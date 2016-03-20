@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>hthebmlvyznmry@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Uğur "vigo" Özyılmazel</string>
+	<key>description</key>
+	<string>My custom TextMate2 bundle. Trying to migrate my old TextMate1 stuff here...
+</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>EBF49C8B-A46A-47A2-A655-D4EE67065003</string>
+			<string>------------------------------------</string>
+			<string>39351940-970D-4D61-A796-91457573A293</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>39351940-970D-4D61-A796-91457573A293</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
+					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
+					<string>9F0FCB9F-7C26-45A5-A791-8326E7D92D1A</string>
+				</array>
+				<key>name</key>
+				<string>Markdown</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string>TextMate2 Power Tools</string>
+	<key>uuid</key>
+	<string>BC2D56EC-5EF0-4635-AF13-7A353C4E09C5</string>
+</dict>
+</plist>
