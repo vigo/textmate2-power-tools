@@ -37,6 +37,6 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ## License
 
-This project licensed under MIT.
+This project is licensed under MIT.
 
 [contributer-01]: https://github.com/vigo
