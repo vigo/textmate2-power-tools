@@ -22,9 +22,23 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * `alt+shift+2`: Generates: `’`
 * `table`: Generates table code.
 
+### Javascript
+
+* `con`: Generates `console.log`, `console.dir`, `console.warn`, `console.error`
+* `for`, `if`, `swi`
+
+### jQuery
+
+* `plugin`: Generates jQuery plugin skel.
+* `each`, `ready`
+
 ### HTML
 
 * `alt+shift+2`: Generates: `&rsquo`
+
+### Text
+
+* `lorem`: Generates various Lorem Ipsum texts.
 
 ### Middleman
 
@@ -43,6 +57,10 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * added: HTML snippets
 * added: Date and Time snippets
 * added: Markdown / table snippet
+* added: Javascript snippets added
+* added: Text snippets (Lorem Ipsum)
+* added: Custom lib, dji18njs snippets
+* added: jQuery snippets
 
 **2016-03-20**
 

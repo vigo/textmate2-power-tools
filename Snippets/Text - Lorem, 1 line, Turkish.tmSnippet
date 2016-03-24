@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Terminal’i her açtığımızda ya da ssh ile uzaktaki makineye her bağlanızda, aslında, ~/.bash_profile dosyası bizi karşılıyor.</string>
+	<key>name</key>
+	<string>Text - Lorem, 1 line, Turkish</string>
+	<key>tabTrigger</key>
+	<string>lorem</string>
+	<key>uuid</key>
+	<string>85AE7C14-CBF2-4D33-A463-CAC0DACFBBF4</string>
+</dict>
+</plist>

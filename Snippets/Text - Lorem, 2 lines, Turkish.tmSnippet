@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Terminal’i her açtığımızda ya da ssh ile uzaktaki makineye her bağlanızda, aslında, ~/.bash_profile dosyası bizi karşılıyor. Yani eskiden Amiga’da da disket’i takınca (dos disk) boot edip `startup-sequence` adlı dosyayı çalıştırırdı…</string>
+	<key>name</key>
+	<string>Text - Lorem, 2 lines, Turkish</string>
+	<key>tabTrigger</key>
+	<string>lorem</string>
+	<key>uuid</key>
+	<string>A368F938-4839-4656-9C38-323F21F8B5EF</string>
+</dict>
+</plist>

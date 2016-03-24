@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>switch(${1:condition}){
+    case ${2:value}:
+        break;
+    default:
+        $0
+};
+</string>
+	<key>name</key>
+	<string>Javascript - switch</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>swi</string>
+	<key>uuid</key>
+	<string>4753476A-FEE8-4E15-B86D-95157D8406B7</string>
+</dict>
+</plist>

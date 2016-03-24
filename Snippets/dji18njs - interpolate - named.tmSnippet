@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>dji18njs.interpolate(${1:string}, ${2:object}, true)$0</string>
+	<key>name</key>
+	<string>dji18njs - interpolate - named</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>dji</string>
+	<key>uuid</key>
+	<string>E8EFB5A8-8A41-4976-B260-5907FA49C4D1</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Terminal’i her açtığımızda ya da ssh ile uzaktaki makineye her bağlanızda, aslında, ~/.bash_profile dosyası bizi karşılıyor. Yani eskiden Amiga’da da disket’i takınca (dos disk) boot edip `startup-sequence` adlı dosyayı çalıştırırdı... Yani, bu sayede aklıma, kendi Dotfiles’ımla ilgili bir sürü şey yapmak geldi ve ışık hızıyla hemen bunları yapmaya giriştim.</string>
+	<key>name</key>
+	<string>Text - Lorem, 3 lines, Turkish</string>
+	<key>tabTrigger</key>
+	<string>lorem</string>
+	<key>uuid</key>
+	<string>CF177026-B730-4AEF-8415-650701AACAF4</string>
+</dict>
+</plist>

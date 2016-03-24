@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>(function(\$){
+    \$.fn.${1:name_of_plugin} = function(options){
+        var defaults = {
+        },
+        settings = \$.extend({},defaults,options);
+        this.each(function(){
+            var \$this = \$(this);
+            // \$this.click(function(e){});
+            return this;
+        });
+    };
+})(jQuery);
+$0</string>
+	<key>name</key>
+	<string>jQuery - Plugin Skelethon</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>plug</string>
+	<key>uuid</key>
+	<string>035E5927-C500-4C1C-9965-DFE49CB1A566</string>
+</dict>
+</plist>
