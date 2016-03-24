@@ -16,9 +16,22 @@
 			<string>EBF49C8B-A46A-47A2-A655-D4EE67065003</string>
 			<string>------------------------------------</string>
 			<string>39351940-970D-4D61-A796-91457573A293</string>
+			<string>------------------------------------</string>
+			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
+			<string>------------------------------------</string>
+			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
 		</array>
 		<key>submenus</key>
 		<dict>
+			<key>04706E97-CDFC-4B18-94EE-6162B3C65954</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>910D4E1C-537E-4208-A7EE-0006DB35C25A</string>
+				</array>
+				<key>name</key>
+				<string>HTML</string>
+			</dict>
 			<key>39351940-970D-4D61-A796-91457573A293</key>
 			<dict>
 				<key>items</key>
@@ -26,14 +39,42 @@
 					<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
 					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
 					<string>9F0FCB9F-7C26-45A5-A791-8326E7D92D1A</string>
+					<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
 				</array>
 				<key>name</key>
 				<string>Markdown</string>
+			</dict>
+			<key>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>3089742F-7E11-42CE-A4D0-CF7C94E9F535</string>
+					<string>337BB464-B1F4-4E68-ACE3-266AEEFA940D</string>
+					<string>DDF9CDF8-E740-4981-9F45-B9ABA6758E9E</string>
+					<string>B144657C-2FFE-4926-9D4E-61FBCF94ACD0</string>
+					<string>4C06DE2A-B82D-48B7-AE01-9292524B02EC</string>
+				</array>
+				<key>name</key>
+				<string>Date and Time</string>
 			</dict>
 		</dict>
 	</dict>
 	<key>name</key>
 	<string>TextMate2 Power Tools</string>
+	<key>ordering</key>
+	<array>
+		<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
+		<string>9F0FCB9F-7C26-45A5-A791-8326E7D92D1A</string>
+		<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
+		<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
+		<string>EBF49C8B-A46A-47A2-A655-D4EE67065003</string>
+		<string>910D4E1C-537E-4208-A7EE-0006DB35C25A</string>
+		<string>3089742F-7E11-42CE-A4D0-CF7C94E9F535</string>
+		<string>337BB464-B1F4-4E68-ACE3-266AEEFA940D</string>
+		<string>DDF9CDF8-E740-4981-9F45-B9ABA6758E9E</string>
+		<string>B144657C-2FFE-4926-9D4E-61FBCF94ACD0</string>
+		<string>4C06DE2A-B82D-48B7-AE01-9292524B02EC</string>
+	</array>
 	<key>uuid</key>
 	<string>BC2D56EC-5EF0-4635-AF13-7A353C4E09C5</string>
 </dict>

@@ -20,12 +20,29 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * `code`: Generates backtick code block for ruby, bash, python, css, js
 * `kntrl+c`: Inline code (wraps with backticks)
 * `alt+shift+2`: Generates: `’`
+* `table`: Generates table code.
+
+### HTML
+
+* `alt+shift+2`: Generates: `&rsquo`
 
 ### Middleman
 
 * `more`: Generates `READ_MORE`
 
+### General: Date and Time
+
+* `dateT`: Generates various date and time formats in Turkish.
+
+
+
 ## Change Log
+
+**2016-03-24**
+
+* added: HTML snippets
+* added: Date and Time snippets
+* added: Markdown / table snippet
 
 **2016-03-20**
 
