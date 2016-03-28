@@ -23,6 +23,8 @@
 			<string>------------------------------------</string>
 			<string>F6630905-7EE7-4822-8496-FEDD0B0DFC41</string>
 			<string>------------------------------------</string>
+			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string>
+			<string>------------------------------------</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -80,6 +82,15 @@
 				</array>
 				<key>name</key>
 				<string>Lorem Ipsum</string>
+			</dict>
+			<key>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>274FC990-9EB6-4C32-BB1E-EF2C3E063EEA</string>
+				</array>
+				<key>name</key>
+				<string>Templates</string>
 			</dict>
 			<key>AB04E546-98B7-48E9-A85A-70B30F493E04</key>
 			<dict>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require "time"
+
+# You must set your scope to "Shell Script (Bash)"
+
+TM_DATE = Time.now.strftime("%Y-%m-%d")
+TM_YEAR = Time.now.strftime("%Y")
+
+TM_FULLNAME = ENV['TM_FULLNAME'] || "Your Name Here..."
+TM_ORGANIZATION = ENV['TM_ORGANIZATION'] || "Your Organization Here..."
+puts(&lt;&lt;-TEMP)
+#!/usr/bin/env bash
+#
+# Created by #{TM_FULLNAME} on #{TM_DATE}.
+# Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
+
+set -e
+
+TEMP
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>Bash Script Template</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>temp</string>
+	<key>uuid</key>
+	<string>274FC990-9EB6-4C32-BB1E-EF2C3E063EEA</string>
+</dict>
+</plist>

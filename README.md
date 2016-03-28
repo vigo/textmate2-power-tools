@@ -48,9 +48,15 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 * `dateT`: Generates various date and time formats in Turkish.
 
+### Templates
 
+* Bash Script Template, `temp` generates Bash Script Scaffold.
 
 ## Change Log
+
+**2016-03-28**
+
+* added: `temp` for `source.shell` scope.
 
 **2016-03-24**
 
