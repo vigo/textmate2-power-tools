@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>search_fields = ("${1:foreign_key\_\_}${2:related_fieldname}")$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - search_fields</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>1D6A8A51-FDA9-4AE5-8267-71639CE32651</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>date_hierarchy = "${1:pub_date}"$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - date_hierarchy</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>8A979EBA-CFF2-475E-9DDB-FA5CA04D7424</string>
+</dict>
+</plist>

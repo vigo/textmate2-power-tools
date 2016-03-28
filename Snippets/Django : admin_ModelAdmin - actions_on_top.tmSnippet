@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>actions_on_top = ${1|True,False|};$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - actions_on_top</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>2400E4E4-4BD1-45A0-9D11-B8A8782952AB</string>
+</dict>
+</plist>

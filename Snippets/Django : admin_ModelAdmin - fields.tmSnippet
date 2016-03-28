@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>fields = ("${1:field}",)$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - fields</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>E8810E8C-9A40-48BD-B8A0-B0A268EB53A6</string>
+</dict>
+</plist>

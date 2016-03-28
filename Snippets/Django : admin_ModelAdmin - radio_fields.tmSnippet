@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>radio_fields = {"group": admin.VERTICAL}$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - radio_fields</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>E779F1BF-4C77-4619-AAF0-C7664C9270EE</string>
+</dict>
+</plist>

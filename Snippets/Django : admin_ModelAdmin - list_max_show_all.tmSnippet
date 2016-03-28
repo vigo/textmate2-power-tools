@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>list_max_show_all = ${1:200}$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - list_max_show_all</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>51A2D339-35C6-4E97-BB17-E3D5AE983A69</string>
+</dict>
+</plist>

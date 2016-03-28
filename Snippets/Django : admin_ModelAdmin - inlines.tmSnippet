@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>inlines = [${1:MediaInline}]$0</string>
+	<key>name</key>
+	<string>Django : admin.ModelAdmin - inlines</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>EBEFD3B4-1F0F-4928-8126-62D2F01AD578</string>
+</dict>
+</plist>
