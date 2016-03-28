@@ -15,6 +15,34 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ## Available Items
 
+### Django / admin.ModelAdmin
+
+* `actions_on_top`:
+* `date_hierarchy`:
+* `empty_value_display (1_9)`:
+* `exclude`:
+* `fields (multiple)`:
+* `fields`:
+* `filter_horizontal/vertical`:
+* `form`:
+* `formfield_overrides`:
+* `inlines`:
+* `list_display`:
+* `list_display_links`:
+* `list_filter`:
+* `list_max_show_all`:
+* `list_per_page`:
+* `list_select_related`:
+* `ordering`:
+* `prepopulated_fields`:
+* `radio_fields`:
+* `raw_id_fields`:
+* `readonly_fields`:
+* `search_fields`:
+* `show_full_result_count`:
+* `view_on_site`:
+
+
 ### Markdown
 
 * `code`: Generates backtick code block for ruby, bash, python, css, js
@@ -53,6 +81,10 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * Bash Script Template, `temp` generates Bash Script Scaffold.
 
 ## Change Log
+
+**2016-03-28**
+
+* added: admin.ModelAdmin helpers
 
 **2016-03-28**
 
