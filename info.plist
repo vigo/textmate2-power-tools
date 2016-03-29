@@ -13,11 +13,14 @@
 	<dict>
 		<key>items</key>
 		<array>
+			<string>------------------------------------</string>
 			<string>AD73FA21-9EB3-407C-A6EB-B3AFA48FAC17</string>
-			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
-			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
 			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string>
 			<string>39351940-970D-4D61-A796-91457573A293</string>
+			<string>------------------------------------</string>
+			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
+			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
+			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
 			<string>------------------------------------</string>
 			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
 			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
@@ -105,6 +108,18 @@
 				<key>name</key>
 				<string>Text</string>
 			</dict>
+			<key>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
+					<string>7ABFA5D7-96AF-4E9C-A747-3C576D76751E</string>
+					<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
+					<string>0598D4C3-E91B-4ED8-BD8A-E16214A2A0B1</string>
+				</array>
+				<key>name</key>
+				<string>Helpers</string>
+			</dict>
 			<key>77C244E4-C7C1-4F5A-9BCC-4F1F634A79E6</key>
 			<dict>
 				<key>items</key>
@@ -145,6 +160,8 @@
 				<key>items</key>
 				<array>
 					<string>3B5EEAF6-2CC1-4AA5-980E-8C84ADE084D6</string>
+					<string>D06D8D7B-4289-4758-B814-A89907C83CF5</string>
+					<string>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</string>
 				</array>
 				<key>name</key>
 				<string>Django</string>
@@ -161,6 +178,15 @@
 				</array>
 				<key>name</key>
 				<string>Date and Time</string>
+			</dict>
+			<key>D06D8D7B-4289-4758-B814-A89907C83CF5</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>EC3BECFF-F932-4873-8ABB-C0DD812C820A</string>
+				</array>
+				<key>name</key>
+				<string>models.Model</string>
 			</dict>
 			<key>D2720E48-D650-4A35-A2E1-AD235944A697</key>
 			<dict>
@@ -181,6 +207,15 @@
 				</array>
 				<key>name</key>
 				<string>Middleman</string>
+			</dict>
+			<key>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>96B07777-0872-4114-B00C-096A4AE25F48</string>
+				</array>
+				<key>name</key>
+				<string>Python</string>
 			</dict>
 			<key>E9C4C14F-02A9-4F97-8BEF-FEF3E1A292A2</key>
 			<dict>
@@ -242,6 +277,7 @@
 		<string>A368F938-4839-4656-9C38-323F21F8B5EF</string>
 		<string>CF177026-B730-4AEF-8415-650701AACAF4</string>
 		<string>F64C8DAE-6D7F-423F-84BA-F17317B523F9</string>
+		<string>96B07777-0872-4114-B00C-096A4AE25F48</string>
 		<string>274FC990-9EB6-4C32-BB1E-EF2C3E063EEA</string>
 		<string>A002A391-B7FB-4950-A1B5-AB4E34F702F5</string>
 		<string>8A979EBA-CFF2-475E-9DDB-FA5CA04D7424</string>
@@ -268,6 +304,11 @@
 		<string>1D6A8A51-FDA9-4AE5-8267-71639CE32651</string>
 		<string>AF3BBA1E-6545-4D4E-AC36-BC8B2C80CC2C</string>
 		<string>A80DF16A-6172-4844-944E-8226AFCF7C27</string>
+		<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
+		<string>7ABFA5D7-96AF-4E9C-A747-3C576D76751E</string>
+		<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
+		<string>0598D4C3-E91B-4ED8-BD8A-E16214A2A0B1</string>
+		<string>EC3BECFF-F932-4873-8ABB-C0DD812C820A</string>
 	</array>
 	<key>uuid</key>
 	<string>BC2D56EC-5EF0-4635-AF13-7A353C4E09C5</string>
