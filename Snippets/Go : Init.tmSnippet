@@ -3,17 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\`\`\`${1|ruby,bash,css,js,python,go,html,php|}
-$0
-\`\`\`
-</string>
+	<string>package main
+
+import "fmt"
+
+func main() {
+  fmt.Println("Hello World")
+}</string>
 	<key>name</key>
-	<string>Markdown - Code</string>
+	<string>Go : Init</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>source.go</string>
 	<key>tabTrigger</key>
-	<string>c</string>
+	<string>ini</string>
 	<key>uuid</key>
-	<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
+	<string>70C2482C-3B78-4016-8E0B-EF93329F8C5F</string>
 </dict>
 </plist>

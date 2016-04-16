@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\`\`\`${1|ruby,bash,css,js,python,go,html,php|}
-$0
-\`\`\`
-</string>
+	<string>return HttpResponse(u'%s, %s' % (args, kwargs))$0</string>
 	<key>name</key>
-	<string>Markdown - Code</string>
+	<string>Django : Helper - HttpResponse</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>c</string>
+	<string>hlp</string>
 	<key>uuid</key>
-	<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
+	<string>16F0C084-10D4-4586-829F-46636026602B</string>
 </dict>
 </plist>

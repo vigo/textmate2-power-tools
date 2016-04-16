@@ -20,7 +20,9 @@
 			<string>------------------------------------</string>
 			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
 			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
+			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string>
 			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
+			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
 			<string>------------------------------------</string>
 			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
 			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
@@ -29,9 +31,20 @@
 			<string>------------------------------------</string>
 			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string>
 			<string>------------------------------------</string>
+			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string>
 		</array>
 		<key>submenus</key>
 		<dict>
+			<key>03BAC6EA-C067-4555-8699-92389B59B99C</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>70C2482C-3B78-4016-8E0B-EF93329F8C5F</string>
+					<string>6C0CEF6D-698D-4D45-9F76-6F01D731B2C5</string>
+				</array>
+				<key>name</key>
+				<string>Go</string>
+			</dict>
 			<key>04706E97-CDFC-4B18-94EE-6162B3C65954</key>
 			<dict>
 				<key>items</key>
@@ -108,6 +121,15 @@
 				<key>name</key>
 				<string>Text</string>
 			</dict>
+			<key>72D0130C-3B3A-49F7-B0B1-1902D81976D8</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>C0C5E23E-C7D8-4163-9FC5-D7D69267D3EA</string>
+				</array>
+				<key>name</key>
+				<string>Behaviours</string>
+			</dict>
 			<key>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</key>
 			<dict>
 				<key>items</key>
@@ -116,6 +138,8 @@
 					<string>7ABFA5D7-96AF-4E9C-A747-3C576D76751E</string>
 					<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
 					<string>0598D4C3-E91B-4ED8-BD8A-E16214A2A0B1</string>
+					<string>16F0C084-10D4-4586-829F-46636026602B</string>
+					<string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
 				</array>
 				<key>name</key>
 				<string>Helpers</string>
@@ -165,6 +189,15 @@
 				</array>
 				<key>name</key>
 				<string>Django</string>
+			</dict>
+			<key>B2226D0F-A432-4FF7-B889-B3E46B26C309</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>2745CC5D-7AB7-4214-8E8C-446F005EB5E6</string>
+				</array>
+				<key>name</key>
+				<string>Ruby</string>
 			</dict>
 			<key>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</key>
 			<dict>
@@ -308,7 +341,13 @@
 		<string>7ABFA5D7-96AF-4E9C-A747-3C576D76751E</string>
 		<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
 		<string>0598D4C3-E91B-4ED8-BD8A-E16214A2A0B1</string>
+		<string>16F0C084-10D4-4586-829F-46636026602B</string>
 		<string>EC3BECFF-F932-4873-8ABB-C0DD812C820A</string>
+		<string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
+		<string>C0C5E23E-C7D8-4163-9FC5-D7D69267D3EA</string>
+		<string>70C2482C-3B78-4016-8E0B-EF93329F8C5F</string>
+		<string>6C0CEF6D-698D-4D45-9F76-6F01D731B2C5</string>
+		<string>2745CC5D-7AB7-4214-8E8C-446F005EB5E6</string>
 	</array>
 	<key>uuid</key>
 	<string>BC2D56EC-5EF0-4635-AF13-7A353C4E09C5</string>

@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\`\`\`${1|ruby,bash,css,js,python,go,html,php|}
-$0
-\`\`\`
-</string>
+	<string>&lt;%= $1 %&gt;$0</string>
 	<key>name</key>
-	<string>Markdown - Code</string>
+	<string>Ruby : ERB : print</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>text.html.erb</string>
 	<key>tabTrigger</key>
-	<string>c</string>
+	<string>=</string>
 	<key>uuid</key>
-	<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
+	<string>2745CC5D-7AB7-4214-8E8C-446F005EB5E6</string>
 </dict>
 </plist>

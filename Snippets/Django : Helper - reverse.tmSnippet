@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.utils.translation import ugettext_lazy as _$0</string>
+	<string>from django.core.urlresolvers import reverse$0</string>
 	<key>name</key>
 	<string>Django : Helper - reverse</string>
 	<key>scope</key>
