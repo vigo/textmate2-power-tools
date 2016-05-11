@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>desc "${1:Task description}"
+remote_task :${2:${3:task_name} =&gt; ${4:[:${5:dependent, :tasks}]}}, role: :remote_app do
+	$0
+end
+</string>
+	<key>name</key>
+	<string>Rake : Remote Task</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>tasr</string>
+	<key>uuid</key>
+	<string>E6009087-8A23-46DE-BE19-1C1F743F3015</string>
+</dict>
+</plist>

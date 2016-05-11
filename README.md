@@ -64,6 +64,12 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 * `alt+shift+2`: Generates: `&rsquo`
 
+### Rake
+
+* `tasr`: New remote task
+* `tasd`: Default task
+* `inv`: Invoke task
+
 ### Text
 
 * `lorem`: Generates various Lorem Ipsum texts.
@@ -81,6 +87,11 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * Bash Script Template, `temp` generates Bash Script Scaffold.
 
 ## Change Log
+
+**2016-05-11**
+
+* added: Python `init` and `utf` snippets
+* added: Rake helpers
 
 **2016-03-28**
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>task :default =&gt; [${1:Task?}]</string>
+	<key>name</key>
+	<string>Rake : Default Task</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>tasd</string>
+	<key>uuid</key>
+	<string>C68FAD46-C323-4F7F-8903-F5FBA80CB345</string>
+</dict>
+</plist>
