@@ -207,6 +207,10 @@
 				<key>items</key>
 				<array>
 					<string>2745CC5D-7AB7-4214-8E8C-446F005EB5E6</string>
+					<string>91A830D8-8A42-4E2A-A288-39EBA4C95156</string>
+					<string>B5B5BE4B-04AA-4745-9447-3CAB53FDEC71</string>
+					<string>0539978F-4EE5-44B7-AB75-B18EC2EB4810</string>
+					<string>0718DD87-9173-4454-9564-26A4A54C8B8A</string>
 				</array>
 				<key>name</key>
 				<string>Ruby</string>
@@ -364,9 +368,14 @@
 		<string>70C2482C-3B78-4016-8E0B-EF93329F8C5F</string>
 		<string>6C0CEF6D-698D-4D45-9F76-6F01D731B2C5</string>
 		<string>2745CC5D-7AB7-4214-8E8C-446F005EB5E6</string>
+		<string>91A830D8-8A42-4E2A-A288-39EBA4C95156</string>
+		<string>B5B5BE4B-04AA-4745-9447-3CAB53FDEC71</string>
+		<string>0539978F-4EE5-44B7-AB75-B18EC2EB4810</string>
+		<string>0718DD87-9173-4454-9564-26A4A54C8B8A</string>
 		<string>E6009087-8A23-46DE-BE19-1C1F743F3015</string>
 		<string>C68FAD46-C323-4F7F-8903-F5FBA80CB345</string>
 		<string>66A554B2-D194-4499-95CD-CC874C731721</string>
+		<string>3F15BB1E-7E68-4F1B-A4ED-593FD1FC9FED</string>
 	</array>
 	<key>uuid</key>
 	<string>BC2D56EC-5EF0-4635-AF13-7A353C4E09C5</string>
