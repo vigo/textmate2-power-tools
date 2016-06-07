@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>self.assert${1|Equal,NotEqual,Greater,GreaterEqual,Less,LessEqual,True,False,Is,IsNot,IsNone,IsNotNone,In,NotIn,IsInstance,NotIsInstance,ListEqual,TupleEqual,DictEqual,SetEqual|}(${2:First}, ${3:Second}${4:, ${5:Message}})</string>
+	<key>name</key>
+	<string>Testing : Assertions</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>ase</string>
+	<key>uuid</key>
+	<string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
+</dict>
+</plist>

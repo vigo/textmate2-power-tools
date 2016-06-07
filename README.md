@@ -15,6 +15,10 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ## Available Items
 
+### Python
+
+* `ase`: All the testing assertions added. 
+
 ### Django / admin.ModelAdmin
 
 * `actions_on_top`:
@@ -87,6 +91,10 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * Bash Script Template, `temp` generates Bash Script Scaffold.
 
 ## Change Log
+
+**2016-06-07**
+
+* added: Python testing assertions.
 
 **2016-05-11**
 
