@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>self.assert${1|Equal,NotEqual,Greater,GreaterEqual,Less,LessEqual,Is,IsNot,In,NotIn,ListEqual,TupleEqual,DictEqual,SetEqual|}(${2:First}, ${3:Second}${4:, ${5:Message}})</string>
+	<string>self.assert${1|True,False,IsNone,IsNotNone|}(${2:Expression}${3:, ${4:Message}})</string>
 	<key>name</key>
 	<string>Python : Testing : Assertions</string>
 	<key>scope</key>
@@ -11,6 +11,6 @@
 	<key>tabTrigger</key>
 	<string>ase</string>
 	<key>uuid</key>
-	<string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
+	<string>0D2CA4DB-A686-4778-9D3D-2ABC65F473ED</string>
 </dict>
 </plist>

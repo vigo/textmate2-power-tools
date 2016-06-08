@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>self.assert${1|Equal,NotEqual,Greater,GreaterEqual,Less,LessEqual,Is,IsNot,In,NotIn,ListEqual,TupleEqual,DictEqual,SetEqual|}(${2:First}, ${3:Second}${4:, ${5:Message}})</string>
+	<string>True if C else False</string>
 	<key>name</key>
-	<string>Python : Testing : Assertions</string>
+	<string>Python : Ternary</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>ase</string>
+	<string>tern</string>
 	<key>uuid</key>
-	<string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
+	<string>B2526C10-2527-493A-90BC-FA3574510B7C</string>
 </dict>
 </plist>
