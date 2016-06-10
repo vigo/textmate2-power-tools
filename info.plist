@@ -71,7 +71,6 @@
 				<key>items</key>
 				<array>
 					<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
-					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
 					<string>9F0FCB9F-7C26-45A5-A791-8326E7D92D1A</string>
 					<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
 				</array>
@@ -127,6 +126,7 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
 					<string>77C244E4-C7C1-4F5A-9BCC-4F1F634A79E6</string>
 					<string>E9C4C14F-02A9-4F97-8BEF-FEF3E1A292A2</string>
 				</array>
@@ -300,9 +300,9 @@
 	<string>TextMate2 Power Tools</string>
 	<key>ordering</key>
 	<array>
+		<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
 		<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
 		<string>9F0FCB9F-7C26-45A5-A791-8326E7D92D1A</string>
-		<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
 		<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
 		<string>EBF49C8B-A46A-47A2-A655-D4EE67065003</string>
 		<string>910D4E1C-537E-4208-A7EE-0006DB35C25A</string>
