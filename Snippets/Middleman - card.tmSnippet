@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;%= card src: '${1:Image Url}',
+         title: '${2:Title}',
+         text: '${3:Image sub text}' %&gt;
+</string>
+	<key>name</key>
+	<string>Middleman - card</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>card</string>
+	<key>uuid</key>
+	<string>1B783248-7F12-4EE2-BE82-59B27B559046</string>
+</dict>
+</plist>
