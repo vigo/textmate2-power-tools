@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;%= partial '${1:partials/}'${2:, locals: {
+  ${3:key}: ${4:value},
+\}} %&gt;</string>
+	<key>name</key>
+	<string>Middleman - partial</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>par</string>
+	<key>uuid</key>
+	<string>A4EAD5AB-E7B4-49E7-96E3-28B7132C1DF2</string>
+</dict>
+</plist>
