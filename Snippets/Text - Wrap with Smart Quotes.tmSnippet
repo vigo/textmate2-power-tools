@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;%= zoomable src: '${1:url}',${2: dir: '${3:posts}'}${4:, alt: '${5:alt}'}${6:, title: '${7:title}'} %&gt;</string>
+	<string>${0:${TM_SELECTED_TEXT/\A&amp;ldquo;(.*)&amp;rdquo;\z|.*/(?1:$1:&amp;ldquo;$0&amp;rdquo;)/m}}</string>
+	<key>keyEquivalent</key>
+	<string>^S</string>
 	<key>name</key>
-	<string>Middleman - zoom</string>
+	<string>Text - Wrap with Smart Quotes</string>
 	<key>scope</key>
 	<string>text.html</string>
-	<key>tabTrigger</key>
-	<string>zoom</string>
 	<key>uuid</key>
-	<string>2DD80D42-B619-40CC-A2FD-541A122006CA</string>
+	<string>EACFECE5-01FD-4587-853C-6DF673FA8C2E</string>
 </dict>
 </plist>

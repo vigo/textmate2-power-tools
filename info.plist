@@ -75,6 +75,7 @@
 					<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
 					<string>9F0FCB9F-7C26-45A5-A791-8326E7D92D1A</string>
 					<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
+					<string>356A70BE-9C84-49E2-9CBD-50EA1502DFE5</string>
 				</array>
 				<key>name</key>
 				<string>Markdown</string>
@@ -129,6 +130,7 @@
 				<key>items</key>
 				<array>
 					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
+					<string>EACFECE5-01FD-4587-853C-6DF673FA8C2E</string>
 					<string>77C244E4-C7C1-4F5A-9BCC-4F1F634A79E6</string>
 					<string>E9C4C14F-02A9-4F97-8BEF-FEF3E1A292A2</string>
 				</array>
@@ -268,6 +270,9 @@
 					<string>1B783248-7F12-4EE2-BE82-59B27B559046</string>
 					<string>44FEF3FB-6ABF-4046-B560-87A33B348F2D</string>
 					<string>07F8C3B8-5F09-49B2-9C89-0461343F26D0</string>
+					<string>7B8D21DB-8CAA-48DD-84C9-96528CE23830</string>
+					<string>A4EAD5AB-E7B4-49E7-96E3-28B7132C1DF2</string>
+					<string>16C784AE-CE98-48F8-AB6D-91BDA44586CA</string>
 				</array>
 				<key>name</key>
 				<string>Middleman</string>

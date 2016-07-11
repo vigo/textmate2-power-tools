@@ -7,7 +7,7 @@
   ${3:key}: ${4:value},
 \}} %&gt;</string>
 	<key>name</key>
-	<string>Middleman - partial</string>
+	<string>Middleman - Partial</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

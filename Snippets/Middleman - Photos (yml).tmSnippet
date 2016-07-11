@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;%= card src: '${1:Image Url}',
-         title: '${2:Title}',
-         alt: '${3:alt}',
-         text: '${4:Image sub text}' %&gt;
+	<string>photos1:
+  -
+   thumb: IMAGE_URL
+   cap: "Caption"
 </string>
 	<key>name</key>
-	<string>Middleman - card</string>
+	<string>Middleman - Photos (yml)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>card</string>
+	<string>pho</string>
 	<key>uuid</key>
-	<string>1B783248-7F12-4EE2-BE82-59B27B559046</string>
+	<string>16C784AE-CE98-48F8-AB6D-91BDA44586CA</string>
 </dict>
 </plist>

@@ -3,18 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;%= card src: '${1:Image Url}',
-         title: '${2:Title}',
-         alt: '${3:alt}',
-         text: '${4:Image sub text}' %&gt;
-</string>
+	<string>&lt;%= img_gallery(current_page.data.${1:photos1}) %&gt;</string>
 	<key>name</key>
-	<string>Middleman - card</string>
+	<string>Middleman - Photo Gallery</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>card</string>
+	<string>gal</string>
 	<key>uuid</key>
-	<string>1B783248-7F12-4EE2-BE82-59B27B559046</string>
+	<string>7B8D21DB-8CAA-48DD-84C9-96528CE23830</string>
 </dict>
 </plist>
