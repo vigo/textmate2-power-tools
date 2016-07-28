@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.utils.translation import ugettext_lazy as _$0</string>
+	<string>def my_view(request):
+    return render(request, 'myapp/index.html', {
+        'foo': 'bar',
+    }, content_type='application/xhtml+xml')</string>
 	<key>name</key>
-	<string>Django : Helper - import lazy</string>
+	<string>Django : Helper - return render</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>hlp</string>
 	<key>uuid</key>
-	<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
+	<string>8A539A19-60B9-435A-9F28-EBE091B4218F</string>
 </dict>
 </plist>

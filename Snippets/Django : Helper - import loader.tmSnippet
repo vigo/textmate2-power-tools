@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.utils.translation import ugettext_lazy as _$0</string>
+	<string>from django.template import loader</string>
 	<key>name</key>
-	<string>Django : Helper - import lazy</string>
+	<string>Django : Helper - import loader</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>hlp</string>
 	<key>uuid</key>
-	<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
+	<string>74F87BE6-CBF5-47DC-BE98-9CB6B0A60D84</string>
 </dict>
 </plist>

@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>return HttpResponse(u'%s, %s' % (args, kwargs))$0</string>
 	<key>name</key>
-	<string>Django : Helper - HttpResponse</string>
+	<string>Django : Helper - return HttpResponse</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
