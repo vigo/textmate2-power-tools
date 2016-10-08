@@ -32,6 +32,7 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * `kntrl+c`: Inline code (wraps with backticks)
 * `alt+shift+2`: Generates: `’`
 * `table`: Generates table code.
+* `img`: Generates code for markdown image.
 
 ### Javascript
 
