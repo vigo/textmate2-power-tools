@@ -18,7 +18,7 @@
 			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string>
 			<string>39351940-970D-4D61-A796-91457573A293</string>
 			<string>056DD6F9-AFF5-480B-848E-98C5C5A97FCE</string>
-            <string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
+			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
 			<string>------------------------------------</string>
 			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
 			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
@@ -46,6 +46,8 @@
 				<key>items</key>
 				<array>
 				    <string>44868070-EF40-44FA-A5FD-59D2E45FE942</string>
+				    <string>7FC17AEF-60D5-4237-B660-BA96E5083EF2</string>
+				    <string>D1A876C8-42ED-4AF6-B446-F829FC966403</string>
 				</array>
 			</dict>
 			<key>03BAC6EA-C067-4555-8699-92389B59B99C</key>

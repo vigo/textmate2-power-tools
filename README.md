@@ -72,6 +72,10 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ## Change Log
 
+**2016-11-29**
+
+* added: Swift snippets; `p`, `=`, `typ`
+
 **2016-10-08**
 
 * added: `admin_modeladmin.png`
