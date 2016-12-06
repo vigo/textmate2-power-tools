@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># -*- coding: utf-8 -*-
+
+from __future__ import unicode_literals
+
+from django.utils.translation import ugettext_lazy as _
+from django.contrib import admin
+
+# from . models import YourModel
+# admin.site.register(YourModel)
+</string>
+	<key>name</key>
+	<string>admin.py - base</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>DFF74BF2-B9C2-4359-87CA-CCAFD70A1D63</string>
+</dict>
+</plist>

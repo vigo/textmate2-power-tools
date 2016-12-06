@@ -21,7 +21,9 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ### Django / admin.ModelAdmin
 
-`admin`: Pops **admin.ModelAdmin** methods.
+* Started Python 3 support for Django
+* `admin`: Pops **admin.ModelAdmin** methods.
+* `model`: Pops model related helpers.
 
 ![admin.ModelAdmin](Screens/admin_modeladmin.png)
 

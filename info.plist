@@ -122,6 +122,7 @@
 					<string>1D6A8A51-FDA9-4AE5-8267-71639CE32651</string>
 					<string>AF3BBA1E-6545-4D4E-AC36-BC8B2C80CC2C</string>
 					<string>A80DF16A-6172-4844-944E-8226AFCF7C27</string>
+					<string>DFF74BF2-B9C2-4359-87CA-CCAFD70A1D63</string>
 				</array>
 				<key>name</key>
 				<string>admin.ModelAdmin</string>
@@ -265,6 +266,8 @@
 				<key>items</key>
 				<array>
 					<string>EC3BECFF-F932-4873-8ABB-C0DD812C820A</string>
+					<string>7226D11A-71B5-4C59-B8C9-57902E97E855</string>
+					<string>45F43514-FBB2-4BB7-B9B7-A9ADDC710FBF</string>
 				</array>
 				<key>name</key>
 				<string>models.Model</string>
