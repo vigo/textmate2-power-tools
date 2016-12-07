@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>class ${1:ModelName-Singular}(models.Model):
+	<string>@python_2_unicode_compatible
+class ${1:ModelName-Singular}(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True, verbose_name=_("Updated At"))
 
