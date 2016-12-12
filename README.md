@@ -55,6 +55,8 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * `tasr`: New remote task
 * `tasd`: Default task
 * `inv`: Invoke task
+* `des`: Description only
+* `tas`: Task with args / Task with args and dependents
 
 ### Text
 

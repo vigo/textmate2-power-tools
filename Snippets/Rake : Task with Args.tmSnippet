@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>task ${1::name_of_task}, [${2::input}] do |t, args|
+  $0
+end
+</string>
+	<key>name</key>
+	<string>Rake : Task with Args</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>tas</string>
+	<key>uuid</key>
+	<string>0D56AB32-E302-4DF3-8163-2A24B4C12E54</string>
+</dict>
+</plist>
