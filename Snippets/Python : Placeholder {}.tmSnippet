@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>import ${1|os,datetime,sys,collections|}</string>
+	<string>{${1}}$0</string>
 	<key>name</key>
-	<string>Python : import</string>
+	<string>Python : Placeholder {}</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>imp</string>
+	<string>=</string>
 	<key>uuid</key>
-	<string>96B07777-0872-4114-B00C-096A4AE25F48</string>
+	<string>309DAC4B-86BF-4E2C-80F6-2C119668D116</string>
 </dict>
 </plist>
