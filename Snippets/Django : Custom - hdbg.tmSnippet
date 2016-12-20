@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>hdbg(${1:string})$0</string>
 	<key>name</key>
-	<string>Django : Custom - hdbg</string>
+	<string>hdbg</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

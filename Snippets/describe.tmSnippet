@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>return HttpResponse(u'%s, %s' % (args, kwargs))$0</string>
+	<string>String(describing: ${1:${2:type(of: ${3:variable})}})$0</string>
 	<key>name</key>
-	<string>Django : Helper - return HttpResponse</string>
+	<string>describe</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.swift</string>
 	<key>tabTrigger</key>
-	<string>hlp</string>
+	<string>des</string>
 	<key>uuid</key>
-	<string>16F0C084-10D4-4586-829F-46636026602B</string>
+	<string>0242F263-ECD0-42A1-A0F0-4475B735D4C5</string>
 </dict>
 </plist>

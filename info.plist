@@ -18,22 +18,19 @@
 			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string>
 			<string>39351940-970D-4D61-A796-91457573A293</string>
 			<string>056DD6F9-AFF5-480B-848E-98C5C5A97FCE</string>
-			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
 			<string>------------------------------------</string>
 			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
 			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
 			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string>
 			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
 			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
+			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
 			<string>------------------------------------</string>
 			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
 			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
-			<string>------------------------------------</string>
 			<string>C63354A0-FBC2-45F8-82C8-3F0D8798D1D0</string>
 			<string>F6630905-7EE7-4822-8496-FEDD0B0DFC41</string>
-			<string>------------------------------------</string>
 			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string>
-			<string>------------------------------------</string>
 			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string>
 			<string>------------------------------------</string>
 		</array>
@@ -48,6 +45,7 @@
 				    <string>44868070-EF40-44FA-A5FD-59D2E45FE942</string>
 				    <string>7FC17AEF-60D5-4237-B660-BA96E5083EF2</string>
 				    <string>D1A876C8-42ED-4AF6-B446-F829FC966403</string>
+                    <string>0242F263-ECD0-42A1-A0F0-4475B735D4C5</string>
 				</array>
 			</dict>
 			<key>03BAC6EA-C067-4555-8699-92389B59B99C</key>
@@ -179,7 +177,6 @@
 					<string>16F0C084-10D4-4586-829F-46636026602B</string>
 					<string>8A539A19-60B9-435A-9F28-EBE091B4218F</string>
 					<string>93A55F9F-6DEB-422F-AB22-EB768B3B8924</string>
-					<string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
 				</array>
 				<key>name</key>
 				<string>Helpers</string>
@@ -226,10 +223,20 @@
 					<string>3B5EEAF6-2CC1-4AA5-980E-8C84ADE084D6</string>
 					<string>D06D8D7B-4289-4758-B814-A89907C83CF5</string>
 					<string>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</string>
+					<string>D52C474F-BD24-454B-8A9B-582D76675A8F</string>
 				</array>
 				<key>name</key>
 				<string>Django</string>
 			</dict>
+            <key>D52C474F-BD24-454B-8A9B-582D76675A8F</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
+                </array>
+				<key>name</key>
+				<string>Custom</string>
+            </dict>
 			<key>B2226D0F-A432-4FF7-B889-B3E46B26C309</key>
 			<dict>
 				<key>items</key>

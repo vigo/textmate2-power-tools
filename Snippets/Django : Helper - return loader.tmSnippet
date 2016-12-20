@@ -3,14 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def my_view(request):
-    # View code here...
-    t = loader.get_template('myapp/index.html')
-    c = {'foo': 'bar'}
-    return HttpResponse(t.render(c, request),
+	<string>def ${1:name of view}(request, *args, **kwargs):
+    t = loader.get_template('${2:template}.html')
+    params = {'foo': 'bar'}
+    return HttpResponse(t.render(params, request),
         content_type='application/xhtml+xml')</string>
 	<key>name</key>
-	<string>Django : Helper - return loader</string>
+	<string>view example : template loader</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def my_view(request):
-    return render(request, 'myapp/index.html', {
-        'foo': 'bar',
-    }, content_type='application/xhtml+xml')</string>
+	<string>def ${1:name of view}(request, *args, **kwargs):
+    params = {}
+    return render(request, '${2:template}.html', params,
+        content_type='application/xhtml+xml')</string>
 	<key>name</key>
-	<string>Django : Helper - return render</string>
+	<string>view example : render</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

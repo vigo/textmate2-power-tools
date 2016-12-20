@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.http import HttpResponse</string>
+	<string>from django.http import ${1|HttpResponse,HttpResponseRedirect|}</string>
 	<key>name</key>
-	<string>Django : Helper - import HttpResponse</string>
+	<string>django.http import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

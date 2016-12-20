@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.shortcuts import render</string>
+	<string>from django.shortcuts import ${1|render,render_to_response,loader,get_object_or_404,get_list_or_404,redirect|}</string>
 	<key>name</key>
-	<string>Django : Helper - import render</string>
+	<string>django.shortcuts import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
