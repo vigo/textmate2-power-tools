@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from __future__ import ${1|unicode_literals,print_function|}$0</string>
+	<string>console(${1:string})$0</string>
 	<key>name</key>
-	<string>Python : from __future__</string>
+	<string>console</string>
 	<key>scope</key>
-	<string>source.python</string>
+	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>hlp</string>
+	<string>con</string>
 	<key>uuid</key>
-	<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
+	<string>2C915C5F-A3AD-4274-987F-A1B3CEE213A4</string>
 </dict>
 </plist>

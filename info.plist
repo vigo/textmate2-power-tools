@@ -166,7 +166,6 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
 					<string>7ABFA5D7-96AF-4E9C-A747-3C576D76751E</string>
 					<string>48680117-A319-4E3A-BF8A-8749FD57EBBF</string>
 					<string>0598D4C3-E91B-4ED8-BD8A-E16214A2A0B1</string>
@@ -233,6 +232,7 @@
                 <key>items</key>
                 <array>
                     <string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
+                    <string>2C915C5F-A3AD-4274-987F-A1B3CEE213A4</string>
                 </array>
 				<key>name</key>
 				<string>Custom</string>
@@ -323,6 +323,7 @@
 					<string>6CD2C238-FCB6-446A-8EF5-B26CD6BBB13C</string>
                     <string>309DAC4B-86BF-4E2C-80F6-2C119668D116</string>
                     <string>BEDDDAF7-764A-47A6-BAFB-445C1B31ECC0</string>
+					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>
