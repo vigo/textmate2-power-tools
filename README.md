@@ -17,7 +17,13 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ### Python
 
-* `ase`: All the testing assertions added. 
+* `ini`: Initial code for writing Python.
+* `imp`: Imports some modules (*os, sys ...*)
+* `ase`: All the testing assertions added.
+* `p`: print with format
+* `pp`: pretty print initializer
+* `hlp`: imports from future
+
 
 ### Django / admin.ModelAdmin
 

@@ -211,6 +211,7 @@
 					<string>067E5DC5-8EBE-4443-8D21-3A77223F584A</string>
 					<string>8DFF939A-1B13-4DC4-A036-6EB8A85E6E09</string>
 					<string>4753476A-FEE8-4E15-B86D-95157D8406B7</string>
+					<string>E6F8C05F-F8A9-41BB-8774-CA9A46DF8EF3</string>
 				</array>
 				<key>name</key>
 				<string>Javascript</string>
@@ -324,6 +325,8 @@
                     <string>309DAC4B-86BF-4E2C-80F6-2C119668D116</string>
                     <string>BEDDDAF7-764A-47A6-BAFB-445C1B31ECC0</string>
 					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
+					<string>A4B4038A-ACD3-4FBD-9F7C-FF6828D5C14B</string>
+                    <string>DF611687-AD6E-4B07-8D55-093EB81FC317</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>

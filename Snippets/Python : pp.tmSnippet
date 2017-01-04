@@ -3,24 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string># -*- coding: utf-8 -*-
-
-import os
-import pprint
-import sys
-reload(sys)
-sys.setdefaultencoding('UTF8')
-
-pp = pprint.PrettyPrinter(indent=4)
-
-$0</string>
+	<string>pp = pprint.PrettyPrinter(indent=4)</string>
 	<key>name</key>
-	<string>Python : init</string>
+	<string>Python : pp</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>ini</string>
+	<string>pp</string>
 	<key>uuid</key>
-	<string>67BEF7A3-5A71-4486-A1E9-F3D2980D3424</string>
+	<string>A4B4038A-ACD3-4FBD-9F7C-FF6828D5C14B</string>
 </dict>
 </plist>
