@@ -17,12 +17,18 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 
 ### Python
 
+You need to install:
+
+    pip install pep8 autopep8
+
 * `ini`: Initial code for writing Python.
 * `imp`: Imports some modules (*os, sys ...*)
 * `ase`: All the testing assertions added.
 * `p`: print with format
 * `pp`: pretty print initializer
 * `hlp`: imports from future
+* `⌥` + `⌘` + `:` : autopep8 checker.
+* `⌥` + `⌘` + `.` : pep8 checker.
 
 
 ### Django / admin.ModelAdmin
@@ -41,6 +47,7 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * `alt+shift+2`: Generates: `’`
 * `table`: Generates table code.
 * `img`: Generates code for markdown image.
+* `badge`: Adds **img.shields.io** badge!
 
 ### Javascript
 
@@ -81,6 +88,11 @@ git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tool
 * Bash Script Template, `temp` generates Bash Script Scaffold.
 
 ## Change Log
+
+**2017-01-09**
+
+* `pep8` and `autopep8` for python.
+* `badge` img.shields.io integration for markdown.
 
 **2016-11-29**
 

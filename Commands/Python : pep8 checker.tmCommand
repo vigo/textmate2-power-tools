@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+
+html_header "pep8 checking"
+
+INPUT=$(cat /dev/stdin)
+
+if [[ -e "${TM_FILEPATH}" ]]; then
+    need_file="${TM_FILEPATH}"
+else
+    need_file="${TMPDIR}random.py"
+    touch "${need_file}"
+fi
+
+echo "${INPUT}" &gt; "${need_file}"
+
+pep8_result=$(~/.pyenv/shims/pep8 --show-source "${need_file}")
+if [[ $? == "0" ]]; then
+    echo "All good to go!" | pre
+else
+    echo "${pep8_result}" | pre
+fi
+
+
+html_footer
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@.</string>
+	<key>name</key>
+	<string>Python : pep8 checker</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>uuid</key>
+	<string>982F3D63-447D-4802-B5F0-1F8F6D047DDD</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

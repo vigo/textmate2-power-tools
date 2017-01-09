@@ -91,6 +91,7 @@
 					<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
 					<string>356A70BE-9C84-49E2-9CBD-50EA1502DFE5</string>
 					<string>FBCE52A8-C390-42A3-B3C5-077DAF38671F</string>
+                    <string>CC033A07-54AF-41EF-9473-D8E88DED1250</string>
 				</array>
 				<key>name</key>
 				<string>Markdown</string>
@@ -327,6 +328,8 @@
 					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
 					<string>A4B4038A-ACD3-4FBD-9F7C-FF6828D5C14B</string>
                     <string>DF611687-AD6E-4B07-8D55-093EB81FC317</string>
+                    <string>A5A6BF17-649A-443B-9155-E36D53624B57</string>
+                    <string>982F3D63-447D-4802-B5F0-1F8F6D047DDD</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>
