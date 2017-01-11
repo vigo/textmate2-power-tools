@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div class="full zoomable"&gt;&lt;img src="/public/images/posts/${1:image}" alt="${2:alt}"&gt;&lt;/div&gt;
+
+$0</string>
+	<key>name</key>
+	<string>Geliştiriciyiz - img - zoom</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>zoom</string>
+	<key>uuid</key>
+	<string>F03D7700-6F18-4884-A9AF-A52530C177D6</string>
+</dict>
+</plist>
