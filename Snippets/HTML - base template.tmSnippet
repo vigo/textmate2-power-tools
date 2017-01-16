@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;Hello World&lt;/title&gt;
+        &lt;style type="text/css" media="screen"&gt;
+            @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;amp;subset=latin-ext);
+            body { font-family: 'Roboto', sans-serif; }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        $0
+    &lt;/body&gt;
+&lt;/html&gt;
+</string>
+	<key>name</key>
+	<string>HTML - base template</string>
+	<key>tabTrigger</key>
+	<string>html5</string>
+	<key>uuid</key>
+	<string>B9DA8410-670B-4174-8501-12E82829CA5F</string>
+</dict>
+</plist>

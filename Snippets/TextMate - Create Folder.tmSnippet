@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;key&gt;${2:UUID}&lt;/key&gt;
+&lt;dict&gt;
+	&lt;key&gt;items&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;${3:SUB ELEMENTS UUID}&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;name&lt;/key&gt;
+	&lt;string&gt;${1:Folder Name}&lt;/string&gt;
+&lt;/dict&gt;</string>
+	<key>name</key>
+	<string>TextMate - Create Folder</string>
+	<key>scope</key>
+	<string>text.xml.plist</string>
+	<key>tabTrigger</key>
+	<string>folder</string>
+	<key>uuid</key>
+	<string>355F3E67-ECCD-4A17-AEEE-D2C16931E39A</string>
+</dict>
+</plist>

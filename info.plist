@@ -25,6 +25,7 @@
 			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
 			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
 			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
+			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string>
 			<string>------------------------------------</string>
 			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
 			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
@@ -63,6 +64,7 @@
 				<key>items</key>
 				<array>
 					<string>910D4E1C-537E-4208-A7EE-0006DB35C25A</string>
+                    <string>B9DA8410-670B-4174-8501-12E82829CA5F</string>
 				</array>
 				<key>name</key>
 				<string>HTML</string>
@@ -92,6 +94,8 @@
 					<string>356A70BE-9C84-49E2-9CBD-50EA1502DFE5</string>
 					<string>FBCE52A8-C390-42A3-B3C5-077DAF38671F</string>
                     <string>CC033A07-54AF-41EF-9473-D8E88DED1250</string>
+                    <string>006FE107-A6D7-4369-9159-2127740245C9</string>
+                    <string>6E557CA3-CA7B-45BE-9556-D1F1C31A2ADF</string>
 				</array>
 				<key>name</key>
 				<string>Markdown</string>
@@ -213,6 +217,7 @@
 					<string>8DFF939A-1B13-4DC4-A036-6EB8A85E6E09</string>
 					<string>4753476A-FEE8-4E15-B86D-95157D8406B7</string>
 					<string>E6F8C05F-F8A9-41BB-8774-CA9A46DF8EF3</string>
+                    <string>2E962522-419D-4829-B592-96AAD82B5979</string>
 				</array>
 				<key>name</key>
 				<string>Javascript</string>
@@ -229,6 +234,18 @@
 				<key>name</key>
 				<string>Django</string>
 			</dict>
+            
+            <key>B8AE3B20-08B1-47F1-B0F4-471638CC482D</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>9220AA4B-6BB8-4037-B7BD-920DD749CC8E</string>
+                </array>
+                <key>name</key>
+                <string>LISP</string>
+            </dict>
+            
+            
             <key>D52C474F-BD24-454B-8A9B-582D76675A8F</key>
             <dict>
                 <key>items</key>

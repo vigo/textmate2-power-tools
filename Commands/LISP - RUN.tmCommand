@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoScrollOutput</key>
+	<true/>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+
+html_header "Running LISP"
+
+if [[ $TM_CLISP ]]; then
+    if [[ $TM_FILEPATH ]]; then
+        run_file="${TM_FILEPATH}"
+    else
+        run_file="/tmp/rnd.lisp"
+    fi
+    $TM_CLISP "${run_file}"|pre
+else
+    echo "You must define \$TM_CLISP variable"|pre
+fi
+
+html_footer
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>LISP - RUN</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.lisp</string>
+	<key>uuid</key>
+	<string>9220AA4B-6BB8-4037-B7BD-920DD749CC8E</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
