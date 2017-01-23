@@ -25,7 +25,7 @@
 			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
 			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
 			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
-			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string>
+			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string> <!-- lisp -->
 			<string>------------------------------------</string>
 			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
 			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
@@ -241,9 +241,10 @@
                 <key>items</key>
                 <array>
                     <string>9220AA4B-6BB8-4037-B7BD-920DD749CC8E</string>
+                    <string>9ACC314C-63CE-4995-BD76-83C1731B0C11</string>
                 </array>
                 <key>name</key>
-                <string>LISP</string>
+                <string>Lisp</string>
             </dict>
             
             

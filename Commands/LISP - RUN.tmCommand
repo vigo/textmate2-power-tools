@@ -35,7 +35,7 @@ html_footer
 	<key>keyEquivalent</key>
 	<string>@r</string>
 	<key>name</key>
-	<string>LISP - RUN</string>
+	<string>Lisp - Run</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
