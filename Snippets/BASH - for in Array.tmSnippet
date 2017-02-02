@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\`\`\`${1|applescript,bash,css,go,html,js,php,python,ruby,sql,swift|}
-$0
-\`\`\`
-</string>
+	<string>for ${1:var} in \${${2:array}[@]}; do
+    $0
+done</string>
 	<key>name</key>
-	<string>Markdown - Code</string>
+	<string>BASH - for in Array</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>source.shell</string>
 	<key>tabTrigger</key>
-	<string>c</string>
+	<string>for</string>
 	<key>uuid</key>
-	<string>D90FF4F8-9E23-447A-B460-25A2015942EB</string>
+	<string>2AE137DB-56FC-49B6-B8C3-2811CC46EDC8</string>
 </dict>
 </plist>

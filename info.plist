@@ -14,30 +14,40 @@
 		<key>items</key>
 		<array>
 			<string>------------------------------------</string>
-			<string>AD73FA21-9EB3-407C-A6EB-B3AFA48FAC17</string>
-			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string>
-			<string>39351940-970D-4D61-A796-91457573A293</string>
-			<string>056DD6F9-AFF5-480B-848E-98C5C5A97FCE</string>
+			<string>AD73FA21-9EB3-407C-A6EB-B3AFA48FAC17</string> <!-- django -->
+			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string> <!-- jquery -->
+			<string>39351940-970D-4D61-A796-91457573A293</string> <!-- markdown -->
+			<string>056DD6F9-AFF5-480B-848E-98C5C5A97FCE</string> <!-- rake -->
 			<string>------------------------------------</string>
-			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
-			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
-			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string>
-			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
-			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
-			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
+			<string>C4F64DFD-319A-411C-B70A-0869DB4D1038</string> <!-- bash -->
+			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string> <!-- html -->
+			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string> <!-- javascript -->
+			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string> <!-- go -->
+			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string> <!-- python -->
+			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string> <!-- ruby -->
+			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string> <!-- swift -->
 			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string> <!-- lisp -->
 			<string>------------------------------------</string>
-			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
-			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
-			<string>C63354A0-FBC2-45F8-82C8-3F0D8798D1D0</string>
-			<string>F6630905-7EE7-4822-8496-FEDD0B0DFC41</string>
-			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string>
-			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string>
+			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string> <!-- date and time -->
+			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string> <!-- text -->
+			<string>C63354A0-FBC2-45F8-82C8-3F0D8798D1D0</string> <!-- helpers -->
+			<string>F6630905-7EE7-4822-8496-FEDD0B0DFC41</string> <!-- custom libs -->
+			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string> <!-- templates -->
+			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string> <!-- behaviours -->
 			<string>------------------------------------</string>
 		</array>
 		<key>submenus</key>
 		<dict>
-			<key>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</key>
+			<key>C4F64DFD-319A-411C-B70A-0869DB4D1038</key>
+			<dict>
+			    <key>items</key>
+			    <array>
+			        <string>2AE137DB-56FC-49B6-B8C3-2811CC46EDC8</string>
+			    </array>
+			    <key>name</key>
+			    <string>Bash</string>
+			</dict>
+            <key>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</key>
 			<dict>
 				<key>name</key>
 				<string>Swift</string>

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby18 -wKU
 require "time"
@@ -20,18 +22,29 @@ puts(&lt;&lt;-TEMP)
 # Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
 
 set -e
+set -o pipefail
 
 TEMP
 </string>
 	<key>input</key>
 	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>Bash Script Template</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.shell</string>
 	<key>tabTrigger</key>
 	<string>temp</string>
 	<key>uuid</key>
 	<string>274FC990-9EB6-4C32-BB1E-EF2C3E063EEA</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
