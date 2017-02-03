@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>.vimrc</string>
+	</array>
+	<key>name</key>
+	<string>vimrc</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\".*$\n?</string>
+			<key>name</key>
+			<string>comment.line.config.vimrc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>:\b\w+\b</string>
+			<key>name</key>
+			<string>entity.name.function.config.vimrc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(set|let|(n|c|i)?(nore)?map|syntax|filetype|call|au(tocmd)?|snor|colorscheme)\b</string>
+			<key>name</key>
+			<string>keyword.config.vimrc</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>config.vimrc</string>
+	<key>uuid</key>
+	<string>C16A7D44-9A65-4278-87D4-4C35FE1F0E4D</string>
+</dict>
+</plist>
