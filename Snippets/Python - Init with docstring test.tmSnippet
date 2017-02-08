@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># -*- coding: utf-8 -*-
+
+import os
+import pprint
+import sys
+reload(sys)
+sys.setdefaultencoding('UTF8')
+pp = pprint.PrettyPrinter(indent=4)
+
+# Code here --------------------------------------------------------------------
+
+def print_hello(input):
+    """
+    &gt;&gt;&gt; print_hello("world")
+    Hello, world!
+    """
+    print('Hello, {}!'.format(input))
+
+$0
+
+# ------------------------------------------------------------------------------
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+</string>
+	<key>name</key>
+	<string>Python - Init with docstring test</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>ini</string>
+	<key>uuid</key>
+	<string>8B7F6A99-2326-459C-919F-C8346A5D14EC</string>
+</dict>
+</plist>

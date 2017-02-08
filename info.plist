@@ -342,12 +342,13 @@
 				<key>name</key>
 				<string>Middleman</string>
 			</dict>
-			<key>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</key>
+			<key>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</key> <!-- python -->
 			<dict>
 				<key>items</key>
 				<array>
 					<string>96B07777-0872-4114-B00C-096A4AE25F48</string>
 					<string>67BEF7A3-5A71-4486-A1E9-F3D2980D3424</string>
+					<string>8B7F6A99-2326-459C-919F-C8346A5D14EC</string>
 					<string>396637F6-281A-4ABF-93C2-D48ECFC16F60</string>
 					<string>B2526C10-2527-493A-90BC-FA3574510B7C</string>
 					<string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
