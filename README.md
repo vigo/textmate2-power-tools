@@ -89,6 +89,10 @@ You need to install:
 
 ## Change Log
 
+**2017-02-26**
+
+* Elixir support added
+
 **2017-01-09**
 
 * `pep8` and `autopep8` for python.

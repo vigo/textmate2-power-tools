@@ -27,6 +27,7 @@
 			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string> <!-- ruby -->
 			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string> <!-- swift -->
 			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string> <!-- lisp -->
+			<string>DF2B733A-D9AE-45C8-8B89-E6AC588FCACC</string> <!-- elixir -->
 			<string>------------------------------------</string>
 			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string> <!-- date and time -->
 			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string> <!-- text -->
@@ -38,6 +39,17 @@
 		</array>
 		<key>submenus</key>
 		<dict>
+            <key>DF2B733A-D9AE-45C8-8B89-E6AC588FCACC</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>ED4925CF-3CB9-4F6F-9B0B-C69C477C209A</string>
+                    <string>A61028D3-A299-471F-8D5A-AE534928B099</string>
+                    <string>F0ECBF21-A54C-445E-A43B-421E9016FC99</string>
+                </array>
+                <key>name</key>
+                <string>Elixir</string>
+            </dict>
 			<key>C4F64DFD-319A-411C-B70A-0869DB4D1038</key>
 			<dict>
 			    <key>items</key>
