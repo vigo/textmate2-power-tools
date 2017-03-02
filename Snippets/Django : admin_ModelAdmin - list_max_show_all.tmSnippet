@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>list_max_show_all = ${1:200}$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - list_max_show_all</string>
+	<string>admin.ModelAdmin - list_max_show_all</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

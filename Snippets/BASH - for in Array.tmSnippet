@@ -7,7 +7,7 @@
     $0
 done</string>
 	<key>name</key>
-	<string>BASH - for in Array</string>
+	<string>for in Array</string>
 	<key>scope</key>
 	<string>source.shell</string>
 	<key>tabTrigger</key>

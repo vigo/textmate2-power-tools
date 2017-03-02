@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.ForeignKey("self", related_name="${2:child_set}", null=True, blank=True, limit_choices_to={"$1": None}, verbose_name=_("$2"))$0</string>
+	<key>name</key>
+	<string>models.ForeignKey - self (parent node)</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>C371D270-5B6E-48D9-BD5F-6B46B2AABBF3</string>
+</dict>
+</plist>

@@ -8,7 +8,7 @@
 }
 </string>
 	<key>name</key>
-	<string>Javascript - if</string>
+	<string>if</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

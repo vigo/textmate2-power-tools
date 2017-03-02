@@ -8,7 +8,7 @@ $0
 &lt;% end %&gt;
 </string>
 	<key>name</key>
-	<string>Ruby : ERB : if</string>
+	<string>ERB - if</string>
 	<key>scope</key>
 	<string>text.html.erb</string>
 	<key>tabTrigger</key>

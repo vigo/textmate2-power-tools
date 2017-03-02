@@ -9,7 +9,7 @@
          text: '${4:Image sub text}' %&gt;
 </string>
 	<key>name</key>
-	<string>Middleman - card</string>
+	<string>card (vigos blog)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

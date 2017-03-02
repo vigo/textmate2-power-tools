@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
-	<string>Markdown - Highlight</string>
+	<string>Highlight</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>uuid</key>

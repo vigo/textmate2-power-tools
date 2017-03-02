@@ -15,7 +15,7 @@ pp = pprint.PrettyPrinter(indent=4)
 
 $0</string>
 	<key>name</key>
-	<string>Python : init</string>
+	<string>init</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

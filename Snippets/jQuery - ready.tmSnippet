@@ -7,7 +7,7 @@
     $0
 });</string>
 	<key>name</key>
-	<string>jQuery - ready</string>
+	<string>ready</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

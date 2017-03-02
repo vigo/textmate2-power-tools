@@ -19,7 +19,7 @@ class ${1:ModelName-Singular}(models.Model):
 
 </string>
 	<key>name</key>
-	<string>Django : models.Model (Python 3)</string>
+	<string>models.Model (Python 3)</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

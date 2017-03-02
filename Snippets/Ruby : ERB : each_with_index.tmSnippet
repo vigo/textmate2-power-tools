@@ -8,7 +8,7 @@ $0
 &lt;% end %&gt;
 </string>
 	<key>name</key>
-	<string>Ruby : ERB : each_with_index</string>
+	<string>ERB - each_with_index</string>
 	<key>scope</key>
 	<string>text.html.erb</string>
 	<key>tabTrigger</key>

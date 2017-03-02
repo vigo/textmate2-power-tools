@@ -24,7 +24,7 @@
         
 </string>
 	<key>name</key>
-	<string>Django : models.Model (Python 2)</string>
+	<string>models.Model (Python 2)</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

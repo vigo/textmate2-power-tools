@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>![Version](https://img.shields.io/badge/version-${1:0.1.0}-yellow.svg)$0</string>
 	<key>name</key>
-	<string>Markdown - Badge - version</string>
+	<string>Badge - version</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>

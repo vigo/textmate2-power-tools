@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>from __future__ import ${1|unicode_literals,print_function|}$0</string>
 	<key>name</key>
-	<string>Python : from __future__</string>
+	<string>from __future__</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

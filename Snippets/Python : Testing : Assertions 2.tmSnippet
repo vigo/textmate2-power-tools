@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>self.assert${1|True,False,IsNone,IsNotNone|}(${2:Expression}${3:, ${4:Message}})</string>
 	<key>name</key>
-	<string>Python : Testing : Assertions</string>
+	<string>Assertions - True ...</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

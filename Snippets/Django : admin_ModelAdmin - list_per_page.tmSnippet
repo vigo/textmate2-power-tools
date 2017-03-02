@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>list_per_page = ${1:100}$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - list_per_page</string>
+	<string>admin.ModelAdmin - list_per_page</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

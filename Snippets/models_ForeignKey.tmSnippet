@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.ForeignKey('${2:other model}', on_delete=models.${3|CASCADE,PROTECT,SET_NULL,SET_DEFAULT,SET,DO_NOTHING|})$0</string>
+	<key>name</key>
+	<string>models.ForeignKey</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>6FA7977A-565C-48A0-935C-AC0A0F065C9F</string>
+</dict>
+</plist>

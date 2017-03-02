@@ -8,7 +8,7 @@ $0
 \`\`\`
 </string>
 	<key>name</key>
-	<string>Markdown - Code</string>
+	<string>Code</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>

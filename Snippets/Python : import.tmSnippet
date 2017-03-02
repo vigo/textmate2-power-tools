@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>import ${1|os,datetime,sys,collections|pprint|}</string>
 	<key>name</key>
-	<string>Python : import</string>
+	<string>import</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

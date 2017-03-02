@@ -9,7 +9,7 @@
    cap: "Caption"
 </string>
 	<key>name</key>
-	<string>Middleman - Photos (yml)</string>
+	<string>photos (yml) (vigos blog)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

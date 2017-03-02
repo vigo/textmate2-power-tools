@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>dji18njs.interpolate(${1:string}, ${2:array})$0</string>
 	<key>name</key>
-	<string>dji18njs - interpolate - simple</string>
+	<string>interpolate - simple</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

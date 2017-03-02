@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.CharField(max_length=${2:number}, verbose_name=_("${3:verbose name}"))$0</string>
+	<key>name</key>
+	<string>models.CharField - common</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>7594D5D0-2214-407E-A527-CFF096A15736</string>
+</dict>
+</plist>

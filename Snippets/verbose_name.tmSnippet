@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>verbose_name=_("${1:Verbose Name}")$0</string>
+	<key>name</key>
+	<string>verbose_name</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>opt</string>
+	<key>uuid</key>
+	<string>B9700BB8-CEF0-41BB-80F6-54CC3389E3F0</string>
+</dict>
+</plist>

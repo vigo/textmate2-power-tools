@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>date_hierarchy = "${1:pub_date}"$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - date_hierarchy</string>
+	<string>admin.ModelAdmin - date_hierarchy</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.DecimalField(max_digits=${2:number}, decimal_places=${3:number})$0</string>
+	<key>name</key>
+	<string>models.DecimalField</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>845BAA23-EF60-4589-A08E-EF797C3EDB03</string>
+</dict>
+</plist>

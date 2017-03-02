@@ -16,7 +16,7 @@
 	<key>keyEquivalent</key>
 	<string>~@:</string>
 	<key>name</key>
-	<string>Python : autopep8</string>
+	<string>autopep8</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

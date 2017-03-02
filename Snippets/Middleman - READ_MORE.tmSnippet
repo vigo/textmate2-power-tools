@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>READ_MORE</string>
 	<key>name</key>
-	<string>Middleman - READ_MORE</string>
+	<string>READ_MORE</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>

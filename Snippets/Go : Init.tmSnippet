@@ -11,7 +11,7 @@ func main() {
 	fmt.Println("Hello World")
 }</string>
 	<key>name</key>
-	<string>Go : Init</string>
+	<string>Init</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>

@@ -9,7 +9,7 @@ remote_task :${2:${3:task_name} =&gt; ${4:[:${5:dependent, :tasks}]}}, role: :re
 end
 </string>
 	<key>name</key>
-	<string>Rake : Remote Task</string>
+	<string>Remote Task</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>

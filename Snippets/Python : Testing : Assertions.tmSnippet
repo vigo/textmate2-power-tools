@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>self.assert${1|IsInstance,NotIsInstance|}(${2:Object}, ${3:Class}${4:, ${5:"$1 is not an instance of $2"}})$0</string>
 	<key>name</key>
-	<string>Python : Testing : Assertions</string>
+	<string>Assertions - IsInstance ...</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

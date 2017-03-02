@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>(${1|princ,print,prin1|} ${2:expression})$0</string>
 	<key>name</key>
-	<string>Lisp - print</string>
+	<string>print</string>
 	<key>scope</key>
 	<string>source.lisp</string>
 	<key>tabTrigger</key>

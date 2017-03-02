@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.DateTimeField(auto_now=True, auto_now_add=True, verbose_name=_("${2:verbose name}"))$0</string>
+	<key>name</key>
+	<string>models.DateTimeField - with defaults</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>A0A75A68-20F8-45BA-8417-E4009931C4F1</string>
+</dict>
+</plist>

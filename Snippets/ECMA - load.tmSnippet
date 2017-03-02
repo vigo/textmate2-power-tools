@@ -7,7 +7,7 @@
     console.log("ready");
 });</string>
 	<key>name</key>
-	<string>ECMA - load</string>
+	<string>load</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

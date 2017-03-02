@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>choices=${1:list_of_tuples}$0</string>
+	<key>name</key>
+	<string>choices</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>opt</string>
+	<key>uuid</key>
+	<string>5E8465FB-1ABA-4712-86C3-4F1918E57939</string>
+</dict>
+</plist>

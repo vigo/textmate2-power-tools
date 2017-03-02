@@ -7,7 +7,7 @@
     pass
 admin.site.register($1, $1Admin)</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin</string>
+	<string>admin.ModelAdmin</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

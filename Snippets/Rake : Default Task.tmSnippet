@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>task :default =&gt; [${1:Task?}]</string>
 	<key>name</key>
-	<string>Rake : Default Task</string>
+	<string>Default Task</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>

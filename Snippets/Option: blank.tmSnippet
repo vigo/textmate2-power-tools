@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>blank=${1|True,False|}$0</string>
+	<key>name</key>
+	<string>blank=True</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>opt</string>
+	<key>uuid</key>
+	<string>CE209F8C-88F9-4EC8-91C8-44C088CF7308</string>
+</dict>
+</plist>

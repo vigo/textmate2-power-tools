@@ -41,7 +41,7 @@ html_footer
 	<key>keyEquivalent</key>
 	<string>~@.</string>
 	<key>name</key>
-	<string>Python : pep8 checker</string>
+	<string>pep8 checker</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

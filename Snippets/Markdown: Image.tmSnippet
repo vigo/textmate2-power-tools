@@ -6,7 +6,7 @@
 	<string>![${1:alt text}](${2:URL}${3: "${4:title}"})
 </string>
 	<key>name</key>
-	<string>Markdown - Image</string>
+	<string>Image</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>

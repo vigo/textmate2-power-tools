@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>^S</string>
 	<key>name</key>
-	<string>Markdown - Wrap with Smart Quotes</string>
+	<string>Wrap with Smart Quotes</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>uuid</key>

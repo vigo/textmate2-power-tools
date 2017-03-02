@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>dji18njs.ngettext(${1:singular}, ${2:plural}, ${3:number})$0</string>
 	<key>name</key>
-	<string>dji18njs - ngettext</string>
+	<string>ngettext</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

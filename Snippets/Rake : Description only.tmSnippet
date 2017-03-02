@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>desc "${1:Description}"$0</string>
 	<key>name</key>
-	<string>Rake : Description only</string>
+	<string>Description only</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>

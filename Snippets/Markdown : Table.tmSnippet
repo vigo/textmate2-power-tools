@@ -7,7 +7,7 @@
 --------|--------
 $0</string>
 	<key>name</key>
-	<string>Markdown - Table</string>
+	<string>Table</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>

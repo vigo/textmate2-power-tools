@@ -7,7 +7,7 @@
   $0
 end</string>
 	<key>name</key>
-	<string>Rake : Task w/o description</string>
+	<string>Task w/o description</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>

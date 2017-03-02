@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.IntegerField(choices=${2:list_of_tuples}, default=${3:value}, max_length=${4:number}, verbose_name=_("${4:verbose name}"))$0</string>
+	<key>name</key>
+	<string>models.IntegerField - choices</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>AD21CAC1-2155-4329-90BA-E4581935D37A</string>
+</dict>
+</plist>

@@ -31,7 +31,7 @@ html_footer
 	<key>keyEquivalent</key>
 	<string>@r</string>
 	<key>name</key>
-	<string>JavaScript : Run</string>
+	<string>Run</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

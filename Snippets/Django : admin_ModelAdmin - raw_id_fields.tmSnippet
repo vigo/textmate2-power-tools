@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>raw_id_fields = ("${1:field}",)$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - raw_id_fields</string>
+	<string>admin.ModelAdmin - raw_id_fields</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

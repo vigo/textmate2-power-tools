@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>self.assert${1|Equal,NotEqual,Greater,GreaterEqual,Less,LessEqual,Is,IsNot,In,NotIn,ListEqual,TupleEqual,DictEqual,SetEqual|}(${2:First}, ${3:Second}${4:, ${5:Message}})</string>
 	<key>name</key>
-	<string>Python : Testing : Assertions</string>
+	<string>Assertions - Equal ...</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

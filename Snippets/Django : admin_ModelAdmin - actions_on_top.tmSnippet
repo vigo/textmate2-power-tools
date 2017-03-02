@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>actions_on_top = ${1|True,False|};$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - actions_on_top</string>
+	<string>admin.ModelAdmin - actions_on_top</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>&lt;%= img_gallery(current_page.data.${1:photos1}) %&gt;</string>
 	<key>name</key>
-	<string>Middleman - Photo Gallery</string>
+	<string>img_gallery (vigos blog)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

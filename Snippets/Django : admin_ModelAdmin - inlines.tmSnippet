@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>inlines = [${1:MediaInline}]$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - inlines</string>
+	<string>admin.ModelAdmin - inlines</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

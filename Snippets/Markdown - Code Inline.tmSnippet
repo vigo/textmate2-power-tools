@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>^c</string>
 	<key>name</key>
-	<string>Markdown - Code Inline</string>
+	<string>Code Inline</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>uuid</key>

@@ -30,7 +30,7 @@ if __name__ == '__main__':
     doctest.testmod()
 </string>
 	<key>name</key>
-	<string>Python - Init with docstring test</string>
+	<string>Init with docstring test</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>&lt;%= debug(${1:variable}) %&gt;</string>
 	<key>name</key>
-	<string>Middleman - debug</string>
+	<string>debug (vigos blog)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:field_name} = models.UUIDField(primary_key=${2|True,False|}, default=${3:uuid.uuid4}, editable=${4|False,True|})$0</string>
+	<key>name</key>
+	<string>models.UUIDField</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>1823A074-3414-493B-B9A3-6A8BB752DDF7</string>
+</dict>
+</plist>

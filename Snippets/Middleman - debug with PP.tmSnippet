@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>&lt;%= debug(PP.pp ${1:variable}, "") %&gt;</string>
 	<key>name</key>
-	<string>Middleman - debug with PP</string>
+	<string>debug with PP (vigos blog)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>Rake::Task["${1:task}"].invoke${2:("${3:param}")}</string>
 	<key>name</key>
-	<string>Rake : Invoke</string>
+	<string>Invoke</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>

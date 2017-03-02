@@ -34,8 +34,12 @@ You need to install:
 ### Django / admin.ModelAdmin
 
 * Started Python 3 support for Django
+* Extended Python (Django) syntax
 * `admin`: Pops **admin.ModelAdmin** methods.
 * `model`: Pops model related helpers.
+* `fld`: Django, models.py, add field
+* `opt`: Django, models.py, field options
+
 
 ![admin.ModelAdmin](Screens/admin_modeladmin.png)
 
@@ -88,6 +92,12 @@ You need to install:
 * Bash Script Template, `temp` generates Bash Script Scaffold.
 
 ## Change Log
+
+**2017-03-02**
+
+* added: `fld`, `opt` for python/django
+* added: `if` for Shell Scripting
+* fixed: names of snippets
 
 **2017-02-26**
 

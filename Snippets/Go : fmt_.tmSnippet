@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>fmt.${1|Println|}</string>
 	<key>name</key>
-	<string>Go : fmt.</string>
+	<string>fmt.</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>

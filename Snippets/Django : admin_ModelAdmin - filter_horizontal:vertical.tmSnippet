@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>filter_${1|horizontal,vertical|} = ("${2:field}",)$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - filter_horizontal/vertical</string>
+	<string>admin.ModelAdmin - filter_horizontal/vertical</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

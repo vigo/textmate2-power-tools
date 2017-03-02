@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>&lt;%= zoomable src: '${1:url}',${2: dir: '${3:posts}'}${4:, alt: '${5:alt}'}${6:, title: '${7:title}'} %&gt;</string>
 	<key>name</key>
-	<string>Middleman - zoom</string>
+	<string>zoom (vigos blog)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

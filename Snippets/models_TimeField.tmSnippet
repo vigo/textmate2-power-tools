@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.TimeField(${2|auto_now_add,auto_now|}=True, verbose_name=_("${1:$TM_SELECTED_TEXT}"))$0</string>
+	<key>name</key>
+	<string>models.TimeField</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>5F38F5A4-6723-4B30-8EEA-428A818D0695</string>
+</dict>
+</plist>

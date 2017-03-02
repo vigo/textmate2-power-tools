@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>{${1}}$0</string>
 	<key>name</key>
-	<string>Python : Placeholder {}</string>
+	<string>Placeholder {}</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

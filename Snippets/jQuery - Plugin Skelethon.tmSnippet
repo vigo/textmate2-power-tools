@@ -17,7 +17,7 @@
 })(jQuery);
 $0</string>
 	<key>name</key>
-	<string>jQuery - Plugin Skelethon</string>
+	<string>Plugin Skelethon</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

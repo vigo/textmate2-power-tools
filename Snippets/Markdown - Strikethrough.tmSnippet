@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>^s</string>
 	<key>name</key>
-	<string>Markdown - Strikethrough</string>
+	<string>Strikethrough</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>uuid</key>

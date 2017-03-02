@@ -5,72 +5,40 @@
 	<key>contactEmailRot13</key>
 	<string>hthebmlvyznmry@tznvy.pbz</string>
 	<key>contactName</key>
-	<string>Uğur &quot;vigo&quot; Özyılmazel</string>
+	<string>Uğur "vigo" Özyılmazel</string>
 	<key>description</key>
-	<string>My custom TextMate2 bundle. Trying to migrate my old TextMate1 stuff here...
+	<string>My custom TextMate2 bundle. Handy helpers for various languages and frameworks.
 </string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
 		<array>
 			<string>------------------------------------</string>
-			<string>AD73FA21-9EB3-407C-A6EB-B3AFA48FAC17</string> <!-- django -->
-			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string> <!-- jquery -->
-			<string>39351940-970D-4D61-A796-91457573A293</string> <!-- markdown -->
-			<string>056DD6F9-AFF5-480B-848E-98C5C5A97FCE</string> <!-- rake -->
+			<string>AD73FA21-9EB3-407C-A6EB-B3AFA48FAC17</string>
+			<string>D2720E48-D650-4A35-A2E1-AD235944A697</string>
+			<string>39351940-970D-4D61-A796-91457573A293</string>
+			<string>056DD6F9-AFF5-480B-848E-98C5C5A97FCE</string>
 			<string>------------------------------------</string>
-			<string>C4F64DFD-319A-411C-B70A-0869DB4D1038</string> <!-- bash -->
-			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string> <!-- html -->
-			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string> <!-- javascript -->
-			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string> <!-- go -->
-			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string> <!-- python -->
-			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string> <!-- ruby -->
-			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string> <!-- swift -->
-			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string> <!-- lisp -->
-			<string>DF2B733A-D9AE-45C8-8B89-E6AC588FCACC</string> <!-- elixir -->
+			<string>C4F64DFD-319A-411C-B70A-0869DB4D1038</string>
+			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
+			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
+			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string>
+			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
+			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
+			<string>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</string>
+			<string>B8AE3B20-08B1-47F1-B0F4-471638CC482D</string>
+			<string>DF2B733A-D9AE-45C8-8B89-E6AC588FCACC</string>
 			<string>------------------------------------</string>
-			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string> <!-- date and time -->
-			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string> <!-- text -->
-			<string>C63354A0-FBC2-45F8-82C8-3F0D8798D1D0</string> <!-- helpers -->
-			<string>F6630905-7EE7-4822-8496-FEDD0B0DFC41</string> <!-- custom libs -->
-			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string> <!-- templates -->
-			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string> <!-- behaviours -->
+			<string>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</string>
+			<string>703AE58D-8AE3-40D5-B79B-94DF9C34C08E</string>
+			<string>C63354A0-FBC2-45F8-82C8-3F0D8798D1D0</string>
+			<string>F6630905-7EE7-4822-8496-FEDD0B0DFC41</string>
+			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string>
+			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string>
 			<string>------------------------------------</string>
 		</array>
 		<key>submenus</key>
 		<dict>
-            <key>DF2B733A-D9AE-45C8-8B89-E6AC588FCACC</key>
-            <dict>
-                <key>items</key>
-                <array>
-                    <string>ED4925CF-3CB9-4F6F-9B0B-C69C477C209A</string>
-                    <string>A61028D3-A299-471F-8D5A-AE534928B099</string>
-                    <string>F0ECBF21-A54C-445E-A43B-421E9016FC99</string>
-                </array>
-                <key>name</key>
-                <string>Elixir</string>
-            </dict>
-			<key>C4F64DFD-319A-411C-B70A-0869DB4D1038</key>
-			<dict>
-			    <key>items</key>
-			    <array>
-			        <string>2AE137DB-56FC-49B6-B8C3-2811CC46EDC8</string>
-			    </array>
-			    <key>name</key>
-			    <string>Bash</string>
-			</dict>
-            <key>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</key>
-			<dict>
-				<key>name</key>
-				<string>Swift</string>
-				<key>items</key>
-				<array>
-				    <string>44868070-EF40-44FA-A5FD-59D2E45FE942</string>
-				    <string>7FC17AEF-60D5-4237-B660-BA96E5083EF2</string>
-				    <string>D1A876C8-42ED-4AF6-B446-F829FC966403</string>
-                    <string>0242F263-ECD0-42A1-A0F0-4475B735D4C5</string>
-				</array>
-			</dict>
 			<key>03BAC6EA-C067-4555-8699-92389B59B99C</key>
 			<dict>
 				<key>items</key>
@@ -86,7 +54,7 @@
 				<key>items</key>
 				<array>
 					<string>910D4E1C-537E-4208-A7EE-0006DB35C25A</string>
-                    <string>B9DA8410-670B-4174-8501-12E82829CA5F</string>
+					<string>B9DA8410-670B-4174-8501-12E82829CA5F</string>
 				</array>
 				<key>name</key>
 				<string>HTML</string>
@@ -100,11 +68,46 @@
 					<string>66A554B2-D194-4499-95CD-CC874C731721</string>
 					<string>5C8D2A53-C2C1-4931-B707-67A43D675B03</string>
 					<string>0D56AB32-E302-4DF3-8163-2A24B4C12E54</string>
-                    <string>5A4F8BFF-BEC1-4BB9-995E-40AC7A9F71BE</string>
-                    <string>187BF2B7-B91E-4427-AA1D-CE7745BFAE3A</string>
+					<string>5A4F8BFF-BEC1-4BB9-995E-40AC7A9F71BE</string>
+					<string>187BF2B7-B91E-4427-AA1D-CE7745BFAE3A</string>
 				</array>
 				<key>name</key>
 				<string>Rake</string>
+			</dict>
+			<key>2B4B7AAB-F13C-43F1-840F-29F1158DDD3F</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>1AAF53DB-85FD-4DF8-B096-1D235FAFE414</string>
+					<string>83B23667-C88D-41D4-9B14-3B53F0ED4A4B</string>
+					<string>ECD8E35F-B768-4F37-8424-C37D607FDF86</string>
+					<string>4A7BCA56-FEA4-41A6-870D-C4A72A1CDC60</string>
+					<string>87526CEF-9087-4412-9B4D-BF4EEE5B2D57</string>
+					<string>7594D5D0-2214-407E-A527-CFF096A15736</string>
+					<string>080B0B84-BA25-4698-B2B3-C16647B0865C</string>
+					<string>95CE0503-A792-4ECA-868C-CC907BACC264</string>
+					<string>A8392967-F77B-4FA1-BC87-C72BC2D0C0CB</string>
+					<string>9F13CF15-96A8-4CFE-B5F3-62007DF5E279</string>
+					<string>63E55C6C-F642-40C0-B463-89454F742AC1</string>
+					<string>A0A75A68-20F8-45BA-8417-E4009931C4F1</string>
+					<string>845BAA23-EF60-4589-A08E-EF797C3EDB03</string>
+					<string>C0E2D954-D2AB-419A-A256-C4656F286F31</string>
+					<string>7CD41E06-0F92-4FDD-8CBE-831C14D976AD</string>
+					<string>6FA7977A-565C-48A0-935C-AC0A0F065C9F</string>
+					<string>C371D270-5B6E-48D9-BD5F-6B46B2AABBF3</string>
+					<string>15760737-594C-4032-B258-A9E89B504A42</string>
+					<string>AD21CAC1-2155-4329-90BA-E4581935D37A</string>
+					<string>5A39E5C3-30A3-4283-82AC-7522A51E1DCD</string>
+					<string>E99D794A-7A05-4FFB-8CA5-DCB762D5F307</string>
+					<string>74718340-0502-47B7-9D4D-39A45AA8A2FB</string>
+					<string>A0A1C79D-D045-4D5D-82A8-06BD4214955D</string>
+					<string>5F38F5A4-6723-4B30-8EEA-428A818D0695</string>
+					<string>F364B8CE-AEED-4020-9159-58BF016B24B6</string>
+					<string>27BA630D-38E2-4BB4-A294-D95F2A29CA68</string>
+					<string>1823A074-3414-493B-B9A3-6A8BB752DDF7</string>
+				</array>
+				<key>name</key>
+				<string>Fields</string>
 			</dict>
 			<key>39351940-970D-4D61-A796-91457573A293</key>
 			<dict>
@@ -115,10 +118,10 @@
 					<string>0ADEC4BC-0B60-4A9F-8AA9-5FEF365A74DB</string>
 					<string>356A70BE-9C84-49E2-9CBD-50EA1502DFE5</string>
 					<string>FBCE52A8-C390-42A3-B3C5-077DAF38671F</string>
-                    <string>CC033A07-54AF-41EF-9473-D8E88DED1250</string>
-                    <string>006FE107-A6D7-4369-9159-2127740245C9</string>
-                    <string>6E557CA3-CA7B-45BE-9556-D1F1C31A2ADF</string>
-                    <string>9D0ABBD8-412F-4EDF-9C7F-6D81F31DDFF0</string>
+					<string>CC033A07-54AF-41EF-9473-D8E88DED1250</string>
+					<string>006FE107-A6D7-4369-9159-2127740245C9</string>
+					<string>6E557CA3-CA7B-45BE-9556-D1F1C31A2ADF</string>
+					<string>9D0ABBD8-412F-4EDF-9C7F-6D81F31DDFF0</string>
 				</array>
 				<key>name</key>
 				<string>Markdown</string>
@@ -204,6 +207,7 @@
 					<string>16F0C084-10D4-4586-829F-46636026602B</string>
 					<string>8A539A19-60B9-435A-9F28-EBE091B4218F</string>
 					<string>93A55F9F-6DEB-422F-AB22-EB768B3B8924</string>
+					<string>D1E2FB64-F027-49F5-81DE-0806699ADB8C</string>
 				</array>
 				<key>name</key>
 				<string>Helpers</string>
@@ -240,7 +244,7 @@
 					<string>8DFF939A-1B13-4DC4-A036-6EB8A85E6E09</string>
 					<string>4753476A-FEE8-4E15-B86D-95157D8406B7</string>
 					<string>E6F8C05F-F8A9-41BB-8774-CA9A46DF8EF3</string>
-                    <string>2E962522-419D-4829-B592-96AAD82B5979</string>
+					<string>2E962522-419D-4829-B592-96AAD82B5979</string>
 				</array>
 				<key>name</key>
 				<string>Javascript</string>
@@ -251,35 +255,38 @@
 				<array>
 					<string>3B5EEAF6-2CC1-4AA5-980E-8C84ADE084D6</string>
 					<string>D06D8D7B-4289-4758-B814-A89907C83CF5</string>
+					<string>2B4B7AAB-F13C-43F1-840F-29F1158DDD3F</string>
+					<string>B15729E9-9617-4603-BA49-C3BDFDD75221</string>
 					<string>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</string>
 					<string>D52C474F-BD24-454B-8A9B-582D76675A8F</string>
 				</array>
 				<key>name</key>
 				<string>Django</string>
 			</dict>
-            
-            <key>B8AE3B20-08B1-47F1-B0F4-471638CC482D</key>
-            <dict>
-                <key>items</key>
-                <array>
-                    <string>9220AA4B-6BB8-4037-B7BD-920DD749CC8E</string>
-                    <string>9ACC314C-63CE-4995-BD76-83C1731B0C11</string>
-                </array>
-                <key>name</key>
-                <string>Lisp</string>
-            </dict>
-            
-            
-            <key>D52C474F-BD24-454B-8A9B-582D76675A8F</key>
-            <dict>
-                <key>items</key>
-                <array>
-                    <string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
-                    <string>2C915C5F-A3AD-4274-987F-A1B3CEE213A4</string>
-                </array>
+			<key>B15729E9-9617-4603-BA49-C3BDFDD75221</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>43130AEF-A62D-44F5-82DE-41097CF9E5E8</string>
+					<string>A2B2670E-7157-4BA3-99AE-80DFD60E9815</string>
+					<string>CE209F8C-88F9-4EC8-91C8-44C088CF7308</string>
+					<string>5E8465FB-1ABA-4712-86C3-4F1918E57939</string>
+					<string>34CFF230-64A9-497F-8CF8-E38824A3EDE1</string>
+					<string>F9A5E894-3BA4-4974-AC14-6DF0F54FE2CF</string>
+					<string>5AFDE7F1-CBC3-4353-B1DB-CD6736FDBD28</string>
+					<string>A10F3380-D9FE-41B0-8CCF-D2770545D540</string>
+					<string>F2491BC0-880F-4E83-96EC-2E5610070BDC</string>
+					<string>8E4609C2-2291-489F-A508-2AA01E420ADB</string>
+					<string>0F45EFC1-0416-4430-AF33-71655D149CF5</string>
+					<string>3EA79EA9-75B8-4233-A77D-6921864F63E0</string>
+					<string>899DD6AA-281A-4760-8585-0961FADBC915</string>
+					<string>581E68D9-1A65-4550-873F-1D8AB4BC3616</string>
+					<string>B9307D6E-CF49-40F3-A9A0-4B4170ED36FB</string>
+					<string>B9700BB8-CEF0-41BB-80F6-54CC3389E3F0</string>
+				</array>
 				<key>name</key>
-				<string>Custom</string>
-            </dict>
+				<string>Field Options</string>
+			</dict>
 			<key>B2226D0F-A432-4FF7-B889-B3E46B26C309</key>
 			<dict>
 				<key>items</key>
@@ -293,6 +300,28 @@
 				<key>name</key>
 				<string>Ruby</string>
 			</dict>
+			<key>B8AE3B20-08B1-47F1-B0F4-471638CC482D</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>9220AA4B-6BB8-4037-B7BD-920DD749CC8E</string>
+					<string>9ACC314C-63CE-4995-BD76-83C1731B0C11</string>
+				</array>
+				<key>name</key>
+				<string>Lisp</string>
+			</dict>
+			<key>B9A1B6C6-DCFF-4F87-BA7B-608720207ED2</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>44868070-EF40-44FA-A5FD-59D2E45FE942</string>
+					<string>7FC17AEF-60D5-4237-B660-BA96E5083EF2</string>
+					<string>D1A876C8-42ED-4AF6-B446-F829FC966403</string>
+					<string>0242F263-ECD0-42A1-A0F0-4475B735D4C5</string>
+				</array>
+				<key>name</key>
+				<string>Swift</string>
+			</dict>
 			<key>C17CE9B2-514B-425F-B9CE-7ACD17E9E4C6</key>
 			<dict>
 				<key>items</key>
@@ -305,6 +334,17 @@
 				</array>
 				<key>name</key>
 				<string>Date and Time</string>
+			</dict>
+			<key>C4F64DFD-319A-411C-B70A-0869DB4D1038</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>8BB051CA-F114-4082-8C3F-3657B42F94BE</string>
+                    <string>1CA87D01-5813-4856-8C0B-2932839B9763</string>
+                    <string>2AE137DB-56FC-49B6-B8C3-2811CC46EDC8</string>
+				</array>
+				<key>name</key>
+				<string>Bash</string>
 			</dict>
 			<key>C63354A0-FBC2-45F8-82C8-3F0D8798D1D0</key>
 			<dict>
@@ -337,6 +377,16 @@
 				<key>name</key>
 				<string>jQuery</string>
 			</dict>
+			<key>D52C474F-BD24-454B-8A9B-582D76675A8F</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
+					<string>2C915C5F-A3AD-4274-987F-A1B3CEE213A4</string>
+				</array>
+				<key>name</key>
+				<string>Custom</string>
+			</dict>
 			<key>D9A5D77F-796D-436F-B577-A16BFEC048BE</key>
 			<dict>
 				<key>items</key>
@@ -349,12 +399,23 @@
 					<string>7B8D21DB-8CAA-48DD-84C9-96528CE23830</string>
 					<string>A4EAD5AB-E7B4-49E7-96E3-28B7132C1DF2</string>
 					<string>16C784AE-CE98-48F8-AB6D-91BDA44586CA</string>
-                    <string>F03D7700-6F18-4884-A9AF-A52530C177D6</string>
+					<string>F03D7700-6F18-4884-A9AF-A52530C177D6</string>
 				</array>
 				<key>name</key>
 				<string>Middleman</string>
 			</dict>
-			<key>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</key> <!-- python -->
+			<key>DF2B733A-D9AE-45C8-8B89-E6AC588FCACC</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>ED4925CF-3CB9-4F6F-9B0B-C69C477C209A</string>
+					<string>A61028D3-A299-471F-8D5A-AE534928B099</string>
+					<string>F0ECBF21-A54C-445E-A43B-421E9016FC99</string>
+				</array>
+				<key>name</key>
+				<string>Elixir</string>
+			</dict>
+			<key>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</key>
 			<dict>
 				<key>items</key>
 				<array>
@@ -366,13 +427,13 @@
 					<string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
 					<string>0D2CA4DB-A686-4778-9D3D-2ABC65F473ED</string>
 					<string>6CD2C238-FCB6-446A-8EF5-B26CD6BBB13C</string>
-                    <string>309DAC4B-86BF-4E2C-80F6-2C119668D116</string>
-                    <string>BEDDDAF7-764A-47A6-BAFB-445C1B31ECC0</string>
+					<string>309DAC4B-86BF-4E2C-80F6-2C119668D116</string>
+					<string>BEDDDAF7-764A-47A6-BAFB-445C1B31ECC0</string>
 					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
 					<string>A4B4038A-ACD3-4FBD-9F7C-FF6828D5C14B</string>
-                    <string>DF611687-AD6E-4B07-8D55-093EB81FC317</string>
-                    <string>A5A6BF17-649A-443B-9155-E36D53624B57</string>
-                    <string>982F3D63-447D-4802-B5F0-1F8F6D047DDD</string>
+					<string>DF611687-AD6E-4B07-8D55-093EB81FC317</string>
+					<string>A5A6BF17-649A-443B-9155-E36D53624B57</string>
+					<string>982F3D63-447D-4802-B5F0-1F8F6D047DDD</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>

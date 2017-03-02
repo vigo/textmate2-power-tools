@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>view_on_site = ${1|True,False|}$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - view_on_site</string>
+	<string>admin.ModelAdmin - view_on_site</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

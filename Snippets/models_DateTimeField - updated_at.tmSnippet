@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>updated_at = models.DateTimeField(auto_now=True, verbose_name=_("Updated At"))$0</string>
+	<key>name</key>
+	<string>models.DateTimeField - updated_at</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>63E55C6C-F642-40C0-B463-89454F742AC1</string>
+</dict>
+</plist>

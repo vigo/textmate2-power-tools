@@ -8,7 +8,7 @@
 end
 </string>
 	<key>name</key>
-	<string>Rake : Task with Args</string>
+	<string>Task with Args</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>

@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>~'</string>
 	<key>name</key>
-	<string>HTML - &amp;rsquo;</string>
+	<string>&amp;rsquo;</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

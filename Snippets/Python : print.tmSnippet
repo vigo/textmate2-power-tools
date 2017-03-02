@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>print(${1}${2:.format(${3})})$0</string>
 	<key>name</key>
-	<string>Python : print</string>
+	<string>print with format</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>

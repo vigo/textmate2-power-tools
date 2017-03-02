@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>form = ${1:form_name}$0</string>
 	<key>name</key>
-	<string>Django : admin.ModelAdmin - form</string>
+	<string>admin.ModelAdmin - form</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
