@@ -34,7 +34,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.python.django</string>
+	<string>source.python.django.extended</string>
 	<key>uuid</key>
 	<string>8722BA61-ECB0-487E-9937-2D12310D4CBD</string>
 </dict>
