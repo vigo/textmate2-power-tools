@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>console_dir(${1:objectg})$0</string>
+	<key>name</key>
+	<string>console_dir</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>con</string>
+	<key>uuid</key>
+	<string>EB1818C5-2462-499E-A3C0-B9335A033708</string>
+</dict>
+</plist>
