@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require "time"
+
+TM_DATE = Time.now.strftime("%Y-%m-%d")
+TM_YEAR = Time.now.strftime("%Y")
+TM_FULLNAME = ENV['TM_FULLNAME'] || "Your Name Here..."
+TM_ORGANIZATION = ENV['TM_ORGANIZATION'] || "Your Organization Here..."
+PYTHON_VERSION = `#{ENV['TM_PYTHON']} -c 'from sys import version_info; print("{major}.{minor}.{micro}-{level}".format(major=version_info.major, minor=version_info.minor, micro=version_info.micro, level=version_info.releaselevel))'`
+
+puts(&lt;&lt;-TEMP)
+# -*- coding: utf-8 -*-
+#
+# Created by #{TM_FULLNAME} on #{TM_DATE}.
+# Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
+# Python version: #{PYTHON_VERSION}
+
+import os, pprint, sys
+reload(sys)
+sys.setdefaultencoding('UTF8')
+
+pp = pprint.PrettyPrinter(indent=4)
+
+# Code here...
+$0
+
+
+# Example
+def print_hello(input):
+    """
+    &gt;&gt;&gt; print_hello("world")
+    Hello, world!
+    """
+    print('Hello, {}!'.format(input))
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    TEMP</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Python Script Template with Doctest</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>temp</string>
+	<key>uuid</key>
+	<string>4352ED82-4AEC-4919-9E28-9FB96D93338F</string>
+</dict>
+</plist>

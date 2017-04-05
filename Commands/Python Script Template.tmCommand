@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require "time"
+
+TM_DATE = Time.now.strftime("%Y-%m-%d")
+TM_YEAR = Time.now.strftime("%Y")
+TM_FULLNAME = ENV['TM_FULLNAME'] || "Your Name Here..."
+TM_ORGANIZATION = ENV['TM_ORGANIZATION'] || "Your Organization Here..."
+PYTHON_VERSION = `#{ENV['TM_PYTHON']} -c 'from sys import version_info; print("{major}.{minor}.{micro}-{level}".format(major=version_info.major, minor=version_info.minor, micro=version_info.micro, level=version_info.releaselevel))'`
+
+puts(&lt;&lt;-TEMP)
+# -*- coding: utf-8 -*-
+#
+# Created by #{TM_FULLNAME} on #{TM_DATE}.
+# Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
+# Python version: #{PYTHON_VERSION}
+
+import os, pprint, sys
+reload(sys)
+sys.setdefaultencoding('UTF8')
+
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint("Hello {world}".format(world="world"))
+
+TEMP</string>
+	<key>name</key>
+	<string>Python Script Template</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>temp</string>
+	<key>uuid</key>
+	<string>66BDD933-2358-43D1-B9B0-448AE7CD23A6</string>
+</dict>
+</plist>

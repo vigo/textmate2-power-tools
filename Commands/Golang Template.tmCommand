@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require "time"
+
+TM_DATE = Time.now.strftime("%Y-%m-%d")
+TM_YEAR = Time.now.strftime("%Y")
+TM_FULLNAME = ENV['TM_FULLNAME'] || "Your Name Here..."
+TM_ORGANIZATION = ENV['TM_ORGANIZATION'] || "Your Organization Here..."
+GO_CMD = ENV['TM_GO'] || 'go'
+GOLANG_VERSION = `#{GO_CMD} version`.chomp
+
+puts(&lt;&lt;-TEMP)
+// Created by #{TM_FULLNAME} on #{TM_DATE}.
+// Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
+// #{GOLANG_VERSION}
+
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World")
+}
+TEMP
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Golang Template</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.go</string>
+	<key>tabTrigger</key>
+	<string>temp</string>
+	<key>uuid</key>
+	<string>BE77FEAB-FFBC-4557-8232-271024DCA059</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
