@@ -93,6 +93,11 @@ You need to install:
 
 ## Change Log
 
+**2017-04-14**
+
+* <kbd>⌃</kbd> + <kbd>'</kbd>: Adds triple quote (*Python docstring*)
+
+
 **2017-03-02**
 
 * added: `fld`, `opt` for python/django
