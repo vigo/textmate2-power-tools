@@ -420,25 +420,47 @@
 				<key>name</key>
 				<string>Elixir</string>
 			</dict>
+            
+            <key>5C4FFB91-3251-4318-AEC1-3B9AC96AA674</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>982F3D63-447D-4802-B5F0-1F8F6D047DDD</string>
+                    <string>A5A6BF17-649A-443B-9155-E36D53624B57</string>
+                    <string>6C85CD58-9716-4FE1-A731-A716A1938D00</string>
+                </array>
+                <key>name</key>
+                <string>Linting</string>
+            </dict>
+            
+            <key>F2EA418F-903F-4AE4-A94A-1CA4FEECBD9A</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
+                    <string>0D2CA4DB-A686-4778-9D3D-2ABC65F473ED</string>
+                    <string>6CD2C238-FCB6-446A-8EF5-B26CD6BBB13C</string>
+                </array>
+                <key>name</key>
+                <string>Testing</string>
+            </dict>
+            
 			<key>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</key>
 			<dict>
 				<key>items</key>
 				<array>
+                    <string>5C4FFB91-3251-4318-AEC1-3B9AC96AA674</string>
+                    <string>F2EA418F-903F-4AE4-A94A-1CA4FEECBD9A</string>
+					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
 					<string>96B07777-0872-4114-B00C-096A4AE25F48</string>
 					<string>67BEF7A3-5A71-4486-A1E9-F3D2980D3424</string>
 					<string>8B7F6A99-2326-459C-919F-C8346A5D14EC</string>
 					<string>396637F6-281A-4ABF-93C2-D48ECFC16F60</string>
 					<string>B2526C10-2527-493A-90BC-FA3574510B7C</string>
-					<string>E3216094-CD5C-4A46-B16F-E7C6D963D320</string>
-					<string>0D2CA4DB-A686-4778-9D3D-2ABC65F473ED</string>
-					<string>6CD2C238-FCB6-446A-8EF5-B26CD6BBB13C</string>
 					<string>309DAC4B-86BF-4E2C-80F6-2C119668D116</string>
 					<string>BEDDDAF7-764A-47A6-BAFB-445C1B31ECC0</string>
-					<string>BD2225EF-FDEC-427C-AF9C-38F47A2D9653</string>
 					<string>A4B4038A-ACD3-4FBD-9F7C-FF6828D5C14B</string>
 					<string>DF611687-AD6E-4B07-8D55-093EB81FC317</string>
-					<string>A5A6BF17-649A-443B-9155-E36D53624B57</string>
-					<string>982F3D63-447D-4802-B5F0-1F8F6D047DDD</string>
                     <string>6E1FE84E-2BC0-432C-822F-F2BC56FA3147</string>
 				</array>
 				<key>name</key>
