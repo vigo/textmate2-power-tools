@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'''$1'''$0</string>
+	<string>${1|''',"""|}$0$1
+</string>
 	<key>keyEquivalent</key>
 	<string>^'</string>
 	<key>name</key>
