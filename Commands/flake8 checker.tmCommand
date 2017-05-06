@@ -7,20 +7,38 @@
 	<key>command</key>
 	<string>#!/bin/bash
 
-# ⌥ + ⌘ + C
+# ⌥ + ⌘ + .
 
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 . "$TM_SUPPORT_PATH/lib/webpreview.sh"
+
 html_header "flake8 checker"
 
-# output_format="%(path)s:%(row)d:%(col)d: %(code)s %(text)s"
-output_format="Line: %(row)d, Col: %(col)d | [%(code)s] | %(text)s"
+flake8_max_line_length="79"
 
-flake8_result=$(~/.pyenv/shims/flake8 --count --format="${output_format}" "${TM_FILEPATH}")
-if [[ $? == "0" ]]; then
+if [[ "${TM_SCOPE}" == *"source.python.django"* &amp;&amp; "${TM_FLAKE8_DJANGO_MAX_CHAR}" ]]; then
+    flake8_max_line_length="${TM_FLAKE8_DJANGO_MAX_CHAR}"
+fi
+
+flake8_result=$(~/.pyenv/shims/flake8 --max-line-length=${flake8_max_line_length} --format='%(row)d || %(code)s || %(text)s' "${TM_FILEPATH}")
+flake8_execution_status=$?
+
+"${TM_MATE}" --clear-mark warning
+
+echo "Flake8 maximum line length is: ${flake8_max_line_length}" | pre
+
+if [[ "${flake8_execution_status}" == "0" ]]; then
     echo "All good to go!" | pre
 else
+    echo "${flake8_result}" | while read line
+    do
+        IFS='||' read -ra flake_line &lt;&lt;&lt; "${line}"
+        flake_line_number="${flake_line[0]}"
+        flake_error_code="${flake_line[2]}"
+        flake_error_message="${flake_line[4]}"
+        "${TM_MATE}" "${TM_FILEPATH}" --line ${flake_line_number} --set-mark warning:"${flake_error_code}: ${flake_error_message}"
+    done
     echo "${flake8_result}" | pre
 fi
 
@@ -30,7 +48,7 @@ html_footer</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>~@c</string>
+	<string>~@:</string>
 	<key>name</key>
 	<string>flake8 checker</string>
 	<key>outputCaret</key>

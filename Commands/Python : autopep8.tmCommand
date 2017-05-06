@@ -7,14 +7,16 @@
 	<key>command</key>
 	<string>#!/bin/bash
 
-~/.pyenv/shims/autopep8 --aggressive --aggressive "${TM_FILEPATH}"
-# cat "${TM_FILEPATH}"</string>
+# ⌥ + ⌘ + .
+
+$HOME/.pyenv/shims/autopep8 --aggressive --aggressive "${TM_FILEPATH}"
+</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>~@:</string>
+	<string>~@.</string>
 	<key>name</key>
 	<string>autopep8</string>
 	<key>outputCaret</key>

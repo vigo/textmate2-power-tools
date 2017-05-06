@@ -38,8 +38,6 @@ html_footer
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>~@.</string>
 	<key>name</key>
 	<string>pep8 checker</string>
 	<key>outputCaret</key>
