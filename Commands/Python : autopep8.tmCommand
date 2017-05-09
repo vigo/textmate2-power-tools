@@ -9,7 +9,12 @@
 
 # ⌥ + ⌘ + .
 
-$HOME/.pyenv/shims/autopep8 --aggressive --aggressive "${TM_FILEPATH}"
+max_chars="79"
+if [[ "${TM_SCOPE}" == *"source.python.django"* &amp;&amp; "${TM_FLAKE8_DJANGO_MAX_CHAR}" ]]; then
+    max_chars="${TM_FLAKE8_DJANGO_MAX_CHAR}"
+fi
+
+"${HOME}/.pyenv/shims/autopep8" --aggressive --aggressive --max-line-length=${max_chars} "${TM_FILEPATH}"
 </string>
 	<key>input</key>
 	<string>document</string>
