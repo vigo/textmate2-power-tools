@@ -4,24 +4,24 @@
 <dict>
 	<key>content</key>
 	<string>class ${1:ModelName-Singular}(models.Model):
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True, verbose_name=_("Updated At"))
-    published_at = models.DateTimeField(_('Published At'))
-    # objects = models.Manager()
+    created_at = models.DateTimeField(verbose_name=_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(verbose_name=_('Updated At'), auto_now=True)
+    objects = models.Manager()
+
+    class Meta:
+        # abstract = True
+        verbose_name = _('$1')
+        verbose_name_plural = _('$1')
+        # ordering = ('field_name',)
+
+    def __unicode__(self):
+        return self.updated_at
 
     def get_absolute_url(self):
         pass
         # return reverse('URL_NAME', kwargs={})
 
-    def __unicode__(self):
-        return u"%s" % self.updated_at
 
-    class Meta:
-        # abstract = True
-        verbose_name = _("$1")
-        verbose_name_plural = _("$1s")
-        # ordering = ('field_name',)
-        
 </string>
 	<key>name</key>
 	<string>models.Model (Python 2)</string>

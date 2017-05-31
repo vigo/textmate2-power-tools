@@ -20,8 +20,6 @@ fi
 	<string>document</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>~@.</string>
 	<key>name</key>
 	<string>autopep8</string>
 	<key>outputCaret</key>

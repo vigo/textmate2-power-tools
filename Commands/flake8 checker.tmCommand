@@ -47,8 +47,6 @@ html_footer</string>
 	<string>document</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>~@:</string>
 	<key>name</key>
 	<string>flake8 checker</string>
 	<key>outputCaret</key>

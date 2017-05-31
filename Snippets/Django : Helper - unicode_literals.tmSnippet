@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from __future__ import ${1|unicode_literals,print_function|}$0</string>
+	<string>from __future__ import ${1|unicode_literals,print_function,division,absolute_imports|}$0</string>
 	<key>name</key>
 	<string>from __future__</string>
 	<key>scope</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>import ${1|os,datetime,sys,collections|pprint|}</string>
+	<string>import ${1|os,datetime,sys,collections,pprint|}</string>
 	<key>name</key>
 	<string>import</string>
 	<key>scope</key>

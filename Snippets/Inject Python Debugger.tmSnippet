@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>’</string>
-	<key>keyEquivalent</key>
-	<string>~'</string>
+	<string>import pdb; pdb.set_trace() # c to continue$0</string>
 	<key>name</key>
-	<string>Apostrof - Single Quote</string>
+	<string>Inject Python Debugger</string>
 	<key>scope</key>
-	<string>text.html.markdown,source.yaml</string>
+	<string>source.python</string>
 	<key>uuid</key>
-	<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
+	<string>865C2420-03F7-4DD0-BFAC-D3457151069F</string>
 </dict>
 </plist>

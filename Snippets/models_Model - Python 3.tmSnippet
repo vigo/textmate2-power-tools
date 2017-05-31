@@ -5,17 +5,19 @@
 	<key>content</key>
 	<string>@python_2_unicode_compatible
 class ${1:ModelName-Singular}(models.Model):
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True, verbose_name=_("Updated At"))
+    created_at = models.DateTimeField(verbose_name=_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(verbose_name=_('Updated At'), auto_now=True)
+    objects = models.Manager()
 
-    def __str__(self):
-        return '{updated_at}'.format(updated_at=self.updated_at)
-    
     class Meta:
         # abstract = True
-        verbose_name = _("$1")
-        verbose_name_plural = _("$1s")
+        verbose_name = _('$1')
+        verbose_name_plural = _('$1')
         # ordering = ('field_name',)
+
+    def __str__(self):
+        return self.updated_at
+
 
 </string>
 	<key>name</key>
