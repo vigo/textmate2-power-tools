@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\`\`\`${1|applescript,bash,css,go,html,js,php,python,ruby,sql,swift|}
+	<string>\`\`\`${1|applescript,bash,css,django,go,html,js,php,python,ruby,sql,swift|}
 $0
 \`\`\`
 </string>

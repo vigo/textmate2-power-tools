@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>Apostrof - Single Quote</string>
 	<key>scope</key>
-	<string>text.html.markdown,source.yaml</string>
+	<string>text.html.markdown,source.yaml,text.plain</string>
 	<key>uuid</key>
 	<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
 </dict>
