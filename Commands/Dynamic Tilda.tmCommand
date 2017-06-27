@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+
+print '~' * (80 - ENV['TM_COLUMN_NUMBER'].to_i)
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Dynamic Tilda</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>tabTrigger</key>
+	<string>---</string>
+	<key>uuid</key>
+	<string>052CC680-3A04-43E5-A776-76D2D12B8501</string>
+</dict>
+</plist>
