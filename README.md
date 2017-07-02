@@ -112,16 +112,8 @@ TAB completion | Description
 
 ### Snippets
 
-* `c` + <kbd>⇥</kbd>: Generates back-tick code block for various languages
-* <kbd>⌃</kbd> + <kbd>C</kbd>: Inline code (*wraps with single back-tick*)
-* `table` + <kbd>⇥</kbd>: Generates html table code
-* `img` + <kbd>⇥</kbd>: Generates html image code
+
 * `badge` + <kbd>⇥</kbd>: Adds **img.shields.io** badge!
-* <kbd>⌘</kbd> + <kbd>U</kbd>: Underline
-* <kbd>⌃</kbd> + <kbd>⌘</kbd> + <kbd>S</kbd>: Wrap selection with smart quotes.
-* <kbd>⌃</kbd> + <kbd>H</kbd>: Adds hightlight wrappers to selection.
-* <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>'</kbd>: Generates: `’` (*This also works
-  at few other more scopes*)
 * <kbd>⌥</kbd> + <kbd>(</kbd>: Fixes Parenthesis behavior. 
 
 
