@@ -54,7 +54,7 @@
 				<key>items</key>
 				<array>
 					<string>910D4E1C-537E-4208-A7EE-0006DB35C25A</string>
-					<string>B9DA8410-670B-4174-8501-12E82829CA5F</string>
+					<string>EACFECE5-01FD-4587-853C-6DF673FA8C2E</string>
 				</array>
 				<key>name</key>
 				<string>HTML</string>
@@ -177,10 +177,11 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
-					<string>EACFECE5-01FD-4587-853C-6DF673FA8C2E</string>
 					<string>77C244E4-C7C1-4F5A-9BCC-4F1F634A79E6</string>
 					<string>E9C4C14F-02A9-4F97-8BEF-FEF3E1A292A2</string>
+					<string>E2050518-EF7B-45E2-8727-4ADD011FA115</string>
+                    <string>F9C4F032-560D-4D04-8FD4-5E7BFDDDA2C2</string>
+                    <string>052CC680-3A04-43E5-A776-76D2D12B8501</string>
 				</array>
 				<key>name</key>
 				<string>Text</string>
@@ -233,6 +234,7 @@
                     <string>66BDD933-2358-43D1-B9B0-448AE7CD23A6</string>
                     <string>4352ED82-4AEC-4919-9E28-9FB96D93338F</string>
                     <string>BE77FEAB-FFBC-4557-8232-271024DCA059</string>
+                    <string>B9DA8410-670B-4174-8501-12E82829CA5F</string>
 				</array>
 				<key>name</key>
 				<string>Templates</string>
@@ -355,6 +357,7 @@
 				<key>items</key>
 				<array>
 					<string>933AF85C-E378-4FDD-9F08-E0DD1599D6A7</string>
+                    <string>26B527FF-7536-487E-B2E8-91230E730940</string>
 				</array>
 				<key>name</key>
 				<string>Helpers</string>

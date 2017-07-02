@@ -7,7 +7,7 @@
 	<key>keyEquivalent</key>
 	<string>@u</string>
 	<key>name</key>
-	<string>Italic</string>
+	<string>Underline</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>uuid</key>

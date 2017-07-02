@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;kbd&gt;${1|⌘,⎋,⏏,⇥,⇤,⇧,⇪,⌥,⌤,⌃,⌅,⌫,⌦,⌽|}&lt;/kbd&gt;</string>
+	<key>name</key>
+	<string>Apple Special Keys with &lt;kbd&gt;</string>
+	<key>tabTrigger</key>
+	<string>applek</string>
+	<key>uuid</key>
+	<string>26B527FF-7536-487E-B2E8-91230E730940</string>
+</dict>
+</plist>

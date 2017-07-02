@@ -5,9 +5,9 @@
 	<key>content</key>
 	<string>${0:${TM_SELECTED_TEXT/\A&amp;ldquo;(.*)&amp;rdquo;\z|.*/(?1:$1:&amp;ldquo;$0&amp;rdquo;)/m}}</string>
 	<key>keyEquivalent</key>
-	<string>^S</string>
+	<string>^@s</string>
 	<key>name</key>
-	<string>Text - Wrap with Smart Quotes</string>
+	<string>Wrap with Smart Quotes</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>uuid</key>

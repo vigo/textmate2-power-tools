@@ -1,157 +1,281 @@
+![Version](https://img.shields.io/badge/version-2.0.0-orange.svg)
+![Plaftorm](https://img.shields.io/badge/platform-TextMate-blue.svg)
+
+
 # TextMate2 - Power Tools
 
-This bundle includes most used commands (on a daily basis). Trying to migrate
-my old TextMate1 stuff here...
+This bundle includes most used commands (*on a daily basis*) of me!...
 
 ## Installation
 
 ```bash
-cd "~/Library/Application Support/Avian/Bundles/"
-# if you don’t have Avian/Bundles folder, you need to create it!
+cd ~/Library/Application\ Support/TextMate/Bundles/
+git clone https://github.com/vigo/textmate2-power-tools.git PowerTools.tmbundle
 
-git clone https://github.com/vigo/textmate2-power-tools.git textmate2-power-tools.tmbundle
-# reload your TextMate2
+# Restart your TextMate2
 ```
 
 ## Available Items
 
+### Django
+
+#### Snippets
+
+TAB completion | Description
+---------------|:-----------
+`admin` + <kbd>⇥</kbd> | ![Screenshot of: admin](Screens/django-admin.png?1 "admin+TAB")
+`model` + <kbd>⇥</kbd> | ![Screenshot of: model](Screens/django-model.png?1 "model+TAB")
+`fld` + <kbd>⇥</kbd> (*For fields...*) | ![Screenshot of: fld](Screens/django-fld.png?1 "fld+TAB")
+`opt` + <kbd>⇥</kbd> (*For field options...*) | ![Screenshot of: opt](Screens/django-opt.png?1 "opt+TAB")
+`hlp` + <kbd>⇥</kbd> (*Helpers*) | ![Screenshot of: hlp](Screens/django-hlp.png?1 "hlp+TAB")
+
+#### Scope
+
+You have a scope called: **Python Django (Extended)**.
+Press <kbd>⌃</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>P</kbd> for selecting
+this scope.
+
+
+---
+
+
 ### Python
 
-You need to install:
+#### Snippets
 
-    pip install pep8 autopep8
+TAB completion | Description
+---------------|:-----------
+`ase` + <kbd>⇥</kbd> | ![Screenshot of: ase](Screens/python-ase.png?1 "ase+TAB")
+`utf` + <kbd>⇥</kbd> | `# -*- coding: utf-8 -*-`
+`p` + <kbd>⇥</kbd> | Print with format: `print(CURSOR.format())`
+`pp` + <kbd>⇥</kbd> | `pp = pprint.PrettyPrinter(indent=4)`
+`pr` + <kbd>⇥</kbd> | Pretty Print with format: `pp.pprint(CURSOR.format())`
+<kbd>⌃</kbd> + <kbd>'</kbd> | Docstring
 
-* `ini`: Initial code for writing Python.
-* `imp`: Imports some modules (*os, sys ...*)
-* `ase`: All the testing assertions added.
-* `p`: print with format
-* `pp`: pretty print initializer
-* `hlp`: imports from future
-* `⌥` + `⌘` + `:` : autopep8 checker.
-* `⌥` + `⌘` + `.` : pep8 checker.
+`hlp` + <kbd>⇥</kbd>
 
-
-### Django / admin.ModelAdmin
-
-* Started Python 3 support for Django
-* Extended Python (Django) syntax
-* `admin`: Pops **admin.ModelAdmin** methods.
-* `model`: Pops model related helpers.
-* `fld`: Django, models.py, add field
-* `opt`: Django, models.py, field options
+    from __future__ import unicode_literals
+                           print_function
+                           division
+                           absolute_imports
 
 
-![admin.ModelAdmin](Screens/admin_modeladmin.png)
+---
 
+
+## Ruby
+
+You need to add **Ruby on Rails** bundle from Preferences/Bundles.
+
+### Snippets for ERB
+
+TAB completion | Description
+---------------|:-----------
+`=` + <kbd>⇥</kbd> | `<%= CURSOR %>`
+`if` + <kbd>⇥</kbd> | ERB compatible `if`
+`each` + <kbd>⇥</kbd> | ERB compatible `each` and `each_with_index`
+
+
+---
+
+
+## Rake
+
+### Snippets
+
+`tas` + <kbd>⇥</kbd>
+
+* Task with args
+* Task with args and dependecies
+* Task w/o description
+
+* `tasr` + <kbd>⇥</kbd>: Creates remote-task skel
+* `tasd` + <kbd>⇥</kbd>: Creates default task code
+* `inv` + <kbd>⇥</kbd>: Creates `Rake::Task...invoke` + params
+* `des` + <kbd>⇥</kbd>: `desc "...."` only
+
+
+---
+
+
+## Bash
+
+### Snippets
+
+* `if` + <kbd>⇥</kbd>: `if` / `else` / `elif` template.
+* `for` + <kbd>⇥</kbd>: Array iteration template
+
+
+---
 
 ### Markdown
 
-* `code`: Generates backtick code block for ruby, bash, python, css, js
-* `kntrl+c`: Inline code (wraps with backticks)
-* `alt+shift+2`: Generates: `’`
-* `table`: Generates table code.
-* `img`: Generates code for markdown image.
-* `badge`: Adds **img.shields.io** badge!
+### Snippets
 
-### Javascript
+* `c` + <kbd>⇥</kbd>: Generates back-tick code block for various languages
+* <kbd>⌃</kbd> + <kbd>C</kbd>: Inline code (*wraps with single back-tick*)
+* `table` + <kbd>⇥</kbd>: Generates html table code
+* `img` + <kbd>⇥</kbd>: Generates html image code
+* `badge` + <kbd>⇥</kbd>: Adds **img.shields.io** badge!
+* <kbd>⌘</kbd> + <kbd>U</kbd>: Underline
+* <kbd>⌃</kbd> + <kbd>⌘</kbd> + <kbd>S</kbd>: Wrap selection with smart quotes.
+* <kbd>⌃</kbd> + <kbd>H</kbd>: Adds hightlight wrappers to selection.
+* <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>'</kbd>: Generates: `’` (*This also works
+  at few other more scopes*)
+* <kbd>⌥</kbd> + <kbd>(</kbd>: Fixes Parenthesis behavior. 
 
-* `con`: Generates `console.log`, `console.dir`, `console.warn`, `console.error`
-* `for`, `if`, `swi`
+
+---
+
 
 ### jQuery
 
-* `plugin`: Generates jQuery plugin skel.
-* `each`, `ready`
+### Snippets
 
-### HTML
-
-* `alt+shift+2`: Generates: `&rsquo`
-
-### Rake
-
-* `tasr`: New remote task
-* `tasd`: Default task
-* `inv`: Invoke task
-* `des`: Description only
-* `tas`: Task with args / Task with args and dependents
-
-### Text
-
-* `lorem`: Generates various Lorem Ipsum texts.
-
-### Middleman
-
-* `more`: Generates `READ_MORE`
-
-### General: Date and Time
-
-* `dateT`: Generates various date and time formats in Turkish.
-
-### Templates
-
-* Bash Script Template, `temp` generates Bash Script Scaffold.
-
-## Change Log
-
-**2017-04-14**
-
-* <kbd>⌃</kbd> + <kbd>'</kbd>: Adds triple quote (*Python docstring*)
+* `each` + <kbd>⇥</kbd>: jQuery `each` code template
+* `ready` + <kbd>⇥</kbd>: jQuery `$(document).ready()` code template
+* `plug` + <kbd>⇥</kbd>: jQuery plugin skel.
 
 
-**2017-03-02**
+---
 
-* added: `fld`, `opt` for python/django
-* added: `if` for Shell Scripting
-* fixed: names of snippets
 
-**2017-02-26**
+## HTML
 
-* Elixir support added
+### Snippets
 
-**2017-01-09**
+* `more` + <kbd>⇥</kbd>: `&rsquo;`
+* <kbd>⌃</kbd> + <kbd>⌘</kbd> + <kbd>S</kbd>: Wrap selection with smart quotes.
 
-* `pep8` and `autopep8` for python.
-* `badge` img.shields.io integration for markdown.
 
-**2016-11-29**
+---
 
-* added: Swift snippets; `p`, `=`, `typ`
 
-**2016-10-08**
+### Javascript
 
-* added: `admin_modeladmin.png`
-* added: `img` for Markdown.
+### Snippets
 
-**2016-06-07**
 
-* added: Python testing assertions.
+* `con` + <kbd>⇥</kbd>: Generates `console.log`, `console.dir`,
+  `console.warn`, `console.error` skel
+* `if` + <kbd>⇥</kbd>: `if` related code.
+* `fun` + <kbd>⇥</kbd>: `function` related code.
+* `for` + <kbd>⇥</kbd>: `for` related code.
+* `swi` + <kbd>⇥</kbd>: `switch` related code.
 
-**2016-05-11**
+### Commands
 
-* added: Python `init` and `utf` snippets
-* added: Rake helpers
+You need to install `node` locally and must define `TM_NODE` variable and set
+the executable path for node:
 
-**2016-03-28**
+```bash
+# example
+defaults write com.macromates.textmate environmentVariables -array-add \
+    '{enabled = 1; value = "/path/to/node"; name = "TM_NODE"; }'
+```
 
-* added: admin.ModelAdmin helpers
+* <kbd>⌘</kbd> + <kbd>R</kbd>: Runs javascript. 
 
-**2016-03-28**
 
-* added: `temp` for `source.shell` scope.
+---
 
-**2016-03-24**
 
-* added: HTML snippets
-* added: Date and Time snippets
-* added: Markdown / table snippet
-* added: Javascript snippets added
-* added: Text snippets (Lorem Ipsum)
-* added: Custom lib, dji18njs snippets
-* added: jQuery snippets
+## Go
 
-**2016-03-20**
+### Snippets
 
-* Initial commit
+* `fmt` + <kbd>⇥</kbd>: Go format helper
+
+
+---
+
+
+## Swift
+
+You need to install/activate **Swift Bundle** from: TextMate > Preferences >
+Bundles.
+
+### Snippets
+
+* `p` + <kbd>⇥</kbd>: Print statement
+* `typ` + <kbd>⇥</kbd>: Type of object
+* `=` + <kbd>⇥</kbd>: Variable safe print
+* `des` + <kbd>⇥</kbd>: Describe object
+
+
+---
+
+
+## Lisp
+
+You need to install/activate **Lisp Bundle** from: TextMate > Preferences >
+Bundles. Please set `TM_CLISP` variable for executer. You can install from
+brew: `brew install clisp`
+
+```bash
+# example
+defaults write com.macromates.textmate environmentVariables -array-add \
+    '{enabled = 1; value = "/usr/local/bin/clisp"; name = "TM_CLISP"; }'
+```
+
+### Snippets
+
+* `p` + <kbd>⇥</kbd>: Print
+
+### Commands
+
+* <kbd>⌘</kbd> + <kbd>R</kbd>: Run. 
+
+
+---
+
+
+## Elixir
+
+You need to install/activate **Elixir Bundle**:
+
+```bash
+cd ~/Library/Application\ Support/TextMate/Bundles/
+git clone https://github.com/elixir-lang/elixir-tmbundle.git Elixir.tmbundle
+```
+
+### Snippets
+
+* `p` + <kbd>⇥</kbd>: Print or Inspect
+* `#`: Select text in quotes then press `#` (*Ruby’s string interpolation-ish*)
+
+
+---
+
+
+## General
+
+TAB completion | Description
+---------------|:-----------
+`dateT` + <kbd>⇥</kbd> | ![Screenshot of: dateT](Screens/general-datet.png?1 "dateT+TAB")
+`lorem` + <kbd>⇥</kbd> | ![Screenshot of: lorem](Screens/general-lorem.png?1 "lorem+TAB")
+<kbd>⌥</kbd> + <kbd>'</kbd> | Single smart apostrophe. (*Works in html, text, markdown, yaml*)
+`applek` + <kbd>⇥</kbd> | Generate apple symbols like: ⌘ ⎋ more...
+`applek` + <kbd>⇥</kbd> | Generate apple symbols inside of `<kbd>` tags.
+`--` + <kbd>⇥</kbd> | Line delimeter, 80 charts comment `# ---- ...`
+`---` + <kbd>⇥</kbd> | Dynamic tilda. Fills remaning line with `~`
+
+---
+
+
+## Templates
+
+Language      | Scope                 | TAB Completion
+:-------------|:----------------------|:--------------------------------
+BASH          | source.shell          | `temp` + <kbd>⇥</kbd>
+Python        | source.python         | `temp` + <kbd>⇥</kbd>
+Python        | source.python         | `temp` + <kbd>⇥</kbd> with Doctests
+Golang        | source.go             | `temp` + <kbd>⇥</kbd>
+HTML          | -no scope required -  | `html5` + <kbd>⇥</kbd>
+
+
+---
+
 
 ## Contributer(s)
 

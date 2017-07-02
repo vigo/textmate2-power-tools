@@ -21,7 +21,7 @@
 &lt;/html&gt;
 </string>
 	<key>name</key>
-	<string>base template</string>
+	<string>HTML Template</string>
 	<key>tabTrigger</key>
 	<string>html5</string>
 	<key>uuid</key>
