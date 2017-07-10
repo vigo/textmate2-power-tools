@@ -356,12 +356,26 @@
 			<dict>
 				<key>items</key>
 				<array>
+                    <string>17D72D33-7CC2-4ABC-A376-5D8A1FB7E4BD</string>
 					<string>933AF85C-E378-4FDD-9F08-E0DD1599D6A7</string>
                     <string>26B527FF-7536-487E-B2E8-91230E730940</string>
 				</array>
 				<key>name</key>
 				<string>Helpers</string>
 			</dict>
+            
+            <key>17D72D33-7CC2-4ABC-A376-5D8A1FB7E4BD</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>5EEDC545-579F-4B0C-AAA2-C9D9742662A0</string>
+                    <string>2E5B8133-A56A-419C-8E86-B146D40E6E47</string>
+                    <string>EB50A596-94A0-4129-B0CD-BE3021492103</string>
+                </array>
+                <key>name</key>
+                <string>Apple Keys</string>
+            </dict>
+            
 			<key>D06D8D7B-4289-4758-B814-A89907C83CF5</key>
 			<dict>
 				<key>items</key>
