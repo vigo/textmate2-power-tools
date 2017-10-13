@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>related_query_name="${1:name}"</string>
+	<string>related_query_name='${1:name}'</string>
 	<key>name</key>
 	<string>related_query_name</string>
 	<key>scope</key>

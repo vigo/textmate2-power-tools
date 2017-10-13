@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>date_hierarchy = "${1:pub_date}"$0</string>
+	<string>date_hierarchy = '${1:pub_date}'$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - date_hierarchy</string>
 	<key>scope</key>

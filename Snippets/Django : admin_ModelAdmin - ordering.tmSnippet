@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>ordering = ("${1:field}",)$0</string>
+	<string>ordering = ('${1:field}',)$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - ordering</string>
 	<key>scope</key>

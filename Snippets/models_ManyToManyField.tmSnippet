@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.ManyToManyField("${2|self,model name|}"${3:, through="${4:target model}"}${5:, through_fields=("${6:target model field 1}", "${7:target model field 2}")})$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.ManyToManyField(
+    to='${2|self,Model Name|}'${3:, 
+    through='${4:target model}'}${5:, 
+    through_fields=('${6:target model field 1}', '${7:target model field 2}'),}
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.ManyToManyField</string>
 	<key>scope</key>

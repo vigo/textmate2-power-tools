@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>required_db_vendor = ${1|sqlite, postgresql, mysql, oracle|}$0</string>
+	<key>name</key>
+	<string>required_db_vendor</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>6E5395D7-5281-4419-926A-0E3F0DEF8919</string>
+</dict>
+</plist>

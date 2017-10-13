@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>limit_choices_to={"${1:is_staff}": ${2:True}}$0</string>
+	<string>limit_choices_to={'${1:is_staff}': ${2:True}}$0</string>
 	<key>name</key>
 	<string>limit_choices_to</string>
 	<key>scope</key>

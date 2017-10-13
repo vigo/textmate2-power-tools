@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>console_dir(${1:objectg})$0</string>
+	<string>console.dir(${1:object})$0</string>
 	<key>name</key>
-	<string>console_dir</string>
+	<string>console.dir</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

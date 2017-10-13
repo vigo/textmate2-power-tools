@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.UUIDField(primary_key=${2|True,False|}, default=${3:uuid.uuid4}, editable=${4|False,True|})$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.UUIDField(
+    primary_key=${2|True,False|},
+    default=${3:uuid.uuid4},
+    editable=${4|False,True|},
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.UUIDField</string>
 	<key>scope</key>

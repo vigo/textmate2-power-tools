@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>indexes = [
+    models.Index(fields=['${1:field}', '${2:field}']), # or
+    # models.Index(fields=['${1:field}', name='$1_idx']),
+]
+$0</string>
+	<key>name</key>
+	<string>indexes</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>EDE63E0F-8F13-437F-9DCE-CEA32D7F2897</string>
+</dict>
+</plist>

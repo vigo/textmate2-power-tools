@@ -3,7 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.DateTimeField(auto_now=True, auto_now_add=True, verbose_name=_("${2:verbose name}"))$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.DateTimeField(
+    auto_now=True,
+    auto_now_add=True,
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.DateTimeField - with defaults</string>
 	<key>scope</key>

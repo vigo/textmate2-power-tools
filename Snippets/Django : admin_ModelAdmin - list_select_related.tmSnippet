@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>list_select_related = ("${1:field}",)$0</string>
+	<string>list_select_related = ('${1:field}',)$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - list_select_related</string>
 	<key>scope</key>

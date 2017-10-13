@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:id} = models.BigAutoField(primary_key=True)$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.BigAutoField(
+    primary_key=True,
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.BigAutoField</string>
 	<key>scope</key>

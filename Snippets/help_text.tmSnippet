@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>help_text=_("$1")$0</string>
+	<string>help_text=_('$1')$0</string>
 	<key>name</key>
 	<string>help_text</string>
 	<key>scope</key>

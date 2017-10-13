@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>created_at = models.DateTimeField(auto_now_add=True, verbose_name=_("Created At"))$0</string>
+	<string>created_at = models.DateTimeField(
+    auto_now_add=True,
+    verbose_name=_('Created At'),
+)$0</string>
 	<key>name</key>
 	<string>models.DateTimeField - created_at</string>
 	<key>scope</key>

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>through_fields=("${1:target model field}",)$0</string>
+	<string>through_fields=('${1:target model field}',)$0</string>
 	<key>name</key>
 	<string>through_fields</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>fld</string>
+	<string>opt</string>
 	<key>uuid</key>
 	<string>B9307D6E-CF49-40F3-A9A0-4B4170ED36FB</string>
 </dict>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>verbose_name=_("${1:Verbose Name}")$0</string>
+	<string>verbose_name=_('${1:Verbose Name}')$0</string>
 	<key>name</key>
 	<string>verbose_name</string>
 	<key>scope</key>

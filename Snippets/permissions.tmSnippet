@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>permissions = (('can_${1:PERMISSION_CODE}', '${2:HUMAN READABLE PERMISSION NAME}'),)$0</string>
+	<key>name</key>
+	<string>permissions</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>C1C21D41-E0A0-4BF3-B5E4-D6EC1481F1D1</string>
+</dict>
+</plist>

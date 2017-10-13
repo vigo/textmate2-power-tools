@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.CharField(max_length=${2:number}, verbose_name=_("${3:verbose name}"))$0</string>
+	<string>app_label = '${1:label}'$0</string>
 	<key>name</key>
-	<string>models.CharField - common</string>
+	<string>app_label</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>fld</string>
+	<string>meta</string>
 	<key>uuid</key>
-	<string>7594D5D0-2214-407E-A527-CFF096A15736</string>
+	<string>62AA1190-726F-420D-B301-5210CDBDC333</string>
 </dict>
 </plist>

@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>updated_at = models.DateTimeField(auto_now=True, verbose_name=_("Updated At"))$0</string>
+	<string>updated_at = models.DateTimeField(
+    auto_now=True,
+    verbose_name=_('Updated At'),
+)$0</string>
 	<key>name</key>
 	<string>models.DateTimeField - updated_at</string>
 	<key>scope</key>

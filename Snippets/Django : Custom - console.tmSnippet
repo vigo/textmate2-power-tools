@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>console(${1:string})$0</string>
+	<string>console(${1:item})$0</string>
 	<key>name</key>
 	<string>console</string>
 	<key>scope</key>

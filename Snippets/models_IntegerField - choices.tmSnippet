@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.IntegerField(choices=${2:list_of_tuples}, default=${3:value}, max_length=${4:number}, verbose_name=_("${4:verbose name}"))$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.IntegerField(
+    choices=${2:list_of_tuples},
+    default=${3:value},
+    max_length=${4:number},
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.IntegerField - choices</string>
 	<key>scope</key>

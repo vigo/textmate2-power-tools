@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>related_name="${1|+,related_name|}"$0</string>
+	<string>related_name='${1|+,related_name|}'$0</string>
 	<key>name</key>
 	<string>related_name - no backward</string>
 	<key>scope</key>

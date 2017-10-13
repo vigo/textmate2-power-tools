@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>verbose_name_plural = _('${1:name}')$0</string>
+	<key>name</key>
+	<string>verbose_name_plural - i18n</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>B51D25A5-4C2A-4738-89AE-E7881A5FD761</string>
+</dict>
+</plist>

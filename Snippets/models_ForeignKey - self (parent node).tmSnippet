@@ -3,7 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.ForeignKey("self", related_name="${2:child_set}", null=True, blank=True, limit_choices_to={"$1": None}, verbose_name=_("$2"))$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.ForeignKey(
+    to='self',
+    related_name='${2:MODEL_NAME_Plural}',
+    null=True,
+    blank=True,
+    limit_choices_to={'$1': None},
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.ForeignKey - self (parent node)</string>
 	<key>scope</key>

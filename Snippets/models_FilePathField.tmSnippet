@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.FilePathField(path="${2:/home/images}", match="${3:foo.*}", recursive=${4|True,False|})$0</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.FilePathField(
+    path='${2:/home/images}',
+    match='${3:foo.*}',
+    recursive=${4|True,False|},
+    verbose_name=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
 	<key>name</key>
 	<string>models.FilePathField</string>
 	<key>scope</key>

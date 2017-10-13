@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>prepopulated_fields = {"${1:slug}": ("${2:title}",)}$0</string>
+	<string>prepopulated_fields = {'${1:slug}': ('${2:title}',)}$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - prepopulated_fields</string>
 	<key>scope</key>

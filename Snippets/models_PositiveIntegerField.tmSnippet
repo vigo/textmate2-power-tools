@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:field_name} = models.PositiveIntegerField($0)</string>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.PositiveIntegerField(verbose_name=_('${1:$TM_SELECTED_TEXT}'))$0</string>
 	<key>name</key>
 	<string>models.PositiveIntegerField</string>
 	<key>scope</key>
