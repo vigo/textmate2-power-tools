@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>task ${1::name_of_task}, [${2::input}] do |t, args|
+	<string>desc "${1:description}"
+task :${2:name_of_task}, [:${3:input}] do |t, args|
   $0
 end
 </string>
