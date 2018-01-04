@@ -41,6 +41,9 @@ this scope.
 
 ### Python
 
+You can prettify any kind of Python `list` or `dict` via <kbd>⌥</kbd> +
+<kbd>⌘</kbd> + <kbd>P</kbd> in any scope!
+
 #### Snippets
 
 TAB completion | Description
