@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db.models import ${1|Avg,Count,F,Max,Min,Sum,Q|}</string>
+	<string>import ipdb; ipdb.set_trace()$0</string>
 	<key>name</key>
-	<string>from django.db.models import Avg, Count, F ...</string>
+	<string>Inject IPython Debugger</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>hlp</string>
+	<string>ipdbg</string>
 	<key>uuid</key>
-	<string>9EEF25FA-1B6C-427F-8FA4-72D6362C41B7</string>
+	<string>19AE63C7-64D4-4DDE-995C-3A49DB724FDA</string>
 </dict>
 </plist>

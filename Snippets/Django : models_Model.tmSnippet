@@ -15,7 +15,7 @@
         # ordering = ('field_name',)
 
     def __unicode__(self):
-        return self.updated_at
+        return self.created_at
 
     def get_absolute_url(self):
         pass

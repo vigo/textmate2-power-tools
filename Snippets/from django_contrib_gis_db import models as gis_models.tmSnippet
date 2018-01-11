@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db.models import ${1|Avg,Count,F,Max,Min,Sum,Q|}</string>
+	<string>from django.contrib.gis.db import models as gis_models</string>
 	<key>name</key>
-	<string>from django.db.models import Avg, Count, F ...</string>
+	<string>from django.contrib.gis.db import models as gis_models</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>hlp</string>
 	<key>uuid</key>
-	<string>9EEF25FA-1B6C-427F-8FA4-72D6362C41B7</string>
+	<string>38A77620-F08E-402A-911C-AFC4AAE4FD58</string>
 </dict>
 </plist>

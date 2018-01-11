@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db.models import ${1|Avg,Count,F,Max,Min,Sum,Q|}</string>
+	<string>try:
+    pass
+except ${1:Model}.DoesNotExist:
+    pass
+</string>
 	<key>name</key>
-	<string>from django.db.models import Avg, Count, F ...</string>
+	<string>Model  - DoesNotExist</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>hlp</string>
+	<string>does</string>
 	<key>uuid</key>
-	<string>9EEF25FA-1B6C-427F-8FA4-72D6362C41B7</string>
+	<string>E7326B29-4EDB-45DC-94A0-7A3F48E4E842</string>
 </dict>
 </plist>

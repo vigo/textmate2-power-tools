@@ -20,7 +20,7 @@
         # ordering = ('field_name',)
 
     def __str__(self):
-        return self.updated_at
+        return self.created_at
 
     # def save(self, *args, **kwargs):
     #     super().save(*args, **kwargs)
