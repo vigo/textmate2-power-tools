@@ -12,19 +12,25 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>(gis_models)\.(PointField|Admin|AutoField|BooleanField|CharField|CommaSeparatedIntegerField|DateField|DateTimeField|DecimalField|EmailField|FileField|FilePathField|FloatField|ForeignKey|ImageField|IntegerField|IPAddressField|ManyToManyField|NullBooleanField|OneToOneField|PhoneNumberField|PositiveIntegerField|PositiveSmallIntegerField|SlugField|SmallIntegerField|TextField|TimeField|URLField|USStateField|XMLField)</string>
+			<key>name</key>
+			<string>support.type.django.model</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(BASE_DIR|MIDDLEWARE|ALLOWED_HOSTS|TEMPLATES|WSGI_APPLICATION|DATABASES|AUTH_PASSWORD_VALIDATORS|USE_L10N|USE_TZ|STATIC_URL|PRODUCTION_BASE_PATH|STATIC_ROOT|STATICFILES_DIRS)\b</string>
 			<key>name</key>
 			<string>variable.other.django.settings</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(HttpResponse(Redirect)?|render|request|response)\b</string>
+			<string>\b(HttpResponse(Redirect)?|render|request|response|GEOSGeometry)\b</string>
 			<key>name</key>
 			<string>support.function.django.view</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(debug_view|hdbg|console|console_dir|default_browser_language_detector|fix_turkish_chars_for_slugify)\b</string>
+			<string>\b(debug_view|hdbg|console|console_dir|default_browser_language_detector|fix_turkish_chars_for_slugify|gis_models)\b</string>
 			<key>name</key>
 			<string>support.function.django.custom</string>
 		</dict>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def save(self, *args, **kwargs):
+    super().save(*args, **kwargs)
+</string>
+	<key>name</key>
+	<string>save(self, *args, **kwargs)</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>msave</string>
+	<key>uuid</key>
+	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+</dict>
+</plist>

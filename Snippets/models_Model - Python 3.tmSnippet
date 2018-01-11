@@ -3,10 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@python_2_unicode_compatible
-class ${1:ModelName-Singular}(models.Model):
+	<string>class ${1:ModelName-Singular}(models.Model):
+    """
+    Documentation of $1
+    """
+
     created_at = models.DateTimeField(verbose_name=_('Created At'), auto_now_add=True)
     updated_at = models.DateTimeField(verbose_name=_('Updated At'), auto_now=True)
+
     objects = models.Manager()
 
     class Meta:
@@ -18,7 +22,11 @@ class ${1:ModelName-Singular}(models.Model):
     def __str__(self):
         return self.updated_at
 
+    # def save(self, *args, **kwargs):
+    #     super().save(*args, **kwargs)
 
+    # def get_absolute_url(self):
+    #     return self.?
 </string>
 	<key>name</key>
 	<string>models.Model (Python 3)</string>

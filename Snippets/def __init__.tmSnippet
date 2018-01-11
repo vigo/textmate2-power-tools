@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def __init__(self, *args, **kwargs):
+    $0
+    super().__init__(*args, **kwargs)
+</string>
+	<key>name</key>
+	<string>def __init__(self, *args, **kwargs)</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>init</string>
+	<key>uuid</key>
+	<string>14AAA08F-C9E0-4C94-B8DC-25FC0EE1342A</string>
+</dict>
+</plist>
