@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>import ipdb; ipdb.set_trace()$0</string>
+	<string>import ipdb; ipdb.set_trace() # 'c' or 'n' to continue$0</string>
 	<key>name</key>
 	<string>Inject IPython Debugger</string>
 	<key>scope</key>
