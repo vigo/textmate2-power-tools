@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>filter_${1|horizontal,vertical|} = ('${2:field}',)$0</string>
+	<string>filter_${1|horizontal,vertical|} = ['${2:field}',]$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - filter_horizontal/vertical</string>
 	<key>scope</key>

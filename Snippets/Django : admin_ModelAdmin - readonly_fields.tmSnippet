@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>readonly_fields = ('${1:field}',)$0</string>
+	<string>readonly_fields = ['${1:field}',]$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - readonly_fields</string>
 	<key>scope</key>

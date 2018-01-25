@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>raw_id_fields = ('${1:field}',)$0</string>
+	<string>raw_id_fields = ['${1:field}',]$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - raw_id_fields</string>
 	<key>scope</key>

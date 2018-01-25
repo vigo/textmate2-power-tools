@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>search_fields = ('${1:foreign_key__}${2:related_fieldname}',)$0</string>
+	<string>search_fields = ['${1:foreign_key__}${2:related_fieldname}',]$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - search_fields</string>
 	<key>scope</key>

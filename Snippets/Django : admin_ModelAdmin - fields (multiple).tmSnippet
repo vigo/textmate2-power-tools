@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>fields = (('${1:field1}', '${2:field2}'), '${3:field3}',)$0</string>
+	<string>fields = [['${1:field1}', '${2:field2}'], '${3:field3}',]$0</string>
 	<key>name</key>
 	<string>admin.ModelAdmin - fields (multiple)</string>
 	<key>scope</key>
