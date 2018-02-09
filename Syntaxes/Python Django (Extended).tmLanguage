@@ -30,7 +30,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(debug_view|hdbg|console|console_dir|default_browser_language_detector|fix_turkish_chars_for_slugify|gis_(models|admin|forms|widgets))\b</string>
+			<string>\b(debug_view|hdbg|console|console_dir|default_browser_language_detector|fix_turkish_chars_for_slugify|pprint|gis_(models|admin|forms|widgets))\b</string>
 			<key>name</key>
 			<string>support.function.django.custom</string>
 		</dict>
