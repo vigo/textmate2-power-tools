@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>fmt.${1|Print,Println,Scanf,Sprintf,Sprintln|}(${2:"${3}"})$0</string>
+	<string>if ${1:variable} := ${1:expression}; ${1} != nil {
+	return ${1}
+}
+</string>
 	<key>name</key>
-	<string>fmt.Method</string>
+	<string>if error shorthand</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>
-	<string>fmt</string>
+	<string>if</string>
 	<key>uuid</key>
-	<string>6C0CEF6D-698D-4D45-9F76-6F01D731B2C5</string>
+	<string>6377BC7C-72F4-4C07-A0FC-ACA890E65F53</string>
 </dict>
 </plist>
