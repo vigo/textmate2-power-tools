@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>if ${1:variable} := ${2:expression}; ${1} != nil {
-	return ${1}
-}
-</string>
+	<string>fmt.Println(${1:"${2:Text}"})$0</string>
 	<key>name</key>
-	<string>if error shorthand</string>
+	<string>fmt.Println()</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>
-	<string>if</string>
+	<string>pr</string>
 	<key>uuid</key>
-	<string>6377BC7C-72F4-4C07-A0FC-ACA890E65F53</string>
+	<string>813CF85F-F7F8-4D92-A03E-2A0BCC3A315B</string>
 </dict>
 </plist>
