@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>import os
+import sys
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s [%(levelname)s]: %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+)
+
+
+def main():
+    logging.info('Hello')
+    $0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
+</string>
+	<key>name</key>
+	<string>Python Script</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>cmdtool</string>
+	<key>uuid</key>
+	<string>29BF986D-458F-4621-B9B7-DF13BCBB0DB8</string>
+</dict>
+</plist>
