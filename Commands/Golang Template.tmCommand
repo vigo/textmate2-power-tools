@@ -16,10 +16,15 @@ GO_CMD = ENV['TM_GO'] || 'go'
 GOLANG_VERSION = `#{GO_CMD} version`.chomp
 
 puts(&lt;&lt;-TEMP)
-// Created by #{TM_FULLNAME} on #{TM_DATE}.
-// Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
-// #{GOLANG_VERSION}
+/*
+Package NAME OF YOUR PACKAGES implements ....
 
+
+	Build with: #{GOLANG_VERSION}
+	Created by #{TM_FULLNAME} on #{TM_DATE}.
+	Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
+
+*/
 package main
 
 import "fmt"
