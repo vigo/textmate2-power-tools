@@ -180,6 +180,12 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 ### Snippets
 
 * `fmt` + <kbd>⇥</kbd>: Go format helper
+* `spr` + <kbd>⇥</kbd>: `fmt.Sprintf`
+* `prl` + <kbd>⇥</kbd>: `fmt.Println`
+* `tof` + <kbd>⇥</kbd>: `reflect.TypeOf`
+* `log` + <kbd>⇥</kbd>: `log.Println`
+* `if` + <kbd>⇥</kbd>: `if` conditions
+* `for` + <kbd>⇥</kbd>: `for` conditions
 
 
 ---
