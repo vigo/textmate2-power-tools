@@ -177,6 +177,10 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 
 ## Go
 
+### Commands
+
+* <kbd>⌥</kbd> + <kbd>r</kbd> : Runs `gofmt` without save!
+
 ### Snippets
 
 * `fmt` + <kbd>⇥</kbd>: Go format helper

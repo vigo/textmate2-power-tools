@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+. "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+export PATH="/usr/local/bin/:${PATH}"
+
+if [ -z "${GOPATH}" ]; then
+    export GOPATH="${TM_GOPATH}"
+fi
+
+(goimports &amp;&amp; gofmt) || exit_show_tool_tip</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~r</string>
+	<key>name</key>
+	<string>Gofmt</string>
+	<key>outputCaret</key>
+	<string>interpolateByLine</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>source.go</string>
+	<key>semanticClass</key>
+	<string>callback.document.will-save</string>
+	<key>uuid</key>
+	<string>ABCCD625-BF19-4C0D-A479-5E7C326B30C6</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
