@@ -3,9 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>log.Println(${1:"${2:Text}"})$0</string>
+	<string>log.${1|Printf,Println,Fatal|}($0)
+</string>
 	<key>name</key>
-	<string>log.Println()</string>
+	<string>log...</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>

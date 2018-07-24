@@ -35,7 +35,7 @@ func main() {
 TEMP
 </string>
 	<key>input</key>
-	<string>selection</string>
+	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
@@ -45,7 +45,7 @@ TEMP
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>replaceInput</string>
+	<string>atCaret</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>
