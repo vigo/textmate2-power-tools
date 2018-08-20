@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;kbd&gt;${1|⌘,⎋,⏏,⇥,⇤,⇧,⇪,⌥,⌤,⌃,⌅,⌫,⌦,⌽|}&lt;/kbd&gt;</string>
+	<string>&lt;kbd&gt;${1|⌘,⎋,⏏,⇥,⇤,⇧,⇪,⌥,⌤,⌃,⌅,⌫,⌦,⌽,←,→|}&lt;/kbd&gt;</string>
 	<key>name</key>
 	<string>Apple Special Keys with &lt;kbd&gt;</string>
 	<key>tabTrigger</key>
