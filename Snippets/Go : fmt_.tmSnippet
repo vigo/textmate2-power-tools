@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>fmt.${1|Fprintf,Print,Println,Printf,Scanf,Sprintf,Sprintln|}(${2:"${3}"})$0</string>
+	<string>fmt.${1|Fprintf,Print,Println,Printf,Scanf,Sprintf,Sprintln|}(${2:"${3|%T,%v,%+v,%#v|}", $0})</string>
 	<key>name</key>
 	<string>fmt.Method</string>
 	<key>scope</key>

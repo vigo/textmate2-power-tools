@@ -177,18 +177,22 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 
 ## Go
 
+When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs:
+`gofmt` + `goimports` + `golint`
+
 ### Commands
 
-* <kbd>⌥</kbd> + <kbd>r</kbd> : Runs `gofmt` without save!
+* <kbd>⌥</kbd> + <kbd>R</kbd> : Runs `gofmt` + `goimports` without save!
 
 ### Snippets
 
-* `fmt` + <kbd>⇥</kbd>: Go format helper
+* `fmt` + <kbd>⇥</kbd>: `fmt.METHOD`
 * `spr` + <kbd>⇥</kbd>: `fmt.Sprintf`
 * `prl` + <kbd>⇥</kbd>: `fmt.Println`
+* `prf` + <kbd>⇥</kbd>: `fmt.Printf`
 * `tof` + <kbd>⇥</kbd>: `reflect.TypeOf`
-* `log` + <kbd>⇥</kbd>: `log.Println`
-* `if` + <kbd>⇥</kbd>: `if` conditions
+* `log` + <kbd>⇥</kbd>: `log.METHOD`
+* `if` + <kbd>⇥</kbd>: `if` conditions or `obj, ok` condition
 * `for` + <kbd>⇥</kbd>: `for` conditions
 
 

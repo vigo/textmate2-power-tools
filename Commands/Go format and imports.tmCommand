@@ -5,17 +5,12 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env bash
+	<string>#!/usr/bin/env ruby18
 
-. "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+require "#{ENV['TM_BUNDLE_SUPPORT']}/go_helper"
 
-export PATH="/usr/local/bin/:${PATH}"
-
-if [ -z "${GOPATH}" ]; then
-    export GOPATH="${TM_GOPATH}"
-fi
-
-(goimports &amp;&amp; gofmt) || exit_show_tool_tip</string>
+Go::run_gofmt_and_goimports
+</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>
@@ -23,7 +18,7 @@ fi
 	<key>keyEquivalent</key>
 	<string>~r</string>
 	<key>name</key>
-	<string>Gofmt</string>
+	<string>Go format and imports</string>
 	<key>outputCaret</key>
 	<string>interpolateByLine</string>
 	<key>outputFormat</key>
@@ -35,7 +30,7 @@ fi
 	<key>semanticClass</key>
 	<string>callback.document.will-save</string>
 	<key>uuid</key>
-	<string>ABCCD625-BF19-4C0D-A479-5E7C326B30C6</string>
+	<string>9F33908F-28C9-4055-8A3D-F505C5AC87E1</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
