@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:Field} ${2|byte,bool,complex64,complex128,float32,float64,int,int8,int16,int32,int64,Pointer,string,uint,uint8,uint16,uint32,uint64,uintptr,rune|} ${3:\`json:"${1/(^[[:upper:]])|([[:upper:]])/(?1:\L$0)(?2:_\L$0)/g}"\`}
+</string>
+	<key>name</key>
+	<string>struct Field</string>
+	<key>scope</key>
+	<string>source.go</string>
+	<key>tabTrigger</key>
+	<string>fld</string>
+	<key>uuid</key>
+	<string>556818C1-8B35-48EA-9231-4F7FB13F1DDE</string>
+</dict>
+</plist>
