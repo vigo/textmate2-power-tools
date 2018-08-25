@@ -24,15 +24,18 @@ module Go
   end
 
   def Go::golint
-    # system(ENV['TM_MATE'], ENV['TM_FILEPATH'], "--clear-mark=note", "--clear-mark=warning", "--clear-mark=error")
-    system(ENV['TM_MATE'], "--uuid", ENV['TM_DOCUMENT_UUID'], "--clear-mark=note", "--clear-mark=warning", "--clear-mark=error")
-
     out, err = TextMate::Process.run("golint", ENV['TM_FILEPATH'])
     TextMate.exit_show_tool_tip(err) unless err.nil? || err == ""
-
-    need_args = []
-
-    out.split("\n").each do |line|
+    
+    self.set_markers(out)
+  end
+  
+  def Go::reset_markers
+    system(ENV['TM_MATE'], "--uuid", ENV['TM_DOCUMENT_UUID'], "--clear-mark=note", "--clear-mark=warning", "--clear-mark=error")
+  end
+  
+  def Go::set_markers(input)
+    input.split("\n").each do |line|
       if line =~ /^(.*?)(:(?:(\d+):)?(?:(\d+):)?)\s*(.*?)$/ and not $1.nil?
         file, prefix, lineno, column, message = $1, $2, $3, $4, $5
         unless lineno.nil?
@@ -43,7 +46,7 @@ module Go
       end
     end
   end
-
+  
   def Go::run_gofmt_and_goimports
     self.gofmt
     self.goimports
@@ -51,7 +54,18 @@ module Go
     print $OUTPUT
   end
   
-  def Go::run_golint
-    Go::golint
+  def Go::govet
+    out, err = TextMate::Process.run("go", "vet", ENV['TM_FILEPATH'])
+    unless err.nil? || err == ""
+      self.set_markers(err) 
+    else
+      TextMate.exit_show_tool_tip("Good to go!")
+    end
+  end
+  
+  def Go::run_golint_and_govet
+    self.reset_markers
+    self.golint
+    self.govet
   end
 end

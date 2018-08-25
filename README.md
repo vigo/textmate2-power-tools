@@ -178,7 +178,7 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 ## Go
 
 When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs:
-`gofmt` + `goimports` + `golint`
+`gofmt` + `goimports` + `golint` + `go vet`
 
 ### Commands
 

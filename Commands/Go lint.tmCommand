@@ -9,14 +9,14 @@
 
 require "#{ENV['TM_BUNDLE_SUPPORT']}/go_helper"
 
-Go::run_golint
+Go::run_golint_and_govet
 </string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Go lint</string>
+	<string>Go lint and vet</string>
 	<key>outputCaret</key>
 	<string>interpolateByLine</string>
 	<key>outputFormat</key>
