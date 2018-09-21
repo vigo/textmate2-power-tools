@@ -55,6 +55,10 @@ module Go
     lookup_path = ENV['TM_FILEPATH']
     lookup_path = ENV['TM_DIRECTORY'] if ENV['TM_FILEPATH'].start_with?(ENV['GOPATH'])
     out, err = TextMate::Process.run("go", "vet", lookup_path)
+    
+    unless err.nil?
+      err = err.delete("\n")
+    end
 
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
