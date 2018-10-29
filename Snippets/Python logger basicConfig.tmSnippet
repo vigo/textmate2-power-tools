@@ -17,6 +17,8 @@ $0</string>
 	<string>Python logger basicConfig</string>
 	<key>scope</key>
 	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>loggerbc</string>
 	<key>uuid</key>
 	<string>B88498F0-2643-4AB7-B114-33A695DF2D6B</string>
 </dict>

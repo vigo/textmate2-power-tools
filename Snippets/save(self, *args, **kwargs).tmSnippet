@@ -4,8 +4,9 @@
 <dict>
 	<key>content</key>
 	<string>def save(self, *args, **kwargs):
-    super().save(*args, **kwargs)
-</string>
+    # do something before real save
+    super().save(*args, **kwargs)  # real save
+    # do something after real save</string>
 	<key>name</key>
 	<string>save(self, *args, **kwargs)</string>
 	<key>scope</key>
