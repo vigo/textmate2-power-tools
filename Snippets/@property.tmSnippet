@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{{ ${1:variable} }}$0</string>
+	<string>@property
+${1:def ${2:method_name}():
+    return ${3:what?}}
+$0</string>
 	<key>name</key>
-	<string>{{ variable }}</string>
+	<string>@property</string>
 	<key>scope</key>
-	<string>text.html.django,text.html.jinja</string>
+	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>=</string>
+	<string>@pr</string>
 	<key>uuid</key>
-	<string>D2E6EE38-015C-4450-B7E1-9F5665956727</string>
+	<string>12107D52-BF32-46E7-B82D-40452B459F79</string>
 </dict>
 </plist>

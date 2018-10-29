@@ -27,7 +27,7 @@ set -o pipefail
 TEMP
 </string>
 	<key>input</key>
-	<string>document</string>
+	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
@@ -37,7 +37,7 @@ TEMP
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>replaceInput</string>
+	<string>atCaret</string>
 	<key>scope</key>
 	<string>source.shell</string>
 	<key>tabTrigger</key>

@@ -15,18 +15,28 @@ TM_ORGANIZATION = ENV['TM_ORGANIZATION'] || "Your Organization Here..."
 PYTHON_VERSION = `#{ENV['TM_PYTHON']} -c 'from sys import version_info; print("{major}.{minor}.{micro}-{level}".format(major=version_info.major, minor=version_info.minor, micro=version_info.micro, level=version_info.releaselevel))'`
 
 puts(&lt;&lt;-TEMP)
-# -*- coding: utf-8 -*-
-#
 # Created by #{TM_FULLNAME} on #{TM_DATE}.
 # Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
 # Python version: #{PYTHON_VERSION}
 
-import os, pprint, sys
-reload(sys)
-sys.setdefaultencoding('UTF8')
+import os
+import sys
+import logging
 
-pp = pprint.PrettyPrinter(indent=4)
-pp.pprint("Hello {world}".format(world="world"))
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s [%(levelname)s]: %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+)
+
+
+def main():
+    logging.info('Hello')
+    $0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
 
 TEMP</string>
 	<key>input</key>
@@ -34,7 +44,7 @@ TEMP</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Python Script Template</string>
+	<string>Python Script with Logging</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
@@ -46,7 +56,7 @@ TEMP</string>
 	<key>tabTrigger</key>
 	<string>temp</string>
 	<key>uuid</key>
-	<string>66BDD933-2358-43D1-B9B0-448AE7CD23A6</string>
+	<string>38A5532A-69C0-4BE2-844C-D20A47ED9606</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

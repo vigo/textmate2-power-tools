@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby18 -wKU
 require "time"
@@ -13,15 +15,11 @@ TM_ORGANIZATION = ENV['TM_ORGANIZATION'] || "Your Organization Here..."
 PYTHON_VERSION = `#{ENV['TM_PYTHON']} -c 'from sys import version_info; print("{major}.{minor}.{micro}-{level}".format(major=version_info.major, minor=version_info.minor, micro=version_info.micro, level=version_info.releaselevel))'`
 
 puts(&lt;&lt;-TEMP)
-# -*- coding: utf-8 -*-
-#
 # Created by #{TM_FULLNAME} on #{TM_DATE}.
 # Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
 # Python version: #{PYTHON_VERSION}
 
-import os, pprint, sys
-reload(sys)
-sys.setdefaultencoding('UTF8')
+import pprint
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -41,15 +39,19 @@ def print_hello(input):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-    TEMP</string>
+
+TEMP
+</string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>Python Script Template with Doctest</string>
 	<key>outputCaret</key>
-	<string>interpolateByChar</string>
+	<string>afterOutput</string>
 	<key>outputFormat</key>
-	<string>snippet</string>
+	<string>text</string>
 	<key>outputLocation</key>
 	<string>atCaret</string>
 	<key>scope</key>
@@ -58,5 +60,7 @@ if __name__ == '__main__':
 	<string>temp</string>
 	<key>uuid</key>
 	<string>4352ED82-4AEC-4919-9E28-9FB96D93338F</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
