@@ -19,21 +19,16 @@ puts(&lt;&lt;-TEMP)
 # Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.
 # Python version: #{PYTHON_VERSION}
 
-import pprint
-
-pp = pprint.PrettyPrinter(indent=4)
-
 # Code here...
-$0
 
 
 # Example
-def print_hello(input):
-    """
-    &gt;&gt;&gt; print_hello("world")
-    Hello, world!
-    """
-    print('Hello, {}!'.format(input))
+# def print_hello(input):
+#     """
+#     &gt;&gt;&gt; print_hello("world")
+#     Hello, world!
+#     """
+#     print('Hello, {}!'.format(input))
 
 
 if __name__ == '__main__':
