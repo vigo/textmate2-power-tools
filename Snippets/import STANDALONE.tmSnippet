@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if os.environ.get('TM_PYTHON_FMT_VIRTUAL_ENV', False):
+    sys.path.append(
+        os.path.join(
+            os.environ['TM_PYTHON_FMT_VIRTUAL_ENV'],
+            'bin',
+        )
+    )
+    sys.path.append(
+        os.path.join(
+            os.environ['TM_PYTHON_FMT_VIRTUAL_ENV'],
+            'lib',
+            'python3.7',
+            'site-packages',
+        )
+    )
+$0</string>
+	<key>name</key>
+	<string>import STANDALONE</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>inject</string>
+	<key>uuid</key>
+	<string>B4470180-6099-463B-9058-90520ED5FD56</string>
+</dict>
+</plist>
