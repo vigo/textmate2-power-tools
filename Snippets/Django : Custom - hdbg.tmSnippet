@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>hdbg(${1:string})$0</string>
+	<string>self.hdbg(${1:string})$0</string>
 	<key>name</key>
 	<string>hdbg</string>
 	<key>scope</key>
