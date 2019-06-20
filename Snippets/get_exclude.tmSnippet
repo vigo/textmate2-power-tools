@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def get_exclude(self, request, obj=None):
+    exclude = get_exclude(request, obj)
+    $0
+    return exclude
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>get_exclude</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>ABF84F40-3CE9-4848-91B7-64837853F0CF</string>
 </dict>
 </plist>

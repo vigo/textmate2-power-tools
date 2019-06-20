@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def response_delete(self, request, obj_display, obj_id):
+    # response_delete is called after the object has been deleted
+    response = super().response(request, obj_display, obj_id)
+    $0
+    return response
+</string>
+	<key>name</key>
+	<string>response_delete</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>894C7C99-0FD7-4FA7-BD27-BC2A6C1ED20F</string>
+</dict>
+</plist>

@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def get_queryset(self, request):
+    queryset = super().get_queryset(request)
+    $0
+    return queryset
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>get_queryset</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>BB082244-40AD-46CA-BDFC-66A070A94943</string>
 </dict>
 </plist>

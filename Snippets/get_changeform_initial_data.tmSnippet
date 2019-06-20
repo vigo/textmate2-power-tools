@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_changeform_initial_data(self, request):
+    initial_data = super().get_changeform_initial_data(request)
+    # initial_data.update(field=value)
+    $0
+    return initial_data
+</string>
+	<key>name</key>
+	<string>get_changeform_initial_data</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>7BEBDD72-3118-43CF-A906-590B2C5D8ACB</string>
+</dict>
+</plist>

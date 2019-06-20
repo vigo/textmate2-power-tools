@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_inline_instances(self, request, obj=None):
+    # inline_instances = super().get_inline_instances(request, obj)
+    inline_instances = [inline(self.model, self.admin_site) for inline in self.inlines]
+    $0
+    return inline_instances
+</string>
+	<key>name</key>
+	<string>get_inline_instances</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>1CAF6D04-3E9B-4430-A135-8A7830E6E07D</string>
+</dict>
+</plist>

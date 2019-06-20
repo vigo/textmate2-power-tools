@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def has_view_permission(self, request, obj=None):
+    # Should return True if viewing obj is permitted, False otherwise
+    perm = super().has_view_permission(request, obj)
+    $0
+    # return False
+    return perm
+</string>
+	<key>name</key>
+	<string>has_view_permission</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>50B086BD-BC89-404D-916A-AD8EE10E4372</string>
+</dict>
+</plist>

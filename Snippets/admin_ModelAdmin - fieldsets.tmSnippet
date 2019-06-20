@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>fieldsets = (
+    (None, {
+        'fields': ['${1:field}'],
+        'description': 'Description...',
+    }),
+    ('Advanced options', {
+        'classes': ('collapse',),
+        'fields': ['field', 'field',]
+    }),
+)$0</string>
+	<key>name</key>
+	<string>admin.ModelAdmin - fieldsets</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>52C9B0E0-2307-4CA3-B3B9-926971988D59</string>
+</dict>
+</plist>

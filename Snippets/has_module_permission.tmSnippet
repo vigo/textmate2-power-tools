@@ -3,17 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def has_module_permission(self, request):
+    # Should return True...
+    perm = super().has_module_permission(request)
+    # return False
+    $0
+    return perm
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>has_module_permission</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>D32E8A05-8305-462B-9CA0-355089BAAA80</string>
 </dict>
 </plist>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def formfield_for_manytomany(self, db_field, request, **kwargs):
+    if db_field.name == '${1:FK field name}':
+        kwargs['queryset'] = ${1/(^\S+)\W*(.+)?/\u$1/}.objects.filter(${2:field}=${3:value})
+    $0
+    return super().formfield_for_manytomany(db_field, request, **kwargs)
+</string>
+	<key>name</key>
+	<string>formfield_for_manytomany</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>E2CC7C02-01C2-43F2-BE2D-DB5D7C2C7BAF</string>
+</dict>
+</plist>

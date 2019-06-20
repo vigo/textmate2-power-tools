@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>paginator = ${1:Class}$0</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>admin.ModelAdmin - paginator</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>F25C56A5-C702-4B99-89B6-EFD22A1E3720</string>
 </dict>
 </plist>

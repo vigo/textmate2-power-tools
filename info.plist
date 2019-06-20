@@ -163,17 +163,88 @@
 				<key>name</key>
 				<string>Markdown</string>
 			</dict>
+
+            <key>9F5EBE50-3B60-4C91-84EE-88373F5F0097</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>A002A391-B7FB-4950-A1B5-AB4E34F702F5</string>
+                    <string>DFF74BF2-B9C2-4359-87CA-CCAFD70A1D63</string>
+                </array>
+                <key>name</key>
+                <string>admin.ModelAdmin</string>
+            </dict>
+
+            <key>FE5499E3-DB1C-4AE6-ADF4-B0BABF3BC9D4</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>ACA90686-BF56-4C45-B422-DC10B80EC873</string>
+                    <string>0D1DFE53-D6C1-4AE0-83C4-7F671D828299</string>
+                    <string>B832CE84-4A51-4CE2-9628-0B3639253F45</string>
+                    <string>873DD20B-BF7D-45DE-9A07-55C0D519490E</string>
+                    <string>C32E3377-C2CD-4027-B35A-8014853E15D0</string>
+                    <string>E6BAA935-A129-4A03-8069-53AED070808D</string>
+                    <string>A274E9A8-58AE-479B-879C-3B25D53D56B1</string>
+                    <string>69E699EB-15BA-4020-9931-8AA580584884</string>
+                    <string>E2CC7C02-01C2-43F2-BE2D-DB5D7C2C7BAF</string>
+                    <string>8424BE7F-51EF-47EE-A1B6-AB6C0ADFFB89</string>
+                    <string>7BEBDD72-3118-43CF-A906-590B2C5D8ACB</string>
+                    <string>F320F401-7C92-403E-88D9-BD709F130226</string>
+                    <string>E131247F-8819-49B8-BBE1-C9B468D74A43</string>
+                    <string>847EA612-17CF-4329-A271-D0AC79C8B717</string>
+                    <string>C12E1DAC-3ECD-429D-962F-803CBF22551B</string>
+                    <string>ABF84F40-3CE9-4848-91B7-64837853F0CF</string>
+                    <string>0ADB7373-6970-4069-AF5F-67F289DD1013</string>
+                    <string>6332711B-BF5D-4B3E-8214-33298ADE589E</string>
+                    <string>D12E6BBD-52CC-472F-8CF4-AF96AC0751CD</string>
+                    <string>B880F604-C793-4948-BF99-725DB007373A</string>
+                    <string>344F63D2-56D4-4B85-944B-7494D6AFE99C</string>
+                    <string>0E9E97D8-EDAC-4624-B073-BE3F7C7DB547</string>
+                    <string>1CAF6D04-3E9B-4430-A135-8A7830E6E07D</string>
+                    <string>B2C9B90B-872A-4767-BB34-3A1AE0D52012</string>
+                    <string>03467AB4-9955-4319-BB84-C2143F4F577A</string>
+                    <string>FC96B482-CD3E-4197-A907-495337691B91</string>
+                    <string>FC4383DC-67C4-4EC8-8FCF-1452EAB000B0</string>
+                    <string>FAFF4E7B-26CB-47BC-A473-88D35177228C</string>
+                    <string>C097B538-9B6C-4884-9D98-3D3BBF93D98A</string>
+                    <string>29743ED3-AE26-41F4-B01E-9DCCDFB93609</string>
+                    <string>E31B6F89-EE1D-4211-9B2C-069E6187F6B9</string>
+                    <string>BB082244-40AD-46CA-BDFC-66A070A94943</string>
+                    <string>22CF684F-E18A-4134-8179-854DB8EC545C</string>
+                    <string>7C82D2BC-64E7-481D-826D-C4C151CC9939</string>
+                    <string>1B466280-0CE3-481B-A73E-D1B96B8321B2</string>
+                    <string>5FCFA65B-F0F3-4C6F-BC74-7EE5FE3861C5</string>
+                    <string>50B086BD-BC89-404D-916A-AD8EE10E4372</string>
+                    <string>9C35E6EA-F897-4DF1-9ED3-B16DEB2F9745</string>
+                    <string>DD6BB416-B6F8-4AE1-9C97-437583D7E0EC</string>
+                    <string>D32E8A05-8305-462B-9CA0-355089BAAA80</string>
+                    <string>CC53371B-DF50-4248-AE6E-27F421E9234A</string>
+                    <string>70DDB177-CA8D-479A-906B-3B5C7FD8B373</string>
+                    <string>98DF1020-0C95-4F5A-8B7D-82E2A2E4CCD0</string>
+                    <string>894C7C99-0FD7-4FA7-BD27-BC2A6C1ED20F</string>
+                    <string>97F601F7-51E1-46A8-8633-B5FF54B9074A</string>
+                    <string>BDEE21C9-8183-4016-9C38-EBD1AE6E5F57</string>
+                    <string>89CE6A99-676E-448C-8090-E879C95A3C8A</string>
+                </array>
+                <key>name</key>
+                <string>admin.ModelAdmin - methods</string>
+            </dict>
+
 			<key>3B5EEAF6-2CC1-4AA5-980E-8C84ADE084D6</key>
 			<dict>
 				<key>items</key>
 				<array>
-					<string>A002A391-B7FB-4950-A1B5-AB4E34F702F5</string>
-					<string>8A979EBA-CFF2-475E-9DDB-FA5CA04D7424</string>
+                    <string>A98D682E-6AAA-4CE7-B483-0F46920773F4</string>
 					<string>2400E4E4-4BD1-45A0-9D11-B8A8782952AB</string>
+                    <string>B8BAA6A1-DA17-4944-B1F5-B469B09E23A7</string>
+                    <string>F0BF5FCC-5E12-4227-8154-66ADEEE2F18D</string>
+					<string>8A979EBA-CFF2-475E-9DDB-FA5CA04D7424</string>
 					<string>C8CB5653-B238-4F70-9A5F-5D9115FF9D29</string>
 					<string>540A076E-51C6-4813-8984-93DE0ACF5EA3</string>
 					<string>E8810E8C-9A40-48BD-B8A0-B0A268EB53A6</string>
 					<string>3D7D983B-9A96-423C-8E1D-FE9E517770FF</string>
+                    <string>52C9B0E0-2307-4CA3-B3B9-926971988D59</string>
 					<string>86DDF98D-F1FD-4081-9EAC-305A87D056DA</string>
 					<string>86031129-19AB-4A51-8069-D91C9777776F</string>
 					<string>CDFAE8E1-F95C-4237-9A3D-8399888F1B98</string>
@@ -185,17 +256,22 @@
 					<string>C6C4E09B-735E-4567-925E-B8D05B964B42</string>
 					<string>20F85CC0-823C-4A45-9DE3-D6C94C43C668</string>
 					<string>26916262-BB04-42A8-82C6-703E0B015500</string>
+                    <string>F25C56A5-C702-4B99-89B6-EFD22A1E3720</string>
 					<string>26D4FFCB-25D6-4B70-8FAA-B19FFF63E66C</string>
+                    <string>91693835-1985-410E-A1EE-A1284625FC3C</string>
 					<string>E779F1BF-4C77-4619-AAF0-C7664C9270EE</string>
 					<string>BA3666F4-79DB-49B1-A979-C243FAB2C53C</string>
 					<string>00E27D47-6FD9-49FD-A052-EB006C51533B</string>
+                    <string>AC911E98-6028-4C2E-A774-7D11717DF237</string>
+                    <string>4E35C1AF-FBD4-4C79-8039-6E04AF1173C2</string>
+                    <string>7E05ACB1-9B49-408E-BFBF-F79D2C3BE5BC</string>
 					<string>1D6A8A51-FDA9-4AE5-8267-71639CE32651</string>
 					<string>AF3BBA1E-6545-4D4E-AC36-BC8B2C80CC2C</string>
+                    <string>A6246024-0D1E-4A3E-AA5E-0C3F15A8A0DB</string>
 					<string>A80DF16A-6172-4844-944E-8226AFCF7C27</string>
-					<string>DFF74BF2-B9C2-4359-87CA-CCAFD70A1D63</string>
 				</array>
 				<key>name</key>
-				<string>admin.ModelAdmin</string>
+				<string>admin.ModelAdmin - properties</string>
 			</dict>
 			<key>4D0FFFD2-9569-43CA-9B4A-451367C54D9C</key>
 			<dict>
@@ -301,6 +377,8 @@
 			<dict>
 				<key>items</key>
 				<array>
+                    <string>9F5EBE50-3B60-4C91-84EE-88373F5F0097</string>
+                    <string>FE5499E3-DB1C-4AE6-ADF4-B0BABF3BC9D4</string>
 					<string>3B5EEAF6-2CC1-4AA5-980E-8C84ADE084D6</string>
 					<string>D52C474F-BD24-454B-8A9B-582D76675A8F</string>
 					<string>2B4B7AAB-F13C-43F1-840F-29F1158DDD3F</string>

@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def get_ordering(self, request):
+    ordering = super().get_ordering(request)
+    $0
+    return ordering
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>get_ordering</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>FAFF4E7B-26CB-47BC-A473-88D35177228C</string>
 </dict>
 </plist>

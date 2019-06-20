@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def has_delete_permission(self, request, obj=None):
+    # Should return True if deleting obj is permitted, False otherwise
+    perm = super().has_delete_permission(request, obj)
+    # return False
+    $0
+    return perm
+</string>
+	<key>name</key>
+	<string>has_delete_permission</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>DD6BB416-B6F8-4AE1-9C97-437583D7E0EC</string>
+</dict>
+</plist>

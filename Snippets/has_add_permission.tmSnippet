@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def has_add_permission(self, request):
+    # Should return True if adding an object is permitted, False otherwise
+    perm = super().has_add_permission(request)
+    # return False
+    $0
+    return perm
+</string>
+	<key>name</key>
+	<string>has_add_permission</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>5FCFA65B-F0F3-4C6F-BC74-7EE5FE3861C5</string>
+</dict>
+</plist>

@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def get_list_display_links(self, request, list_display):
+    list_display_links = super().get_list_display_links(request, list_display)
+    $0
+    return list_display
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>get_list_display_link</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>03467AB4-9955-4319-BB84-C2143F4F577A</string>
 </dict>
 </plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># object_history_template = 'admin/myapp/extras/my_object_history.html'
+def history_view(self, request, object_id, extra_context=None):
+    extra_context = extra_context or {}
+    extra_context['VAR'] = 'VAL'
+    $0
+    return super().history_view(request, object_id, extra_context=extra_context)
+</string>
+	<key>name</key>
+	<string>history_view</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>CC53371B-DF50-4248-AE6E-27F421E9234A</string>
+</dict>
+</plist>

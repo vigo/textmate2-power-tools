@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>${1|add_form,change_form,change_list,delete_confirmation,delete_selected_confirmation,object_history,popup_response|}_template = '${2:file.html}'$0</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>admin.ModelAdmin - template</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>A6246024-0D1E-4A3E-AA5E-0C3F15A8A0DB</string>
 </dict>
 </plist>

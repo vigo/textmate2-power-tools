@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_changelist_formset(self, request, **kwargs):
+    # changelist_formset = super().get_changelist_formset(request, **kwargs)
+    # kwargs['formset'] = MyAdminFormSet
+    $0
+    return super().get_changelist_formset(request, **kwargs)
+</string>
+	<key>name</key>
+	<string>get_changelist_formset</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>847EA612-17CF-4329-A271-D0AC79C8B717</string>
+</dict>
+</plist>

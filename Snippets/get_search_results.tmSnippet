@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_search_results(self, request, queryset, search_term):
+    queryset, use_distinct = super().get_search_results(request, queryset, search_term)
+    # queryset |= self.model.objects.filter(age=search_term_as_int)
+    $0
+    return queryset, use_distinct
+</string>
+	<key>name</key>
+	<string>get_search_results</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>7C82D2BC-64E7-481D-826D-C4C151CC9939</string>
+</dict>
+</plist>

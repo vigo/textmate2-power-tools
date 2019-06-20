@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def save_related(self, request, form, formsets, change):
+    super().save_related(selfrequest, form, formsets, change)
+    $0
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>save_related</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>89CE6A99-676E-448C-8090-E879C95A3C8A</string>
 </dict>
 </plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># change_form_template = 'admin/myapp/extras/my_change_form.html'
+def add_view(self, request, form_url='', extra_context=None):
+    extra_context = extra_context or {}
+    extra_context['MY_VAR'] = 'VAR'
+    $0
+    return super().add_view(request, form_url, extra_context=extra_context)
+</string>
+	<key>name</key>
+	<string>add_view</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>ACA90686-BF56-4C45-B422-DC10B80EC873</string>
+</dict>
+</plist>

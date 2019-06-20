@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># delete_confirmation_template = 'admin/myapp/extras/my_delete_confirmation.html'
+def delete_view(self, request, object_id, extra_context=None):
+    extra_context = extra_context or {}
+    extra_context['VAR'] = 'VAL'
+    $0
+    return super().delete_view(request, object_id, extra_context=extra_context)
+</string>
+	<key>name</key>
+	<string>delete_view</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>E6BAA935-A129-4A03-8069-53AED070808D</string>
+</dict>
+</plist>

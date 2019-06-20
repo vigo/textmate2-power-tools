@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def save(self, *args, **kwargs):
-    # do something before real save
-    super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+	<string>def delete_queryset(self, request, queryset):
+    $0
+    super().delete_queryset(request, queryset,)
+</string>
 	<key>name</key>
-	<string>save(self, *args, **kwargs)</string>
+	<string>delete_queryset</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>save</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>3B461B2D-A103-49B1-95CE-E4FFD68656D6</string>
+	<string>C32E3377-C2CD-4027-B35A-8014853E15D0</string>
 </dict>
 </plist>

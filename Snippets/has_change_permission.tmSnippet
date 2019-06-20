@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def has_change_permission(self, request, obj=None):
+    # Should return True if editing obj is permitted, False otherwise
+    perm = super().has_change_permission(request, obj)
+    # return False
+    $0
+    return perm
+</string>
+	<key>name</key>
+	<string>has_change_permission</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>9C35E6EA-F897-4DF1-9ED3-B16DEB2F9745</string>
+</dict>
+</plist>

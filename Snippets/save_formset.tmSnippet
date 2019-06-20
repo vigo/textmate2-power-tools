@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def save_formset(self, request, form, formset, change):
+    # instances = formset.save(commit=False)
+    # for obj in formset.deleted_objects:
+    #     obj.delete()
+    # for instance in instances:
+    #     instance.user = request.user
+    #     instance.save()
+    # formset.save_m2m()
+    $0
+    super().save_formset(request, form, formset, change)
+</string>
+	<key>name</key>
+	<string>save_formset</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>97F601F7-51E1-46A8-8633-B5FF54B9074A</string>
+</dict>
+</plist>

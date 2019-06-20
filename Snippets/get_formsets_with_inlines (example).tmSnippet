@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># inlines = [MyInline, SomeOtherInline]
+
+def get_formsets_with_inlines(self, request, obj=None):
+    for inline in self.get_inline_instances(request, obj):
+        # hide MyInline in the add view
+        if not isinstance(inline, MyInline) or obj is not None:
+            yield inline.get_formset(request, obj), inline
+$0</string>
+	<key>name</key>
+	<string>get_formsets_with_inlines (example)</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>0E9E97D8-EDAC-4624-B073-BE3F7C7DB547</string>
+</dict>
+</plist>

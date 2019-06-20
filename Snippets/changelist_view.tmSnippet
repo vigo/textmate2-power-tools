@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># change_list_template = 'admin/myapp/extras/my_change_list.html'
+def changelist_view(self, request, extra_context=None):
+    extra_context = extra_context or {}
+    extra_context['MY_VAR'] = 'VAR'
+    $0
+    return super().changelist_view(request, extra_context=extra_context)
+</string>
+	<key>name</key>
+	<string>changelist_view</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>B832CE84-4A51-4CE2-9628-0B3639253F45</string>
+</dict>
+</plist>
