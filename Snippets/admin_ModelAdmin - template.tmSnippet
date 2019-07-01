@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${1|add_form,change_form,change_list,delete_confirmation,delete_selected_confirmation,object_history,popup_response|}_template = '${2:file.html}'$0</string>
 	<key>name</key>
-	<string>admin.ModelAdmin - template</string>
+	<string>template</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

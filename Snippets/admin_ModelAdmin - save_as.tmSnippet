@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>save_as = ${1|False,True|}</string>
 	<key>name</key>
-	<string>admin.ModelAdmin - save_as</string>
+	<string>save_as</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

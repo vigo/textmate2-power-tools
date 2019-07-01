@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>ordering = ['${1:field}',]$0</string>
 	<key>name</key>
-	<string>admin.ModelAdmin - ordering</string>
+	<string>ordering</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

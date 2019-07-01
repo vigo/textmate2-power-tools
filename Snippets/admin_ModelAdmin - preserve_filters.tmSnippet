@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>preserve_filters = ${1|False,True|}</string>
 	<key>name</key>
-	<string>admin.ModelAdmin - preserve_filters</string>
+	<string>preserve_filters</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

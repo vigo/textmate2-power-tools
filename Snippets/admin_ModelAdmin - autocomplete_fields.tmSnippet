@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>autocomplete_fields = ['${1:field}',]$0</string>
 	<key>name</key>
-	<string>admin.ModelAdmin - autocomplete_fields</string>
+	<string>autocomplete_fields</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
