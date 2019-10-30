@@ -125,7 +125,7 @@ TAB completion | Description
 
 * `if` + <kbd>⇥</kbd>: `if` / `else` / `elif` template.
 * `for` + <kbd>⇥</kbd>: Array iteration template
-
+* `envi` + <kbd>⇥</kbd>: Inject some environment variables.
 
 ---
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>export DATABASE_URL="postgres://localhost:5432/${1:db_name}"</string>
+	<key>name</key>
+	<string>DATABASE_URL</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>envi</string>
+	<key>uuid</key>
+	<string>2847446E-4F9E-41C7-AA50-431A12195313</string>
+</dict>
+</plist>
