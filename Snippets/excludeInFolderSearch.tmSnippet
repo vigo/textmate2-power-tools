@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>excludeInFolderSearch = "{\$excludeInFolderSearch,${1:path}}"</string>
+	<key>name</key>
+	<string>excludeInFolderSearch</string>
+	<key>scope</key>
+	<string>source.tm-properties</string>
+	<key>tabTrigger</key>
+	<string>prop</string>
+	<key>uuid</key>
+	<string>1B6B008F-1200-45B0-B92B-D7A5F33AE573</string>
+</dict>
+</plist>
