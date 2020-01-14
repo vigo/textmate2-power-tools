@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>excludeInFolderSearch = "{\$excludeInFolderSearch,${1:path}}"</string>
+	<string>${1|excludeInFolderSearch,excludeInFileChooser|} = "{\$$1,${2:path}}"</string>
 	<key>name</key>
-	<string>excludeInFolderSearch</string>
+	<string>excludes</string>
 	<key>scope</key>
 	<string>source.tm-properties</string>
 	<key>tabTrigger</key>
