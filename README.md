@@ -15,6 +15,13 @@ git clone https://github.com/vigo/textmate2-power-tools.git PowerTools.tmbundle
 # Restart your TextMate2
 ```
 
+You need to install extra tools for Golang helper:
+
+```bash
+$ go get -u golang.org/x/tools/cmd/goimports
+$ go get -u golang.org/x/lint/golint
+```
+
 ## Available Items
 
 ### Django
