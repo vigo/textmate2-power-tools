@@ -20,6 +20,7 @@ You need to install extra tools for Golang helper:
 ```bash
 $ go get -u golang.org/x/tools/cmd/goimports
 $ go get -u golang.org/x/lint/golint
+$ go get -u github.com/nsf/gocode
 ```
 
 ## Available Items
