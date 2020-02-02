@@ -19,14 +19,12 @@ module Go
   
   def Go::set_markers(input)
     input.split("\n").each do |line|
-      if line =~ /^(.*?)(:(?:(\d+):)?(?:(\d+):)?)\s*(.*?)$/ and not $1.nil?
-        file, prefix, lineno, column, message = $1, $2, $3, $4, $5
+      if line =~ /^vet: (.*?):(\d+):(\d+):\s*(.*)$/
+        file, lineno, column, message = $1, $2, $3, $4
         file = File.basename(file)
-        unless lineno.nil?
-          value = (message =~ /^\s*(error|warning|note):/ ? $1 : "warning") + ":#{message} - [#{file}]"
-          tm_args = ["--uuid", ENV['TM_DOCUMENT_UUID'], "--line=#{lineno}:#{column || '1'}", "--set-mark=#{value}"]
-          system(ENV['TM_MATE'], *tm_args)
-        end
+        message = "warning:#{message}"
+        tm_args = ["--uuid", ENV['TM_DOCUMENT_UUID'], "--line=#{lineno}:#{column || '1'}", "--set-mark=#{message}"]
+        system(ENV['TM_MATE'], *tm_args)
       end
     end
   end
@@ -55,10 +53,6 @@ module Go
     lookup_path = ENV['TM_FILEPATH']
     lookup_path = ENV['TM_DIRECTORY'] if ENV['TM_FILEPATH'].start_with?(ENV['GOPATH'])
     out, err = TextMate::Process.run("go", "vet", lookup_path)
-    
-    unless err.nil?
-      err = err.delete("\n")
-    end
 
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
