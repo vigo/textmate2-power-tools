@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require 'fileutils'
+
+if File.directory?(ENV['TM_SELECTED_FILE'])
+  DUNDER_INIT_FILE = "#{ENV['TM_SELECTED_FILE']}/__init__.py"
+  FileUtils.touch(DUNDER_INIT_FILE)
+  puts "#{DUNDER_INIT_FILE} has been created.\n"
+else
+  puts "#{ENV['TM_SELECTED_FILE']} is not a directory"
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>$@i</string>
+	<key>name</key>
+	<string>Create __init__.py</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>uuid</key>
+	<string>B7618CE1-9BC7-4C73-AA91-626C27935F89</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
