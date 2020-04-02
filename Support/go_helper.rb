@@ -19,7 +19,7 @@ module Go
   
   def Go::set_markers(input)
     input.split("\n").each do |line|
-      if line =~ /^vet: (.*?):(\d+):(\d+):\s*(.*)$/
+      if line =~ /^(.*?):(\d+):(\d+):\s*(.*)$/
         file, lineno, column, message = $1, $2, $3, $4
         file = File.basename(file)
         message = "warning:#{message}"
