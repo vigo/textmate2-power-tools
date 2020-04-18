@@ -13,19 +13,26 @@
 
 . "$TM_SUPPORT_PATH/lib/webpreview.sh"
 
-html_header "Running JavaScript"
+
+title="${TM_FILENAME:-Current document}"
+html_header "JavaScript" "${title}"
+
 
 if [[ $TM_NODE ]]; then
-    INPUT=$(cat /dev/stdin)
-	$TM_NODE -e "${INPUT}"|pre
+    if [[ -z ${TM_FILEPATH+x} ]]; then
+        cat /dev/stdin | $TM_NODE - | pre
+    else
+        cat "${TM_FILEPATH}" | $TM_NODE - | pre
+    fi
 else
     echo "You must define \$TM_NODE variable"|pre
 fi
 
 html_footer
+exit_show_html
 </string>
 	<key>input</key>
-	<string>selection</string>
+	<string>document</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
