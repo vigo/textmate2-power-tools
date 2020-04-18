@@ -3,16 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>for(var ${20:i}=0; ${20:i}&lt;${1:Things}.length; ${20:i}++){
-    ${100:${1:Things}[${20:i}]}$0
-}</string>
+	<string>${1:array}.forEach(${2:el} =&gt; {
+    console.log(${2});
+});$0
+</string>
 	<key>name</key>
-	<string>for</string>
+	<string>for - forEach</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
 	<string>for</string>
 	<key>uuid</key>
-	<string>8DFF939A-1B13-4DC4-A036-6EB8A85E6E09</string>
+	<string>FB183727-CEDD-421B-BF92-7646F3FA146A</string>
 </dict>
 </plist>
