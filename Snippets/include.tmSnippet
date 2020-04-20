@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>include = "{\$include,.env*}"$0</string>
+	<string>include = "{\$include,`\ls -a1p "${TM_DIRECTORY}"| \grep "^\." | \grep -v "\/" | grep -v "DS_Store" | \xargs | \sed -e 's/ /,/g'`}"$0</string>
 	<key>name</key>
 	<string>include</string>
 	<key>scope</key>
