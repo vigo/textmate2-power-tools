@@ -50,9 +50,10 @@ module Go
   end
 
   def Go::govet
-    lookup_path = ENV['TM_FILEPATH']
-    lookup_path = ENV['TM_DIRECTORY'] if ENV['TM_FILEPATH'].start_with?(ENV['GOPATH'])
-    out, err = TextMate::Process.run("go", "vet", lookup_path)
+    # go vet needs . as cwd
+    # lookup_path = ENV['TM_FILEPATH']
+    # lookup_path = ENV['TM_DIRECTORY'] if ENV['TM_FILEPATH'].start_with?(ENV['GOPATH'])
+    out, err = TextMate::Process.run("go", "vet", ".")
 
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
