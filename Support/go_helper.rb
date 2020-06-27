@@ -31,21 +31,36 @@ module Go
 
   def Go::gofmt
     $OUTPUT, err = TextMate::Process.run("gofmt", :input => $DOCUMENT)
-    TextMate.exit_show_tool_tip(err) unless err.nil? || err == ""
+    unless err.nil? || err == ""
+      self.set_markers(err)
+      TextMate.exit_show_tool_tip("Fix the gofmt error(s)!")
+    end
+    
+    # TextMate.exit_show_tool_tip("gofmt: #{err}") unless err.nil? || err == ""
   end
   
   def Go::goimports
     $OUTPUT, err = TextMate::Process.run("goimports", :input => $DOCUMENT)
-    TextMate.exit_show_tool_tip(err) unless err.nil? || err == ""
+    unless err.nil? || err == ""
+      self.set_markers(err)
+      TextMate.exit_show_tool_tip("Fix the goimports error(s)!")
+    end
+    
+    # TextMate.exit_show_tool_tip("goimports: #{err}") unless err.nil? || err == ""
   end
 
   def Go::golint
     out, err = TextMate::Process.run("golint", ENV['TM_FILEPATH'])
-    TextMate.exit_show_tool_tip(err) unless err.nil? || err == ""
+    # TextMate.exit_show_tool_tip(err) unless err.nil? || err == ""
+
+    unless err.nil? || err == ""
+      self.set_markers(err)
+      TextMate.exit_show_tool_tip("Fix the golint error(s)!")
+    end
 
     unless out.empty?
       self.set_markers(out)
-      TextMate.exit_show_tool_tip("Fix the lint error(s)!")
+      TextMate.exit_show_tool_tip("Fix the golint error(s)!")
     end
   end
 
@@ -58,13 +73,15 @@ module Go
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
         self.set_markers(err)
-        TextMate.exit_show_tool_tip("Fix the vet error(s)!")
+        TextMate.exit_show_tool_tip("Fix the go vet error(s)!\n\n#{err}")
       end
     end
   end
   
   # callback.document.will-save
   def Go::run_gofmt_and_goimports
+    self.reset_markers
+    
     self.gofmt
     self.goimports
     
@@ -73,7 +90,7 @@ module Go
 
   # callback.document.did-save
   def Go::run_golint_and_govet
-    self.reset_markers
+    # self.reset_markers
     self.golint
     self.govet
 
