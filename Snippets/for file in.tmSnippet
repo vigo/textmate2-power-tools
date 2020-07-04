@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>for ${1:file} in ${2:*};do
+    echo "\${${1}}"
+done</string>
+	<key>name</key>
+	<string>for file in</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>for</string>
+	<key>uuid</key>
+	<string>AA791E85-0FD4-402A-81C1-62C89D0DD766</string>
+</dict>
+</plist>
