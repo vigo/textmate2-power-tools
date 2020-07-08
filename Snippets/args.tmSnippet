@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>args.with_defaults(${1:key} =&gt; ${2:value})$0</string>
+	<string>args.with_defaults(${1:arg} =&gt; ${2:value})$0</string>
 	<key>name</key>
 	<string>args.with_defaults</string>
 	<key>scope</key>

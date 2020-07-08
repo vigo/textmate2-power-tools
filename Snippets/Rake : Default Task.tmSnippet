@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>task :default =&gt; [${1:Task?}]</string>
+	<string>task :default =&gt; [:${1:task}]</string>
 	<key>name</key>
 	<string>Default Task</string>
 	<key>scope</key>

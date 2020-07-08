@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>desc "${1:Task description}"
-remote_task :${2:${3:task_name} =&gt; ${4:[:${5:dependent, :tasks}]}}, role: :remote_app do
+remote_task :${2:${3:task} =&gt; ${4:[:${5:dependent, :tasks}]}}, role: :remote_app do
 	$0
 end
 </string>
