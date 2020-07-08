@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>fmt.Sprintf(${1:"${2|%T,%v,%+v,%#v,%t,%b,%c,%d,%o,%q,%x,%X,%U,%f,%s,%p|}"}, $3)$0</string>
+	<string>fmt.Sprintf(${1:"%${2|T,v,s,+v,#v,t,b,c,d,o,q,x,X,U,f,p|}"}, $3)$0</string>
 	<key>name</key>
 	<string>fmt.Sprintf()</string>
 	<key>scope</key>

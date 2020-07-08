@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>fmt.Printf(${1:"%${2|T,v,s,+v,#v,t,b,c,d,o,q,x,X,U,f,p|}\n", ${3:Object}})$0</string>
+	<string>fmt.Printf("%[1]${1|T,v,s,+v,#v,t,b,c,d,o,q,x,X,U,f,p|}\n", ${2:object})$0</string>
 	<key>name</key>
-	<string>fmt.Printf()</string>
+	<string>fmt.Printf() - arg reuse</string>
 	<key>scope</key>
 	<string>source.go</string>
 	<key>tabTrigger</key>
 	<string>prf</string>
 	<key>uuid</key>
-	<string>C0B4BC21-3F1E-4F1A-97A2-CA6749D740D5</string>
+	<string>010FCE44-371C-4C5C-9DED-8EA923C7294B</string>
 </dict>
 </plist>
