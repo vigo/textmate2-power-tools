@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>console</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python</string>
 	<key>tabTrigger</key>
 	<string>con</string>
 	<key>uuid</key>

@@ -634,8 +634,6 @@
 				<key>items</key>
 				<array>
 					<string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
-					<string>2C915C5F-A3AD-4274-987F-A1B3CEE213A4</string>
-					<string>EB1818C5-2462-499E-A3C0-B9335A033708</string>
 				</array>
 				<key>name</key>
 				<string>Custom</string>
@@ -731,6 +729,11 @@
                     <string>76FCB3F1-015A-4D8E-8662-68CC68694A13</string>
                     <string>33E9CA5D-01A8-400F-8085-F5CF49B22402</string>
                     <string>B7618CE1-9BC7-4C73-AA91-626C27935F89</string>
+                    <string>------------------------------------</string>
+                    <string>2C915C5F-A3AD-4274-987F-A1B3CEE213A4</string>
+                    <string>EB1818C5-2462-499E-A3C0-B9335A033708</string>
+                    <string>2544DC44-23C6-4CA5-AFE7-4A6BF5FD40DE</string>
+                    <string>------------------------------------</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>

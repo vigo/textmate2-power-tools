@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>console.dir(${1:object})$0</string>
+	<string>${1|from console import console,console = console(source=__name__)|}</string>
 	<key>name</key>
-	<string>console.dir</string>
+	<string>vb_console</string>
 	<key>scope</key>
 	<string>source.python</string>
 	<key>tabTrigger</key>
 	<string>con</string>
 	<key>uuid</key>
-	<string>EB1818C5-2462-499E-A3C0-B9335A033708</string>
+	<string>2544DC44-23C6-4CA5-AFE7-4A6BF5FD40DE</string>
 </dict>
 </plist>
