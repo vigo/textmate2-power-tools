@@ -21,11 +21,16 @@ $ go get -u golang.org/x/tools/cmd/goimports
 $ go get -u golang.org/x/lint/golint
 ```
 
-and you need to set: `TM_GOPATH` and `TM_GO`:
+and you need to set:
+
+- `TM_GOPATH` get the value of `$ go env GOPATH`
+- `GOMODCACHE` get the value of `$ go env GOMODCACHE`
+- `TM_GO` get the value of `$ which go`
 
 ```bash
-$ which go            # TM_GO =>     /usr/local/bin/go
-$ echo "${GOPATH}"    # TM_GOPATH => /Users/vigo/.local/gopackages
+$ go env GOPATH       # for TM_GOPATH => /Users/vigo/.local/gopackages
+$ go env GOMODCACHE       # for GOMODCACHE => /Users/vigo/.local/gopackages/pkg/mod
+$ which go            # for TM_GO     => /usr/local/bin/go
 ```
 
 ## Available Items
