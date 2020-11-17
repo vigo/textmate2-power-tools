@@ -6,11 +6,14 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/tm/executor'
 require ENV['TM_SUPPORT_PATH'] + '/lib/tm/process'
 require ENV['TM_SUPPORT_PATH'] + '/lib/tm/save_current_document'
 
+# TM_GO must set...
+# TM_GOPATH must set...
+ENV['PATH'] = "#{File.dirname(ENV['TM_GO'])}:#{ENV['PATH']}"
 ENV['PATH'] = "#{ENV['TM_GOPATH']}/bin:#{ENV['PATH']}"
-ENV['PATH'] = "/usr/local/bin:#{ENV['PATH']}"
 
 $OUTPUT = ""
 $DOCUMENT = STDIN.read
+$SETUP_OK = false
 
 module Go
   def Go::reset_markers
@@ -35,8 +38,6 @@ module Go
       self.set_markers(err)
       TextMate.exit_show_tool_tip("Fix the gofmt error(s)!")
     end
-    
-    # TextMate.exit_show_tool_tip("gofmt: #{err}") unless err.nil? || err == ""
   end
   
   def Go::goimports
@@ -45,13 +46,10 @@ module Go
       self.set_markers(err)
       TextMate.exit_show_tool_tip("Fix the goimports error(s)!")
     end
-    
-    # TextMate.exit_show_tool_tip("goimports: #{err}") unless err.nil? || err == ""
   end
 
   def Go::golint
     out, err = TextMate::Process.run("golint", ENV['TM_FILEPATH'])
-    # TextMate.exit_show_tool_tip(err) unless err.nil? || err == ""
 
     unless err.nil? || err == ""
       self.set_markers(err)
@@ -65,11 +63,8 @@ module Go
   end
 
   def Go::govet
-    # go vet needs . as cwd
-    # lookup_path = ENV['TM_FILEPATH']
-    # lookup_path = ENV['TM_DIRECTORY'] if ENV['TM_FILEPATH'].start_with?(ENV['GOPATH'])
     out, err = TextMate::Process.run("go", "vet", ".")
-
+    
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
         self.set_markers(err)
@@ -78,19 +73,38 @@ module Go
     end
   end
   
+  def Go::check_bundle_config
+    err_msg = nil
+    
+    # check env
+    required_env_names = ['TM_GO', 'TM_GOPATH']
+    required_envs_set = required_env_names.all?{|val| ENV[val]}
+
+    if required_envs_set
+      $SETUP_OK = true
+    else
+      err_msg = "Bundle config error, please check TM environment variables.\n\n#{required_env_names.join(' or ')}\n\nmust set..."
+    end
+
+    TextMate.exit_show_tool_tip(err_msg) unless $SETUP_OK
+  end
+  
   # callback.document.will-save
   def Go::run_gofmt_and_goimports
+    self.check_bundle_config
+
     self.reset_markers
-    
     self.gofmt
     self.goimports
-    
+
     print $OUTPUT
   end
 
   # callback.document.did-save
   def Go::run_golint_and_govet
-    # self.reset_markers
+    self.check_bundle_config
+
+    self.reset_markers
     self.golint
     self.govet
 

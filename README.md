@@ -1,6 +1,5 @@
 ![Version](https://img.shields.io/badge/version-2.0.1-orange.svg)
-![Plaftorm](https://img.shields.io/badge/platform-TextMate-blue.svg)
-
+![Plaftorm](https://img.shields.io/badge/platform-TextMate_2_-blue.svg)
 
 # TextMate2 - Power Tools
 
@@ -20,7 +19,13 @@ You need to install extra tools for Golang helper:
 ```bash
 $ go get -u golang.org/x/tools/cmd/goimports
 $ go get -u golang.org/x/lint/golint
-$ go get -u github.com/nsf/gocode
+```
+
+and you need to set: `TM_GOPATH` and `TM_GO`:
+
+```bash
+$ which go            # TM_GO =>     /usr/local/bin/go
+$ echo "${GOPATH}"    # TM_GOPATH => /Users/vigo/.local/gopackages
 ```
 
 ## Available Items
