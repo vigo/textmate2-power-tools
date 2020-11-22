@@ -7,9 +7,9 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/tm/process'
 require ENV['TM_SUPPORT_PATH'] + '/lib/tm/save_current_document'
 
 # TM_GO must set...
-# TM_GOPATH must set...
+# GOPATH must set...
 ENV['PATH'] = "#{File.dirname(ENV['TM_GO'])}:#{ENV['PATH']}"
-ENV['PATH'] = "#{ENV['TM_GOPATH']}/bin:#{ENV['PATH']}"
+ENV['PATH'] = "#{ENV['GOPATH']}/bin:#{ENV['PATH']}"
 
 $OUTPUT = ""
 $DOCUMENT = STDIN.read
@@ -77,7 +77,7 @@ module Go
     err_msg = nil
     
     # check env
-    required_env_names = ['TM_GO', 'TM_GOPATH']
+    required_env_names = ['TM_GO', 'GOPATH', 'GOMODCACHE']
     required_envs_set = required_env_names.all?{|val| ENV[val]}
 
     if required_envs_set

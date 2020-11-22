@@ -23,14 +23,14 @@ $ go get -u golang.org/x/lint/golint
 
 and you need to set:
 
-- `TM_GOPATH` get the value of `$ go env GOPATH`
+- `GOPATH` get the value of `$ go env GOPATH`
 - `GOMODCACHE` get the value of `$ go env GOMODCACHE`
 - `TM_GO` get the value of `$ which go`
 
 ```bash
-$ go env GOPATH       # for TM_GOPATH => /Users/vigo/.local/gopackages
+$ go env GOPATH           # for GOPATH => /Users/vigo/.local/gopackages
 $ go env GOMODCACHE       # for GOMODCACHE => /Users/vigo/.local/gopackages/pkg/mod
-$ which go            # for TM_GO     => /usr/local/bin/go
+$ which go                # for TM_GO     => /usr/local/bin/go
 ```
 
 ## Available Items
