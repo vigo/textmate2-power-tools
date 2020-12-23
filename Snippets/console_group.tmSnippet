@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>console.${1|log,dir,warn,error,trace|}($0);</string>
+	<string>console.group('%c${2:string}', 'background-color:#e0005a;color:#ffffff;font-weight:bold;padding:4px;');
+$0
+console.groupEnd();</string>
 	<key>name</key>
-	<string>console</string>
+	<string>console.group</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
 	<string>con</string>
 	<key>uuid</key>
-	<string>71733247-C065-4F4B-BD23-B8781B42C0F8</string>
+	<string>FCD4D424-296D-4114-944C-487F1FE6A22B</string>
 </dict>
 </plist>
