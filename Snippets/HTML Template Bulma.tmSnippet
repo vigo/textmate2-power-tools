@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;section class="section"&gt;
+        &lt;div class="container"&gt;
+            &lt;h1 class="title"&gt;$0&lt;/h1&gt;
+            &lt;p class="subtitle"&gt;My first website with &lt;strong&gt;Bulma&lt;/strong&gt;!&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	<key>name</key>
+	<string>HTML Template Bulma</string>
+	<key>tabTrigger</key>
+	<string>html5</string>
+	<key>uuid</key>
+	<string>1988B215-3B9A-40E3-A98F-B0813B8B123B</string>
+</dict>
+</plist>

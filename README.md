@@ -327,6 +327,7 @@ Python        | source.python         | `temp` + <kbd>⇥</kbd> with Doctests
 Python        | source.python         | `temp` + <kbd>⇥</kbd> with Logging
 Golang        | source.go             | `temp` + <kbd>⇥</kbd>
 HTML          | -no scope required-   | `html5` + <kbd>⇥</kbd>
+HTML with Bulma | -no scope required-   | `html5` + <kbd>⇥</kbd> with Bulma.io CSS
 Vue Component | text.html.vue         | `temp` + <kbd>⇥</kbd>
 
 
