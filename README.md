@@ -33,6 +33,12 @@ $ go env GOMODCACHE       # for GOMODCACHE => /Users/vigo/.local/gopackages/pkg/
 $ which go                # for TM_GO     => /usr/local/bin/go
 ```
 
+Other bundle dependencies (*not required but nice to have*)
+
+- https://github.com/blahed/Vue.tmbundle
+- https://github.com/michaeledgar/protobuf-tmbundle
+
+
 ## Available Items
 
 ### Django
@@ -178,7 +184,8 @@ TAB completion | Description
 
 * `more` + <kbd>⇥</kbd>: `&rsquo;`
 * <kbd>⌃</kbd> + <kbd>⌘</kbd> + <kbd>S</kbd>: Wrap selection with smart quotes.
-
+* `p` + <kbd>⇥</kbd>: `<p>carret<p>`
+* `li` + <kbd>⇥</kbd>: `<li>carret<li>`
 
 ---
 
@@ -317,8 +324,10 @@ Language      | Scope                 | TAB Completion
 BASH          | source.shell          | `temp` + <kbd>⇥</kbd>
 Python        | source.python         | `temp` + <kbd>⇥</kbd>
 Python        | source.python         | `temp` + <kbd>⇥</kbd> with Doctests
+Python        | source.python         | `temp` + <kbd>⇥</kbd> with Logging
 Golang        | source.go             | `temp` + <kbd>⇥</kbd>
-HTML          | -no scope required -  | `html5` + <kbd>⇥</kbd>
+HTML          | -no scope required-   | `html5` + <kbd>⇥</kbd>
+Vue Component | text.html.vue         | `temp` + <kbd>⇥</kbd>
 
 
 ---

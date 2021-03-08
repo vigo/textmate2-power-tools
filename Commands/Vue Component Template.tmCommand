@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+puts(&lt;&lt;-TEMP)
+&lt;template&gt;
+  &lt;p&gt;{{ name }}&lt;/p&gt;
+&lt;/template&gt;
+
+
+&lt;script&gt;
+export default {
+  name: 'App',
+  data() {
+    return {
+      name: 'vigo'
+    }
+  },
+  methods: {},
+  computed: {},
+  watch: {}
+}
+&lt;/script&gt;
+
+
+&lt;style&gt;
+body,
+input,
+select,
+button {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.3rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  text-align: center;
+}
+#app {
+  margin-top: 60px;
+}
+&lt;/style&gt;
+TEMP
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Vue Component Template</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>scope</key>
+	<string>text.html.vue</string>
+	<key>tabTrigger</key>
+	<string>temp</string>
+	<key>uuid</key>
+	<string>FFD1EF3E-1CA4-4529-A425-D8EAE4AC508E</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
