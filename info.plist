@@ -22,6 +22,7 @@
 			<string>C4F64DFD-319A-411C-B70A-0869DB4D1038</string>
 			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
 			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
+            <string>0EACB7C6-1726-437E-A150-C65EEBDC116F</string>
 			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string>
 			<string>56D1573D-3213-42B6-AC3E-20C1864B923A</string>
 			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
@@ -52,6 +53,23 @@
 				<string>C</string>
 			</dict>
 			
+            <key>0EACB7C6-1726-437E-A150-C65EEBDC116F</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>870BC6DD-043F-4364-A978-D24E4318788C</string>
+                    <string>------------------------------------</string>
+                    <string>4B1F27C6-C27E-47F3-A7AB-492207B2DFD1</string>
+                    <string>00285B27-9076-48A3-B9CD-A8439F8B82A4</string>
+                    <string>88B4427C-5F1F-417B-9E2D-579FC4BA639E</string>
+                    <string>------------------------------------</string>
+                    <string>1656BDAE-FD65-413F-95FE-332894A6B456</string>
+                    <string>------------------------------------</string>
+                </array>
+                <key>name</key>
+                <string>Vue JS</string>
+            </dict>
+            
 			<key>03BAC6EA-C067-4555-8699-92389B59B99C</key>
 			<dict>
 				<key>items</key>

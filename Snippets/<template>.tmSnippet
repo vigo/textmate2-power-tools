@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;template&gt;
+  $0
+&lt;/template&gt;</string>
+	<key>name</key>
+	<string>&lt;template&gt;</string>
+	<key>scope</key>
+	<string>text.html.vue</string>
+	<key>tabTrigger</key>
+	<string>tem</string>
+	<key>uuid</key>
+	<string>4B1F27C6-C27E-47F3-A7AB-492207B2DFD1</string>
+</dict>
+</plist>
