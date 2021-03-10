@@ -6,6 +6,9 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby18 -wKU
+
+app_name = File.basename(ENV['TM_FILENAME'], '.vue') || 'App'
+
 puts(&lt;&lt;-TEMP)
 &lt;template&gt;
   &lt;p&gt;{{ name }}&lt;/p&gt;
@@ -14,7 +17,7 @@ puts(&lt;&lt;-TEMP)
 
 &lt;script&gt;
 export default {
-  name: 'App',
+  name: '#{app_name}',
   components: {
   },
   data() {
@@ -29,19 +32,7 @@ export default {
 &lt;/script&gt;
 
 
-&lt;style&gt;
-body, input, select, button {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.3rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body {
-  text-align: center;
-}
-#app {
-  margin-top: 60px;
-}
+&lt;style scoped&gt;
 &lt;/style&gt;
 TEMP
 </string>

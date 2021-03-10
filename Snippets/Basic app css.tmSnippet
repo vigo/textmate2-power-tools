@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>body, input, select, button {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.3rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  text-align: center;
+}
+#app {
+  margin-top: 60px;
+}</string>
+	<key>name</key>
+	<string>Basic app css</string>
+	<key>scope</key>
+	<string>text.html.vue</string>
+	<key>tabTrigger</key>
+	<string>css</string>
+	<key>uuid</key>
+	<string>D5AE3584-8CB5-4BB7-8DBD-91CFDEE582CB</string>
+</dict>
+</plist>
