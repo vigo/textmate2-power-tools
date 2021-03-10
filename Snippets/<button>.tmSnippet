@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>v-${1|display,for,if,model,show,slot,slot:default|}="${0}"</string>
+	<string>&lt;button&gt;$0&lt;/button&gt;</string>
 	<key>name</key>
-	<string>v- Directives</string>
+	<string>&lt;button&gt;</string>
 	<key>scope</key>
 	<string>text.html.vue</string>
 	<key>tabTrigger</key>
-	<string>v</string>
+	<string>but</string>
 	<key>uuid</key>
-	<string>68D202C7-8B86-48AC-98FD-139E5B98F393</string>
+	<string>F51D9C62-F328-4BE0-B72D-2B6B6AFAF010</string>
 </dict>
 </plist>
