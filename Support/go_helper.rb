@@ -63,8 +63,13 @@ module Go
   end
 
   def Go::govet
-    out, err = TextMate::Process.run("go", "vet", ".")
+    current_dir = ENV['TM_PROJECT_DIRECTORY']
+    go_mod = "#{current_dir}/go.mod"
     
+    lookup = File.exists?(go_mod) ? "." : ENV['TM_FILENAME']
+
+    out, err = TextMate::Process.run("go", "vet", lookup)
+
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
         self.set_markers(err)

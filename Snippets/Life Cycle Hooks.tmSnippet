@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1|beforeCreate,created,beforeMount,mounted,beforeUpdate,updated,beforeUnmount,unmounted|}(){
+  $0
+}</string>
+	<key>name</key>
+	<string>Life Cycle Hooks</string>
+	<key>scope</key>
+	<string>text.html.vue</string>
+	<key>tabTrigger</key>
+	<string>lif</string>
+	<key>uuid</key>
+	<string>E0D0162D-2E96-493C-8EFF-CA37703A799F</string>
+</dict>
+</plist>

@@ -7,7 +7,8 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby18 -wKU
 
-app_name = File.basename(ENV['TM_FILENAME'], '.vue') || 'App'
+app_name = 'App'
+app_name = File.basename(ENV['TM_FILENAME'], '.vue') if ENV['TM_FILENAME']
 
 puts(&lt;&lt;-TEMP)
 &lt;template&gt;
