@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>![Version](https://img.shields.io/badge/version-${1:0.0.0}-${2|orange,green,yellow,red,blue,success,important,critical,inactive|}.svg?style=${3|for-the-badge,flat-square,flat,plastic,social|})$0</string>
+	<string>![${1:name of action}](https://github.com/${2:vigo}/${3:url}/actions/workflows/${4|tests,go|}.yml/badge.svg)$0</string>
 	<key>name</key>
-	<string>Badge - Image Shields</string>
+	<string>Badge - GitHub Action</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>
 	<string>badge</string>
 	<key>uuid</key>
-	<string>CC033A07-54AF-41EF-9473-D8E88DED1250</string>
+	<string>3EE67697-571C-4F52-A2B9-E3D3592833AB</string>
 </dict>
 </plist>

@@ -8,7 +8,7 @@ $ ${0}
 \`\`\`
 </string>
 	<key>name</key>
-	<string>Markdown - Codeblock BASH</string>
+	<string>Codeblock - BASH</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>tabTrigger</key>
