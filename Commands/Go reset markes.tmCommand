@@ -9,28 +9,24 @@
 
 require "#{ENV['TM_BUNDLE_SUPPORT']}/go_helper"
 
-Go::run_document_will_save
+Go::reset_markers
 </string>
 	<key>input</key>
-	<string>document</string>
+	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>~r</string>
 	<key>name</key>
-	<string>Go format and imports</string>
+	<string>Go reset markes</string>
 	<key>outputCaret</key>
-	<string>interpolateByLine</string>
+	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>replaceDocument</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>source.go</string>
-	<key>semanticClass</key>
-	<string>callback.document.will-save</string>
 	<key>uuid</key>
-	<string>9F33908F-28C9-4055-8A3D-F505C5AC87E1</string>
+	<string>AD8FC749-4099-4836-82B4-14B33744819F</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

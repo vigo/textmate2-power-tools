@@ -9,7 +9,7 @@
 
 require "#{ENV['TM_BUNDLE_SUPPORT']}/go_helper"
 
-Go::run_golint_and_govet
+Go::run_document_did_save
 </string>
 	<key>input</key>
 	<string>none</string>

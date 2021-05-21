@@ -14,11 +14,12 @@ git clone https://github.com/vigo/textmate2-power-tools.git PowerTools.tmbundle
 # Restart your TextMate2
 ```
 
-You need to install extra tools for Golang helper:
+You need to install extra tools for **Golang** helper:
 
 ```bash
 $ go get -u golang.org/x/tools/cmd/goimports
 $ go get -u golang.org/x/lint/golint
+$ brew install golangci-lint
 ```
 
 and you need to set:
@@ -222,7 +223,10 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 ## Go
 
 When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs:
-`gofmt` + `goimports` + `golint` + `go vet`
+`gofmt` + `goimports` + `golint` + `go vet` + `golangci-lint`
+
+You can disable format/lint feature via setting `TM_DISABLE_GO_LINTER`
+environment variable.
 
 ### Commands
 
@@ -234,12 +238,14 @@ When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs:
 * `spr` + <kbd>⇥</kbd>: `fmt.Sprintf`
 * `prl` + <kbd>⇥</kbd>: `fmt.Println`
 * `prf` + <kbd>⇥</kbd>: `fmt.Printf`
+* `errf` + <kbd>⇥</kbd>: `fmt.Errorf`
 * `tof` + <kbd>⇥</kbd>: `reflect.TypeOf`
 * `log` + <kbd>⇥</kbd>: `log.METHOD`
 * `if` + <kbd>⇥</kbd>: `if` conditions or `obj, ok` condition
 * `for` + <kbd>⇥</kbd>: `for` conditions
 * `str` + <kbd>⇥</kbd>: Define `struct`
 * `fld` + <kbd>⇥</kbd>: Define `struct` field
+* `ctp` + <kbd>⇥</kbd>: Inserts compile time proof fill place holders of `var _ interface = (*struct)(nil)`
 
 ---
 
