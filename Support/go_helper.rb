@@ -38,8 +38,17 @@ module Go
     
     ss.join("\n").split(%r{^(.*?:\d+:\d+):}).select{|i| i.size > 0 }.each_slice(2) do |slice|
       file, lineno, column = slice[0].split(":")
-      messages = slice[1].chomp
-      $ALL_ERRORS << "[#{sender}] : #{lineno}:#{column} -> #{messages}"
+      messages = slice[1]
+      messages.chomp! unless slice[1].nil?
+      
+      case sender
+      when "golangci-lint"
+        filepath = file
+        filepath = "#{File.basename(ENV['TM_DIRECTORY'])}/#{file}" unless ENV['TM_PROJECT_DIRECTORY'] == ENV['TM_DIRECTORY']
+        $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{messages}"
+      else
+        $ALL_ERRORS << "[#{sender}] : #{lineno}:#{column} -> #{messages}"
+      end
 
       messages = "#{style}:#{messages} -> #{lineno}:#{column}"
       messages = "#{messages} - (#{sender})" unless sender.empty?
@@ -69,7 +78,6 @@ module Go
 
     unless err.nil? || err == ""
       self.set_markers(err, "golint", "error")
-      # TextMate.exit_show_tool_tip(wrap_str("golint error: #{err}"))
       TextMate.exit_show_tool_tip("Fix the golint error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
     end
 
@@ -96,11 +104,18 @@ module Go
   end
   
   def Go::golangci_lint
-    out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run")
+    current_dir = ENV['TM_PROJECT_DIRECTORY']
+    go_mod = "#{current_dir}/go.mod"
+
+    if File.exists?(go_mod)
+      out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run")
+    else
+      out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run", ENV['TM_FILENAME'])
+    end
+
     unless err.nil? || err == ""
       self.set_markers(err, "golangci-lint", "error")
       TextMate.exit_show_tool_tip("Fix the golangci-lint error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
-      # TextMate.exit_show_tool_tip(wrap_str("golangci-lint error:\n\n#{err}"))
     end
 
     unless out.empty?
@@ -148,9 +163,10 @@ module Go
     self.check_bundle_config
 
     self.reset_markers
-    self.golint
-    self.govet
-    self.golangci_lint
+
+    self.golint unless ENV['TM_DISABLE_GOLINT']
+    self.govet unless ENV['TM_DISABLE_GOVET']
+    self.golangci_lint unless ENV['TM_DISABLE_GOLANGCI']
 
     TextMate.exit_show_tool_tip(boxify("Good to go 🚀"))
   end

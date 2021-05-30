@@ -228,6 +228,12 @@ When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs:
 You can disable format/lint feature via setting `TM_DISABLE_GO_LINTER`
 environment variable.
 
+You can disable linters piece by piece;
+
+- `TM_DISABLE_GOLINT`
+- `TM_DISABLE_GOVET`
+- `TM_DISABLE_GOLANGCI`
+
 ### Commands
 
 * <kbd>⌥</kbd> + <kbd>R</kbd> : Runs `gofmt` + `goimports` without save!
@@ -319,6 +325,7 @@ TAB completion | Description
 `applek` + <kbd>⇥</kbd> | Generate apple symbols inside of `<kbd>` tags.
 `--` + <kbd>⇥</kbd> | Line delimeter, 80 charts comment `# ---- ...`
 `---` + <kbd>⇥</kbd> | Dynamic tilda. Fills remaning line with `~`
+<kbd>⌥</kbd> + <kbd>⌘</kbd> + `B` | Shows `git blame` for current line
 
 ---
 

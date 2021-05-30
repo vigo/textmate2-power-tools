@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+
+require 'date'
+
+def pluralize(num)
+  "s" if num &gt; 1
+end
+
+def ordinal_diff(tm)
+  days = (tm/(60*60*24)).round
+  weeks = (days / 7).round
+  months = (days / 30).round
+  years = (days / 365).round
+  
+  return "yesterday" if days == 1
+  return "#{days} day#{pluralize(days)} ago" if days &lt; 7
+  return "#{weeks} weeks#{pluralize(weeks)} ago" if days &lt; 31
+  return "#{months} month#{pluralize(months)} ago" if days &lt; 365
+
+  "#{years} year#{pluralize(years)} ago"
+  
+end
+
+line_number = ENV['TM_LINE_NUMBER'].to_i
+author_name = `git blame -L #{line_number},+1  --line-porcelain #{ENV['TM_FILEPATH']} | sed -n 's/^author //p'`.chomp
+commit_date = `git blame -L #{line_number},+1  --line-porcelain #{ENV['TM_FILEPATH']} | sed -n 's/^committer-time //p'`.chomp.to_i
+ruby_date = Time.at(commit_date)
+
+date_diff_seconds = (Time.now - ruby_date).round
+# date_diff_minutes = (date_diff_seconds/(60)).round
+# date_diff_hours = (date_diff_seconds/(60*60)).round
+# date_diff_days = (date_diff_seconds/(60*60*24)).round
+# date_diff_months = (date_diff_seconds/(60*60*24*30)).round
+# date_diff_years = (date_diff_seconds/(60*60*24*30*12)).round
+
+
+
+puts "Author: #{author_name}\nDate: #{ruby_date.strftime('%B %d, %A %Y at %k:%M')} (#{ordinal_diff(date_diff_seconds)})"
+
+# puts "#{date_diff_years} year#{pluralize(date_diff_years)} " if date_diff_years &gt; 0
+# puts "#{date_diff_months} month#{pluralize(date_diff_months)} " if date_diff_months &lt; 13
+# puts "#{date_diff_days} day#{pluralize(date_diff_days)} " if date_diff_days &lt; 31</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>~@b</string>
+	<key>name</key>
+	<string>Git blame current line</string>
+	<key>outputCaret</key>
+	<string>interpolateByLine</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>uuid</key>
+	<string>A0D69C77-98B4-49DD-BB84-D1C7B6850F69</string>
+</dict>
+</plist>
