@@ -23,28 +23,23 @@ def ordinal_diff(tm)
   return "#{months} month#{pluralize(months)} ago" if days &lt; 365
 
   "#{years} year#{pluralize(years)} ago"
-  
 end
 
-line_number = ENV['TM_LINE_NUMBER'].to_i
-author_name = `git blame -L #{line_number},+1  --line-porcelain #{ENV['TM_FILEPATH']} | sed -n 's/^author //p'`.chomp
-commit_date = `git blame -L #{line_number},+1  --line-porcelain #{ENV['TM_FILEPATH']} | sed -n 's/^committer-time //p'`.chomp.to_i
-ruby_date = Time.at(commit_date)
+def in_git_repo
+  !`git rev-parse --git-dir 2&gt;/dev/null`.chomp.empty?
+end
 
-date_diff_seconds = (Time.now - ruby_date).round
-# date_diff_minutes = (date_diff_seconds/(60)).round
-# date_diff_hours = (date_diff_seconds/(60*60)).round
-# date_diff_days = (date_diff_seconds/(60*60*24)).round
-# date_diff_months = (date_diff_seconds/(60*60*24*30)).round
-# date_diff_years = (date_diff_seconds/(60*60*24*30*12)).round
-
-
-
-puts "Author: #{author_name}\nDate: #{ruby_date.strftime('%B %d, %A %Y at %k:%M')} (#{ordinal_diff(date_diff_seconds)})"
-
-# puts "#{date_diff_years} year#{pluralize(date_diff_years)} " if date_diff_years &gt; 0
-# puts "#{date_diff_months} month#{pluralize(date_diff_months)} " if date_diff_months &lt; 13
-# puts "#{date_diff_days} day#{pluralize(date_diff_days)} " if date_diff_days &lt; 31</string>
+if in_git_repo
+  line_number = ENV['TM_LINE_NUMBER'].to_i
+  author_name = `git blame -L #{line_number},+1  --line-porcelain #{ENV['TM_FILEPATH']} | sed -n 's/^author //p'`.chomp
+  commit_date = `git blame -L #{line_number},+1  --line-porcelain #{ENV['TM_FILEPATH']} | sed -n 's/^committer-time //p'`.chomp.to_i
+  ruby_date = Time.at(commit_date)
+  date_diff_seconds = (Time.now - ruby_date).round
+  puts "Author: #{author_name}\nDate: #{ruby_date.strftime('%B %d, %A %Y at %k:%M')} (#{ordinal_diff(date_diff_seconds)})"
+else
+  puts "You are not in a git repo"
+end
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
