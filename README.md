@@ -313,6 +313,14 @@ git clone https://github.com/elixir-lang/elixir-tmbundle.git Elixir.tmbundle
 
 ---
 
+## Git
+
+Press <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>B</kbd> for;
+
+1. Git blame current line
+1. Git blame current line for last N commit
+
+---
 
 ## General
 

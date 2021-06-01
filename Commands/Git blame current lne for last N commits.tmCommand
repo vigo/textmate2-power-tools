@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+require ENV['TM_SUPPORT_PATH'] + "/lib/ui"
+require 'date'
+
+def pluralize(num)
+  "s" if num &gt; 1
+end
+
+def ordinal_diff(tm)
+  days = (tm/(60*60*24)).round
+  weeks = (days / 7).round
+  months = (days / 30).round
+  years = (days / 365).round
+  
+  return "yesterday" if days == 1
+  return "#{days} day#{pluralize(days)} ago" if days &lt; 7
+  return "#{weeks} weeks#{pluralize(weeks)} ago" if days &lt; 31
+  return "#{months} month#{pluralize(months)} ago" if days &lt; 365
+
+  "#{years} year#{pluralize(years)} ago"
+end
+
+def in_git_repo
+  !`git rev-parse --git-dir 2&gt;/dev/null`.chomp.empty?
+end
+
+if in_git_repo
+  line_number = ENV['TM_LINE_NUMBER'].to_i
+  
+  total_commit_count = `git rev-list --count HEAD`.chomp.to_i
+  total_commit_count_str = total_commit_count &gt; 1 ? 'is': 'are'
+
+  users_input = TextMate::UI.request_string :title =&gt; "Git blame for last N commits", :default =&gt; '5', :prompt =&gt; "There #{total_commit_count_str} #{total_commit_count} in this repo"
+  TextMate.exit_discard if users_input.empty?
+
+  users_input = users_input.to_i
+
+  out = []
+  users_input.times do |i|
+    git_blame = `git blame -c -L #{line_number},+3 HEAD~#{i} #{ENV['TM_FILEPATH']}`.chomp
+    if git_blame
+      out &lt;&lt; git_blame
+      out &lt;&lt; "---"
+    end
+    
+  end
+  TextMate.exit_create_new_document(out.join("\n"))
+else
+  puts "You are not in a git repo"
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@b</string>
+	<key>name</key>
+	<string>Git blame current lne for last N commits</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>D2E03C9B-DAA9-48FD-9DA4-B05F551A2C1A</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
