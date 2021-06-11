@@ -355,7 +355,7 @@ Vue Component | text.html.vue         | `temp` + <kbd>⇥</kbd>
 ---
 
 
-## Contributer(s)
+## Contributor(s)
 
 * [Uğur "vigo" Özyılmazel][contributer-01] - Creator, maintainer
 
