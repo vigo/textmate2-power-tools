@@ -12,7 +12,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>(gis_models)\.(PointField|Admin|AutoField|BooleanField|CharField|CommaSeparatedIntegerField|DateField|DateTimeField|DecimalField|EmailField|FileField|FilePathField|FloatField|ForeignKey|ImageField|IntegerField|IPAddressField|ManyToManyField|NullBooleanField|OneToOneField|PhoneNumberField|PositiveIntegerField|PositiveSmallIntegerField|SlugField|SmallIntegerField|TextField|TimeField|URLField|USStateField|XMLField)</string>
+			<string>(meta|models)?\.?(CIEmailField|CICharField|PointField|Admin|AutoField|BooleanField|CharField|CommaSeparatedIntegerField|DateField|DateTimeField|DecimalField|EmailField|FileField|FilePathField|FloatField|ForeignKey|ImageField|IntegerField|IPAddressField|ManyToManyField|NullBooleanField|OneToOneField|PhoneNumberField|PositiveIntegerField|PositiveSmallIntegerField|PositiveBigIntegerField|SlugField|SmallIntegerField|TextField|TimeField|URLField|USStateField|XMLField|JSONField)</string>
 			<key>name</key>
 			<string>support.type.django.model</string>
 		</dict>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.contrib.gis import admin as gis_admin</string>
+	<string>from django.contrib.gis import admin as gis_admin$0</string>
 	<key>name</key>
 	<string>from django.contrib.gis import admin as gis_admin</string>
 	<key>scope</key>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from rest_framework.generics ${1|CreateAPIView,DestroyAPIView,GenericAPIView,Http404,ListAPIView,ListCreateAPIView,QuerySet,RetrieveAPIView,RetrieveDestroyAPIView,RetrieveUpdateAPIView,RetrieveUpdateDestroyAPIView,UpdateAPIView,ValidationError,api_settings,get_object_or_404,mixins,views|}$0</string>
+	<key>name</key>
+	<string>from rest_framework.generics ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>A11E3787-596A-4E71-AE13-1CD76296EDBE</string>
+</dict>
+</plist>

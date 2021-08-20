@@ -106,12 +106,18 @@ module Go
   def Go::golangci_lint
     current_dir = ENV['TM_PROJECT_DIRECTORY']
     go_mod = "#{current_dir}/go.mod"
-
-    if File.exists?(go_mod)
-      out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run")
-    else
-      out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run", ENV['TM_FILENAME'])
-    end
+    
+    params = ["golangci-lint", "--color", "never"]
+    params << "run"
+    params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
+    
+    out, err = TextMate::Process.run(*params)
+    
+    # if File.exists?(go_mod)
+    #   out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run")
+    # else
+    #   out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run", ENV['TM_FILENAME'])
+    # end
 
     unless err.nil? || err == ""
       self.set_markers(err, "golangci-lint", "error")

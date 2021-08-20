@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.contrib.auth.models import ${1|User,Group,Permission|}$0</string>
+	<string>from rest_framework.viewsets ${1|GenericViewSet,ModelViewSet,ReadOnlyModelViewSet,ViewSet,ViewSetMixin|}$0</string>
 	<key>name</key>
-	<string>from django.contrib.auth.models import ...</string>
+	<string>from rest_framework.viewsets ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>hlp</string>
 	<key>uuid</key>
-	<string>D1E2FB64-F027-49F5-81DE-0806699ADB8C</string>
+	<string>ED51FA6D-4979-47B0-BD6A-83D4101791BA</string>
 </dict>
 </plist>

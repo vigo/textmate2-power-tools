@@ -44,6 +44,11 @@ Other bundle dependencies (*not required but nice to have*)
 
 ### Django
 
+**Update**
+
+- Improve Django snippets/helpers
+- Add Django REST generics and viewsets
+
 #### Snippets
 
 TAB completion | Description

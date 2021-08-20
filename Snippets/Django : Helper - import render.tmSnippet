@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.shortcuts import ${1|render,render_to_response,loader,get_object_or_404,get_list_or_404,redirect|}</string>
+	<string>from django.shortcuts import ${1|Http404,HttpResponse,HttpResponsePermanentRedirect,HttpResponseRedirect,NoReverseMatch,Promise,get_list_or_404,get_object_or_404,loader,redirect,render,resolve_url,reverse|}$0</string>
 	<key>name</key>
-	<string>django.shortcuts import ...</string>
+	<string>from django.shortcuts import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

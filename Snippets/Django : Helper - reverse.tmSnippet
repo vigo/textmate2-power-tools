@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>from django.core.urlresolvers import ${1|reverse|}$0</string>
 	<key>name</key>
-	<string>django.core.urlresolvers import ...</string>
+	<string>from django.core.urlresolvers import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

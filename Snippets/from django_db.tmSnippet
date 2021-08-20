@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db import ${1|models,connection|}$0</string>
+	<string>from django.db import ${1|models,connection,connections,router|}$0</string>
 	<key>name</key>
 	<string>from django.db</string>
 	<key>scope</key>

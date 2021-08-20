@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.contrib.gis.db import models as gis_models</string>
+	<string>from django.contrib.gis.db import models as gis_models$0</string>
 	<key>name</key>
 	<string>from django.contrib.gis.db import models as gis_models</string>
 	<key>scope</key>

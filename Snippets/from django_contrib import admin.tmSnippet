@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.contrib import admin</string>
+	<string>from django.contrib import admin$0</string>
 	<key>name</key>
 	<string>from django.contrib import admin</string>
 	<key>scope</key>

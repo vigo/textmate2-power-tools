@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.contrib.auth.models import ${1|User,Group,Permission|}$0</string>
+	<string>from django.utils.functional import cached_property$0</string>
 	<key>name</key>
-	<string>from django.contrib.auth.models import ...</string>
+	<string>from django.utils.functional import cached_property</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>hlp</string>
 	<key>uuid</key>
-	<string>D1E2FB64-F027-49F5-81DE-0806699ADB8C</string>
+	<string>E420570D-AD37-4BB6-8C7B-8F58D43D6F80</string>
 </dict>
 </plist>

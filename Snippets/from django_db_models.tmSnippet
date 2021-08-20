@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db.models import ${1|Avg,Count,F,Max,Min,Sum,Q|}</string>
+	<string>from django.db.models import ${1|Aggregate,AutoField,Avg,BLANK_CHOICE_DASH,BigAutoField,BigIntegerField,BinaryField,BooleanField,CASCADE,Case,CharField,CheckConstraint,Choices,CommaSeparatedIntegerField,Count,DEFERRED,DO_NOTHING,DateField,DateTimeField,DecimalField,Deferrable,DurationField,EmailField,Empty,Exists,Expression,ExpressionList,ExpressionWrapper,F,Field,FileField,FilePathField,FilteredRelation,FloatField,ForeignKey,ForeignObject,ForeignObjectRel,Func,GenericIPAddressField,IPAddressField,ImageField,Index,IntegerChoices,IntegerField,JSONField,Lookup,Manager,ManyToManyField,ManyToManyRel,ManyToOneRel,Max,Min,Model,NOT_PROVIDED,NullBooleanField,ObjectDoesNotExist,OneToOneField,OneToOneRel,OrderBy,OrderWrt,OuterRef,PROTECT,PositiveBigIntegerField,PositiveIntegerField,PositiveSmallIntegerField,Prefetch,ProtectedError,Q,QuerySet,RESTRICT,RestrictedError,RowRange,SET,SET_DEFAULT,SET_NULL,SlugField,SmallAutoField,SmallIntegerField,StdDev,Subquery,Sum,TextChoices,TextField,TimeField,Transform,URLField,UUIDField,UniqueConstraint,Value,ValueRange,Variance,When,Window,WindowFrame,prefetch_related_objects,signals|}$0</string>
 	<key>name</key>
-	<string>from django.db.models import Avg, Count, F ...</string>
+	<string>from django.db.models import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
