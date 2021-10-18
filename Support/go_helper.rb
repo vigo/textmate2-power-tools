@@ -57,6 +57,14 @@ module Go
     end
   end
 
+  def Go::gofumpt
+    out, err = TextMate::Process.run("gofumpt", :input => $DOCUMENT)
+    unless err.nil? || err == ""
+      TextMate.exit_show_tool_tip("gofumpt error: #{err}")
+    end
+    $DOCUMENT = out
+  end
+
   def Go::gofmt
     $OUTPUT, err = TextMate::Process.run("gofmt", :input => $DOCUMENT)
     unless err.nil? || err == ""
@@ -156,6 +164,7 @@ module Go
     self.check_bundle_config
     self.reset_markers
 
+    self.gofumpt
     self.gofmt
     self.goimports
 
