@@ -142,7 +142,7 @@ module Go
     err_msg = nil
     
     # check env
-    required_env_names = ['TM_GO', 'GOPATH', 'GOMODCACHE']
+    required_env_names = ['TM_GO', 'GOPATH']
     required_envs_set = required_env_names.all?{|val| ENV[val]}
 
     if required_envs_set

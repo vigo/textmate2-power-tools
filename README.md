@@ -17,20 +17,19 @@ git clone https://github.com/vigo/textmate2-power-tools.git PowerTools.tmbundle
 You need to install extra tools for **Golang** helper:
 
 ```bash
-$ go get -u golang.org/x/tools/cmd/goimports
-$ go get -u golang.org/x/lint/golint
+$ go install golang.org/x/tools/cmd/goimports@latest
+$ go install golang.org/x/lint/golint@latest
+$ go install mvdan.cc/gofumpt@latest
 $ brew install golangci-lint
 ```
 
 and you need to set:
 
 - `GOPATH` get the value of `$ go env GOPATH`
-- `GOMODCACHE` get the value of `$ go env GOMODCACHE`
 - `TM_GO` get the value of `$ which go`
 
 ```bash
 $ go env GOPATH           # for GOPATH => /Users/vigo/.local/gopackages
-$ go env GOMODCACHE       # for GOMODCACHE => /Users/vigo/.local/gopackages/pkg/mod
 $ which go                # for TM_GO     => /usr/local/bin/go
 ```
 
