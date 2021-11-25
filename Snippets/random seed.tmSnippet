@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>rand.Seed(time.Now().UnixNano())$0</string>
+	<key>name</key>
+	<string>random seed</string>
+	<key>scope</key>
+	<string>source.go</string>
+	<key>tabTrigger</key>
+	<string>seed</string>
+	<key>uuid</key>
+	<string>A9826AC0-AF36-40DE-A0C7-C8AF85CC5A07</string>
+</dict>
+</plist>
