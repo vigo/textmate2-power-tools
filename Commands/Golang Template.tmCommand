@@ -32,8 +32,7 @@ import "fmt"
 func main() {
 	fmt.Println("Hello World")
 }
-TEMP
-</string>
+TEMP</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
@@ -41,7 +40,7 @@ TEMP
 	<key>name</key>
 	<string>Golang Template</string>
 	<key>outputCaret</key>
-	<string>afterOutput</string>
+	<string>interpolateByLine</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
