@@ -115,8 +115,7 @@ module Go
     current_dir = ENV['TM_PROJECT_DIRECTORY']
     go_mod = "#{current_dir}/go.mod"
     
-    params = ["golangci-lint", "--color", "never"]
-    params << "run"
+    params = ["golangci-lint", "--color", "never", "run"]
     params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
     
     out, err = TextMate::Process.run(*params)
