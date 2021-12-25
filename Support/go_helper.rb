@@ -57,6 +57,7 @@ module Go
     end
   end
 
+  # callback.document.will-save
   def Go::gofumpt
     out, err = TextMate::Process.run("gofumpt", :input => $DOCUMENT)
     unless err.nil? || err == ""
@@ -65,6 +66,7 @@ module Go
     $DOCUMENT = out
   end
 
+  # callback.document.will-save
   def Go::gofmt
     $OUTPUT, err = TextMate::Process.run("gofmt", :input => $DOCUMENT)
     unless err.nil? || err == ""
@@ -72,7 +74,8 @@ module Go
       TextMate.exit_show_tool_tip("Fix the gofmt error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
     end
   end
-  
+
+  # callback.document.will-save
   def Go::goimports
     $OUTPUT, err = TextMate::Process.run("goimports", :input => $DOCUMENT)
     unless err.nil? || err == ""
@@ -81,6 +84,18 @@ module Go
     end
   end
 
+  # callback.document.will-save
+  def Go::golines
+    max_len = ENV['TM_GOLINES_MAX_LEN'] || '100'
+    tab_len = ENV['TM_GOLINES_TAB_LEN'] || '4'
+
+    $OUTPUT, err = TextMate::Process.run("golines", "-m", max_len, "-t", tab_len, :input => $DOCUMENT)
+    TextMate.exit_show_tool_tip("golines error: #{err}") unless err.empty?
+  end
+
+  # ---
+
+  # callback.document.did-save
   def Go::golint
     out, err = TextMate::Process.run("golint", ENV['TM_FILEPATH'])
 
@@ -95,6 +110,7 @@ module Go
     end
   end
 
+  # callback.document.did-save
   def Go::govet
     current_dir = ENV['TM_PROJECT_DIRECTORY']
     go_mod = "#{current_dir}/go.mod"
@@ -110,7 +126,8 @@ module Go
       end
     end
   end
-  
+
+  # callback.document.did-save
   def Go::golangci_lint
     current_dir = ENV['TM_PROJECT_DIRECTORY']
     go_mod = "#{current_dir}/go.mod"
@@ -119,12 +136,6 @@ module Go
     params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
     
     out, err = TextMate::Process.run(*params)
-    
-    # if File.exists?(go_mod)
-    #   out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run")
-    # else
-    #   out, err = TextMate::Process.run("golangci-lint", "--color", "never", "run", ENV['TM_FILENAME'])
-    # end
 
     unless err.nil? || err == ""
       self.set_markers(err, "golangci-lint", "error")
@@ -143,11 +154,20 @@ module Go
     # check env
     required_env_names = ['TM_GO', 'GOPATH']
     required_envs_set = required_env_names.all?{|val| ENV[val]}
+    
+    # check bins
+    required_bins = [
+      'gofumpt', 'goimports', 'golangci-lint',
+      'golines',
+    ]
+    required_bins_exists = required_bins.all?{|name| !`command -v #{name} > /dev/null 2>&1 && echo $?`.chomp.empty? }
+    
+    all_conditions = [required_envs_set, required_bins_exists].all?
 
-    if required_envs_set
+    if all_conditions
       $SETUP_OK = true
     else
-      err_msg = "Bundle config error, please check TM environment variables.\n\n#{required_env_names.join(' or ')}\n\nmust set..."
+      err_msg = "Bundle config error, please check TM environment variables.\n\n#{required_env_names.join(' or ')}\n\nmust set...\n\nor check binaries #{required_bins_exists.join(' or ')}"
     end
 
     TextMate.exit_show_tool_tip(err_msg) unless $SETUP_OK
@@ -163,9 +183,10 @@ module Go
     self.check_bundle_config
     self.reset_markers
 
-    self.gofumpt
-    self.gofmt
-    self.goimports
+    self.gofumpt unless ENV['TM_DISABLE_GOFUMPT']
+    self.gofmt unless ENV['TM_DISABLE_GOFMT']
+    self.goimports unless ENV['TM_DISABLE_GOIMPORTS']
+    self.golines unless ENV['TM_DISABLE_GOLINES']
 
     print $OUTPUT
   end
@@ -175,7 +196,6 @@ module Go
     return if ENV['TM_DISABLE_GO_LINTER']
 
     self.check_bundle_config
-
     self.reset_markers
 
     self.golint unless ENV['TM_DISABLE_GOLINT']

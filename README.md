@@ -20,17 +20,28 @@ You need to install extra tools for **Golang** helper:
 $ go install golang.org/x/tools/cmd/goimports@latest
 $ go install golang.org/x/lint/golint@latest
 $ go install mvdan.cc/gofumpt@latest
+$ go install github.com/segmentio/golines@latest
 $ brew install golangci-lint
+```
+
+You need to add your **brew/bin** path to `PATH` variable too:
+
+```bash
+$ command -v golangci-lint
+/opt/homebrew/bin/golangci-lint     # my brew/bin is: /opt/homebrew/bin
+
+# add to TextMate variable
+PATH /opt/homebrew/bin:${PATH}
 ```
 
 and you need to set:
 
 - `GOPATH` get the value of `$ go env GOPATH`
-- `TM_GO` get the value of `$ which go`
+- `TM_GO` get the value of `$ command -v go`
 
 ```bash
 $ go env GOPATH           # for GOPATH => /Users/vigo/.local/gopackages
-$ which go                # for TM_GO     => /usr/local/bin/go
+$ command -v go           # for TM_GO  => /opt/homebrew/opt/go/libexec/bin/go
 ```
 
 Other bundle dependencies (*not required but nice to have*)
@@ -38,6 +49,7 @@ Other bundle dependencies (*not required but nice to have*)
 - https://github.com/blahed/Vue.tmbundle
 - https://github.com/michaeledgar/protobuf-tmbundle
 
+---
 
 ## Available Items
 
@@ -72,9 +84,7 @@ You have a scope called: **Python Django (Extended)**.
 Press <kbd>⌃</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>P</kbd> for selecting
 this scope.
 
-
 ---
-
 
 ### Python
 
@@ -109,9 +119,7 @@ TAB completion | Description
                            division
                            absolute_imports
 
-
 ---
-
 
 ## Ruby
 
@@ -125,9 +133,7 @@ TAB completion | Description
 `if` + <kbd>⇥</kbd> | ERB compatible `if`
 `each` + <kbd>⇥</kbd> | ERB compatible `each` and `each_with_index`
 
-
 ---
-
 
 ## Rake
 
@@ -144,9 +150,7 @@ TAB completion | Description
 * `inv` + <kbd>⇥</kbd>: Creates `Rake::Task...invoke` + params
 * `des` + <kbd>⇥</kbd>: `desc "...."` only
 
-
 ---
-
 
 ## Bash
 
@@ -163,13 +167,10 @@ TAB completion | Description
 
 ### Snippets
 
-
 * `badge` + <kbd>⇥</kbd>: Adds **img.shields.io** badge!
 * <kbd>⌥</kbd> + <kbd>(</kbd>: Fixes Parenthesis behavior. 
 
-
 ---
-
 
 ### jQuery
 
@@ -179,9 +180,7 @@ TAB completion | Description
 * `ready` + <kbd>⇥</kbd>: jQuery `$(document).ready()` code template
 * `plug` + <kbd>⇥</kbd>: jQuery plugin skel.
 
-
 ---
-
 
 ## HTML
 
@@ -194,11 +193,9 @@ TAB completion | Description
 
 ---
 
-
 ### Javascript
 
 ### Snippets
-
 
 * `con` + <kbd>⇥</kbd>: Generates `console.log`, `console.dir`,
   `console.warn`, `console.error` skel
@@ -220,19 +217,30 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 
 * <kbd>⌘</kbd> + <kbd>R</kbd>: Runs javascript. 
 
-
 ---
-
 
 ## Go
 
-When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs:
-`gofmt` + `goimports` + `golint` + `go vet` + `golangci-lint`
+When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs unless disabler
+environment variable(s) is/are set:
 
-You can disable format/lint feature via setting `TM_DISABLE_GO_LINTER`
-environment variable.
+- `gofumpt`
+- `gofmt`
+- `goimports`
+- `golines`
+- `golint`
+- `go vet`
+- `golangci-lint`
+
+You can disable format/lint feature (*all of them*) via setting
+`TM_DISABLE_GO_LINTER` environment variable.
 
 You can disable linters piece by piece;
+
+- `TM_DISABLE_GOFUMPT`
+- `TM_DISABLE_GOFMT`
+- `TM_DISABLE_GOIMPORTS`
+- `TM_DISABLE_GOLINES`
 
 - `TM_DISABLE_GOLINT`
 - `TM_DISABLE_GOVET`
@@ -259,7 +267,6 @@ You can disable linters piece by piece;
 
 ---
 
-
 ## Swift
 
 You need to install/activate **Swift Bundle** from: TextMate > Preferences >
@@ -272,9 +279,7 @@ Bundles.
 * `=` + <kbd>⇥</kbd>: Variable safe print
 * `des` + <kbd>⇥</kbd>: Describe object
 
-
 ---
-
 
 ## Lisp
 
@@ -296,9 +301,7 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 
 * <kbd>⌘</kbd> + <kbd>R</kbd>: Run. 
 
-
 ---
-
 
 ## Elixir
 
@@ -313,7 +316,6 @@ git clone https://github.com/elixir-lang/elixir-tmbundle.git Elixir.tmbundle
 
 * `p` + <kbd>⇥</kbd>: Print or Inspect
 * `#`: Select text in quotes then press `#` (*Ruby’s string interpolation-ish*)
-
 
 ---
 
@@ -341,7 +343,6 @@ TAB completion | Description
 
 ---
 
-
 ## Templates
 
 Language      | Scope                 | TAB Completion
@@ -355,9 +356,7 @@ HTML          | -no scope required-   | `html5` + <kbd>⇥</kbd>
 HTML with Bulma | -no scope required-   | `html5` + <kbd>⇥</kbd> with Bulma.io CSS
 Vue Component | text.html.vue         | `temp` + <kbd>⇥</kbd>
 
-
 ---
-
 
 ## Contributor(s)
 
