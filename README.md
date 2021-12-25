@@ -21,6 +21,8 @@ $ go install golang.org/x/tools/cmd/goimports@latest
 $ go install golang.org/x/lint/golint@latest
 $ go install mvdan.cc/gofumpt@latest
 $ go install github.com/segmentio/golines@latest
+$ go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
+
 $ brew install golangci-lint
 ```
 
@@ -229,7 +231,7 @@ environment variable(s) is/are set:
 - `goimports`
 - `golines`
 - `golint`
-- `go vet`
+- `go vet` + shadow
 - `golangci-lint`
 
 You can disable format/lint feature (*all of them*) via setting
@@ -244,6 +246,7 @@ You can disable linters piece by piece;
 
 - `TM_DISABLE_GOLINT`
 - `TM_DISABLE_GOVET`
+- `TM_DISABLE_GOVET_SHADOW`
 - `TM_DISABLE_GOLANGCI`
 
 ### Commands
@@ -264,6 +267,44 @@ You can disable linters piece by piece;
 * `str` + <kbd>⇥</kbd>: Define `struct`
 * `fld` + <kbd>⇥</kbd>: Define `struct` field
 * `ctp` + <kbd>⇥</kbd>: Inserts compile time proof fill place holders of `var _ interface = (*struct)(nil)`
+* `seed` + <kbd>⇥</kbd>: Inserts random seeder
+* `gcil` + <kbd>⇥</kbd>: Creates `.golangci.yml` under current working directory.
+
+`.golangci.yml` default config:
+
+```yaml
+run:
+  concurrency: 4
+  timeout: 1m
+
+linters:
+  disable-all: true
+  enable:
+    - asciicheck 
+    - durationcheck 
+    - errcheck 
+    - errorlint 
+    - exhaustive 
+    - gosec 
+    - govet 
+    - makezero 
+    - nilerr 
+    - rowserrcheck 
+    - exportloopref 
+    - sqlclosecheck 
+    - staticcheck 
+    - typecheck 
+    - bodyclose 
+    - noctx 
+    - prealloc
+    - gosimple
+  presets:
+    - comment 
+    - error 
+    - format 
+    - metalinter 
+    - unused 
+```
 
 ---
 

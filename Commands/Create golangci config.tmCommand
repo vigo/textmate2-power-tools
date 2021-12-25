@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+
+CONFIG_TEMPLATE = %{run:
+  concurrency: 4
+  timeout: 1m
+
+linters:
+  disable-all: true
+  enable:
+    - asciicheck 
+    - durationcheck 
+    - errcheck 
+    - errorlint 
+    - exhaustive 
+    - gosec 
+    - govet 
+    - makezero 
+    - nilerr 
+    - rowserrcheck 
+    - exportloopref 
+    - sqlclosecheck 
+    - staticcheck 
+    - typecheck 
+    - bodyclose 
+    - noctx 
+    - prealloc
+    - gosimple
+  presets:
+    - comment 
+    - error 
+    - format 
+    - metalinter 
+    - unused 
+}
+
+CONFIG_FILE = "#{ENV['PWD']}/.golangci.yml"
+
+unless File.exists? CONFIG_FILE
+  f = File.open(CONFIG_FILE, "w")
+  f.puts(CONFIG_TEMPLATE)
+  f.close
+
+  puts "  .golangci.yml created at: \n\n"
+  puts "  #{CONFIG_FILE}"
+else
+  puts "  #{CONFIG_FILE} already exists!\n\n"
+  puts "  Please remove file first!"
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Create golangci config</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.go</string>
+	<key>tabTrigger</key>
+	<string>gcil</string>
+	<key>uuid</key>
+	<string>B8C5DBA3-29EA-47C4-B47D-F3E04378E46E</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

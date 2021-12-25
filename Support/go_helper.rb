@@ -118,13 +118,25 @@ module Go
     lookup = File.exists?(go_mod) ? "." : ENV['TM_FILENAME']
 
     out, err = TextMate::Process.run("go", "vet", lookup)
-
     unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
       if err.include?(ENV['TM_FILENAME'])
         self.set_markers(err, "govet", "warning")
         TextMate.exit_show_tool_tip("Fix the go vet error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
       end
     end
+
+    unless ENV['TM_DISABLE_GOVET_SHADOW']
+      shadow_bin = `command -v shadow`.chomp
+
+      out, err = TextMate::Process.run("go", "vet", "-vettool", shadow_bin, lookup)
+      unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
+        if err.include?(ENV['TM_FILENAME'])
+          self.set_markers(err, "govet", "warning")
+          TextMate.exit_show_tool_tip("Fix the go vet shadow error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+        end
+      end
+    end
+    
   end
 
   # callback.document.did-save
@@ -158,7 +170,7 @@ module Go
     # check bins
     required_bins = [
       'gofumpt', 'goimports', 'golangci-lint',
-      'golines',
+      'golines', 'shadow',
     ]
     required_bins_exists = required_bins.all?{|name| !`command -v #{name} > /dev/null 2>&1 && echo $?`.chomp.empty? }
     
