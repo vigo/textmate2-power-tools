@@ -160,6 +160,17 @@ module Go
     end
   end
   
+  # callback.document.did-save
+  def Go::staticcheck
+    params = ["staticcheck", ENV['TM_FILENAME']]
+
+    out, err = TextMate::Process.run(*params)
+    unless out.empty? || !err.empty?
+      self.set_markers(out, "staticcheck", "error")
+      TextMate.exit_show_tool_tip("Fix the staticcheck error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+    end
+  end
+  
   def Go::check_bundle_config
     err_msg = nil
     
@@ -168,11 +179,19 @@ module Go
     required_envs_set = required_env_names.all?{|val| ENV[val]}
     
     # check bins
-    required_bins = [
-      'gofumpt', 'goimports', 'golangci-lint',
-      'golines', 'shadow',
-    ]
-    required_bins_exists = required_bins.all?{|name| !`command -v #{name} > /dev/null 2>&1 && echo $?`.chomp.empty? }
+    required_bins = []
+    required_bins << 'gofumpt' unless ENV['TM_DISABLE_GOFUMPT']
+    required_bins << 'goimports' unless ENV['TM_DISABLE_GOIMPORTS']
+    required_bins << 'golangci-lint' unless ENV['TM_DISABLE_GOLANGCI_LINT']
+    required_bins << 'golines' unless ENV['TM_DISABLE_GOLINES']
+    required_bins << 'shadow' unless ENV['TM_DISABLE_GOVET_SHADOW']
+    required_bins << 'staticcheck' unless ENV['TM_DISABLE_STATIC_CHECK']
+
+    if required_bins.length > 0
+      required_bins_exists = required_bins.all?{|name| !`command -v #{name} > /dev/null 2>&1 && echo $?`.chomp.empty? }
+    else
+      required_bins_exists = true
+    end
     
     all_conditions = [required_envs_set, required_bins_exists].all?
 
@@ -213,6 +232,7 @@ module Go
     self.golint unless ENV['TM_DISABLE_GOLINT']
     self.govet unless ENV['TM_DISABLE_GOVET']
     self.golangci_lint unless ENV['TM_DISABLE_GOLANGCI']
+    self.staticcheck unless ENV['TM_DISABLE_STATIC_CHECK']
 
     TextMate.exit_show_tool_tip(boxify("Good to go 🚀"))
   end

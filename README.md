@@ -22,6 +22,7 @@ $ go install golang.org/x/lint/golint@latest
 $ go install mvdan.cc/gofumpt@latest
 $ go install github.com/segmentio/golines@latest
 $ go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
+$ go install honnef.co/go/tools/cmd/staticcheck@latest
 
 $ brew install golangci-lint
 ```
@@ -233,6 +234,7 @@ environment variable(s) is/are set:
 - `golint`
 - `go vet` + shadow
 - `golangci-lint`
+- `staticcheck`
 
 You can disable format/lint feature (*all of them*) via setting
 `TM_DISABLE_GO_LINTER` environment variable.
@@ -247,7 +249,8 @@ You can disable linters piece by piece;
 - `TM_DISABLE_GOLINT`
 - `TM_DISABLE_GOVET`
 - `TM_DISABLE_GOVET_SHADOW`
-- `TM_DISABLE_GOLANGCI`
+- `TM_DISABLE_GOLANGCI_LINT`
+- `TM_DISABLE_STATIC_CHECK`
 
 ### Commands
 
