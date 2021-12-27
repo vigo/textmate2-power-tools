@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>type ${1:Object} struct {
+	<string>// ${1} represents ...
+type ${1:Object} struct {
 	$0
 }
 </string>
