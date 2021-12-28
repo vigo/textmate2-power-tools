@@ -145,6 +145,16 @@ module Go
     go_mod = "#{current_dir}/go.mod"
     
     params = ["golangci-lint", "--color", "never", "run"]
+    
+    has_config_file = false
+    ['yml', 'yaml', 'toml', 'json'].each do |ext|
+      if File.exists?("#{current_dir}/.golangci.#{ext}")
+        has_config_file = true
+        break
+      end
+    end
+    
+    params += ENV['TM_GOLANGCI_LINT_MANUAL'].split(" ") if !has_config_file && ENV['TM_GOLANGCI_LINT_MANUAL']
     params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
     
     out, err = TextMate::Process.run(*params)

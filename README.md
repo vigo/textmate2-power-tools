@@ -309,6 +309,21 @@ linters:
     - unused 
 ```
 
+You can configure golangci via setting `TM_GOLANGCI_LINT_MANUAL` environment
+variable manually w/o config file. Example variable and value:
+
+```bash
+TM_GOLANGCI_LINT_MANUAL    -p comment -p error -p format -p metalinter -p unused -E gosimple -E asciicheck -E durationcheck -E errcheck -E errorlint -E exhaustive -E gosec -E govet -E makezero -E nilerr -E rowserrcheck -E exportloopref -E sqlclosecheck -E staticcheck -E typecheck -E bodyclose -E noctx -E prealloc
+```
+
+This works only if any of these file(s) is/are unset/not-exists in the project
+root:
+
+- `.golangci.yml`
+- `.golangci.yaml`
+- `.golangci.toml`
+- `.golangci.json`
+
 ---
 
 ## Swift
