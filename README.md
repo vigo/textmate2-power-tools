@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-2.2.8-orange.svg)
+![Version](https://img.shields.io/badge/version-2.2.9-orange.svg)
 ![Plaftorm](https://img.shields.io/badge/platform-TextMate_2_-blue.svg)
 
 # TextMate2 - Power Tools
