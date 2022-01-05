@@ -7,95 +7,15 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby18 -wKU
 
-CONFIG_TEMPLATE = %{run:
-  concurrency: 4
-  timeout: 1m
-
-linters-settings:
-  revive:
-    ignore-generated-header: true
-    severity: warning
-    rules:
-      - name: exported
-        severity: warning
-      - name: error-return
-        severity: warning
-      - name: error-naming
-        severity: warning
-      - name: if-return
-        severity: warning
-      - name: var-naming
-        severity: warning
-      - name: var-declaration
-        severity: warning
-      - name: receiver-naming
-        severity: warning
-      - name: errorf
-        severity: warning
-      - name: empty-block
-        severity: warning
-      - name: unused-parameter
-        severity: warning
-      - name: unreachable-code
-        severity: warning
-      - name: redefines-builtin-id
-        severity: warning
-      - name: superfluous-else
-        severity: warning
-      - name: unexported-return
-        severity: warning
-      - name: indent-error-flow
-        severity: warning
-      - name: blank-imports
-        severity: warning
-      - name: range
-        severity: warning
-      - name: time-naming
-        severity: warning
-      - name: context-as-argument
-        severity: warning
-      - name: context-keys-type
-        severity: warning
-      - name: indent-error-flow
-        severity: warning
-
-linters:
-  disable-all: true
-  enable:
-    - asciicheck 
-    - durationcheck 
-    - errcheck 
-    - errorlint 
-    - exhaustive 
-    - gosec 
-    - govet 
-    - makezero 
-    - nilerr 
-    - rowserrcheck 
-    - exportloopref 
-    - sqlclosecheck 
-    - staticcheck 
-    - typecheck 
-    - bodyclose 
-    - noctx 
-    - prealloc
-    - gosimple
-  presets:
-    - comment 
-    - error 
-    - format 
-    - metalinter 
-    - unused
-
-issues:
-  exclude-use-default: false
-}
-
 CONFIG_FILE = "#{ENV['PWD']}/.golangci.yml"
 
 unless File.exists? CONFIG_FILE
+  cf = File.open("#{ENV['TM_BUNDLE_SUPPORT']}/.golangci.yml")
+  cnf = cf.read
+  cf.close
+
   f = File.open(CONFIG_FILE, "w")
-  f.puts(CONFIG_TEMPLATE)
+  f.puts(cnf)
   f.close
 
   puts "  .golangci.yml created at: \n\n"
