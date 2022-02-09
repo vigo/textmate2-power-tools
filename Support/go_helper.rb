@@ -208,7 +208,11 @@ module Go
     if all_conditions
       $SETUP_OK = true
     else
-      err_msg = "Bundle config error, please check TM environment variables.\n\n#{required_env_names.join(' or ')}\n\nmust set...\n\nor check binaries #{required_bins_exists.join(' or ')}"
+      err_msg = "Bundle config error, please check TM environment variables.\n
+\t#{required_env_names.join(' or ')}\n\nmust set...\n
+#{required_env_names.map{|en| "\t#{en} -> #{ENV[en]} ?[#{File.exists?(ENV[en])}]" }.join("\n")}\n
+or check binaries:
+#{required_bins.map{|bin| "\t#{bin} -> #{`command -v #{bin}`.chomp}" }.join("\n")}"
     end
 
     TextMate.exit_show_tool_tip(err_msg) unless $SETUP_OK
