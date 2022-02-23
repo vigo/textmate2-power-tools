@@ -56,6 +56,16 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## Available Items
 
+### TextMate Helpers
+
+- `folder` + <kbd>⇥</kbd> : Add folder for `info.plist`
+- `-` + <kbd>⇥</kbd> : Add delimeter for `info.plist`
+- `prop` + <kbd>⇥</kbd> : Add properties for `.tm_properties`
+   - excludes: `excludeInFolderSearch` / `excludeInFileChooser`
+   - includes: `include`
+   - spelling: `spellingLanguage`
+- "Show Environment Variables" for better, sorted and grouped env-var list
+
 ### Django
 
 **Update**

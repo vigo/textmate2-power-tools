@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>spellingLanguage = ${1|tr,en|}</string>
+	<key>name</key>
+	<string>Spelling</string>
+	<key>scope</key>
+	<string>source.tm-properties</string>
+	<key>tabTrigger</key>
+	<string>prop</string>
+	<key>uuid</key>
+	<string>F3F8E07D-1D2D-4CA6-9459-EEFB16F33B1F</string>
+</dict>
+</plist>

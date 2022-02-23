@@ -8,7 +8,10 @@
 	<string>#!/bin/bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-env|sort</string>
+env|grep ^TM_|sort
+echo
+echo "Other Variables"
+env|grep ^[^TM_]|sort</string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
