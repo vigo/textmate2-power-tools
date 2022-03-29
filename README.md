@@ -167,6 +167,27 @@ TAB completion | Description
 
 ## Bash
 
+Added [shellcheck](https://github.com/koalaman/shellcheck) linter/checker support. 
+Use `TM_SHELLCHECK_DISABLE` to disable it! You need to install `shellcheck` via;
+
+```bash
+brew install shellcheck
+```
+
+If you already have `shellcheck`, set binary path to `TM_SHELLCHECK`:
+
+```bash
+# custom shellcheck path
+defaults write com.macromates.textmate environmentVariables -array-add \
+    '{ name = "TM_SHELLCHECK"; enabled = 1; value = "/path/to/shellcheck"; }'
+
+# disable shellcheck
+defaults write com.macromates.textmate environmentVariables -array-add \
+    '{ name = "TM_SHELLCHECK_DISABLE"; enabled = 1; value = "1"; }'
+```
+
+You need to restart TextMate after these settings...
+
 ### Snippets
 
 * `if` + <kbd>⇥</kbd>: `if` / `else` / `elif` template.
