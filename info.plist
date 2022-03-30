@@ -38,11 +38,24 @@
 			<string>7F1F7F0F-1B63-4BA3-82D2-AED967AE2B5C</string>
 			<string>72D0130C-3B3A-49F7-B0B1-1902D81976D8</string>
 			<string>8806E892-C003-40E3-9AA0-7936A3C83A4B</string>
+            <string>A5EA110E-E864-4F2A-82C3-028677090E0A</string>
 			<string>------------------------------------</string>
 		</array>
 
 		<key>submenus</key>
 		<dict>
+            
+            <key>A5EA110E-E864-4F2A-82C3-028677090E0A</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>A0D69C77-98B4-49DD-BB84-D1C7B6850F69</string>
+                    <string>D2E03C9B-DAA9-48FD-9DA4-B05F551A2C1A</string>
+                </array>
+                <key>name</key>
+                <string>Git</string>
+            </dict>
+            
 			<key>56D1573D-3213-42B6-AC3E-20C1864B923A</key>
 			<dict>
 				<key>items</key>
@@ -607,6 +620,8 @@
 			<dict>
 				<key>items</key>
 				<array>
+                    <string>AFEF292F-0395-43CE-A6D5-618F1EABEFE1</string>
+                    <string>------------------------------------</string>
 					<string>8BB051CA-F114-4082-8C3F-3657B42F94BE</string>
 					<string>1CA87D01-5813-4856-8C0B-2932839B9763</string>
                     <string>------------------------------------</string>
@@ -774,6 +789,7 @@
                     <string>EB1818C5-2462-499E-A3C0-B9335A033708</string>
                     <string>2544DC44-23C6-4CA5-AFE7-4A6BF5FD40DE</string>
                     <string>------------------------------------</string>
+                    <string>FAF7CA49-9F56-4A99-945A-81CCE12D5312</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>

@@ -14,7 +14,8 @@ git clone https://github.com/vigo/textmate2-power-tools.git PowerTools.tmbundle
 # Restart your TextMate2
 ```
 
-You need to install extra tools for **Golang** helper:
+You need to install extra tools for **Golang** helper. You need to enable
+default **Go Bundle** from TextMate first...
 
 ```bash
 $ go install golang.org/x/tools/cmd/goimports@latest
@@ -25,6 +26,12 @@ $ go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
 $ go install honnef.co/go/tools/cmd/staticcheck@latest
 
 $ brew install golangci-lint
+```
+
+Shellcheck feature requires `shellcheck` binary;
+
+```bash
+$ brew install shellcheck
 ```
 
 You need to add your **brew/bin** path to `PATH` variable too:
@@ -56,7 +63,32 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## Available Items
 
+1. [TextMate](#textMate-helpers)
+1. [Django](#django)
+1. [Python](#python)
+1. [Ruby](#ruby)
+1. [Rake](#rake)
+1. [Bash](#bash)
+1. [Markdown](#markdown)
+1. [jQuery](#jquery)
+1. [HTML](#html)
+1. [Javascript](#javascript)
+1. [Go](#go)
+1. [Swift](#swift)
+1. [Lisp](#lisp)
+1. [Elixir](#elixir)
+1. [Git](#git)
+1. [General](#general)
+1. [Templates](#templates)
+
+---
+
 ### TextMate Helpers
+
+Scopes:
+
+- `text.xml.plist`
+- `source.tm-properties`
 
 - `folder` + <kbd>⇥</kbd> : Add folder for `info.plist`
 - `-` + <kbd>⇥</kbd> : Add delimeter for `info.plist`
@@ -66,6 +98,8 @@ Other bundle dependencies (*not required but nice to have*)
    - spelling: `spellingLanguage`
 - "Show Environment Variables" for better, sorted and grouped env-var list
 
+---
+
 ### Django
 
 **Update**
@@ -73,25 +107,27 @@ Other bundle dependencies (*not required but nice to have*)
 - Improve Django snippets/helpers
 - Add Django REST generics and viewsets
 
-#### Snippets
+#### Django Snippets
 
-TAB completion | Description
----------------|:-----------
-`admin` + <kbd>⇥</kbd> | ![Screenshot of: admin](Screens/django-admin.png?2 "admin+TAB")
-`model` + <kbd>⇥</kbd> | ![Screenshot of: model](Screens/django-model.png?2 "model+TAB")
-`fld` + <kbd>⇥</kbd> (*For fields...*) | ![Screenshot of: fld](Screens/django-fld.png?2 "fld+TAB")
-`opt` + <kbd>⇥</kbd> (*For field options...*) | ![Screenshot of: opt](Screens/django-opt.png?2 "opt+TAB")
-`meta` + <kbd>⇥</kbd> (*Model meta options*) |   ![Screenshot of: opt](Screens/django-model-meta.png?2 "meta+TAB")
-`hlp` + <kbd>⇥</kbd> (*Helpers*) | ![Screenshot of: hlp](Screens/django-hlp.png?2 "hlp+TAB")
-`mstr` + <kbd>⇥</kbd> | Injects `def __str__(self):`
-`msave` + <kbd>⇥</kbd> | Injects model save `def save(self, *args, **kwargs):`
-`does` + <kbd>⇥</kbd> | `Model.DoesNotExist`
-`wr` + <kbd>⇥</kbd> (*Management commands*) | `self.stdout.write`
-`ws` + <kbd>⇥</kbd> (*Management commands*) | `self.style`
-`=` + <kbd>⇥</kbd> (*Template*) | `{{ variable }}`
-`==` + <kbd>⇥</kbd> (*Template*) | `{% tag %}`
+| TAB completion | Description |
+|----------------|:------------|
+| `admin` + <kbd>⇥</kbd> | ![Screenshot of: admin](Screens/django-admin-1.png?1 "admin+TAB") |
+| `admin` + <kbd>⇥</kbd> | ![Screenshot of: admin](Screens/django-admin-2.png?1 "admin+TAB") |
+| `model` + <kbd>⇥</kbd> | ![Screenshot of: model](Screens/django-model.png?1 "model+TAB") |
+| `meta` + <kbd>⇥</kbd> (*Model meta options*) |   ![Screenshot of: opt](Screens/django-model-meta.png?1 "meta+TAB") |
+| `fld` + <kbd>⇥</kbd> (*For fields...*) | ![Screenshot of: fld](Screens/django-fld.png?1 "fld+TAB") |
+| `opt` + <kbd>⇥</kbd> (*For field options...*) | ![Screenshot of: opt](Screens/django-opt.png?2 "opt+TAB") |
+| `hlp` + <kbd>⇥</kbd> (*Helpers*) | ![Screenshot of: hlp](Screens/django-hlp.png?2 "hlp+TAB") |
+| `str` + <kbd>⇥</kbd> | Injects `def __str__(self):` |
+| `save` + <kbd>⇥</kbd> | Injects model save `def save(self, *args, **kwargs):` |
+| `does` + <kbd>⇥</kbd> | `Model.DoesNotExist` |
+| `wr` + <kbd>⇥</kbd> (*Management commands*) | `self.stdout.write` |
+| `ws` + <kbd>⇥</kbd> (*Management commands*) | `self.style` |
+| `=` + <kbd>⇥</kbd> (*Template*) | `{{ variable }}` |
+| `==` + <kbd>⇥</kbd> (*Template*) | `{% tag %}` |
+| `ase` + <kbd>⇥</kbd> (*Test*) | `self.assertQuerysetEqual` |
 
-#### Scope
+#### Django Scope
 
 You have a scope called: **Python Django (Extended)**.
 Press <kbd>⌃</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>P</kbd> for selecting
@@ -104,26 +140,31 @@ this scope.
 You can prettify any kind of Python `list` or `dict` via <kbd>⌥</kbd> +
 <kbd>⌘</kbd> + <kbd>P</kbd> in any scope!
 
-#### Snippets
+#### Python Snippets
 
-TAB completion | Description
----------------|:-----------
-`ase` + <kbd>⇥</kbd> | ![Screenshot of: ase](Screens/python-ase.png?2 "ase+TAB")
-`utf` + <kbd>⇥</kbd> | `# -*- coding: utf-8 -*-`
-`p` + <kbd>⇥</kbd> | Print with format: `print(CURSOR.format())`
-`pp` + <kbd>⇥</kbd> | `pp = pprint.PrettyPrinter(indent=4)`
-`pr` + <kbd>⇥</kbd> | Pretty Print with format: `pp.pprint(CURSOR.format())`
-`tern` + <kbd>⇥</kbd> | Ternary expression helper
-`pdbg` + <kbd>⇥</kbd> | Injects Python Debuffer
-`ipdbg` + <kbd>⇥</kbd> | Injects IPython Debuffer
-`logger` + <kbd>⇥</kbd> | Injects `logger` snippet
-`loggerbc` + <kbd>⇥</kbd> | Injects `logger` snippet with basic config
-<kbd>⌃</kbd> + <kbd>'</kbd> | Docstring
-`init` + <kbd>⇥</kbd> (*Class*) | Injects `def __init__ ...`
-`@sm` + <kbd>⇥</kbd> (*Class*) | Injects `@staticmethod`
-`@cm` + <kbd>⇥</kbd> (*Class*) | Injects `@classmethod`
-`@pr` + <kbd>⇥</kbd> (*Class*) | Injects `@property`
-`__` + <kbd>⇥</kbd> (*Class*) | Injects `__str__` or `__repr__`
+| TAB completion | Description |
+|----------------|:------------|
+| `ase` + <kbd>⇥</kbd> | ![Screenshot of: ase](Screens/python-ase.png?1 "ase+TAB") |
+| `utf` + <kbd>⇥</kbd> | `# -*- coding: utf-8 -*-` |
+| `p` + <kbd>⇥</kbd> | Print with format: `print(CURSOR.format())` |
+| `pp` + <kbd>⇥</kbd> | `pp = pprint.PrettyPrinter(indent=4)` |
+| `pr` + <kbd>⇥</kbd> | Pretty Print with format: `pp.pprint(CURSOR.format())` |
+| `tern` + <kbd>⇥</kbd> | Ternary expression helper |
+| `pdbg` + <kbd>⇥</kbd> | Injects Python Debuffer |
+| `ipdbg` + <kbd>⇥</kbd> | Injects IPython Debuffer |
+| `logger` + <kbd>⇥</kbd> | Injects `logger` snippet |
+| `loggerbc` + <kbd>⇥</kbd> | Injects `logger` snippet with basic config |
+| <kbd>⌃</kbd> + <kbd>'</kbd> | Docstring |
+| `init` + <kbd>⇥</kbd> (*Class*) | Injects `def __init__ ...` |
+| `@sm` + <kbd>⇥</kbd> (*Class*) | Injects `@staticmethod` |
+| `@cm` + <kbd>⇥</kbd> (*Class*) | Injects `@classmethod` |
+| `@pr` + <kbd>⇥</kbd> (*Class*) | Injects `@property` |
+| `__` + <kbd>⇥</kbd> (*Class*) | Injects `__str__` or `__repr__` |
+| `imp` + <kbd>⇥</kbd> (*import*) | Injects `import` with some predefined package names |
+| `inject` + <kbd>⇥</kbd> (*apped*) | Injects `TM_PYTHON_FMT_VIRTUAL_ENV` related appends to `sys.path` |
+| `=` + <kbd>⇥</kbd> (*python*) | Injects python placeholder `{}` |
+| `.` + <kbd>⇥</kbd> (*doctest*) | Injects `>>> ` |
+| <kbd>⇧</kbd> + <kbd>⌘</kbd> + <kbd>i</kbd> | Create `__init__.py` |
 
 `hlp` + <kbd>⇥</kbd>
 
@@ -138,19 +179,21 @@ TAB completion | Description
 
 You need to add **Ruby on Rails** bundle from Preferences/Bundles.
 
-### Snippets for ERB
+### Ruby Snippets for ERB
 
-TAB completion | Description
----------------|:-----------
-`=` + <kbd>⇥</kbd> | `<%= CURSOR %>`
-`if` + <kbd>⇥</kbd> | ERB compatible `if`
-`each` + <kbd>⇥</kbd> | ERB compatible `each` and `each_with_index`
+Scope: `text.html.erb`
+
+| TAB completion | Description |
+|---------------|:-------------|
+| `=` + <kbd>⇥</kbd> | `<%= CURSOR %>` |
+| `if` + <kbd>⇥</kbd> | ERB compatible `if` |
+| `each` + <kbd>⇥</kbd> | ERB compatible `each` and `each_with_index` |
 
 ---
 
 ## Rake
 
-### Snippets
+### Rake Snippets
 
 `tas` + <kbd>⇥</kbd>
 
@@ -162,6 +205,7 @@ TAB completion | Description
 * `tasd` + <kbd>⇥</kbd>: Creates default task code
 * `inv` + <kbd>⇥</kbd>: Creates `Rake::Task...invoke` + params
 * `des` + <kbd>⇥</kbd>: `desc "...."` only
+* `args` + <kbd>⇥</kbd>: `args.with_defaults(...)`
 
 ---
 
@@ -188,7 +232,7 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 
 You need to restart TextMate after these settings...
 
-### Snippets
+### Bash Snippets
 
 * `if` + <kbd>⇥</kbd>: `if` / `else` / `elif` template.
 * `for` + <kbd>⇥</kbd>: Array iteration template
@@ -199,7 +243,7 @@ You need to restart TextMate after these settings...
 
 ### Markdown
 
-### Snippets
+### Markdown Snippets
 
 * `badge` + <kbd>⇥</kbd>: Adds **img.shields.io** badge!
 * <kbd>⌥</kbd> + <kbd>(</kbd>: Fixes Parenthesis behavior. 
@@ -208,7 +252,7 @@ You need to restart TextMate after these settings...
 
 ### jQuery
 
-### Snippets
+### jQuery Snippets
 
 * `each` + <kbd>⇥</kbd>: jQuery `each` code template
 * `ready` + <kbd>⇥</kbd>: jQuery `$(document).ready()` code template
@@ -218,10 +262,11 @@ You need to restart TextMate after these settings...
 
 ## HTML
 
-### Snippets
+### HTML Snippets
 
 * `more` + <kbd>⇥</kbd>: `&rsquo;`
 * <kbd>⌃</kbd> + <kbd>⌘</kbd> + <kbd>S</kbd>: Wrap selection with smart quotes.
+* <kbd>⌃</kbd> + <kbd>C</kbd>: Wrap/unwrap code Inline
 * `p` + <kbd>⇥</kbd>: `<p>carret<p>`
 * `li` + <kbd>⇥</kbd>: `<li>carret<li>`
 
@@ -229,16 +274,17 @@ You need to restart TextMate after these settings...
 
 ### Javascript
 
-### Snippets
+### Javascript Snippets
 
 * `con` + <kbd>⇥</kbd>: Generates `console.log`, `console.dir`,
-  `console.warn`, `console.error` skel
+  `console.warn`, `console.error`, `console.group`, `console.groupEnd` skel
 * `if` + <kbd>⇥</kbd>: `if` related code.
 * `fun` + <kbd>⇥</kbd>: `function` related code.
 * `for` + <kbd>⇥</kbd>: `for` related code.
 * `swi` + <kbd>⇥</kbd>: `switch` related code.
+* `load` + <kbd>⇥</kbd>: Injects `window.addEventListener(...)`
 
-### Commands
+### Javascript Commands
 
 You need to install `node` locally and must define `TM_NODE` variable and set
 the executable path for node:
@@ -283,11 +329,11 @@ You can disable linters piece by piece;
 - `TM_DISABLE_GOLANGCI_LINT`
 - `TM_DISABLE_STATIC_CHECK`
 
-### Commands
+### Go Commands
 
 * <kbd>⌥</kbd> + <kbd>R</kbd> : Runs `gofmt` + `goimports` without save!
 
-### Snippets
+### Go Snippets
 
 * `fmt` + <kbd>⇥</kbd>: `fmt.METHOD`
 * `spr` + <kbd>⇥</kbd>: `fmt.Sprintf`
@@ -362,7 +408,7 @@ root:
 You need to install/activate **Swift Bundle** from: TextMate > Preferences >
 Bundles.
 
-### Snippets
+### Swift Snippets
 
 * `p` + <kbd>⇥</kbd>: Print statement
 * `typ` + <kbd>⇥</kbd>: Type of object
@@ -383,11 +429,11 @@ defaults write com.macromates.textmate environmentVariables -array-add \
     '{enabled = 1; value = "/usr/local/bin/clisp"; name = "TM_CLISP"; }'
 ```
 
-### Snippets
+### Lisp Snippets
 
 * `p` + <kbd>⇥</kbd>: Print
 
-### Commands
+### Lisp Commands
 
 * <kbd>⌘</kbd> + <kbd>R</kbd>: Run. 
 
@@ -402,7 +448,7 @@ cd ~/Library/Application\ Support/TextMate/Bundles/
 git clone https://github.com/elixir-lang/elixir-tmbundle.git Elixir.tmbundle
 ```
 
-### Snippets
+### Elixir Snippets
 
 * `p` + <kbd>⇥</kbd>: Print or Inspect
 * `#`: Select text in quotes then press `#` (*Ruby’s string interpolation-ish*)
@@ -420,31 +466,31 @@ Press <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>B</kbd> for;
 
 ## General
 
-TAB completion | Description
----------------|:-----------
-`dateT` + <kbd>⇥</kbd> | ![Screenshot of: dateT](Screens/general-datet.png?1 "dateT+TAB")
-`lorem` + <kbd>⇥</kbd> | ![Screenshot of: lorem](Screens/general-lorem.png?1 "lorem+TAB")
-<kbd>⌥</kbd> + <kbd>'</kbd> | Single smart apostrophe. (*Works in html, text, markdown, yaml*)
-`applek` + <kbd>⇥</kbd> | Generate apple symbols like: ⌘ ⎋ more...
-`applek` + <kbd>⇥</kbd> | Generate apple symbols inside of `<kbd>` tags.
-`--` + <kbd>⇥</kbd> | Line delimeter, 80 charts comment `# ---- ...`
-`---` + <kbd>⇥</kbd> | Dynamic tilda. Fills remaning line with `~`
-<kbd>⌥</kbd> + <kbd>⌘</kbd> + `B` | Shows `git blame` for current line
+| TAB completion | Description |
+|----------------|:------------|
+| `dateT` + <kbd>⇥</kbd> | ![Screenshot of: dateT](Screens/general-datet.png?1 "dateT+TAB") |
+| `lorem` + <kbd>⇥</kbd> | ![Screenshot of: lorem](Screens/general-lorem.png?1 "lorem+TAB") |
+| <kbd>⌥</kbd> + <kbd>'</kbd> | Single smart apostrophe. (*Works in html, text, markdown, yaml*) |
+| `applek` + <kbd>⇥</kbd> | Generate apple symbols like: ⌘ ⎋ more... |
+| `applek` + <kbd>⇥</kbd> | Generate apple symbols inside of `<kbd>` tags. |
+| `--` + <kbd>⇥</kbd> | Line delimeter, 80 charts comment `# ---- ...` |
+| `---` + <kbd>⇥</kbd> | Dynamic tilda. Fills remaning line with `~` |
+| <kbd>⌥</kbd> + <kbd>⌘</kbd> + `B` | Shows `git blame` for current line |
 
 ---
 
 ## Templates
 
-Language      | Scope                 | TAB Completion
-:-------------|:----------------------|:--------------------------------
-BASH          | source.shell          | `temp` + <kbd>⇥</kbd>
-Python        | source.python         | `temp` + <kbd>⇥</kbd>
-Python        | source.python         | `temp` + <kbd>⇥</kbd> with Doctests
-Python        | source.python         | `temp` + <kbd>⇥</kbd> with Logging
-Golang        | source.go             | `temp` + <kbd>⇥</kbd>
-HTML          | -no scope required-   | `html5` + <kbd>⇥</kbd>
-HTML with Bulma | -no scope required-   | `html5` + <kbd>⇥</kbd> with Bulma.io CSS
-Vue Component | text.html.vue         | `temp` + <kbd>⇥</kbd>
+| Language        | Scope                 | TAB Completion                  |
+|:----------------|:----------------------|:--------------------------------|
+| BASH            | source.shell          | `temp` + <kbd>⇥</kbd> |
+| Python          | source.python         | `temp` + <kbd>⇥</kbd> |
+| Python          | source.python         | `temp` + <kbd>⇥</kbd> with Doctests |
+| Python          | source.python         | `temp` + <kbd>⇥</kbd> with Logging |
+| Golang          | source.go             | `temp` + <kbd>⇥</kbd> |
+| HTML            | -no scope required-   | `html5` + <kbd>⇥</kbd> |
+| HTML with Bulma | -no scope required-   | `html5` + <kbd>⇥</kbd> with Bulma.io CSS |
+| Vue Component   | text.html.vue         | `temp` + <kbd>⇥</kbd> |
 
 ---
 
