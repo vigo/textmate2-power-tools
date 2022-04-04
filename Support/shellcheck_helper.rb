@@ -29,10 +29,8 @@ module Shellcheck
       message = payload["message"] || "no message"
 
       case payload["level"]
-      when "error"
+      when "error","info"
         level = "error"
-      when "info"
-        level = "info"
       when "style"
         level = "note"
       else
@@ -51,7 +49,7 @@ module Shellcheck
     end
 
     def boxify(text)
-      "#{"-" * 80}\n #{text}\n#{"-" * 80}"
+      "#{"-" * 40}\n #{text}\n#{"-" * 40}"
     end
 
   def run
@@ -63,8 +61,9 @@ module Shellcheck
 
     cmd_args = ["-f", "json", "-s", "bash"]
     out, err = TextMate::Process.run(cmd, cmd_args, ENV["TM_FILEPATH"])
+
     TextMate.exit_show_tool_tip(err) unless err.empty?
-    TextMate.exit_show_tool_tip(boxify("Good to go 🚀")) if out.empty?
+    TextMate.exit_show_tool_tip(boxify("Good to go 🚀")) if out.length <= 3
     
     begin
       errors = JSON.parse(out)
@@ -73,7 +72,6 @@ module Shellcheck
     end
     
     errors.each do |err|
-      # puts err
       set_markers(err)
     end
     errors_length = errors.length
