@@ -9,6 +9,9 @@ linters-settings:
     rules:
       - name: exported
         severity: warning
+        arguments:
+            - "checkPrivateReceivers"
+            - "sayRepetitiveInsteadOfStutters"
       - name: error-return
         severity: warning
       - name: error-naming

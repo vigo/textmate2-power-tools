@@ -96,21 +96,6 @@ module Go
   # ---
 
   # callback.document.did-save
-  def Go::golint
-    out, err = TextMate::Process.run("golint", ENV['TM_FILEPATH'])
-
-    unless err.nil? || err == ""
-      self.set_markers(err, "golint", "error")
-      TextMate.exit_show_tool_tip("Fix the golint error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
-    end
-
-    unless out.empty?
-      self.set_markers(out, "golint", "warning")
-      TextMate.exit_show_tool_tip("Fix the golint error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
-    end
-  end
-
-  # callback.document.did-save
   def Go::govet
     current_dir = ENV['TM_PROJECT_DIRECTORY']
     go_mod = "#{current_dir}/go.mod"
@@ -243,7 +228,6 @@ or check binaries:
     self.check_bundle_config
     self.reset_markers
 
-    self.golint unless ENV['TM_DISABLE_GOLINT']
     self.govet unless ENV['TM_DISABLE_GOVET']
     self.golangci_lint unless ENV['TM_DISABLE_GOLANGCI']
     self.staticcheck unless ENV['TM_DISABLE_STATIC_CHECK']

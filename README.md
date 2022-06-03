@@ -19,7 +19,6 @@ default **Go Bundle** from TextMate first...
 
 ```bash
 $ go install golang.org/x/tools/cmd/goimports@latest
-$ go install golang.org/x/lint/golint@latest
 $ go install mvdan.cc/gofumpt@latest
 $ go install github.com/segmentio/golines@latest
 $ go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
@@ -58,6 +57,14 @@ Other bundle dependencies (*not required but nice to have*)
 
 - https://github.com/blahed/Vue.tmbundle
 - https://github.com/michaeledgar/protobuf-tmbundle
+
+---
+
+## News
+
+**2022-06-03**
+
+- `golint` removed, now using `golangci-lint`’s `revive`. (*golint has been archived by the owner*)
 
 ---
 
@@ -308,7 +315,6 @@ environment variable(s) is/are set:
 - `gofmt`
 - `goimports`
 - `golines`
-- `golint`
 - `go vet` + shadow
 - `golangci-lint`
 - `staticcheck`
@@ -323,11 +329,17 @@ You can disable linters piece by piece;
 - `TM_DISABLE_GOIMPORTS`
 - `TM_DISABLE_GOLINES`
 
-- `TM_DISABLE_GOLINT`
 - `TM_DISABLE_GOVET`
 - `TM_DISABLE_GOVET_SHADOW`
 - `TM_DISABLE_GOLANGCI_LINT`
 - `TM_DISABLE_STATIC_CHECK`
+
+Also you can configure `golines` via;
+
+- `TM_GOLINES_MAX_LEN`: Default value is `100`
+- `TM_GOLINES_TAB_LEN`: Default value is `4`
+
+environment variables.
 
 ### Go Commands
 
@@ -357,6 +369,63 @@ run:
   concurrency: 4
   timeout: 1m
 
+linters-settings:
+  revive:
+    ignore-generated-header: true
+    severity: warning
+    rules:
+      - name: exported
+        severity: warning
+        arguments:
+            - "checkPrivateReceivers"
+            - "sayRepetitiveInsteadOfStutters"
+      - name: error-return
+        severity: warning
+      - name: error-naming
+        severity: warning
+      - name: if-return
+        severity: warning
+      - name: var-naming
+        severity: warning
+      - name: var-declaration
+        severity: warning
+      - name: receiver-naming
+        severity: warning
+      - name: errorf
+        severity: warning
+      - name: empty-block
+        severity: warning
+      - name: unused-parameter
+        severity: warning
+      - name: unreachable-code
+        severity: warning
+      - name: redefines-builtin-id
+        severity: warning
+      - name: superfluous-else
+        severity: warning
+      - name: unexported-return
+        severity: warning
+      - name: indent-error-flow
+        severity: warning
+      - name: blank-imports
+        severity: warning
+      - name: range
+        severity: warning
+      - name: time-naming
+        severity: warning
+      - name: context-as-argument
+        severity: warning
+      - name: context-keys-type
+        severity: warning
+      - name: indent-error-flow
+        severity: warning
+      - name: waitgroup-by-value
+        severity: warning
+      - name: useless-break
+        severity: warning
+      - name: struct-tag
+        severity: warning
+
 linters:
   disable-all: true
   enable:
@@ -383,7 +452,10 @@ linters:
     - error 
     - format 
     - metalinter 
-    - unused 
+    - unused
+
+issues:
+  exclude-use-default: false
 ```
 
 You can configure golangci via setting `TM_GOLANGCI_LINT_MANUAL` environment
