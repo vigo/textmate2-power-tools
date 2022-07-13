@@ -62,6 +62,10 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2022-07-13**
+
+- add `fprf` + <kbd>⇥</kbd>, golang `fmt.Fprintf` snippet.
+
 **2022-06-03**
 
 - `golint` removed, now using `golangci-lint`’s `revive`. (*golint has been archived by the owner*)
@@ -361,6 +365,8 @@ environment variables.
 * `ctp` + <kbd>⇥</kbd>: Inserts compile time proof fill place holders of `var _ interface = (*struct)(nil)`
 * `seed` + <kbd>⇥</kbd>: Inserts random seeder
 * `gcil` + <kbd>⇥</kbd>: Creates `.golangci.yml` under current working directory.
+* `fprf` + <kbd>⇥</kbd>: `fmt.Fprintf`
+
 
 `.golangci.yml` default config:
 
