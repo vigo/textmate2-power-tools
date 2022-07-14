@@ -139,6 +139,8 @@ module Go
       end
     end
     
+    log_level = ENV['TM_GOLANGCI_LINT_LOG_LEVEL'] || ''
+    ENV['LOG_LEVEL'] = log_level unless log_level == ''
     params += ENV['TM_GOLANGCI_LINT_MANUAL'].split(" ") if !has_config_file && ENV['TM_GOLANGCI_LINT_MANUAL']
     params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
     

@@ -62,6 +62,12 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2022-07-14**
+
+- `golangci-lint` runner checks for `TM_GOLANGCI_LINT_LOG_LEVEL` environment
+  variable. Due to `go 1.18`, `golangci-lint` produces some warnings. You can
+  by pass those warnings via setting `TM_GOLANGCI_LINT_LOG_LEVEL` to `error`.
+
 **2022-07-13**
 
 - add `fprf` + <kbd>⇥</kbd>, golang `fmt.Fprintf` snippet.
@@ -344,6 +350,12 @@ Also you can configure `golines` via;
 - `TM_GOLINES_TAB_LEN`: Default value is `4`
 
 environment variables.
+
+Use `TM_GOLANGCI_LINT_LOG_LEVEL` to by-pass linter warnings (`go 1.18` issue):
+
+- `TM_GOLANGCI_LINT_LOG_LEVEL` to `error` shows only errors
+- `TM_GOLANGCI_LINT_LOG_LEVEL` to `warning` shows warnings too
+- `TM_GOLANGCI_LINT_LOG_LEVEL` to `info` show info level logs
 
 ### Go Commands
 
