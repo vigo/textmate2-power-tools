@@ -15,6 +15,16 @@ $OUTPUT = ""
 $DOCUMENT = STDIN.read
 $SETUP_OK = false
 $ALL_ERRORS = []
+$DEBUG_OUT = []
+
+$DEBUG_OUT << "TM_DISABLE_GOFUMPT: #{ENV['TM_DISABLE_GOFUMPT']}"
+$DEBUG_OUT << "TM_DISABLE_GOFMT: #{ENV['TM_DISABLE_GOFMT']}"
+$DEBUG_OUT << "TM_DISABLE_GOIMPORTS: #{ENV['TM_DISABLE_GOIMPORTS']}"
+$DEBUG_OUT << "TM_DISABLE_GOLINES: #{ENV['TM_DISABLE_GOLINES']}"
+$DEBUG_OUT << "TM_DISABLE_GOVET: #{ENV['TM_DISABLE_GOVET']}"
+$DEBUG_OUT << "TM_DISABLE_GOLANGCI: #{ENV['TM_DISABLE_GOLANGCI']}"
+$DEBUG_OUT << "TM_DISABLE_STATIC_CHECK: #{ENV['TM_DISABLE_STATIC_CHECK']}"
+
 
 def wrap_str(s, width=80)
   s.gsub(/(.{1,#{width}})(\s+|\Z)/, "\\1\n")
@@ -26,34 +36,91 @@ def boxify(s)
 end
 
 module Go
+  def Go::handle_err_messages(title)
+    err_msg = ""
+    err_msg = err_msg + $DEBUG_OUT.map{|i| "# #{i}"}.join("\n") + "\n" if ENV['TM_GOLINTER_DEBUG']
+    err_msg = err_msg + "#{title}\n\n"
+    err_msg = err_msg + $ALL_ERRORS.join("\n")
+
+    TextMate.exit_show_tool_tip(err_msg)
+    # TextMate.exit_create_new_document(err_msg)
+  end
+
   def Go::reset_markers
     system(ENV['TM_MATE'], "--uuid", ENV['TM_DOCUMENT_UUID'], "--clear-mark=note", "--clear-mark=warning", "--clear-mark=error", "--clear-mark=search")
   end
   
   def Go::set_markers(input, sender, style)
-    ss = input.split("\n").select{|l| !l.start_with?("#")}.map do |s|
-      s.sub!(/vet: /, "") if s.start_with?("vet: ")
-      s
-    end
-    
-    ss.join("\n").split(%r{^(.*?:\d+:\d+):}).select{|i| i.size > 0 }.each_slice(2) do |slice|
-      file, lineno, column = slice[0].split(":")
-      messages = slice[1]
-      messages.chomp! unless slice[1].nil?
-      
-      case sender
-      when "golangci-lint"
-        filepath = file
-        filepath = "#{File.basename(ENV['TM_DIRECTORY'])}/#{file}" unless ENV['TM_PROJECT_DIRECTORY'] == ENV['TM_DIRECTORY']
-        $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{messages}"
-      else
-        $ALL_ERRORS << "[#{sender}] : #{lineno}:#{column} -> #{messages}"
-      end
+    $DEBUG_OUT << "set_markers input: #{input}"
 
-      messages = "#{style}:#{messages} -> #{lineno}:#{column}"
-      messages = "#{messages} - (#{sender})" unless sender.empty?
-      tm_args = ["--uuid", ENV['TM_DOCUMENT_UUID'], "--line=#{lineno}:#{column || '1'}", "--set-mark=#{messages}"]
-      system(ENV['TM_MATE'], *tm_args)
+    current_file = "#{File.basename(ENV['TM_DIRECTORY'])}/#{ENV['TM_FILENAME']}"
+
+    case sender
+    when "golangci-lint"
+      input.split(%r{^(.+:\d+:.+)$}).select{|i| i.size > 0 }.each_slice(2) do |s|
+        s[0].split(%r{(^.[^:]+:\d+:\d*:? ?)}).select{|i| i.size > 0 }.each_slice(2) do |slice|
+          file_info = slice[0].split(':').select{|i| i != " " }
+          
+          filepath = file_info[0]
+          lineno = file_info[1]
+          column = file_info.size == 3 ? file_info[2] : 1
+          err_mesage = slice[1]
+          
+          $DEBUG_OUT << "case: golangci-lint"
+          $DEBUG_OUT << "file_info: #{file_info}"
+          $DEBUG_OUT << "set_markers(#{sender}): filepath: #{filepath} #{filepath.size}"
+          $DEBUG_OUT << "set_markers(#{sender}): current_file: #{current_file} #{current_file.size}"
+          $DEBUG_OUT << "filepath.include?(current_file): #{filepath.include?(current_file)}"
+
+          $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{err_mesage}"
+          
+          if filepath.include?(current_file)
+            mark_message = "#{style}:#{err_mesage} -> #{lineno}:#{column}"
+            mark_message = "#{mark_message} - (#{sender})" unless sender.empty?
+          
+            tm_args = [
+              "--uuid", 
+              ENV['TM_DOCUMENT_UUID'], 
+              "--line=#{lineno}:#{column || '1'}", 
+              "--set-mark=#{mark_message}"
+            ]
+            system(ENV['TM_MATE'], *tm_args)
+          end
+        end
+      end
+    else
+      ss = input.split("\n").select{|l| !l.start_with?("#")}.map do |s|
+        s.sub!(/vet: /, "") if s.start_with?("vet: ")
+        s
+      end
+      
+      ss.join("\n").split(%r{^(.*?:\d+:\d+):}).select{|i| i.size > 0 }.each_slice(2) do |slice|
+            filepath, lineno, column = slice[0].split(":")
+            err_mesage = slice[1]
+            
+            filepath = File.basename(filepath) if filepath.start_with?("./")
+            
+            $DEBUG_OUT << "case: else"
+            $DEBUG_OUT << "filepath: #{filepath}"
+            $DEBUG_OUT << "set_markers(#{sender}): filepath: #{filepath}"
+            $DEBUG_OUT << "set_markers(#{sender}): current_file: #{current_file}"
+            $DEBUG_OUT << "current_file.include?(filepath): #{current_file.include?(filepath)}"
+
+            $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{err_mesage}"
+            
+            if current_file.include?(filepath)
+              mark_message = "#{style}:#{err_mesage} -> #{lineno}:#{column}"
+              mark_message = "#{mark_message} - (#{sender})" unless sender.empty?
+            
+              tm_args = [
+                "--uuid", 
+                ENV['TM_DOCUMENT_UUID'], 
+                "--line=#{lineno}:#{column || '1'}", 
+                "--set-mark=#{mark_message}"
+              ]
+              system(ENV['TM_MATE'], *tm_args)
+            end
+          end
     end
   end
 
@@ -61,7 +128,7 @@ module Go
   def Go::gofumpt
     out, err = TextMate::Process.run("gofumpt", :input => $DOCUMENT)
     unless err.nil? || err == ""
-      TextMate.exit_show_tool_tip("gofumpt error: #{err}")
+      self.handle_err_messages("gofumpt error: #{err}")
     end
     $DOCUMENT = out
   end
@@ -71,7 +138,7 @@ module Go
     $OUTPUT, err = TextMate::Process.run("gofmt", :input => $DOCUMENT)
     unless err.nil? || err == ""
       self.set_markers(err, "gofmt", "warning")
-      TextMate.exit_show_tool_tip("Fix the gofmt error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+      self.handle_err_messages("Fix the gofmt error(s)!")
     end
   end
 
@@ -80,7 +147,7 @@ module Go
     $OUTPUT, err = TextMate::Process.run("goimports", :input => $DOCUMENT)
     unless err.nil? || err == ""
       self.set_markers(err, "goimports", "error")
-      TextMate.exit_show_tool_tip(wrap_str("Fix the goimports error(s)!\n\n#{$ALL_ERRORS.join("\n")}"))
+      self.handle_err_messages(wrap_str("Fix the goimports error(s)!"))
     end
   end
 
@@ -90,34 +157,32 @@ module Go
     tab_len = ENV['TM_GOLINES_TAB_LEN'] || '4'
 
     $OUTPUT, err = TextMate::Process.run("golines", "-m", max_len, "-t", tab_len, :input => $DOCUMENT)
-    TextMate.exit_show_tool_tip("golines error: #{err}") unless err.empty?
+    self.handle_err_messages("golines error: #{err}") unless err.empty?
   end
 
   # ---
-
+  
   # callback.document.did-save
   def Go::govet
     current_dir = ENV['TM_PROJECT_DIRECTORY']
     go_mod = "#{current_dir}/go.mod"
-    
-    lookup = File.exists?(go_mod) ? "." : ENV['TM_FILENAME']
 
-    out, err = TextMate::Process.run("go", "vet", lookup)
-    unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
-      if err.include?(ENV['TM_FILENAME'])
-        self.set_markers(err, "govet", "warning")
-        TextMate.exit_show_tool_tip("Fix the go vet error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
-      end
+    lookup = File.exists?(go_mod) ? "./..." : ENV['TM_FILENAME']
+
+    out, err = TextMate::Process.run("go", "vet", lookup, :chdir => ENV['TM_PROJECT_DIRECTORY'])
+    unless (err.nil? || err == "")
+      self.set_markers(err, "govet", "warning")
+      self.handle_err_messages("Fix the go vet error(s)!")
     end
 
     unless ENV['TM_DISABLE_GOVET_SHADOW']
       shadow_bin = `command -v shadow`.chomp
 
-      out, err = TextMate::Process.run("go", "vet", "-vettool", shadow_bin, lookup)
+      out, err = TextMate::Process.run("go", "vet", "-vettool", shadow_bin, lookup, :chdir => ENV['TM_PROJECT_DIRECTORY'])
       unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
         if err.include?(ENV['TM_FILENAME'])
           self.set_markers(err, "govet", "warning")
-          TextMate.exit_show_tool_tip("Fix the go vet shadow error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+          self.handle_err_messages("Fix the go vet shadow error(s)!")
         end
       end
     end
@@ -126,14 +191,10 @@ module Go
 
   # callback.document.did-save
   def Go::golangci_lint
-    current_dir = ENV['TM_PROJECT_DIRECTORY']
-    go_mod = "#{current_dir}/go.mod"
-    
     params = ["golangci-lint", "--color", "never", "run"]
-    
     has_config_file = false
     ['yml', 'yaml', 'toml', 'json'].each do |ext|
-      if File.exists?("#{current_dir}/.golangci.#{ext}")
+      if File.exists?("#{ENV['TM_PROJECT_DIRECTORY']}/.golangci.#{ext}")
         has_config_file = true
         break
       end
@@ -142,18 +203,21 @@ module Go
     log_level = ENV['TM_GOLANGCI_LINT_LOG_LEVEL'] || ''
     ENV['LOG_LEVEL'] = log_level unless log_level == ''
     params += ENV['TM_GOLANGCI_LINT_MANUAL'].split(" ") if !has_config_file && ENV['TM_GOLANGCI_LINT_MANUAL']
-    params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
+    params << ENV['TM_FILENAME'] unless File.exists?("#{ENV['TM_PROJECT_DIRECTORY']}/go.mod")
     
-    out, err = TextMate::Process.run(*params)
+    out, err = TextMate::Process.run(
+      params,
+      :chdir => ENV["TM_PROJECT_DIRECTORY"]
+    )
 
     unless err.nil? || err == ""
       self.set_markers(err, "golangci-lint", "error")
-      TextMate.exit_show_tool_tip("Fix the golangci-lint error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+      self.handle_err_messages("Fix the golangci-lint error(s)!")
     end
 
     unless out.empty?
       self.set_markers(out, "golangci-lint", "error")
-      TextMate.exit_show_tool_tip("Fix the golangci-lint error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+      self.handle_err_messages("Fix the golangci-lint error(s)! (2)")
     end
   end
   
@@ -164,7 +228,7 @@ module Go
     out, err = TextMate::Process.run(*params)
     unless out.empty? || !err.empty?
       self.set_markers(out, "staticcheck", "error")
-      TextMate.exit_show_tool_tip("Fix the staticcheck error(s)!\n\n#{$ALL_ERRORS.join("\n")}")
+      self.handle_err_messages("Fix the staticcheck error(s)!")
     end
   end
   
@@ -233,7 +297,7 @@ or check binaries:
     self.govet unless ENV['TM_DISABLE_GOVET']
     self.golangci_lint unless ENV['TM_DISABLE_GOLANGCI']
     self.staticcheck unless ENV['TM_DISABLE_STATIC_CHECK']
-
+    
     TextMate.exit_show_tool_tip(boxify("Good to go 🚀"))
   end
   
