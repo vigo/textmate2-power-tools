@@ -41,9 +41,12 @@ module Go
     err_msg = err_msg + $DEBUG_OUT.map{|i| "# #{i}"}.join("\n") + "\n" if ENV['TM_GOLINTER_DEBUG']
     err_msg = err_msg + "#{title}\n\n"
     err_msg = err_msg + $ALL_ERRORS.join("\n")
-
-    TextMate.exit_show_tool_tip(err_msg)
-    # TextMate.exit_create_new_document(err_msg)
+    
+    if ENV['TM_GOLINTER_DEBUG']
+      TextMate.exit_create_new_document(err_msg)
+    else
+      TextMate.exit_show_tool_tip(err_msg)
+    end
   end
 
   def Go::reset_markers
@@ -74,7 +77,7 @@ module Go
 
           $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{err_mesage}"
           
-          if filepath.include?(current_file)
+          if filepath.include?(current_file) || current_file.include?(filepath)
             mark_message = "#{style}:#{err_mesage} -> #{lineno}:#{column}"
             mark_message = "#{mark_message} - (#{sender})" unless sender.empty?
           
@@ -108,7 +111,7 @@ module Go
 
             $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{err_mesage}"
             
-            if current_file.include?(filepath)
+            if filepath.include?(current_file) || current_file.include?(filepath)
               mark_message = "#{style}:#{err_mesage} -> #{lineno}:#{column}"
               mark_message = "#{mark_message} - (#{sender})" unless sender.empty?
             
