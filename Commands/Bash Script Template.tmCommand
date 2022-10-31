@@ -23,6 +23,8 @@ puts(&lt;&lt;-TEMP)
 
 set -e
 set -o pipefail
+set -o errexit
+set -o nounset
 
 TEMP
 </string>
