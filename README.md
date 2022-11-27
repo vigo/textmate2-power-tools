@@ -45,12 +45,17 @@ PATH /opt/homebrew/bin:${PATH}
 
 and you need to set:
 
-- `GOPATH` get the value of `$ go env GOPATH`
+- `TM_GOPATH` get the value of `$ go env GOPATH`
 - `TM_GO` get the value of `$ command -v go`
 
 ```bash
-$ go env GOPATH           # for GOPATH => /Users/vigo/.local/gopackages
+$ go env GOPATH           # for TM_GOPATH => /Users/vigo/.local/gopackages
 $ command -v go           # for TM_GO  => /opt/homebrew/opt/go/libexec/bin/go
+
+$ defaults write com.macromates.TextMate environmentVariables \
+    -array-add "{enabled = 1; value = \"$(command -v go)\"; name = \"TM_GO\"; }"
+$ defaults write com.macromates.TextMate environmentVariables \
+    -array-add "{enabled = 1; value = \"$(go env GOPATH)\"; name = \"TM_GOPATH\"; }"
 ```
 
 Other bundle dependencies (*not required but nice to have*)
@@ -66,7 +71,8 @@ Other bundle dependencies (*not required but nice to have*)
 
 - `golangci-lint` runner checks for `TM_GOLANGCI_LINT_LOG_LEVEL` environment
   variable. Due to `go 1.18`, `golangci-lint` produces some warnings. You can
-  by pass those warnings via setting `TM_GOLANGCI_LINT_LOG_LEVEL` to `error`.
+  bypass those warnings via setting `TM_GOLANGCI_LINT_LOG_LEVEL`. Default is set
+  to `error` (no more warnings).
 
 **2022-07-13**
 

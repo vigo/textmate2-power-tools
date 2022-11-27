@@ -7,9 +7,9 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/tm/process'
 require ENV['TM_SUPPORT_PATH'] + '/lib/tm/save_current_document'
 
 # TM_GO must set...
-# GOPATH must set...
+# TM_GOPATH must set...
 ENV['PATH'] = "#{File.dirname(ENV['TM_GO'])}:#{ENV['PATH']}"
-ENV['PATH'] = "#{ENV['GOPATH']}/bin:#{ENV['PATH']}"
+ENV['PATH'] = "#{ENV['TM_GOPATH']}/bin:#{ENV['PATH']}"
 
 $OUTPUT = ""
 $DOCUMENT = STDIN.read
@@ -203,7 +203,7 @@ module Go
       end
     end
     
-    log_level = ENV['TM_GOLANGCI_LINT_LOG_LEVEL'] || ''
+    log_level = ENV['TM_GOLANGCI_LINT_LOG_LEVEL'] || 'error'
     ENV['LOG_LEVEL'] = log_level unless log_level == ''
     params += ENV['TM_GOLANGCI_LINT_MANUAL'].split(" ") if !has_config_file && ENV['TM_GOLANGCI_LINT_MANUAL']
     params << ENV['TM_FILENAME'] unless File.exists?("#{ENV['TM_PROJECT_DIRECTORY']}/go.mod")
@@ -239,7 +239,7 @@ module Go
     err_msg = nil
     
     # check env
-    required_env_names = ['TM_GO', 'GOPATH']
+    required_env_names = ['TM_GO', 'TM_GOPATH']
     required_envs_set = required_env_names.all?{|val| ENV[val]}
     
     # check bins
@@ -264,7 +264,7 @@ module Go
     else
       err_msg = "Bundle config error, please check TM environment variables.\n
 \t#{required_env_names.join(' or ')}\n\nmust set...\n
-#{required_env_names.map{|en| "\t#{en} -> #{ENV[en]} ?[#{File.exists?(ENV[en])}]" }.join("\n")}\n
+#{required_env_names.map{|en| "\t#{en} -> #{ENV[en]} ?[#{File.exists?(ENV[en])}]" if ENV[en] }.join("\n")}\n
 or check binaries:
 #{required_bins.map{|bin| "\t#{bin} -> #{`command -v #{bin}`.chomp}" }.join("\n")}"
     end
