@@ -45,17 +45,23 @@ PATH /opt/homebrew/bin:${PATH}
 
 and you need to set:
 
-- `TM_GOPATH` get the value of `$ go env GOPATH`
+- `TM_GOPATH` and `GOPATH` get the value of `$ go env GOPATH`
 - `TM_GO` get the value of `$ command -v go`
+- `GOMODCACHE` get the value of `$ go env GOMODCACHE`
 
 ```bash
-$ go env GOPATH           # for TM_GOPATH => /Users/vigo/.local/gopackages
-$ command -v go           # for TM_GO  => /opt/homebrew/opt/go/libexec/bin/go
+$ go env GOPATH           # (example) for TM_GOPATH and GOPATH => /Users/vigo/.local/go
+$ go env GOMODCACHE       # (example) for GOMODCACHE  => /Users/vigo/.local/go/pkg/mod
+$ command -v go           # (example) for TM_GO  => /opt/homebrew/opt/go/libexec/bin/go
 
 $ defaults write com.macromates.TextMate environmentVariables \
     -array-add "{enabled = 1; value = \"$(command -v go)\"; name = \"TM_GO\"; }"
 $ defaults write com.macromates.TextMate environmentVariables \
     -array-add "{enabled = 1; value = \"$(go env GOPATH)\"; name = \"TM_GOPATH\"; }"
+$ defaults write com.macromates.TextMate environmentVariables \
+    -array-add "{enabled = 1; value = \"$(go env GOPATH)\"; name = \"GOPATH\"; }"
+$ defaults write com.macromates.TextMate environmentVariables \
+    -array-add "{enabled = 1; value = \"$(go env GOMODCACHE)\"; name = \"GOMODCACHE\"; }"
 ```
 
 Other bundle dependencies (*not required but nice to have*)
