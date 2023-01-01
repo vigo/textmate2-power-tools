@@ -37,6 +37,24 @@ end
 
 module Go
   def Go::handle_err_messages(title)
+    err_max_lines = ENV['TM_ERROR_TOOLTIP_MAX_LINE'] || 120
+    err_max_lines = err_max_lines.to_i
+    err_max_lines = 150 if err_max_lines > 150
+
+    $ALL_ERRORS.each_with_index do |err, index|
+      err_lines = err.split("\n")
+      err_lines.each_with_index do |e, i|
+        if e.length > err_max_lines
+          buf = []
+          e.split("").each_slice(err_max_lines) do |line|
+            buf << line.join("")
+          end
+          err_lines[i] = buf.join("\n")
+        end
+      end
+      $ALL_ERRORS[index] = err_lines.join("\n")
+    end
+
     err_msg = ""
     err_msg = err_msg + $DEBUG_OUT.map{|i| "# #{i}"}.join("\n") + "\n" if ENV['TM_GOLINTER_DEBUG']
     err_msg = err_msg + "#{title}\n\n"

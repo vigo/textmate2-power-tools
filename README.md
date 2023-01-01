@@ -73,6 +73,10 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2023-01-01**
+
+- Add error tool tip max line length via `TM_ERROR_TOOLTIP_MAX_LINE`
+
 **2022-07-14**
 
 - `golangci-lint` runner checks for `TM_GOLANGCI_LINT_LOG_LEVEL` environment
@@ -368,6 +372,10 @@ Use `TM_GOLANGCI_LINT_LOG_LEVEL` to by-pass linter warnings (`go 1.18` issue):
 - `TM_GOLANGCI_LINT_LOG_LEVEL` to `error` shows only errors
 - `TM_GOLANGCI_LINT_LOG_LEVEL` to `warning` shows warnings too
 - `TM_GOLANGCI_LINT_LOG_LEVEL` to `info` show info level logs
+
+Error tool tip had some issues, due to TextMate’s limit, lines > 150 chars
+was broken. Now it’s fixed. Use `TM_ERROR_TOOLTIP_MAX_LINE` environment
+variable to set your desired amount. Maximum is `150`.
 
 ### Go Commands
 
