@@ -35,22 +35,34 @@ def boxify(s)
   "┏#{line}┓\n┃  #{s}  ┃\n┗#{line}┛"
 end
 
+def wrap_text(txt, limit)
+  out = ['']
+  input = txt.gsub(/\n/," ")
+  words = input.split(" ")
+  line = 0
+  while input != ""
+    word = words.shift
+    break if not word
+    if out[line].length + word.length > limit
+      out[line].squeeze!(" ")
+      line += 1
+      out[line] = ""
+    end
+    out[line] << word + " "
+  end
+  out.join("\n")
+end
+
 module Go
   def Go::handle_err_messages(title)
     err_max_lines = ENV['TM_ERROR_TOOLTIP_MAX_LINE'] || 120
     err_max_lines = err_max_lines.to_i
     err_max_lines = 150 if err_max_lines > 150
-
+    
     $ALL_ERRORS.each_with_index do |err, index|
       err_lines = err.split("\n")
       err_lines.each_with_index do |e, i|
-        if e.length > err_max_lines
-          buf = []
-          e.split("").each_slice(err_max_lines) do |line|
-            buf << line.join("")
-          end
-          err_lines[i] = buf.join("\n")
-        end
+        err_lines[i] = wrap_text(e, err_max_lines)
       end
       $ALL_ERRORS[index] = err_lines.join("\n")
     end
