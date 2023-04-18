@@ -73,6 +73,10 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2023-04-18**
+
+- Add shellcheck disable comment via `dis` + TAB
+
 **2023-01-01**
 
 - Add error tool tip max line length via `TM_ERROR_TOOLTIP_MAX_LINE`
@@ -262,6 +266,15 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 defaults write com.macromates.textmate environmentVariables -array-add \
     '{ name = "TM_SHELLCHECK_DISABLE"; enabled = 1; value = "1"; }'
 ```
+
+You can disable shellcheck feature on your scripts via `dis` + TAB, this
+adds:
+
+```bash
+# shellcheck disable=all
+```
+
+comment.
 
 You need to restart TextMate after these settings...
 

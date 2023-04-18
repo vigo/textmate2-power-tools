@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># shellcheck disable=all$0</string>
+	<key>name</key>
+	<string>Disable shellcheck</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>dis</string>
+	<key>uuid</key>
+	<string>6E135296-7F79-4D81-88D1-FAF999906AB4</string>
+</dict>
+</plist>
