@@ -73,6 +73,11 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2023-06-27**
+
+- Yeah, I’m still developing this bundle
+- Add `-` + <kbd>⇥</kbd> create dynamic comment till your wrap column size!
+
 **2023-04-18**
 
 - Add shellcheck disable comment via `dis` + TAB
@@ -596,6 +601,7 @@ Press <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>B</kbd> for;
 | <kbd>⌥</kbd> + <kbd>'</kbd> | Single smart apostrophe. (*Works in html, text, markdown, yaml*) |
 | `applek` + <kbd>⇥</kbd> | Generate apple symbols like: ⌘ ⎋ more... |
 | `applek` + <kbd>⇥</kbd> | Generate apple symbols inside of `<kbd>` tags. |
+| `-` + <kbd>⇥</kbd> | Dynamic comment. Fills remaning line with `-` |
 | `--` + <kbd>⇥</kbd> | Line delimeter, 80 charts comment `# ---- ...` |
 | `---` + <kbd>⇥</kbd> | Dynamic tilda. Fills remaning line with `~` |
 | <kbd>⌥</kbd> + <kbd>⌘</kbd> + `B` | Shows `git blame` for current line |
