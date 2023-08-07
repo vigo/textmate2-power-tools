@@ -70,7 +70,7 @@ module Go
     err_msg = ""
     err_msg = err_msg + $DEBUG_OUT.map{|i| "# #{i}"}.join("\n") + "\n" if ENV['TM_GOLINTER_DEBUG']
     err_msg = err_msg + "#{title}\n\n"
-    err_msg = err_msg + $ALL_ERRORS.join("\n")
+    err_msg = err_msg + $ALL_ERRORS.join("\n\n")
     
     if ENV['TM_GOLINTER_DEBUG']
       TextMate.exit_create_new_document(err_msg)
@@ -99,6 +99,8 @@ module Go
           column = file_info.size == 3 ? file_info[2] : 1
           err_mesage = slice[1]
           
+          next if err_mesage.start_with?(": # ")
+          
           $DEBUG_OUT << "case: golangci-lint"
           $DEBUG_OUT << "file_info: #{file_info}"
           $DEBUG_OUT << "set_markers(#{sender}): filepath: #{filepath} #{filepath.size}"
@@ -107,9 +109,10 @@ module Go
 
           $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{err_mesage}"
           
-          if filepath.include?(current_file) || current_file.include?(filepath)
+          if ENV['TM_FILEPATH'].include?(filepath)
+            err_mesage = wrap_str(err_mesage, ENV['TM_ERROR_TOOLTIP_MAX_LINE'] || 120)
+            err_mesage = "[#{sender}] - #{err_mesage}" unless sender.empty?
             mark_message = "#{style}:#{err_mesage} -> #{lineno}:#{column}"
-            mark_message = "#{mark_message} - (#{sender})" unless sender.empty?
           
             tm_args = [
               "--uuid", 
@@ -141,9 +144,9 @@ module Go
 
             $ALL_ERRORS << "[#{sender}] #{filepath}\n#{lineno}:#{column} -> #{err_mesage}"
             
-            if filepath.include?(current_file) || current_file.include?(filepath)
+            if ENV['TM_FILEPATH'].include?(filepath)
+              err_mesage = "[#{sender}] - #{err_mesage}" unless sender.empty?
               mark_message = "#{style}:#{err_mesage} -> #{lineno}:#{column}"
-              mark_message = "#{mark_message} - (#{sender})" unless sender.empty?
             
               tm_args = [
                 "--uuid", 
@@ -204,7 +207,7 @@ module Go
 
     out, err = TextMate::Process.run("go", "vet", lookup, :chdir => ENV['TM_PROJECT_DIRECTORY'])
     unless (err.nil? || err == "")
-      self.set_markers(err, "govet", "warning")
+      self.set_markers(err, "govet", "error")
       self.handle_err_messages("Fix the go vet error(s)!")
     end
 
@@ -214,7 +217,7 @@ module Go
       out, err = TextMate::Process.run("go", "vet", "-vettool", shadow_bin, lookup, :chdir => ENV['TM_PROJECT_DIRECTORY'])
       unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
         if err.include?(ENV['TM_FILENAME'])
-          self.set_markers(err, "govet", "warning")
+          self.set_markers(err, "govet", "error")
           self.handle_err_messages("Fix the go vet shadow error(s)!")
         end
       end

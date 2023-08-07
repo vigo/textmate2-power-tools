@@ -1,5 +1,7 @@
 ![Version](https://img.shields.io/badge/version-2.3.8-orange.svg)
 ![Plaftorm](https://img.shields.io/badge/platform-TextMate_2_-blue.svg)
+![Powered by Rake](https://img.shields.io/badge/powered_by-rake-blue?logo=ruby)
+
 
 # TextMate2 - Power Tools
 
