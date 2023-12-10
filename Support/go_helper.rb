@@ -162,7 +162,8 @@ module Go
 
   # callback.document.will-save
   def Go::gofumpt
-    out, err = TextMate::Process.run("gofumpt", :input => $DOCUMENT)
+    cmd = `command -v gofumpt`.chomp
+    out, err = TextMate::Process.run(cmd, :input => $DOCUMENT)
     unless err.nil? || err == ""
       self.handle_err_messages("gofumpt error: #{err}")
     end
@@ -171,7 +172,8 @@ module Go
 
   # callback.document.will-save
   def Go::gofmt
-    $OUTPUT, err = TextMate::Process.run("gofmt", :input => $DOCUMENT)
+    cmd = `command -v gofmt`.chomp
+    $OUTPUT, err = TextMate::Process.run(cmd, :input => $DOCUMENT)
     unless err.nil? || err == ""
       self.set_markers(err, "gofmt", "warning")
       self.handle_err_messages("Fix the gofmt error(s)!")
@@ -180,7 +182,8 @@ module Go
 
   # callback.document.will-save
   def Go::goimports
-    $OUTPUT, err = TextMate::Process.run("goimports", :input => $DOCUMENT)
+    cmd = `command -v goimports`.chomp
+    $OUTPUT, err = TextMate::Process.run(cmd, :input => $DOCUMENT)
     unless err.nil? || err == ""
       self.set_markers(err, "goimports", "error")
       self.handle_err_messages(wrap_str("Fix the goimports error(s)!"))
@@ -192,7 +195,10 @@ module Go
     max_len = ENV['TM_GOLINES_MAX_LEN'] || '100'
     tab_len = ENV['TM_GOLINES_TAB_LEN'] || '4'
 
-    $OUTPUT, err = TextMate::Process.run("golines", "-m", max_len, "-t", tab_len, :input => $DOCUMENT)
+    cmd = `command -v golines`.chomp
+    params = ["-m", max_len, "-t", tab_len]
+
+    $OUTPUT, err = TextMate::Process.run(cmd, params, :input => $DOCUMENT)
     self.handle_err_messages("golines error: #{err}") unless err.empty?
   end
 
@@ -204,8 +210,11 @@ module Go
     go_mod = "#{current_dir}/go.mod"
 
     lookup = File.exists?(go_mod) ? "./..." : ENV['TM_FILENAME']
-
-    out, err = TextMate::Process.run("go", "vet", lookup, :chdir => ENV['TM_PROJECT_DIRECTORY'])
+    
+    cmd = `command -v go`.chomp
+    params = ["vet", lookup]
+    
+    out, err = TextMate::Process.run(cmd, params, :chdir => ENV['TM_PROJECT_DIRECTORY'])
     unless (err.nil? || err == "")
       self.set_markers(err, "govet", "error")
       self.handle_err_messages("Fix the go vet error(s)!")
@@ -213,8 +222,8 @@ module Go
 
     unless ENV['TM_DISABLE_GOVET_SHADOW']
       shadow_bin = `command -v shadow`.chomp
-
-      out, err = TextMate::Process.run("go", "vet", "-vettool", shadow_bin, lookup, :chdir => ENV['TM_PROJECT_DIRECTORY'])
+      vet_params = ["vet", "-vettool", shadow_bin, lookup]
+      out, err = TextMate::Process.run(cmd, vet_params, :chdir => ENV['TM_PROJECT_DIRECTORY'])
       unless (err.nil? || err == "") and err.include?(ENV['TM_FILENAME'])
         if err.include?(ENV['TM_FILENAME'])
           self.set_markers(err, "govet", "error")
@@ -227,7 +236,9 @@ module Go
 
   # callback.document.did-save
   def Go::golangci_lint
-    params = ["golangci-lint", "--color", "never", "run"]
+    cmd = `command -v golangci-lint`.chomp
+    params = ["--color", "never", "run"]
+
     has_config_file = false
     ['yml', 'yaml', 'toml', 'json'].each do |ext|
       if File.exists?("#{ENV['TM_PROJECT_DIRECTORY']}/.golangci.#{ext}")
@@ -241,7 +252,13 @@ module Go
     params += ENV['TM_GOLANGCI_LINT_MANUAL'].split(" ") if !has_config_file && ENV['TM_GOLANGCI_LINT_MANUAL']
     params << ENV['TM_FILENAME'] unless File.exists?("#{ENV['TM_PROJECT_DIRECTORY']}/go.mod")
     
+    if ENV['TM_GOLINTER_DEBUG']
+      cmd_version = `#{cmd} --version`.chomp
+      $DEBUG_OUT << "#{cmd_version}"
+    end
+    
     out, err = TextMate::Process.run(
+      cmd,
       params,
       :chdir => ENV["TM_PROJECT_DIRECTORY"]
     )
@@ -259,9 +276,10 @@ module Go
   
   # callback.document.did-save
   def Go::staticcheck
-    params = ["staticcheck", ENV['TM_FILENAME']]
+    cmd = `command -v staticcheck`.chomp
+    params = [ENV['TM_FILENAME']]
 
-    out, err = TextMate::Process.run(*params)
+    out, err = TextMate::Process.run(cmd, params)
     unless out.empty? || !err.empty?
       self.set_markers(out, "staticcheck", "error")
       self.handle_err_messages("Fix the staticcheck error(s)!")
@@ -334,7 +352,32 @@ or check binaries:
     self.golangci_lint unless ENV['TM_DISABLE_GOLANGCI']
     self.staticcheck unless ENV['TM_DISABLE_STATIC_CHECK']
     
-    TextMate.exit_show_tool_tip(boxify("Good to go 🚀"))
+    success_msg = boxify("Good to go 🚀")
+    if ENV['TM_GOLINTER_SHOW_TOOL_VERSIONS']
+      version_info = []
+        
+      cmd_gofumpt = `command -v gofumpt`.chomp
+      unless cmd_gofumpt.empty?
+        version_gofumpt = `#{cmd_gofumpt} -version`.chomp
+        version_info << "gofumpt: #{version_gofumpt}"
+      end
+
+      cmd_golines = `command -v golines`.chomp
+      unless cmd_golines.empty?
+        version_golines = `#{cmd_golines} --version`.chomp
+        version_info << "golines: #{version_golines}"
+      end
+
+      cmd_golangci_lint = `command -v golangci-lint`.chomp
+      unless cmd_golangci_lint.empty?
+        version_golangci_lint = `#{cmd_golangci_lint} --version`.chomp
+        version_info << "golangci-lint: #{version_golangci_lint}"
+      end
+
+      success_msg = version_info.collect{|m| boxify(m)}.join("\n")
+    end
+    
+    TextMate.exit_show_tool_tip(success_msg)
   end
   
 end

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{% translate "${1:${TM_SELECTED_TEXT:string to translate}}" %}</string>
+	<key>name</key>
+	<string>translate</string>
+	<key>scope</key>
+	<string>text.html.django</string>
+	<key>tabTrigger</key>
+	<string>trans</string>
+	<key>uuid</key>
+	<string>B6BC1EC7-FB32-48E2-AC55-2C437D6F43D3</string>
+</dict>
+</plist>
