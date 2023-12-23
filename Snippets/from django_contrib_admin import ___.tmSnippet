@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>htlp</string>
+	<string>hlp</string>
 	<key>uuid</key>
 	<string>08798489-25CF-4C32-8721-160CAF142334</string>
 </dict>
