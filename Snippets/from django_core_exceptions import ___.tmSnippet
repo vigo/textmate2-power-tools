@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.core.exceptions import ${1|AppRegistryNotReady,BadRequest,DisallowedHost,DisallowedRedirect,EmptyResultSet,FieldDoesNotExist,FieldError,FullResultSet,ImproperlyConfigured,MiddlewareNotUsed,MultipleObjectsReturned,NON_FIELD_ERRORS,ObjectDoesNotExist,PermissionDenied,RequestAborted,RequestDataTooBig,SuspiciousFileOperation,SuspiciousMultipartForm,SuspiciousOperation,SynchronousOnlyOperation,TooManyFieldsSent,TooManyFilesSent,ValidationError,ViewDoesNotExist,make_hashable,operator|}</string>
+	<key>name</key>
+	<string>from django.core.exceptions import ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>9320DE13-0416-4384-BA61-B8388499B3E7</string>
+</dict>
+</plist>

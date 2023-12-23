@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db import ${1|models,connection,connections,router|}$0</string>
+	<string>from django.db import ${1|ConnectionHandler,ConnectionProxy,ConnectionRouter,DEFAULT_DB_ALIAS,DJANGO_VERSION_PICKLE_KEY,DataError,DatabaseError,Error,IntegrityError,InterfaceError,InternalError,NotSupportedError,OperationalError,ProgrammingError,backends,close_old_connections,connection,connections,migrations,models,reset_queries,router,signals,transaction,utils|}$0</string>
 	<key>name</key>
-	<string>from django.db</string>
+	<string>from django.db import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

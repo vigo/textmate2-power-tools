@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.utils.translation import ${1|ContextDecorator,Decimal,ROUND_UP,TranslatorCommentWarning,activate,autoreload_started,check_for_language,deactivate,deactivate_all,file_changed,get_language,get_language_bidi,get_language_from_path,get_language_from_request,get_language_info,get_supported_language_variant,gettext,gettext_lazy,gettext_noop,lazy,lazy_number,ngettext,ngettext_lazy,npgettext,npgettext_lazy,override,pgettext,pgettext_lazy,reloader,round_away_from_one,templatize,to_language,to_locale,trans_real,trim_whitespace,trim_whitespace_re|}</string>
+	<key>name</key>
+	<string>from django.utils.translation import ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>htlp</string>
+	<key>uuid</key>
+	<string>B64FECA8-7AA1-435D-B630-44604282E221</string>
+</dict>
+</plist>

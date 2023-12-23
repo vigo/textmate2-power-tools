@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.contrib.messages import ${1|DEBUG,DEFAULT_LEVELS,DEFAULT_TAGS,ERROR,INFO,MessageFailure,SUCCESS,WARNING,add_message,api,apps,constants,debug,error,get_level,get_messages,info,middleware,set_level,storage,success,utils,warning|}</string>
+	<key>name</key>
+	<string>from django.contrib.messages import *</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>72CC9392-A884-4819-868F-53D4691E734E</string>
+</dict>
+</plist>

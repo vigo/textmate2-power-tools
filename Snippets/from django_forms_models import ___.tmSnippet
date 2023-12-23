@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.forms.models import ${1|ALL_FIELDS,AltersData,BaseForm,BaseFormSet,BaseInlineFormSet,BaseModelForm,BaseModelFormSet,ChoiceField,DeclarativeFieldsMetaclass,ErrorList,Field,FieldError,HiddenInput,ImproperlyConfigured,InlineForeignKeyField,ModelChoiceField,ModelChoiceIterator,ModelChoiceIteratorValue,ModelForm,ModelFormMetaclass,ModelFormOptions,ModelMultipleChoiceField,MultipleHiddenInput,NON_FIELD_ERRORS,RadioSelect,SelectMultiple,ValidationError,apply_limit_choices_to_to_formfield,capfirst,chain,construct_instance,fields_for_model,formset_factory,get_text_list,gettext,inlineformset_factory,model_to_dict,modelform_defines_fields,modelform_factory,modelformset_factory|}</string>
+	<key>name</key>
+	<string>from django.forms.models import ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>B6E27A34-5431-4C59-9A99-F2EC905750EC</string>
+</dict>
+</plist>

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.utils.functional import cached_property$0</string>
+	<string>from django.utils.functional import ${1|LazyObject,Promise,SimpleLazyObject,__builtins__,__cached__,__doc__,__file__,__loader__,__name__,__package__,__spec__,_lazy_proxy_unpickle,cached_property,classproperty,copy,empty,itertools,keep_lazy,keep_lazy_text,lazy,lazystr,new_method_proxy,operator,partition,total_ordering,unpickle_lazyobject,warnings,wraps|}</string>
 	<key>name</key>
-	<string>from django.utils.functional import cached_property</string>
+	<string>from django.utils.functional import ...</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>

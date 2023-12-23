@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.contrib.admin import ${1|AdminSite,AllValuesFieldListFilter,BooleanFieldListFilter,ChoicesFieldListFilter,DateFieldListFilter,EmptyFieldListFilter,FieldListFilter,HORIZONTAL,ListFilter,ModelAdmin,RelatedFieldListFilter,RelatedOnlyFieldListFilter,SimpleListFilter,StackedInline,TabularInline,VERTICAL,action,actions,apps,autodiscover,autodiscover_modules,checks,decorators,display,exceptions,filters,helpers,models,options,register,site,sites,templatetags,utils,views,widgets|}</string>
+	<key>name</key>
+	<string>from django.contrib.admin import ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>htlp</string>
+	<key>uuid</key>
+	<string>08798489-25CF-4C32-8721-160CAF142334</string>
+</dict>
+</plist>

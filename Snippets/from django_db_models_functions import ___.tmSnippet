@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.db.models.functions import ${1|ACos,ASin,ATan,ATan2,Abs,Cast,Ceil,Chr,Coalesce,Collate,Concat,ConcatPair,Cos,Cot,CumeDist,Degrees,DenseRank,Exp,Extract,ExtractDay,ExtractHour,ExtractIsoWeekDay,ExtractIsoYear,ExtractMinute,ExtractMonth,ExtractQuarter,ExtractSecond,ExtractWeek,ExtractWeekDay,ExtractYear,FirstValue,Floor,Greatest,JSONObject,LPad,LTrim,Lag,LastValue,Lead,Least,Left,Length,Ln,Log,Lower,MD5,Mod,Now,NthValue,Ntile,NullIf,Ord,PercentRank,Pi,Power,RPad,RTrim,Radians,Random,Rank,Repeat,Replace,Reverse,Right,Round,RowNumber,SHA1,SHA224,SHA256,SHA384,SHA512,Sign,Sin,Sqrt,StrIndex,Substr,Tan,Trim,Trunc,TruncDate,TruncDay,TruncHour,TruncMinute,TruncMonth,TruncQuarter,TruncSecond,TruncTime,TruncWeek,TruncYear,Upper|}$0</string>
+	<string>from django.db.models.functions import ${1|ACos,ASin,ATan,ATan2,Abs,Cast,Ceil,Chr,Coalesce,Collate,Concat,ConcatPair,Cos,Cot,CumeDist,Degrees,DenseRank,Exp,Extract,ExtractDay,ExtractHour,ExtractIsoWeekDay,ExtractIsoYear,ExtractMinute,ExtractMonth,ExtractQuarter,ExtractSecond,ExtractWeek,ExtractWeekDay,ExtractYear,FirstValue,Floor,Greatest,JSONObject,LPad,LTrim,Lag,LastValue,Lead,Least,Left,Length,Ln,Log,Lower,MD5,Mod,Now,NthValue,Ntile,NullIf,Ord,PercentRank,Pi,Power,RPad,RTrim,Radians,Random,Rank,Repeat,Replace,Reverse,Right,Round,RowNumber,SHA1,SHA224,SHA256,SHA384,SHA512,Sign,Sin,Sqrt,StrIndex,Substr,Tan,Trim,Trunc,TruncDate,TruncDay,TruncHour,TruncMinute,TruncMonth,TruncQuarter,TruncSecond,TruncTime,TruncWeek,TruncYear,Upper,comparison,datetime,math,mixins,text,window|}$0</string>
 	<key>name</key>
 	<string>from django.db.models.functions import ...</string>
 	<key>scope</key>

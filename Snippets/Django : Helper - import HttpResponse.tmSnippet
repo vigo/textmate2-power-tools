@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>from django.http import ${1|BadHeaderError,FileResponse,Http404,HttpRequest,HttpResponse,HttpResponseBadRequest,HttpResponseForbidden,HttpResponseGone,HttpResponseNotAllowed,HttpResponseNotFound,HttpResponseNotModified,HttpResponsePermanentRedirect,HttpResponseRedirect,HttpResponseServerError,JsonResponse,QueryDict,RawPostDataException,SimpleCookie,StreamingHttpResponse,UnreadablePostError,cookie,multipartparser,parse_cookie,request,response|}$0</string>
+	<string>from django.http import ${1|BadHeaderError,FileResponse,Http404,HttpHeaders,HttpRequest,HttpResponse,HttpResponseBadRequest,HttpResponseBase,HttpResponseForbidden,HttpResponseGone,HttpResponseNotAllowed,HttpResponseNotFound,HttpResponseNotModified,HttpResponsePermanentRedirect,HttpResponseRedirect,HttpResponseServerError,JsonResponse,QueryDict,RawPostDataException,SimpleCookie,StreamingHttpResponse,UnreadablePostError,cookie,multipartparser,parse_cookie,request,response|}$0</string>
 	<key>name</key>
 	<string>from django.http import ...</string>
 	<key>scope</key>

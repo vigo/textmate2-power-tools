@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.utils.html import ${1|HTMLParser,MLStripper,Promise,RFC3986_GENDELIMS,RFC3986_SUBDELIMS,SafeData,SafeString,Urlizer,avoid_wrapping,conditional_escape,escape,escapejs,format_html,format_html_join,html,html_safe,json,json_script,keep_lazy,keep_lazy_text,linebreaks,mark_safe,normalize_newlines,parse_qsl,punycode,quote,re,smart_urlquote,strip_spaces_between_tags,strip_tags,unquote,urlencode,urlize,urlizer,urlsplit,urlunsplit|}</string>
+	<key>name</key>
+	<string>from django.utils.html import ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>610D7886-0757-4D22-AA01-26256DD06F97</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.forms.widgets import ${1|CheckboxInput,CheckboxSelectMultiple,ChoiceWidget,ClearableFileInput,CyclicDependencyError,DateInput,DateTimeBaseInput,DateTimeInput,EmailInput,FILE_INPUT_CONTRADICTION,FileInput,HiddenInput,Input,MEDIA_TYPES,MONTHS,Media,MediaDefiningClass,MediaOrderConflictWarning,MultiWidget,MultipleHiddenInput,NullBooleanSelect,NumberInput,OrderedSet,PasswordInput,RadioSelect,Select,SelectDateWidget,SelectMultiple,SplitDateTimeWidget,SplitHiddenDateTimeWidget,TextInput,Textarea,TimeInput,URLInput,Widget,boolean_check,chain,copy,datetime,defaultdict,format_html,formats,get_default_renderer,get_format,html_safe,mark_safe,media_property,stable_topological_sort,static,to_current_timezone,warnings|}</string>
+	<key>name</key>
+	<string>from django.forms.widgets import ...</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>0E67F217-EBE9-4E34-80AA-F779044ECBD7</string>
+</dict>
+</plist>

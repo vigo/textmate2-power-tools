@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>from django.views.generic import ${1|ArchiveIndexView,CreateView,DateDetailView,DayArchiveView,DeleteView,DetailView,FormView,GenericViewError,ListView,MonthArchiveView,RedirectView,TemplateView,TodayArchiveView,UpdateView,View,WeekArchiveView,YearArchiveView,base,dates,detail,edit,list|}</string>
+	<key>name</key>
+	<string>from django.views.generic import</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>hlp</string>
+	<key>uuid</key>
+	<string>9492E1C1-3733-4CB9-ADA4-CADF90560020</string>
+</dict>
+</plist>

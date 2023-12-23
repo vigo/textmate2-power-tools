@@ -75,6 +75,11 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2023-12-23**
+
+- Remove old django related snippets
+- Add new django related snippets (4+)
+
 **2023-06-27**
 
 - Yeah, I’m still developing this bundle
