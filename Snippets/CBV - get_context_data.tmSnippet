@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_context_data(self, **kwargs):
+    context_data = super().get_context_data(**kwargs)
+    ${0}
+    return context_data</string>
+	<key>name</key>
+	<string>CBV - get_context_data</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>get</string>
+	<key>uuid</key>
+	<string>342EACE3-9178-4328-84BC-72DAE682B028</string>
+</dict>
+</plist>

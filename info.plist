@@ -377,6 +377,7 @@
                     <string>ED51FA6D-4979-47B0-BD6A-83D4101791BA</string>
                     <string>A11E3787-596A-4E71-AE13-1CD76296EDBE</string>
                     <string>------------------------------------</string>
+                    <string>DDDEDBE4-B7D5-435B-A31F-8DB7030CE234</string>
                     <string>610D7886-0757-4D22-AA01-26256DD06F97</string>
                     <string>4F467DC1-566A-4BA4-B367-385E1586AE7C</string>
                     <string>D9B5B20A-CFB3-432C-A705-80AFA2F48494</string>
@@ -468,11 +469,25 @@
 					<string>82901970-62E5-43A2-BEC0-F74039C6B03B</string>
 					<string>27C8C2EB-AA74-4762-87EB-0BA02A72AAD1</string>
 					<string>36350B22-49CB-471D-B895-9C55E39DE5E5</string>
+                    <string>23048124-ab06-11ee-95f7-66be51852e05</string>
 				</array>
 				<key>name</key>
 				<string>Django</string>
 			</dict>
-
+            
+            <key>23048124-ab06-11ee-95f7-66be51852e05</key>
+            <dict>
+                <key>items</key>
+                <array>
+                    <string>342EACE3-9178-4328-84BC-72DAE682B028</string>
+                    <string>E02F0DC8-2E83-4F70-AA7B-E79CF397F043</string>
+                    <string>7F1E3742-857F-4768-8DE4-E02319CF7057</string>
+                    <string>A4E2187A-485B-48BA-A1A1-051E6470A109</string>
+                </array>
+                <key>name</key>
+                <string>Class Based Views</string>
+            </dict>
+            
 			<key>36350B22-49CB-471D-B895-9C55E39DE5E5</key>
 			<dict>
 				<key>items</key>

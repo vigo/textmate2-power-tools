@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_form_kwargs(self):
+    kwargs = super().get_form_kwargs()
+    ${0}
+    return kwargs</string>
+	<key>name</key>
+	<string>CBV - get_form_kwargs</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>get</string>
+	<key>uuid</key>
+	<string>7F1E3742-857F-4768-8DE4-E02319CF7057</string>
+</dict>
+</plist>
