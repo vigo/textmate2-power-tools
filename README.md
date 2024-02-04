@@ -204,8 +204,8 @@ You can prettify any kind of Python `list` or `dict` via <kbd>⌥</kbd> +
 | `pp` + <kbd>⇥</kbd> | `pp = pprint.PrettyPrinter(indent=4)` |
 | `pr` + <kbd>⇥</kbd> | Pretty Print with format: `pp.pprint(CURSOR.format())` |
 | `tern` + <kbd>⇥</kbd> | Ternary expression helper |
-| `pdbg` + <kbd>⇥</kbd> | Injects Python Debuffer |
-| `ipdbg` + <kbd>⇥</kbd> | Injects IPython Debuffer |
+| `pdbg` + <kbd>⇥</kbd> | Injects Python Debugger |
+| `ipdbg` + <kbd>⇥</kbd> | Injects IPython Debugger |
 | `logger` + <kbd>⇥</kbd> | Injects `logger` snippet |
 | `loggerbc` + <kbd>⇥</kbd> | Injects `logger` snippet with basic config |
 | <kbd>⌃</kbd> + <kbd>'</kbd> | Docstring |

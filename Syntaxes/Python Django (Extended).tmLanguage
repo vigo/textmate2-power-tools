@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(BASE_DIR|MIDDLEWARE|ALLOWED_HOSTS|TEMPLATES|WSGI_APPLICATION|DATABASES|AUTH_PASSWORD_VALIDATORS|USE_L10N|USE_TZ|STATIC_URL|PRODUCTION_BASE_PATH|STATIC_ROOT|STATICFILES_DIRS)\b</string>
+			<string>\b(BASE_DIR|MIDDLEWARE|ALLOWED_HOSTS|TEMPLATES|WSGI_APPLICATION|DATABASES|AUTH_PASSWORD_VALIDATORS|USE_L10N|USE_TZ|STATIC_URL|PRODUCTION_BASE_PATH|STATIC_ROOT|STATICFILES_DIRS|DEFAULT_AUTO_FIELD|EMAIL_BACKEND|SECURE_HSTS_(SECONDS|INCLUDE_SUBDOMAINS|PRELOAD)|((SESSION|CSRF)_COOKIE_SECURE)|SECURE_(SSL_REDIRECT|REFERRER_POLICY|CROSS_ORIGIN_OPENER_POLICY|PROXY_SSL_HEADER|REDIRECT_EXEMPT)|AUTH_USER_MODEL)\b</string>
 			<key>name</key>
 			<string>variable.other.django.settings</string>
 		</dict>
@@ -36,9 +36,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(match|case)\b</string>
+			<string>\b(autocomplete_choice_fields|formfield_custom_attrs|help_texts|inital_data_from_changelist_filter|original_verbose_names|override_list_display_column_names|readonly_fields_after|show_cancel_and_go_back)\b</string>
 			<key>name</key>
-			<string>keyword.python.new</string>
+			<string>entity.name.type.class.python</string>
 		</dict>
 		<dict>
 			<key>include</key>

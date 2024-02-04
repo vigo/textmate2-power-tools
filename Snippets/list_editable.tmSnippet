@@ -3,18 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def dispatch(self, request, *args, **kwargs):
-    # do your thang!
-    ${0}
-    return super().dispatch(request, *args, **kwargs)
-</string>
+	<string>list_editable = ['${1:field_in_list_display}',]$0</string>
 	<key>name</key>
-	<string>CBV - dispatch</string>
+	<string>list_editable</string>
 	<key>scope</key>
 	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
-	<string>get</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
+	<string>846BCCE2-8585-49F4-8977-1C94F93F9D5D</string>
 </dict>
 </plist>

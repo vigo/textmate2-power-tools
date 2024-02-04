@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+require 'fileutils'
+
+if File.directory?(ENV['TM_SELECTED_FILE'])
+  dunder_init_file = "#{ENV['TM_SELECTED_FILE']}/__init__.py"
+  if File.exists?(dunder_init_file)
+    puts "#{dunder_init_file} already exists"
+    return
+  end
+  FileUtils.touch(dunder_init_file)
+
+  File.open(dunder_init_file, 'a') do |f|
+    f.puts "# ruff: noqa: F403,I001"
+  end
+  puts "__init__.py was created under"
+  puts "#{ENV['TM_SELECTED_FILE']}"
+  puts "ruff directives was added."
+else
+  puts "#{ENV['TM_SELECTED_FILE']} is not a directory"
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>$@i</string>
+	<key>name</key>
+	<string>Create __init__.py with no import sorter - ruff</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>uuid</key>
+	<string>C1F598F4-8E3C-4434-8B4A-C9B6B49B3134</string>
+</dict>
+</plist>

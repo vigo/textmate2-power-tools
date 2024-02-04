@@ -55,6 +55,9 @@ module Shellcheck
   def run
     reset_markers
     return if TM_SHELLCHECK_DISABLE
+    input_text = STDIN.read
+    return if input_text.size == 0
+    return if input_text.split("\n").first.include?("disable=all")
 
     cmd = ENV["TM_SHELLCHECK"] || `command -v shellcheck`.chomp
     TextMate.exit_show_tool_tip(boxify("shellcheck binary not found!")) if cmd.empty?
@@ -64,13 +67,13 @@ module Shellcheck
 
     TextMate.exit_show_tool_tip(err) unless err.empty?
     TextMate.exit_show_tool_tip(boxify("Good to go 🚀")) if out.length <= 3
-    
+
     begin
       errors = JSON.parse(out)
     rescue JSON::ParserError
       TextMate.exit_show_tool_tip("JSON parse error!")
     end
-    
+
     errors.each do |err|
       set_markers(err)
     end

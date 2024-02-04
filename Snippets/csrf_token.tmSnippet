@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{% translate "${1:string to translate}"${2: as ${3:VAR}} %}</string>
+	<string>{% csrf_token %}$0</string>
 	<key>name</key>
-	<string>translate</string>
+	<string>csrf_token</string>
 	<key>scope</key>
 	<string>text.html.django</string>
 	<key>tabTrigger</key>
-	<string>trans</string>
+	<string>csrf</string>
 	<key>uuid</key>
-	<string>B6BC1EC7-FB32-48E2-AC55-2C437D6F43D3</string>
+	<string>564C9807-39E1-4F37-903B-C1FE2801F7B5</string>
 </dict>
 </plist>

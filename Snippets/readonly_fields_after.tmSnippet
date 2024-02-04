@@ -3,18 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def dispatch(self, request, *args, **kwargs):
-    # do your thang!
-    ${0}
-    return super().dispatch(request, *args, **kwargs)
+	<string>readonly_fields_after = {
+    '${2:field}': '${1:after_field}',
+}
 </string>
 	<key>name</key>
-	<string>CBV - dispatch</string>
+	<string>readonly_fields_after</string>
 	<key>scope</key>
 	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
-	<string>get</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
+	<string>94E2C2CB-6FE7-4D1B-B60A-11234CE8E630</string>
 </dict>
 </plist>

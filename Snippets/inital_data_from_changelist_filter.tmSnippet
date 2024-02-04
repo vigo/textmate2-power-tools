@@ -3,18 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def dispatch(self, request, *args, **kwargs):
-    # do your thang!
-    ${0}
-    return super().dispatch(request, *args, **kwargs)
+	<string>inital_data_from_changelist_filter = {
+    '${1:field}${2:${3:__exact}}': '$1',
+}
 </string>
 	<key>name</key>
-	<string>CBV - dispatch</string>
+	<string>inital_data_from_changelist_filter</string>
 	<key>scope</key>
 	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
-	<string>get</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
+	<string>BD5A2FC3-A214-49FC-BE79-2765C8679E9D</string>
 </dict>
 </plist>

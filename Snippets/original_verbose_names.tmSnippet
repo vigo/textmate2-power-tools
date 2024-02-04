@@ -3,18 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def dispatch(self, request, *args, **kwargs):
-    # do your thang!
-    ${0}
-    return super().dispatch(request, *args, **kwargs)
+	<string>original_verbose_names = {
+    '${1:field}': '${2:label}',
+}
 </string>
 	<key>name</key>
-	<string>CBV - dispatch</string>
+	<string>original_verbose_names</string>
 	<key>scope</key>
 	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
-	<string>get</string>
+	<string>admin</string>
 	<key>uuid</key>
-	<string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
+	<string>44518DB2-F8CF-47CA-A914-A9DB390C4F4E</string>
 </dict>
 </plist>
