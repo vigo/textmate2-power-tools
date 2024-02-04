@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def get_form(self, form_class=None):
-    form = super().get_form(form_class=form_class)
+	<string>def get_initial(self):
+    initial = super().get_initial()
     ${0}
-    return form</string>
+    return initial
+</string>
 	<key>name</key>
-	<string>CBV - get_form</string>
+	<string>CBV - get_initial</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>get</string>
 	<key>uuid</key>
-	<string>E02F0DC8-2E83-4F70-AA7B-E79CF397F043</string>
+	<string>62876D7A-3999-41F3-BD79-A41DC76BB40F</string>
 </dict>
 </plist>

@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def get_form(self, form_class=None):
-    form = super().get_form(form_class=form_class)
+	<string>def form_valid(self, form):
     ${0}
-    return form</string>
+    return super().form_valid(form)</string>
 	<key>name</key>
-	<string>CBV - get_form</string>
+	<string>CBV - form_valid</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>get</string>
+	<string>form</string>
 	<key>uuid</key>
-	<string>E02F0DC8-2E83-4F70-AA7B-E79CF397F043</string>
+	<string>8CBDCC5C-6887-40E5-80DA-68F9834EE00A</string>
 </dict>
 </plist>
