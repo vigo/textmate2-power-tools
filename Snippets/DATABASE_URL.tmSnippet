@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>export DATABASE_URL="postgres://localhost:5432/${1:db_name}"</string>
+	<string>export DATABASE_URL="postgresql://localhost:5432/${1:db_name}"</string>
 	<key>name</key>
 	<string>DATABASE_URL</string>
 	<key>scope</key>
