@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def dispatch(self, request, *args, **kwargs):
+    handler = super().dispatch(request, *args, **kwargs)
+    ${0}
+    return handler
+</string>
+	<key>name</key>
+	<string>CBV - dispatch</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>get</string>
+	<key>uuid</key>
+	<string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
+</dict>
+</plist>

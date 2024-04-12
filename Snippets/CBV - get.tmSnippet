@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get(self, request, *args, **kwargs):
+    response = super().get(request, *args, **kwargs)
+    ${0}
+    return response
+</string>
+	<key>name</key>
+	<string>CBV - get (FormView)</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>get</string>
+	<key>uuid</key>
+	<string>3752B780-C93D-4307-9BD3-52974173D019</string>
+</dict>
+</plist>

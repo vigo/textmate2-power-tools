@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def get_object(self, queryset=None):
+    obj = super().get_object(queryset)
+    ${0}
+    return obj</string>
+	<key>name</key>
+	<string>CBV - get_object</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>get</string>
+	<key>uuid</key>
+	<string>EB84EC5C-99F9-4959-83FB-2168C7B1C6C0</string>
+</dict>
+</plist>
