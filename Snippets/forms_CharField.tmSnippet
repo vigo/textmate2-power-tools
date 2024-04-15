@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = forms.CharField(
+    required=False,
+    max_length=200,
+    min_length=10,
+    label=_('${1:$TM_SELECTED_TEXT}'),
+)$0</string>
+	<key>name</key>
+	<string>forms.CharField</string>
+	<key>scope</key>
+	<string>source.python.django</string>
+	<key>tabTrigger</key>
+	<string>ffield</string>
+	<key>uuid</key>
+	<string>CC86CEA3-A476-41E3-B509-2FB1A67B4825</string>
+</dict>
+</plist>
