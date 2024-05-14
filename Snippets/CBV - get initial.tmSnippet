@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>export DATABASE_URL="postgresql://localhost:5432/${1:db_name}"</string>
+	<string>def get_initial(self):
+    initial = super().get_initial()
+    ${0}
+    return initial
+</string>
 	<key>name</key>
-	<string>DATABASE_URL</string>
+	<string>CBV - get_initial</string>
 	<key>scope</key>
-	<string>source.shell</string>
+	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>envi</string>
+	<string>get</string>
 	<key>uuid</key>
-	<string>2847446E-4F9E-41C7-AA50-431A12195313</string>
+	<string>62876D7A-3999-41F3-BD79-A41DC76BB40F</string>
 </dict>
 </plist>

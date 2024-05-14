@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>export DATABASE_URL="postgresql://localhost:5432/${1:db_name}"</string>
+	<string>HTTPStatus.${1|CONTINUE #100,SWITCHING_PROTOCOLS #101,CONTINUE,SWITCHING_PROTOCOLS #102,PROCESSING,EARLY_HINTS #103|}</string>
 	<key>name</key>
-	<string>DATABASE_URL</string>
+	<string>HTTP Status (100)</string>
 	<key>scope</key>
-	<string>source.shell</string>
+	<string>source.python</string>
 	<key>tabTrigger</key>
-	<string>envi</string>
+	<string>h100</string>
 	<key>uuid</key>
-	<string>2847446E-4F9E-41C7-AA50-431A12195313</string>
+	<string>A48FF1F6-E1D0-4544-9F74-E893123552D0</string>
 </dict>
 </plist>

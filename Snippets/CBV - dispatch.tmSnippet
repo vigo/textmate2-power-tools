@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def get_form(self, form_class=None):
-    form = super().get_form(form_class=form_class)
+	<string>def dispatch(self, request, *args, **kwargs):
+    handler = super().dispatch(request, *args, **kwargs)
     ${0}
-    return form</string>
+    return handler
+</string>
 	<key>name</key>
-	<string>CBV - get_form</string>
+	<string>CBV - dispatch</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>get</string>
 	<key>uuid</key>
-	<string>E02F0DC8-2E83-4F70-AA7B-E79CF397F043</string>
+	<string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
 </dict>
 </plist>

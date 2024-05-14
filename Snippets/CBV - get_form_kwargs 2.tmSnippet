@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def get_form_kwargs(self):
-    kwargs = super().get_form_kwargs()
+	<string>def setup(self, request, *args, **kwargs):
+    super().setup(request, *args, **kwargs)
     ${0}
-    return kwargs
 </string>
 	<key>name</key>
-	<string>CBV - get_form_kwargs</string>
+	<string>CBV - setup</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>get</string>
+	<string>setup</string>
 	<key>uuid</key>
 	<string>A4E2187A-485B-48BA-A1A1-051E6470A109</string>
 </dict>

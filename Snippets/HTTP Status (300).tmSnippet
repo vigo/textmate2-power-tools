@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>HTTPStatus.${1|MULTIPLE_CHOICES #300,MOVED_PERMANENTLY #301,FOUND #302,SEE_OTHER #303,NOT_MODIFIED #304,USE_PROXY #305,TEMPORARY_REDIRECT #307,PERMANENT_REDIRECT #308|}</string>
+	<key>name</key>
+	<string>HTTP Status (300)</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>h300</string>
+	<key>uuid</key>
+	<string>6480CAE9-158D-4A31-8D2E-FCD201DD7B34</string>
+</dict>
+</plist>

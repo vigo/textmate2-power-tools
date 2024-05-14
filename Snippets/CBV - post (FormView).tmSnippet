@@ -3,17 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def get_form(self, form_class=None):
-    form = super().get_form(form_class=form_class)
+	<string>def post(self, request, *args, **kwargs):
+    form = self.get_form()
+    if form.is_valid():
+        return self.form_valid(form)
+    else:
+        return self.form_invalid(form)
     ${0}
-    return form</string>
+</string>
 	<key>name</key>
-	<string>CBV - get_form</string>
+	<string>CBV - post (FormView)</string>
 	<key>scope</key>
 	<string>source.python.django</string>
 	<key>tabTrigger</key>
 	<string>get</string>
 	<key>uuid</key>
-	<string>E02F0DC8-2E83-4F70-AA7B-E79CF397F043</string>
+	<string>42083DA1-CD50-4C29-AD49-76768545D63A</string>
 </dict>
 </plist>

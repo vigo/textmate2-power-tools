@@ -53,6 +53,20 @@ def wrap_text(txt, limit)
   out.join("\n")
 end
 
+def match_need_go_module(relative_path)
+  cmd_list_paths_params = [ENV['TM_GO'], 'list', '-f', '{{.Path}}', '-m']
+  modules, _ = TextMate::Process.run(cmd_list_paths_params, :chdir => ENV['TM_PROJECT_DIRECTORY'])
+
+  matched_module = nil
+  modules.split.each do |module_name|
+    if relative_path.include?(module_name)
+      matched_module = module_name
+      break
+    end
+  end
+  matched_module
+end
+
 module Go
   def Go::handle_err_messages(title)
     err_max_lines = ENV['TM_ERROR_TOOLTIP_MAX_LINE'] || 120
@@ -183,7 +197,9 @@ module Go
   # callback.document.will-save
   def Go::goimports
     cmd = `command -v goimports`.chomp
-    $OUTPUT, err = TextMate::Process.run(cmd, :input => $DOCUMENT)
+    params = ['-local', 'dbhelper,httpclienthelper']
+    $OUTPUT, err = TextMate::Process.run(cmd, params, :input => $DOCUMENT)
+    # TextMate.exit_show_tool_tip("#{cmd}\n#{params}")
     unless err.nil? || err == ""
       self.set_markers(err, "goimports", "error")
       self.handle_err_messages(wrap_str("Fix the goimports error(s)!"))
@@ -203,17 +219,25 @@ module Go
   end
 
   # ---
-  
   # callback.document.did-save
   def Go::govet
     current_dir = ENV['TM_PROJECT_DIRECTORY']
+    file_name = ENV['TM_FILENAME']
+    file_path = ENV['TM_FILEPATH']
     go_mod = "#{current_dir}/go.mod"
+    go_work = "#{current_dir}/go.work"
+    relative_path = file_path.gsub(/^#{Regexp.escape(current_dir)}/, '')
 
-    lookup = File.exists?(go_mod) ? "./..." : ENV['TM_FILENAME']
-    
+    lookup = ENV['TM_FILENAME']
+    lookup = "./..." if File.exists?(go_mod)
+    if File.exists?(go_work)
+      matched_module = match_need_go_module(relative_path)
+      lookup = "./#{matched_module}/..." unless matched_module.nil?
+    end
+
     cmd = `command -v go`.chomp
     params = ["vet", lookup]
-    
+
     out, err = TextMate::Process.run(cmd, params, :chdir => ENV['TM_PROJECT_DIRECTORY'])
     unless (err.nil? || err == "")
       self.set_markers(err, "govet", "error")
@@ -236,6 +260,12 @@ module Go
 
   # callback.document.did-save
   def Go::golangci_lint
+    current_dir = ENV['TM_PROJECT_DIRECTORY']
+    file_path = ENV['TM_FILEPATH']
+    go_work = "#{current_dir}/go.work"
+    go_mod = "#{current_dir}/go.mod"
+    relative_path = file_path.gsub(/^#{Regexp.escape(current_dir)}/, '')
+    
     cmd = `command -v golangci-lint`.chomp
     params = ["--color", "never", "run"]
 
@@ -246,17 +276,23 @@ module Go
         break
       end
     end
-    
+
     log_level = ENV['TM_GOLANGCI_LINT_LOG_LEVEL'] || 'error'
     ENV['LOG_LEVEL'] = log_level unless log_level == ''
     params += ENV['TM_GOLANGCI_LINT_MANUAL'].split(" ") if !has_config_file && ENV['TM_GOLANGCI_LINT_MANUAL']
-    params << ENV['TM_FILENAME'] unless File.exists?("#{ENV['TM_PROJECT_DIRECTORY']}/go.mod")
+
+    if File.exists?(go_work)
+      matched_module = match_need_go_module(relative_path)
+      params << "./#{matched_module}/..."
+    elsif !File.exists?(go_mod)
+      params << ENV['TM_FILENAME'] unless File.exists?(go_mod)
+    end
     
     if ENV['TM_GOLINTER_DEBUG']
       cmd_version = `#{cmd} --version`.chomp
       $DEBUG_OUT << "#{cmd_version}"
     end
-    
+
     out, err = TextMate::Process.run(
       cmd,
       params,
@@ -338,7 +374,7 @@ or check binaries:
     self.goimports unless ENV['TM_DISABLE_GOIMPORTS']
     self.golines unless ENV['TM_DISABLE_GOLINES']
 
-    print $OUTPUT
+    print $OUTPUT.size == 0 ? $DOCUMENT : $OUTPUT
   end
 
   # callback.document.did-save

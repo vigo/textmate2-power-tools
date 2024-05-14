@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>export DATABASE_URL="postgresql://localhost:5432/${1:db_name}"</string>
+	<string>def form_valid(self, form):
+    ${0}
+    return super().form_valid(form)</string>
 	<key>name</key>
-	<string>DATABASE_URL</string>
+	<string>CBV - form_valid</string>
 	<key>scope</key>
-	<string>source.shell</string>
+	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>envi</string>
+	<string>form</string>
 	<key>uuid</key>
-	<string>2847446E-4F9E-41C7-AA50-431A12195313</string>
+	<string>8CBDCC5C-6887-40E5-80DA-68F9834EE00A</string>
 </dict>
 </plist>

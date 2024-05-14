@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>export DATABASE_URL="postgresql://localhost:5432/${1:db_name}"</string>
+	<string>def get_success_url(self):
+    success_url = super().get_success_url()
+    ${0}
+    return success_url
+</string>
 	<key>name</key>
-	<string>DATABASE_URL</string>
+	<string>CBV - get_success_url</string>
 	<key>scope</key>
-	<string>source.shell</string>
+	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>envi</string>
+	<string>get</string>
 	<key>uuid</key>
-	<string>2847446E-4F9E-41C7-AA50-431A12195313</string>
+	<string>ECC22E01-DC04-4603-8B7B-65E17025C87C</string>
 </dict>
 </plist>

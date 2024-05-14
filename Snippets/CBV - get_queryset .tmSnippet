@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>export DATABASE_URL="postgresql://localhost:5432/${1:db_name}"</string>
+	<string>def get_queryset(self):
+    queryset = super().get_queryset()
+    ${0}
+    return queryset</string>
 	<key>name</key>
-	<string>DATABASE_URL</string>
+	<string>CBV - get_queryset </string>
 	<key>scope</key>
-	<string>source.shell</string>
+	<string>source.python.django</string>
 	<key>tabTrigger</key>
-	<string>envi</string>
+	<string>get</string>
 	<key>uuid</key>
-	<string>2847446E-4F9E-41C7-AA50-431A12195313</string>
+	<string>4E123C02-ADBB-4F81-8CA8-FAD36A20D6F7</string>
 </dict>
 </plist>

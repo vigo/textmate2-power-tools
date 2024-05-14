@@ -196,7 +196,7 @@
 					<string>1823A074-3414-493B-B9A3-6A8BB752DDF7</string>
 				</array>
 				<key>name</key>
-				<string>Fields</string>
+				<string>Model Fields</string>
 			</dict>
 			<key>39351940-970D-4D61-A796-91457573A293</key>
 			<dict>
@@ -463,9 +463,10 @@
 					<string>D52C474F-BD24-454B-8A9B-582D76675A8F</string>
 					<string>2B4B7AAB-F13C-43F1-840F-29F1158DDD3F</string>
 					<string>B15729E9-9617-4603-BA49-C3BDFDD75221</string>
+					<string>C19CC1F9-8B67-449F-A543-166C69F85EBC</string>
+                    <string>635040DF-8FBA-4AAB-8934-2E97C1B6F68D</string>
 					<string>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</string>
 					<string>D06D8D7B-4289-4758-B814-A89907C83CF5</string>
-					<string>C19CC1F9-8B67-449F-A543-166C69F85EBC</string>
 					<string>82901970-62E5-43A2-BEC0-F74039C6B03B</string>
 					<string>27C8C2EB-AA74-4762-87EB-0BA02A72AAD1</string>
 					<string>36350B22-49CB-471D-B895-9C55E39DE5E5</string>
@@ -482,7 +483,20 @@
                     <string>342EACE3-9178-4328-84BC-72DAE682B028</string>
                     <string>E02F0DC8-2E83-4F70-AA7B-E79CF397F043</string>
                     <string>7F1E3742-857F-4768-8DE4-E02319CF7057</string>
+                    <string>62876D7A-3999-41F3-BD79-A41DC76BB40F</string>
+                    <string>ECC22E01-DC04-4603-8B7B-65E17025C87C</string>
+                    <string>4E123C02-ADBB-4F81-8CA8-FAD36A20D6F7</string>
+                    <string>EB84EC5C-99F9-4959-83FB-2168C7B1C6C0</string>
+                    <string>------------------------------------</string>
+                    <string>8CBDCC5C-6887-40E5-80DA-68F9834EE00A</string>
+                    <string>2FA4AB1F-CB49-436F-9550-5E136C108F15</string>
+                    <string>------------------------------------</string>
                     <string>A4E2187A-485B-48BA-A1A1-051E6470A109</string>
+                    <string>A1937E96-770F-4A8D-BB86-1076EF7CAE0A</string>
+                    <string>------------------------------------</string>
+                    <string>3752B780-C93D-4307-9BD3-52974173D019</string>
+                    <string>42083DA1-CD50-4C29-AD49-76768545D63A</string>
+                    <string>------------------------------------</string>
                 </array>
                 <key>name</key>
                 <string>Class Based Views</string>
@@ -573,7 +587,17 @@
 				<key>name</key>
 				<string>Management Commands</string>
 			</dict>
-			<key>B15729E9-9617-4603-BA49-C3BDFDD75221</key>
+			<key>635040DF-8FBA-4AAB-8934-2E97C1B6F68D</key>
+			<dict>
+			    <key>items</key>
+			    <array>
+			        <string>CC86CEA3-A476-41E3-B509-2FB1A67B4825</string>
+                    <string>675A0443-337B-4FDF-96BB-411F9A9F6917</string>
+			    </array>
+			    <key>name</key>
+			    <string>Form Fields</string>
+			</dict>
+            <key>B15729E9-9617-4603-BA49-C3BDFDD75221</key>
 			<dict>
 				<key>items</key>
 				<array>
@@ -596,7 +620,7 @@
 					<string>B9700BB8-CEF0-41BB-80F6-54CC3389E3F0</string>
 				</array>
 				<key>name</key>
-				<string>Field Options</string>
+				<string>Model Field Options</string>
 			</dict>
 			<key>B2226D0F-A432-4FF7-B889-B3E46B26C309</key>
 			<dict>
@@ -822,6 +846,13 @@
                     <string>2544DC44-23C6-4CA5-AFE7-4A6BF5FD40DE</string>
                     <string>------------------------------------</string>
                     <string>FAF7CA49-9F56-4A99-945A-81CCE12D5312</string>
+                    <string>------------------------------------</string>
+                    <string>A48FF1F6-E1D0-4544-9F74-E893123552D0</string>
+                    <string>A93F3C7A-AC4F-49F9-B43A-16DB493A1E82</string>
+                    <string>6480CAE9-158D-4A31-8D2E-FCD201DD7B34</string>
+                    <string>3554DFB3-324D-422F-BF87-7057713656C2</string>
+                    <string>D019DD4E-4A48-47CA-B3C7-60618E6B84E5</string>
+                    <string>------------------------------------</string>
 				</array>
 				<key>name</key>
 				<string>Python</string>
