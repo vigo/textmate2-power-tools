@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>HTTPMethod.${1|CONNECT,DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT,TRACE|}</string>
+	<key>name</key>
+	<string>HTTPMethod</string>
+	<key>scope</key>
+	<string>source.python</string>
+	<key>tabTrigger</key>
+	<string>hm</string>
+	<key>uuid</key>
+	<string>095F74EA-9B60-41AB-861A-3D1490AEF015</string>
+</dict>
+</plist>
