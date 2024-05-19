@@ -10,7 +10,7 @@
 	<key>name</key>
 	<string>models.DateTimeField - updated_at</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>fld</string>
 	<key>uuid</key>

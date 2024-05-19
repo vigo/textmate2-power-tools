@@ -3,35 +3,51 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>class ${1:ModelName-Singular}(models.Model):
+	<string># class ${1}Manager(models.Manager):
+#     def get_by_natural_key(self, name):
+#         return self.get(name=name)
+
+
+class ${1:ModelName-Singular}(models.Model):
     """
-    Documentation of $1
+    Documentation of ${1}
     """
 
-    created_at = models.DateTimeField(verbose_name=_('Created At'), auto_now_add=True)
-    updated_at = models.DateTimeField(verbose_name=_('Updated At'), auto_now=True)
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name=_('Created At'),
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
+        verbose_name=_('Updated At'),
+    )
 
-    objects = models.Manager()
+    # objects = ${1}Manager()
 
     class Meta:
         # abstract = True
-        verbose_name = _('$1')
-        verbose_name_plural = _('$1')
+        # app_label = ''
+        # db_table = ''
         # ordering = ('field_name',)
+        verbose_name = _('${1}')
+        verbose_name_plural = _('${1}')
 
-    def __str__(self):
-        return self.created_at
+    # def __str__(self):
+    #     return self.created_at
 
     # def save(self, *args, **kwargs):
     #     super().save(*args, **kwargs)
 
     # def get_absolute_url(self):
     #     return self.?
+
+    # def natural_key(self):
+    #     return (self.name,)
 </string>
 	<key>name</key>
-	<string>models.Model (Python 3)</string>
+	<string>models.Model</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>model</string>
 	<key>uuid</key>

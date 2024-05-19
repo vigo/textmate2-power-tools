@@ -10,7 +10,7 @@
 	<key>name</key>
 	<string>CBV - setup</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>setup</string>
 	<key>uuid</key>

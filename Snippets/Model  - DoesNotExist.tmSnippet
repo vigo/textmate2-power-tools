@@ -11,7 +11,7 @@ except ${1:Model}.DoesNotExist:
 	<key>name</key>
 	<string>Model.DoesNotExist</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>does</string>
 	<key>uuid</key>

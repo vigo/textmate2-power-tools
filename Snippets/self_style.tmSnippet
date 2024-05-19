@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>self.style</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>st</string>
 	<key>uuid</key>

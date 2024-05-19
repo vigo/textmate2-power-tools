@@ -13,7 +13,7 @@ def history_view(self, request, object_id, extra_context=None):
 	<key>name</key>
 	<string>history_view</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>admin</string>
 	<key>uuid</key>

@@ -12,7 +12,7 @@
 	<key>name</key>
 	<string>forms.CharField</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>ffield</string>
 	<key>uuid</key>

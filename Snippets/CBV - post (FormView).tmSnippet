@@ -14,7 +14,7 @@
 	<key>name</key>
 	<string>CBV - post (FormView)</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>get</string>
 	<key>uuid</key>

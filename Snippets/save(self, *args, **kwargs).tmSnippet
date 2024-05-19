@@ -6,11 +6,12 @@
 	<string>def save(self, *args, **kwargs):
     # do something before real save
     super().save(*args, **kwargs)  # real save
-    # do something after real save</string>
+    # do something after real save
+</string>
 	<key>name</key>
 	<string>save(self, *args, **kwargs)</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>save</string>
 	<key>uuid</key>
