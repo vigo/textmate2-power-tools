@@ -75,6 +75,11 @@ Other bundle dependencies (*not required but nice to have*)
 
 ## News
 
+**2024-05-28**
+
+- Add `uuid` generator
+- Improve JavaScript runner, Bash Script Template
+
 **2023-12-23**
 
 - Remove old django related snippets
