@@ -695,9 +695,14 @@
 			<dict>
 				<key>items</key>
 				<array>
+                    <string>------------------------------------</string>
 					<string>17D72D33-7CC2-4ABC-A376-5D8A1FB7E4BD</string>
+                    <string>------------------------------------</string>
 					<string>933AF85C-E378-4FDD-9F08-E0DD1599D6A7</string>
 					<string>26B527FF-7536-487E-B2E8-91230E730940</string>
+                    <string>------------------------------------</string>
+                    <string>3E4CC6BF-819E-4A8B-AA2A-88E91098E484</string>
+                    <string>------------------------------------</string>
 				</array>
 				<key>name</key>
 				<string>Helpers</string>

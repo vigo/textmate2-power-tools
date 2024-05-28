@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+uuid_bin=$(command -v uuid)
+if [[ -z "${uuid_bin}" &amp;&amp; -n "${TM_UUID_BIN}" ]]; then
+    uuid_bin="${TM_UUID_BIN}"
+fi
+if [[ -z "${uuid_bin}" ]]; then
+    echo "you need uuid bin"
+    exit 1
+fi
+uuid_val=$(uuid -v 4 | tr -d '\n' | tr '[:lower:]' '[:upper:]')
+printf "%s" "\${1:${uuid_val}}\${0}"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Create UUID</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>tabTrigger</key>
+	<string>uuid</string>
+	<key>uuid</key>
+	<string>3E4CC6BF-819E-4A8B-AA2A-88E91098E484</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

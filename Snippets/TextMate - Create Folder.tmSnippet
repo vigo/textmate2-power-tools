@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;key&gt;${2:UUID}&lt;/key&gt;
+	<string>&lt;key&gt;${2:uuid}&lt;/key&gt;
 &lt;dict&gt;
 	&lt;key&gt;items&lt;/key&gt;
 	&lt;array&gt;

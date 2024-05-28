@@ -11,21 +11,22 @@
 
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+. "${TM_SUPPORT_PATH}/lib/webpreview.sh"
 
 
 title="${TM_FILENAME:-Current document}"
 html_header "JavaScript" "${title}"
 
+node_bin=$(command -v node || echo "${TM_NODE}")
 
-if [[ $TM_NODE ]]; then
+if [[ -x "${node_bin}" ]]; then
     if [[ -z ${TM_FILEPATH+x} ]]; then
-        cat /dev/stdin | $TM_NODE - | pre
+        cat /dev/stdin | "${node_bin}" - | pre
     else
-        cat "${TM_FILEPATH}" | $TM_NODE - | pre
+        cat "${TM_FILEPATH}" | "${node_bin}" - | pre
     fi
 else
-    echo "You must define \$TM_NODE variable"|pre
+    echo "You must define \$TM_NODE variable or set \$PATH" | pre
 fi
 
 html_footer
