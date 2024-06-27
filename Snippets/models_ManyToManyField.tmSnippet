@@ -7,6 +7,9 @@
     to='${2|self,Model Name|}'${3:, 
     through='${4:target model}'}${5:, 
     through_fields=('${6:target model field 1}', '${7:target model field 2}'),}
+    related_name='${8:MODEL_NAME_Plural}',
+    related_query_name='${8/^(.*).$/$1/}',
+    blank=True,
     verbose_name=_('${1:$TM_SELECTED_TEXT}'),
 )$0</string>
 	<key>name</key>

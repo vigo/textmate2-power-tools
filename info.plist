@@ -315,6 +315,11 @@
 					<string>AF3BBA1E-6545-4D4E-AC36-BC8B2C80CC2C</string>
                     <string>A6246024-0D1E-4A3E-AA5E-0C3F15A8A0DB</string>
 					<string>A80DF16A-6172-4844-944E-8226AFCF7C27</string>
+                    <string>------------------------------------</string>
+                    <string>4F3E8215-7074-405C-BF0A-EBE8569FF4A6</string>
+                    <string>28CFF2DE-F837-48D6-AA27-F4BFF346DB56</string>
+                    <string>0520C7C6-5441-4900-A143-F45D1A850B89</string>
+                    <string>------------------------------------</string>
 				</array>
 				<key>name</key>
 				<string>admin.ModelAdmin - properties</string>
@@ -460,17 +465,25 @@
                     <string>9F5EBE50-3B60-4C91-84EE-88373F5F0097</string>
 					<string>3B5EEAF6-2CC1-4AA5-980E-8C84ADE084D6</string>
                     <string>FE5499E3-DB1C-4AE6-ADF4-B0BABF3BC9D4</string>
+                    <string>------------------------------------</string>
 					<string>D52C474F-BD24-454B-8A9B-582D76675A8F</string>
+                    <string>------------------------------------</string>
+					<string>D06D8D7B-4289-4758-B814-A89907C83CF5</string>
 					<string>2B4B7AAB-F13C-43F1-840F-29F1158DDD3F</string>
 					<string>B15729E9-9617-4603-BA49-C3BDFDD75221</string>
 					<string>C19CC1F9-8B67-449F-A543-166C69F85EBC</string>
+                    <string>------------------------------------</string>
                     <string>635040DF-8FBA-4AAB-8934-2E97C1B6F68D</string>
-					<string>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</string>
-					<string>D06D8D7B-4289-4758-B814-A89907C83CF5</string>
+                    <string>------------------------------------</string>
 					<string>82901970-62E5-43A2-BEC0-F74039C6B03B</string>
-					<string>27C8C2EB-AA74-4762-87EB-0BA02A72AAD1</string>
-					<string>36350B22-49CB-471D-B895-9C55E39DE5E5</string>
                     <string>23048124-ab06-11ee-95f7-66be51852e05</string>
+                    <string>------------------------------------</string>
+                    <string>36350B22-49CB-471D-B895-9C55E39DE5E5</string>
+                    <string>------------------------------------</string>
+					<string>739A532C-22D0-4A0A-A96C-A21EAD9B90A2</string>
+					<string>27C8C2EB-AA74-4762-87EB-0BA02A72AAD1</string>
+
+
 				</array>
 				<key>name</key>
 				<string>Django</string>
@@ -749,6 +762,7 @@
 				<key>items</key>
 				<array>
 					<string>42C77C5E-7C81-4488-9D98-FCB89B4F2C49</string>
+                    <string>4E2DEA15-E942-47D0-A4E7-5EBC3E723E8D</string>
 				</array>
 				<key>name</key>
 				<string>Custom</string>

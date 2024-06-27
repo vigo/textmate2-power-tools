@@ -35,6 +35,12 @@
 			<string>support.function.django.custom</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\b(match|case)\b</string>
+			<key>name</key>
+			<string>keyword.python.new</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>source.python.django</string>
 		</dict>

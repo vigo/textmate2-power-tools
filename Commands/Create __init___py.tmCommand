@@ -8,12 +8,15 @@
 	<string>#!/usr/bin/env ruby18 -wKU
 require 'fileutils'
 
-if File.directory?(ENV['TM_SELECTED_FILE'])
-  DUNDER_INIT_FILE = "#{ENV['TM_SELECTED_FILE']}/__init__.py"
-  FileUtils.touch(DUNDER_INIT_FILE)
-  puts "#{DUNDER_INIT_FILE} has been created.\n"
+if File.directory?(ENV["TM_SELECTED_FILE"])
+  dunder_init_file = "#{ENV["TM_SELECTED_FILE"]}/__init__.py"
+  FileUtils.touch(dunder_init_file)
+  File.open(dunder_init_file, 'w') do |file|
+    file.puts "# ruff: noqa: F403,I001"
+  end
+  puts "#{dunder_init_file} has been created.\n"
 else
-  puts "#{ENV['TM_SELECTED_FILE']} is not a directory"
+  puts "#{ENV["TM_SELECTED_FILE"]} is not a directory"
 end
 </string>
 	<key>input</key>
@@ -30,8 +33,6 @@ end
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>toolTip</string>
-	<key>scope</key>
-	<string>source.python</string>
 	<key>uuid</key>
 	<string>B7618CE1-9BC7-4C73-AA91-626C27935F89</string>
 	<key>version</key>

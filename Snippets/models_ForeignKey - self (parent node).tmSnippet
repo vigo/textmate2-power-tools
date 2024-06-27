@@ -6,9 +6,10 @@
 	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.ForeignKey(
     to='self',
     related_name='${2:MODEL_NAME_Plural}',
+    related_query_name='${2/^(.*).$/$1/}',
+    limit_choices_to={'${1}': None},
     null=True,
     blank=True,
-    limit_choices_to={'$1': None},
     verbose_name=_('${1:$TM_SELECTED_TEXT}'),
 )$0</string>
 	<key>name</key>

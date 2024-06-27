@@ -4,9 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>${1/[[:alpha:]]+|( )/(?1:_:\L$0)/g} = models.ForeignKey(
-    to='${2:other model}',
-    related_name='${3:MODEL_NAME_Plural}',
-    on_delete=models.${4|CASCADE,PROTECT,SET_NULL,SET_DEFAULT,SET,DO_NOTHING|},
+    to=${2|'other model',settings.AUTH_USER_MODEL|},
+    on_delete=models.${3|CASCADE,PROTECT,SET_NULL,SET_DEFAULT,SET,DO_NOTHING|},
+    related_name='${4:MODEL_NAME_Plural}',
+    related_query_name='${4/^(.*).$/$1/}',
     verbose_name=_('${1:$TM_SELECTED_TEXT}'),
 )$0</string>
 	<key>name</key>

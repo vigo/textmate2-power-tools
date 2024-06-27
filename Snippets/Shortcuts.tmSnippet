@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1|from django.utils.translation import gettext_lazy as _,from django.conf import settings|}</string>
+	<key>name</key>
+	<string>Shortcuts</string>
+	<key>scope</key>
+	<string>source.python.django,source.python.ruff</string>
+	<key>tabTrigger</key>
+	<string>i</string>
+	<key>uuid</key>
+	<string>4E2DEA15-E942-47D0-A4E7-5EBC3E723E8D</string>
+</dict>
+</plist>
