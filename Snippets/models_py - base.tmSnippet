@@ -14,7 +14,7 @@ from django.utils.encoding import python_2_unicode_compatible
 	<key>name</key>
 	<string>models.py - base (py2)</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>model</string>
 	<key>uuid</key>

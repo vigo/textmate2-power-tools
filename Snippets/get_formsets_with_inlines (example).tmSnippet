@@ -14,7 +14,7 @@ $0</string>
 	<key>name</key>
 	<string>get_formsets_with_inlines (example)</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>admin</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>self.stdout.write</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>wr</string>
 	<key>uuid</key>

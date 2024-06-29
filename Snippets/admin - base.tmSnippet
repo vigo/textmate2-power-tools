@@ -16,7 +16,7 @@ from django.contrib import admin
 	<key>name</key>
 	<string>admin.py - base</string>
 	<key>scope</key>
-	<string>source.python.django</string>
+	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>admin</string>
 	<key>uuid</key>
