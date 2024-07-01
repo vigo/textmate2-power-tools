@@ -4,9 +4,9 @@
 <dict>
 	<key>content</key>
 	<string>def dispatch(self, request, *args, **kwargs):
-    handler = super().dispatch(request, *args, **kwargs)
+    # do your thang!
     ${0}
-    return handler
+    return super().dispatch(request, *args, **kwargs)
 </string>
 	<key>name</key>
 	<string>CBV - dispatch</string>
