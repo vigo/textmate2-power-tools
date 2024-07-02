@@ -35,6 +35,12 @@
 			<string>support.function.django.custom</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>\b(autocomplete_choice_fields|formfield_custom_attrs|help_texts|inital_data_from_changelist_filter|original_verbose_names|override_list_display_column_names|readonly_fields_after|show_cancel_and_go_back)\b</string>
+			<key>name</key>
+			<string>entity.name.type.class.python</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>source.python.django</string>
 		</dict>

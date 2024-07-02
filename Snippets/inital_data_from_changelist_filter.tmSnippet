@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>inital_data_from_changelist_filter = {
+    '${1:field}${2:${3:__exact}}': '$1',
+}
+</string>
+	<key>name</key>
+	<string>inital_data_from_changelist_filter</string>
+	<key>scope</key>
+	<string>source.python.django,source.python.ruff</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>BD5A2FC3-A214-49FC-BE79-2765C8679E9D</string>
+</dict>
+</plist>

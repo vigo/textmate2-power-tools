@@ -297,6 +297,7 @@
 					<string>EBEFD3B4-1F0F-4928-8126-62D2F01AD578</string>
 					<string>44514765-2A1C-4BD3-92D7-BE4F8A800686</string>
 					<string>23A656F7-6661-41D9-B5E9-D78530652C8B</string>
+                    <string>846BCCE2-8585-49F4-8977-1C94F93F9D5D</string>
 					<string>EB56F7B5-FBEA-4CA2-81B7-DE8BEA290478</string>
 					<string>51A2D339-35C6-4E97-BB17-E3D5AE983A69</string>
 					<string>C6C4E09B-735E-4567-925E-B8D05B964B42</string>
@@ -315,6 +316,14 @@
 					<string>AF3BBA1E-6545-4D4E-AC36-BC8B2C80CC2C</string>
                     <string>A6246024-0D1E-4A3E-AA5E-0C3F15A8A0DB</string>
 					<string>A80DF16A-6172-4844-944E-8226AFCF7C27</string>
+                    <string>------------------------------------</string>
+                    <string>F610C0EF-FB88-4B58-BED9-57C4B6BB53D6</string>
+                    <string>19286375-EE2C-469A-BE4F-B77C836834D4</string>
+                    <string>C923C625-1F2B-4D32-9176-DDF585C090DD</string>
+                    <string>BD5A2FC3-A214-49FC-BE79-2765C8679E9D</string>
+                    <string>44518DB2-F8CF-47CA-A914-A9DB390C4F4E</string>
+                    <string>5DD8A320-8131-4FBB-99EE-FF3DCAA95644</string>
+                    <string>94E2C2CB-6FE7-4D1B-B60A-11234CE8E630</string>
 				</array>
 				<key>name</key>
 				<string>admin.ModelAdmin - properties</string>

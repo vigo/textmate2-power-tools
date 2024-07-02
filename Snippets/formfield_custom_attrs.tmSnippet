@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>formfield_custom_attrs = {
+    '${1:field}': {
+        'class': 'admin-form-charfield',
+        'placeholder': _('${2:placeholder}'),
+    },
+}</string>
+	<key>name</key>
+	<string>formfield_custom_attrs</string>
+	<key>scope</key>
+	<string>source.python.django,source.python.ruff</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>19286375-EE2C-469A-BE4F-B77C836834D4</string>
+</dict>
+</plist>

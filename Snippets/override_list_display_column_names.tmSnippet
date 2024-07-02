@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>override_list_display_column_names = {
+    '${1:field}': ${2|ICON_IS_ACTIVE,_('text')|},
+}
+</string>
+	<key>name</key>
+	<string>override_list_display_column_names</string>
+	<key>scope</key>
+	<string>source.python.django,source.python.ruff</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>5DD8A320-8131-4FBB-99EE-FF3DCAA95644</string>
+</dict>
+</plist>

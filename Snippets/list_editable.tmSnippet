@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>list_editable = ['${1:field_in_list_display}',]$0</string>
+	<key>name</key>
+	<string>list_editable</string>
+	<key>scope</key>
+	<string>source.python.django,source.python.ruff</string>
+	<key>tabTrigger</key>
+	<string>admin</string>
+	<key>uuid</key>
+	<string>846BCCE2-8585-49F4-8977-1C94F93F9D5D</string>
+</dict>
+</plist>
