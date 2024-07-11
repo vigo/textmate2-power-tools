@@ -3,17 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def setup(self, request, *args, **kwargs):
-    super().setup(request, *args, **kwargs)
-    ${0}
+	<string>def get_template_names(self):
+    template_names = super().get_template_names()
+    return [*template_names, ${1:'path/to/page.html'}]
+$0
 </string>
 	<key>name</key>
-	<string>CBV - setup</string>
+	<string>CBV - get_template_names</string>
 	<key>scope</key>
 	<string>source.python.django,source.python.ruff</string>
 	<key>tabTrigger</key>
 	<string>get</string>
 	<key>uuid</key>
-	<string>A4E2187A-485B-48BA-A1A1-051E6470A109</string>
+	<string>4A9E81EB-070B-48C6-9955-2D0DB52BF682</string>
 </dict>
 </plist>
