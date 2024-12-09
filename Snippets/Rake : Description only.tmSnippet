@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>desc "${1:Description}"$0</string>
+	<string>desc '${1:Description}'$0</string>
 	<key>name</key>
 	<string>Description only</string>
 	<key>scope</key>

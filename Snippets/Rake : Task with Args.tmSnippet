@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>desc "${1:description}"
-task :${2:task}, [:${3:arg}] do |t, args|
+	<string>desc '${1:description}'
+task :${2:task}, [:${3:arg}] do |_, args|
   $0
 end
 </string>

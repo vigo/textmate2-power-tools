@@ -3,18 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>desc '${1:description}'
-task :${2:task}, [:${3:arg}] =&gt; %i[${4:dependent :tasks}] do |_, args|
-  $0
-end
-</string>
+	<string>desc '${1:Task description}'
+task ${2:${3:task_name:} ${4:[:${5:dependent, :tasks}]}} do
+	$0
+end</string>
 	<key>name</key>
-	<string>Task with Args and Dependents</string>
+	<string>New Task</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>tas</string>
 	<key>uuid</key>
-	<string>5A4F8BFF-BEC1-4BB9-995E-40AC7A9F71BE</string>
+	<string>79626DD2-FE38-4445-B6DD-7FB104A7DEE5</string>
 </dict>
 </plist>

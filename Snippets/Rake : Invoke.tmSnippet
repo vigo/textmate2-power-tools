@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Rake::Task["${1:task}"].invoke${2:("${3:arg}")}</string>
+	<string>Rake::Task['${1:task}'].invoke${2:('${3:arg}')}</string>
 	<key>name</key>
 	<string>Invoke</string>
 	<key>scope</key>

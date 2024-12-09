@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>task :${1:${3:task} =&gt; ${4:[:${5:dependent, :tasks}]}} do
+	<string>task ${1:${3:task}: =&gt; ${4:[:${5:dependent, :tasks}]}} do
   $0
 end</string>
 	<key>name</key>
