@@ -9,7 +9,12 @@
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 INPUT=$(cat /dev/stdin)
-"${TM_PYTHON}" -c "import json; print(json.dumps(${INPUT}))" | "${TM_PYTHON}" -m json.tool
+if [[ -z "${TM_PYTHON}" ]]; then
+    echo "# TM_PYTHON environment variable must set"
+    echo "${INPUT}"
+else
+    "${TM_PYTHON}" -c "import json; print(json.dumps(${INPUT}))" | "${TM_PYTHON}" -m json.tool
+fi
 </string>
 	<key>input</key>
 	<string>selection</string>
