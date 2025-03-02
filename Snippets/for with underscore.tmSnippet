@@ -6,6 +6,8 @@
 	<string>for _, ${1:item} := range ${2:iterible} {
     fmt.Printf("%v\n", ${1})
 }</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>for with _</string>
 	<key>scope</key>

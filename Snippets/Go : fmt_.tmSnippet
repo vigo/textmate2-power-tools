@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>fmt.${1|Fprintf,Print,Println,Printf,Scanf,Sprintf,Sprintln|}(${2:"%${3|T,v,s,+v,#v,t,b,c,d,o,q,x,X,U,f,p|}", $0})</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>fmt.Method</string>
 	<key>scope</key>

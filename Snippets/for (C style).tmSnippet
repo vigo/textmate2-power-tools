@@ -6,6 +6,8 @@
 	<string>for i:=0; i &lt; len(${1:iterible}); i++ {
     fmt.Printf("%d %v\n", i, ${1}[i])
 }</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>for (C style)</string>
 	<key>scope</key>

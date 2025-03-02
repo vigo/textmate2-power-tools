@@ -6,6 +6,8 @@
 	<string>if ${1:var}, ok := ${2:object}; ok {
     $0
 }</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>if var,ok :=</string>
 	<key>scope</key>

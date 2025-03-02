@@ -16,19 +16,6 @@ git clone https://github.com/vigo/textmate2-power-tools.git PowerTools.tmbundle
 # Restart your TextMate2
 ```
 
-You need to install extra tools for **Golang** helper. You need to enable
-default **Go Bundle** from TextMate first...
-
-```bash
-$ go install golang.org/x/tools/cmd/goimports@latest
-$ go install mvdan.cc/gofumpt@latest
-$ go install github.com/segmentio/golines@latest
-$ go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
-$ go install honnef.co/go/tools/cmd/staticcheck@latest
-
-$ brew install golangci-lint
-```
-
 Shellcheck feature requires `shellcheck` binary;
 
 ```bash
@@ -38,32 +25,11 @@ $ brew install shellcheck
 You need to add your **brew/bin** path to `PATH` variable too:
 
 ```bash
-$ command -v golangci-lint
-/opt/homebrew/bin/golangci-lint     # my brew/bin is: /opt/homebrew/bin
+$ command -v shellcheck
+/opt/homebrew/bin/shellcheck     # my brew/bin is: /opt/homebrew/bin
 
 # add to TextMate variable
 PATH /opt/homebrew/bin:${PATH}
-```
-
-and you need to set:
-
-- `TM_GOPATH` and `GOPATH` get the value of `$ go env GOPATH`
-- `TM_GO` get the value of `$ command -v go`
-- `GOMODCACHE` get the value of `$ go env GOMODCACHE`
-
-```bash
-$ go env GOPATH           # (example) for TM_GOPATH and GOPATH => /Users/vigo/.local/go
-$ go env GOMODCACHE       # (example) for GOMODCACHE  => /Users/vigo/.local/go/pkg/mod
-$ command -v go           # (example) for TM_GO  => /opt/homebrew/opt/go/libexec/bin/go
-
-$ defaults write com.macromates.TextMate environmentVariables \
-    -array-add "{enabled = 1; value = \"$(command -v go)\"; name = \"TM_GO\"; }"
-$ defaults write com.macromates.TextMate environmentVariables \
-    -array-add "{enabled = 1; value = \"$(go env GOPATH)\"; name = \"TM_GOPATH\"; }"
-$ defaults write com.macromates.TextMate environmentVariables \
-    -array-add "{enabled = 1; value = \"$(go env GOPATH)\"; name = \"GOPATH\"; }"
-$ defaults write com.macromates.TextMate environmentVariables \
-    -array-add "{enabled = 1; value = \"$(go env GOMODCACHE)\"; name = \"GOMODCACHE\"; }"
 ```
 
 Other bundle dependencies (*not required but nice to have*)
@@ -71,9 +37,18 @@ Other bundle dependencies (*not required but nice to have*)
 - https://github.com/blahed/Vue.tmbundle
 - https://github.com/michaeledgar/protobuf-tmbundle
 
+For `go` related functionality, visit:
+
+https://github.com/vigo/textmate2-golang
+
 ---
 
 ## News
+
+**2025-03-02**
+
+- Go related bundles functionality removed, now you can install:
+  https://github.com/vigo/textmate2-golang
 
 **2024-05-28**
 
@@ -127,7 +102,6 @@ Other bundle dependencies (*not required but nice to have*)
 1. [jQuery](#jquery)
 1. [HTML](#html)
 1. [Javascript](#javascript)
-1. [Go](#go)
 1. [Swift](#swift)
 1. [Lisp](#lisp)
 1. [Elixir](#elixir)
@@ -362,187 +336,6 @@ defaults write com.macromates.textmate environmentVariables -array-add \
 
 ---
 
-## Go
-
-When you hit <kbd>⌘</kbd> + <kbd>S</kbd>, TextMate runs unless disabler
-environment variable(s) is/are set:
-
-- `gofumpt`
-- `gofmt`
-- `goimports`
-- `golines`
-- `go vet` + shadow
-- `golangci-lint`
-- `staticcheck`
-
-You can disable format/lint feature (*all of them*) via setting
-`TM_DISABLE_GO_LINTER` environment variable.
-
-You can disable linters piece by piece;
-
-- `TM_DISABLE_GOFUMPT`
-- `TM_DISABLE_GOFMT`
-- `TM_DISABLE_GOIMPORTS`
-- `TM_DISABLE_GOLINES`
-
-- `TM_DISABLE_GOVET`
-- `TM_DISABLE_GOVET_SHADOW`
-- `TM_DISABLE_GOLANGCI_LINT`
-- `TM_DISABLE_STATIC_CHECK`
-
-Also you can configure `golines` via;
-
-- `TM_GOLINES_MAX_LEN`: Default value is `100`
-- `TM_GOLINES_TAB_LEN`: Default value is `4`
-
-environment variables.
-
-Use `TM_GOLANGCI_LINT_LOG_LEVEL` to by-pass linter warnings (`go 1.18` issue):
-
-- `TM_GOLANGCI_LINT_LOG_LEVEL` to `error` shows only errors
-- `TM_GOLANGCI_LINT_LOG_LEVEL` to `warning` shows warnings too
-- `TM_GOLANGCI_LINT_LOG_LEVEL` to `info` show info level logs
-
-Error tool tip had some issues, due to TextMate’s limit, lines > 150 chars
-was broken. Now it’s fixed. Use `TM_ERROR_TOOLTIP_MAX_LINE` environment
-variable to set your desired amount. Maximum is `150`.
-
-### Go Commands
-
-* <kbd>⌥</kbd> + <kbd>R</kbd> : Runs `gofmt` + `goimports` without save!
-
-### Go Snippets
-
-* `fmt` + <kbd>⇥</kbd>: `fmt.METHOD`
-* `spr` + <kbd>⇥</kbd>: `fmt.Sprintf`
-* `prl` + <kbd>⇥</kbd>: `fmt.Println`
-* `prf` + <kbd>⇥</kbd>: `fmt.Printf`
-* `errf` + <kbd>⇥</kbd>: `fmt.Errorf`
-* `tof` + <kbd>⇥</kbd>: `reflect.TypeOf`
-* `log` + <kbd>⇥</kbd>: `log.METHOD`
-* `if` + <kbd>⇥</kbd>: `if` conditions or `obj, ok` condition
-* `for` + <kbd>⇥</kbd>: `for` conditions
-* `str` + <kbd>⇥</kbd>: Define `struct`
-* `fld` + <kbd>⇥</kbd>: Define `struct` field
-* `ctp` + <kbd>⇥</kbd>: Inserts compile time proof fill place holders of `var _ interface = (*struct)(nil)`
-* `seed` + <kbd>⇥</kbd>: Inserts random seeder
-* `gcil` + <kbd>⇥</kbd>: Creates `.golangci.yml` under current working directory.
-* `fprf` + <kbd>⇥</kbd>: `fmt.Fprintf`
-
-
-`.golangci.yml` default config:
-
-```yaml
-run:
-  concurrency: 4
-  timeout: 1m
-
-linters-settings:
-  revive:
-    ignore-generated-header: true
-    severity: warning
-    rules:
-      - name: exported
-        severity: warning
-        arguments:
-            - "checkPrivateReceivers"
-            - "sayRepetitiveInsteadOfStutters"
-      - name: error-return
-        severity: warning
-      - name: error-naming
-        severity: warning
-      - name: if-return
-        severity: warning
-      - name: var-naming
-        severity: warning
-      - name: var-declaration
-        severity: warning
-      - name: receiver-naming
-        severity: warning
-      - name: errorf
-        severity: warning
-      - name: empty-block
-        severity: warning
-      - name: unused-parameter
-        severity: warning
-      - name: unreachable-code
-        severity: warning
-      - name: redefines-builtin-id
-        severity: warning
-      - name: superfluous-else
-        severity: warning
-      - name: unexported-return
-        severity: warning
-      - name: indent-error-flow
-        severity: warning
-      - name: blank-imports
-        severity: warning
-      - name: range
-        severity: warning
-      - name: time-naming
-        severity: warning
-      - name: context-as-argument
-        severity: warning
-      - name: context-keys-type
-        severity: warning
-      - name: indent-error-flow
-        severity: warning
-      - name: waitgroup-by-value
-        severity: warning
-      - name: useless-break
-        severity: warning
-      - name: struct-tag
-        severity: warning
-
-linters:
-  disable-all: true
-  enable:
-    - asciicheck 
-    - durationcheck 
-    - errcheck 
-    - errorlint 
-    - exhaustive 
-    - gosec 
-    - govet 
-    - makezero 
-    - nilerr 
-    - rowserrcheck 
-    - exportloopref 
-    - sqlclosecheck 
-    - staticcheck 
-    - typecheck 
-    - bodyclose 
-    - noctx 
-    - prealloc
-    - gosimple
-  presets:
-    - comment 
-    - error 
-    - format 
-    - metalinter 
-    - unused
-
-issues:
-  exclude-use-default: false
-```
-
-You can configure golangci via setting `TM_GOLANGCI_LINT_MANUAL` environment
-variable manually w/o config file. Example variable and value:
-
-```bash
-TM_GOLANGCI_LINT_MANUAL    -p comment -p error -p format -p metalinter -p unused -E gosimple -E asciicheck -E durationcheck -E errcheck -E errorlint -E exhaustive -E gosec -E govet -E makezero -E nilerr -E rowserrcheck -E exportloopref -E sqlclosecheck -E staticcheck -E typecheck -E bodyclose -E noctx -E prealloc
-```
-
-This works only if any of these file(s) is/are unset/not-exists in the project
-root:
-
-- `.golangci.yml`
-- `.golangci.yaml`
-- `.golangci.toml`
-- `.golangci.json`
-
----
-
 ## Swift
 
 You need to install/activate **Swift Bundle** from: TextMate > Preferences >
@@ -628,7 +421,6 @@ Press <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>B</kbd> for;
 | Python          | source.python         | `temp` + <kbd>⇥</kbd> |
 | Python          | source.python         | `temp` + <kbd>⇥</kbd> with Doctests |
 | Python          | source.python         | `temp` + <kbd>⇥</kbd> with Logging |
-| Golang          | source.go             | `temp` + <kbd>⇥</kbd> |
 | HTML            | -no scope required-   | `html5` + <kbd>⇥</kbd> |
 | HTML with Bulma | -no scope required-   | `html5` + <kbd>⇥</kbd> with Bulma.io CSS |
 | Vue Component   | text.html.vue         | `temp` + <kbd>⇥</kbd> |

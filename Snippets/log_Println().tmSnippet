@@ -5,6 +5,8 @@
 	<key>content</key>
 	<string>log.${1|Printf,Println,Fatal|}("${2|%T,%v,%+v,%#v|}"$0)
 </string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>log...</string>
 	<key>scope</key>

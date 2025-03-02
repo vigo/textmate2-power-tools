@@ -23,7 +23,6 @@
 			<string>04706E97-CDFC-4B18-94EE-6162B3C65954</string>
 			<string>AB04E546-98B7-48E9-A85A-70B30F493E04</string>
             <string>0EACB7C6-1726-437E-A150-C65EEBDC116F</string>
-			<string>03BAC6EA-C067-4555-8699-92389B59B99C</string>
 			<string>56D1573D-3213-42B6-AC3E-20C1864B923A</string>
 			<string>E1C08699-6717-4AC8-B5A0-29AA0797DCC5</string>
 			<string>B2226D0F-A432-4FF7-B889-B3E46B26C309</string>
@@ -91,45 +90,6 @@
                 <string>Vue JS</string>
             </dict>
             
-			<key>03BAC6EA-C067-4555-8699-92389B59B99C</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>9F33908F-28C9-4055-8A3D-F505C5AC87E1</string>
-					<string>5691B7EF-9221-45A1-9EDF-AAF0344F2008</string>
-                    <string>AD8FC749-4099-4836-82B4-14B33744819F</string>
-					<string>------------------------------------</string>
-					<string>6C0CEF6D-698D-4D45-9F76-6F01D731B2C5</string>
-					<string>813CF85F-F7F8-4D92-A03E-2A0BCC3A315B</string>
-					<string>AFE8DADE-C238-457C-AC9A-53B24354966E</string>
-                    <string>750EBFC0-4C90-4156-B9AA-717760A74245</string>
-					<string>C0B4BC21-3F1E-4F1A-97A2-CA6749D740D5</string>
-                    <string>010FCE44-371C-4C5C-9DED-8EA923C7294B</string>
-                    <string>C20E1123-699D-424E-BCB9-91C594A11E77</string>
-                    <string>250C24EC-E8A8-44D6-B52E-80E75A9004B8</string>
-					<string>------------------------------------</string>
-					<string>159CD0F2-FB0B-4D80-A5DB-9E7B05E3F08A</string>
-					<string>E41641CA-4F26-49D6-A0DA-E014EAC946E1</string>
-					<string>------------------------------------</string>
-					<string>6377BC7C-72F4-4C07-A0FC-ACA890E65F53</string>
-					<string>B285A7AE-753D-4D51-8FE9-25B6C613DFB7</string>
-					<string>------------------------------------</string>
-					<string>46F49A21-CA25-4ECA-9A1D-BB5F5D03E815</string>
-					<string>6BDDE6F3-0974-42FC-888C-0F7B66B3452B</string>
-					<string>516D7263-2D94-401E-AAF6-9A49A82A84D5</string>
-					<string>------------------------------------</string>
-					<string>C030DB13-32B5-402A-B30F-7A0E9F8DBC62</string>
-					<string>556818C1-8B35-48EA-9231-4F7FB13F1DDE</string>
-					<string>------------------------------------</string>
-                    <string>50BF5A8D-DFEA-43E6-94F4-41B44998D6B1</string>
-                    <string>A9826AC0-AF36-40DE-A0C7-C8AF85CC5A07</string>
-                    <string>------------------------------------</string>
-                    <string>B8C5DBA3-29EA-47C4-B47D-F3E04378E46E</string>
-                    <string>------------------------------------</string>
-				</array>
-				<key>name</key>
-				<string>Go</string>
-			</dict>
 			<key>04706E97-CDFC-4B18-94EE-6162B3C65954</key>
 			<dict>
 				<key>items</key>

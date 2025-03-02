@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>fmt.Println(${1:"${2:Text}"})$0</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>fmt.Println()</string>
 	<key>scope</key>

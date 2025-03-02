@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>fmt.Printf(${1:"%${2|T,v,s,+v,#v,t,b,c,d,o,q,x,X,U,f,p|}\n", ${3:Object}})$0</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>fmt.Printf()</string>
 	<key>scope</key>

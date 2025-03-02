@@ -15,6 +15,8 @@ Go::reset_markers
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>Go reset markes</string>
 	<key>outputCaret</key>

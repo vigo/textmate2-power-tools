@@ -8,6 +8,8 @@ type ${1:Object} struct {
 	$0
 }
 </string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>type Struct</string>
 	<key>scope</key>

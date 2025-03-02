@@ -5,6 +5,8 @@
 	<key>content</key>
 	<string>${1:Field} ${2|byte,bool,complex64,complex128,float32,float64,int,int8,int16,int32,int64,Pointer,string,uint,uint8,uint16,uint32,uint64,uintptr,rune|} ${3:\`json:"${1/(^[[:upper:]])|([[:upper:]])/(?1:\L$0)(?2:_\L$0)/g}"\`}
 </string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>struct Field</string>
 	<key>scope</key>

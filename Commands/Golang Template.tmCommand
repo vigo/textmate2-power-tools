@@ -37,6 +37,8 @@ TEMP</string>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>Golang Template</string>
 	<key>outputCaret</key>
