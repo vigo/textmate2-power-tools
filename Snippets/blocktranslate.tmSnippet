@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{% blocktranslate ${1:with ${2:var1} as ${3:var2} }%}
+	<string>{% blocktranslate trimmed ${1:with ${2:var1} as ${3:var2} }%}
 $4{{ $3 }}
 {% endblocktranslate %}</string>
 	<key>name</key>
