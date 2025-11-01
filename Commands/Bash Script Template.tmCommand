@@ -19,10 +19,9 @@ puts(&lt;&lt;-TEMP)
 #
 ${1:# Created by #{TM_FULLNAME} on #{TM_DATE}.
 # Copyright (c) #{TM_YEAR} #{TM_ORGANIZATION}. All rights reserved.}
-set -e
-set -o pipefail
 set -o errexit
 set -o nounset
+set -o pipefail
 
 ${0}
 TEMP
