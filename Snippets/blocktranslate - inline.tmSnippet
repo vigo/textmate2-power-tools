@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>text.html.django</string>
 	<key>tabTrigger</key>
-	<string>bitrans</string>
+	<string>btrans</string>
 	<key>uuid</key>
 	<string>B8AF0171-8676-4DC5-AB58-7B198BD63782</string>
 </dict>

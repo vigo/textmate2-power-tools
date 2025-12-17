@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{% blocktranslate trimmed ${1:with ${2:var1} as ${3:var2} }%}
-{{ $0 }}
+	<string>{% blocktranslate trimmed asvar ${1} ${2:with ${3:var1} as ${4:var2} }%}
+{{ $3 }}
 {% endblocktranslate %}</string>
 	<key>name</key>
-	<string>blocktranslate</string>
+	<string>blocktranslate asvar</string>
 	<key>scope</key>
 	<string>text.html.django</string>
 	<key>tabTrigger</key>
 	<string>btrans</string>
 	<key>uuid</key>
-	<string>0E41D5FB-D0BB-48E7-BF6C-1977D20FF599</string>
+	<string>1C4B3B6D-505E-453D-8504-1BC5205E265A</string>
 </dict>
 </plist>
