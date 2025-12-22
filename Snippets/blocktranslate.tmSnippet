@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>{% blocktranslate trimmed ${1:with ${2:var1} as ${3:var2} }%}
-{{ $0 }}
+$0
 {% endblocktranslate %}</string>
 	<key>name</key>
 	<string>blocktranslate</string>

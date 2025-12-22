@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>{% blocktranslate trimmed asvar ${1} ${2:with ${3:var1} as ${4:var2} }%}
-{{ $3 }}
+$0
 {% endblocktranslate %}</string>
 	<key>name</key>
 	<string>blocktranslate asvar</string>

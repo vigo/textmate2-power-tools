@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>{% blocktranslate trimmed %}${1}{% endblocktranslate %}</string>
+	<string>{% blocktranslate trimmed %}${0}{% endblocktranslate %}</string>
 	<key>name</key>
 	<string>blocktranslate - inline</string>
 	<key>scope</key>
