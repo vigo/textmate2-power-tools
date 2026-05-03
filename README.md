@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-3.0.3-orange.svg)
+![Version](https://img.shields.io/badge/version-3.0.4-orange.svg)
 ![Plaftorm](https://img.shields.io/badge/platform-TextMate_2_-blue.svg)
 ![Powered by Rake](https://img.shields.io/badge/powered_by-rake-blue?logo=ruby)
 
