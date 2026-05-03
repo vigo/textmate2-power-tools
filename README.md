@@ -45,6 +45,19 @@ https://github.com/vigo/textmate2-golang
 
 ## News
 
+**2026-05-03**
+
+- Auto-save / format with prettier
+
+Set your `TM_PRETTIER_CONFIG` in `.tm_properties` or main environment settings.
+When you save your jsx / js file, prettier will be applied..
+
+```toml
+# example tm_properties
+PATH="${TM_PROJECT_DIRECTORY}/node_modules/.bin:${PATH}"
+TM_PRETTIER_CONFIG="${TM_PROJECT_DIRECTORY}/.prettierrc"
+```
+
 **2025-03-02**
 
 - Go related bundles functionality removed, now you can install:
